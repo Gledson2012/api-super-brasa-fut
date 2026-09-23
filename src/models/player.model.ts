@@ -122,3 +122,53 @@ export interface StatsLeaders {
   topAssists: TopAssistEntry[];
   topRatings: TopRatingEntry[];
 }
+
+export interface PlayerComparisonSummary {
+  player1: {
+    id: string;
+    name: string;
+    team: string;
+    position: PlayerPosition;
+    age: number;
+    marketValueEur?: number;
+    goals: number;
+    assists: number;
+    appearances: number;
+    minutesPlayed: number;
+    yellowCards: number;
+    redCards: number;
+    averageRating?: number;
+    goalsPerMatch: number;
+    assistsPerMatch: number;
+    minutesPerGoal: number | null;
+  };
+  player2: {
+    id: string;
+    name: string;
+    team: string;
+    position: PlayerPosition;
+    age: number;
+    marketValueEur?: number;
+    goals: number;
+    assists: number;
+    appearances: number;
+    minutesPlayed: number;
+    yellowCards: number;
+    redCards: number;
+    averageRating?: number;
+    goalsPerMatch: number;
+    assistsPerMatch: number;
+    minutesPerGoal: number | null;
+  };
+  metricsComparison: {
+    moreGoals: 'player1' | 'player2' | 'tie';
+    moreAssists: 'player1' | 'player2' | 'tie';
+    higherRating: 'player1' | 'player2' | 'tie';
+    higherMarketValue: 'player1' | 'player2' | 'tie';
+  };
+  fullDetails: {
+    player1: Player;
+    player2: Player;
+  };
+}
+

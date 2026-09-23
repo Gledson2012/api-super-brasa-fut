@@ -7,6 +7,7 @@ import { playerRoutes } from './player.routes.js';
 import { newsRoutes } from './news.routes.js';
 import { oddsRoutes } from './odds.routes.js';
 import { statsRoutes } from './stats.routes.js';
+import { searchRoutes } from './search.routes.js';
 import { config } from '../config/environment.js';
 
 export const apiRouter = Router();
@@ -23,6 +24,7 @@ apiRouter.get('/health', (_req, res) => {
 });
 
 // Resource routes
+apiRouter.use('/search', searchRoutes);
 apiRouter.use('/leagues', leagueRoutes);
 apiRouter.use('/teams', teamRoutes);
 apiRouter.use('/matches', matchRoutes);

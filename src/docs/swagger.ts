@@ -24,9 +24,25 @@ export const swaggerDocument = {
     { name: 'Stats & Leaders', description: 'Artilharia, assistências e melhores notas de avaliação' },
     { name: 'News', description: 'Notícias esportivas, transferências e análises' },
     { name: 'Odds', description: 'Cotações médias e linhas de apostas das principais casas' },
+    { name: 'Search', description: 'Busca global unificada em múltiplas entidades do futebol' },
     { name: 'Health', description: 'Diagnóstico e integridade da API' },
   ],
   paths: {
+    '/search': {
+      get: {
+        tags: ['Search'],
+        summary: 'Busca global unificada por campeonatos, clubes, jogadores, partidas e notícias',
+        parameters: [
+          { name: 'q', in: 'query', required: true, schema: { type: 'string' }, description: 'Termo de pesquisa (ex: flamengo, arrascaeta, libertadores)' },
+          { name: 'type', in: 'query', schema: { type: 'string', enum: ['all', 'leagues', 'teams', 'players', 'matches', 'news'], default: 'all' }, description: 'Filtrar por tipo de entidade' },
+          { name: 'limit', in: 'query', schema: { type: 'integer', default: 10 }, description: 'Limite de resultados por categoria' },
+        ],
+        responses: {
+          200: { description: 'Resultados categorizados da pesquisa' },
+          400: { description: 'Parâmetro de pesquisa inválido ou ausente' },
+        },
+      },
+    },
     '/health': {
       get: {
         tags: ['Health'],
@@ -144,6 +160,26 @@ export const swaggerDocument = {
         },
       },
     },
+    '/matches/live/stream': {
+      get: {
+        tags: ['Matches'],
+        summary: 'Streaming contínuo de partidas ao vivo via Server-Sent Events (SSE)',
+        description: 'Mantém uma conexão persistente text/event-stream transmitindo atualizações de minuto, placar e eventos de jogos em andamento em tempo real.',
+        responses: {
+          200: {
+            description: 'Conexão SSE estabelecida com eventos periódicos',
+            content: {
+              'text/event-stream': {
+                schema: {
+                  type: 'string',
+                  example: 'event: matches\ndata: [{"id": "m-fla-pal", "minute": 67, "score": {"home": 2, "away": 1}}]\n\n',
+                },
+              },
+            },
+          },
+        },
+      },
+    },
     '/matches/h2h': {
       get: {
         tags: ['Matches'],
@@ -220,6 +256,18 @@ export const swaggerDocument = {
         },
       },
     },
+    '/teams/{id}/calendar': {
+      get: {
+        tags: ['Teams', 'Matches'],
+        summary: 'Calendário e retrospecto completo do clube',
+        description: 'Retorna histórico de partidas passadas, próximos confrontos ordenados cronologicamente e resumo de vitórias/empates/derrotas.',
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        responses: {
+          200: { description: 'Calendário consolidado do time' },
+          404: { description: 'Time não encontrado' },
+        },
+      },
+    },
     '/teams/{id}/squad': {
       get: {
         tags: ['Teams', 'Players'],
@@ -270,6 +318,22 @@ export const swaggerDocument = {
         ],
         responses: {
           200: { description: 'Lista de jogadores' },
+        },
+      },
+    },
+    '/players/compare': {
+      get: {
+        tags: ['Players', 'Stats & Leaders'],
+        summary: 'Comparação estatística detalhada lado a lado entre dois atletas',
+        description: 'Compara gols, assistências, participações em gols, notas médias Sofascore, cartões e minutos jogados.',
+        parameters: [
+          { name: 'p1', in: 'query', required: true, schema: { type: 'string' }, description: 'ID ou slug do primeiro jogador (ex: estevao-willian)' },
+          { name: 'p2', in: 'query', required: true, schema: { type: 'string' }, description: 'ID ou slug do segundo jogador (ex: pedro-flamengo)' },
+        ],
+        responses: {
+          200: { description: 'Relatório comparativo dos dois jogadores' },
+          400: { description: 'Parâmetros p1 ou p2 ausentes' },
+          404: { description: 'Um ou ambos os jogadores não encontrados' },
         },
       },
     },

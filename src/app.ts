@@ -7,9 +7,15 @@ import { config } from './config/environment.js';
 import { apiRouter } from './routes/index.js';
 import { errorHandler, notFoundHandler } from './middlewares/error.middleware.js';
 import { swaggerDocument } from './docs/swagger.js';
+import { globalRateLimiter } from './middlewares/rate-limit.middleware.js';
 
 export function createApp(): Express {
   const app = express();
+
+  // Rate limiting (skip in test mode or custom headers)
+  if (config.env !== 'test') {
+    app.use(globalRateLimiter);
+  }
 
   // Basic security and parsing middlewares
   const helmetFn = helmet as unknown as (options?: Record<string, unknown>) => express.RequestHandler;
@@ -37,12 +43,15 @@ export function createApp(): Express {
       apiBase: config.apiPrefix,
       endpoints: {
         health: `${config.apiPrefix}/health`,
+        search: `${config.apiPrefix}/search?q=flamengo`,
         leagues: `${config.apiPrefix}/leagues`,
         matches: `${config.apiPrefix}/matches`,
         live: `${config.apiPrefix}/matches/live`,
+        liveStream: `${config.apiPrefix}/matches/live/stream`,
         standings: `${config.apiPrefix}/standings`,
         teams: `${config.apiPrefix}/teams`,
         players: `${config.apiPrefix}/players`,
+        playerCompare: `${config.apiPrefix}/players/compare?p1=estevao-willian&p2=pedro-flamengo`,
         news: `${config.apiPrefix}/news`,
         odds: `${config.apiPrefix}/odds`,
         stats: `${config.apiPrefix}/stats/leaders`,

@@ -59,6 +59,16 @@ export class TeamController {
       next(error);
     }
   }
+
+  public async getCalendar(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+      const { id } = req.params;
+      const calendar = await teamService.getTeamCalendar(id);
+      res.json(successResponse(calendar));
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 export const teamController = new TeamController();

@@ -43,6 +43,45 @@ export class MatchController {
     }
   }
 
+  public async streamLive(req: Request, res: Response): Promise<void> {
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache, no-transform');
+    res.setHeader('Connection', 'keep-alive');
+    res.setHeader('X-Accel-Buffering', 'no');
+
+    if (typeof (res as any).flushHeaders === 'function') {
+      (res as any).flushHeaders();
+    }
+
+    res.write(
+      `event: connected\ndata: ${JSON.stringify({
+        message: 'Super Brasa Fut Live Match Stream conectado com sucesso.',
+        timestamp: new Date().toISOString(),
+      })}\n\n`
+    );
+
+    try {
+      const initialMatches = await matchService.getLiveMatches();
+      res.write(`event: matches\ndata: ${JSON.stringify(initialMatches)}\n\n`);
+    } catch {
+      // ignore initial fetch error
+    }
+
+    const interval = setInterval(async () => {
+      try {
+        const liveMatches = await matchService.getLiveMatches();
+        res.write(`event: matches\ndata: ${JSON.stringify(liveMatches)}\n\n`);
+      } catch {
+        res.write(`event: ping\ndata: ${JSON.stringify({ timestamp: new Date().toISOString() })}\n\n`);
+      }
+    }, 3000);
+
+    req.on('close', () => {
+      clearInterval(interval);
+      res.end();
+    });
+  }
+
   public async getHeadToHead(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       const { team1Id, team2Id } = req.query;
