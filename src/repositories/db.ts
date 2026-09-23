@@ -17,6 +17,10 @@ function getDataDir(): string {
   if (fs.existsSync(localDistData)) {
     return localDistData;
   }
+  const cwdDistData = path.resolve(process.cwd(), 'dist/data');
+  if (fs.existsSync(cwdDistData)) {
+    return cwdDistData;
+  }
   const srcData = path.resolve(process.cwd(), 'src/data');
   if (fs.existsSync(srcData)) {
     return srcData;
