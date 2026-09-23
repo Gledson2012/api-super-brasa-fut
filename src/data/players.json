@@ -1,0 +1,395 @@
+[
+  {
+    "id": "estevao-willian",
+    "slug": "estevao-willian",
+    "name": "Estêvão",
+    "fullName": "Estêvão Willian Almeida de Oliveira Gonçalves",
+    "nickname": "Messinho",
+    "birthDate": "2007-04-24",
+    "age": 19,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/estevao.png",
+    "heightCm": 176,
+    "weightKg": 66,
+    "preferredFoot": "left",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "palmeiras",
+      "name": "Palmeiras",
+      "shortName": "Palmeiras"
+    },
+    "shirtNumber": 41,
+    "marketValueEur": 45000000,
+    "contractUntil": "2027-06-30",
+    "sofascoreId": "1482931",
+    "fbrefId": "e996f0ba",
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-serie-a-2026",
+        "leagueName": "Brasileirão Série A 2026",
+        "appearances": 23,
+        "minutesPlayed": 1780,
+        "goals": 11,
+        "expectedGoals": 9.8,
+        "assists": 8,
+        "expectedAssists": 7.4,
+        "shotsOnTarget": 31,
+        "passAccuracyPercent": 82,
+        "keyPasses": 46,
+        "yellowCards": 2,
+        "redCards": 0,
+        "sofascoreRating": 7.78
+      }
+    ]
+  },
+  {
+    "id": "endrick",
+    "slug": "endrick",
+    "name": "Endrick",
+    "fullName": "Endrick Felipe Moreira de Sousa",
+    "birthDate": "2006-07-21",
+    "age": 20,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/endrick.png",
+    "heightCm": 173,
+    "weightKg": 70,
+    "preferredFoot": "left",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "Real Madrid"
+    },
+    "shirtNumber": 16,
+    "marketValueEur": 60000000,
+    "contractUntil": "2030-06-30",
+    "sofascoreId": "1388102",
+    "fbrefId": "b7c12693",
+    "stats": [
+      {
+        "season": "2026/27",
+        "leagueId": "esp-laliga-2026",
+        "leagueName": "LaLiga 2026/27",
+        "appearances": 6,
+        "minutesPlayed": 190,
+        "goals": 3,
+        "expectedGoals": 2.1,
+        "assists": 1,
+        "shotsOnTarget": 7,
+        "passAccuracyPercent": 81,
+        "keyPasses": 5,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.42
+      }
+    ]
+  },
+  {
+    "id": "pedro-flamengo",
+    "slug": "pedro-guilherme",
+    "name": "Pedro",
+    "fullName": "Pedro Guilherme Abreu dos Santos",
+    "birthDate": "1997-06-20",
+    "age": 29,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/pedro.png",
+    "heightCm": 185,
+    "weightKg": 78,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "flamengo",
+      "name": "Flamengo",
+      "shortName": "Flamengo"
+    },
+    "shirtNumber": 9,
+    "marketValueEur": 23000000,
+    "contractUntil": "2027-12-31",
+    "sofascoreId": "833019",
+    "fbrefId": "0d1396a8",
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-serie-a-2026",
+        "leagueName": "Brasileirão Série A 2026",
+        "appearances": 21,
+        "minutesPlayed": 1650,
+        "goals": 14,
+        "expectedGoals": 12.3,
+        "assists": 4,
+        "shotsOnTarget": 38,
+        "passAccuracyPercent": 79,
+        "keyPasses": 22,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.64
+      }
+    ]
+  },
+  {
+    "id": "luiz-henrique-botafogo",
+    "slug": "luiz-henrique",
+    "name": "Luiz Henrique",
+    "fullName": "Luiz Henrique André Rosa da Silva",
+    "birthDate": "2001-01-02",
+    "age": 25,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/luizhenrique.png",
+    "heightCm": 181,
+    "weightKg": 75,
+    "preferredFoot": "left",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "botafogo",
+      "name": "Botafogo",
+      "shortName": "Botafogo"
+    },
+    "shirtNumber": 7,
+    "marketValueEur": 20000000,
+    "contractUntil": "2028-12-31",
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-serie-a-2026",
+        "leagueName": "Brasileirão Série A 2026",
+        "appearances": 25,
+        "minutesPlayed": 2050,
+        "goals": 8,
+        "expectedGoals": 7.2,
+        "assists": 6,
+        "shotsOnTarget": 29,
+        "passAccuracyPercent": 83,
+        "keyPasses": 39,
+        "yellowCards": 4,
+        "redCards": 0,
+        "sofascoreRating": 7.55
+      }
+    ]
+  },
+  {
+    "id": "martin-zubimendi",
+    "slug": "martin-zubimendi",
+    "name": "Martín Zubimendi",
+    "fullName": "Martín Zubimendi Ibáñez",
+    "birthDate": "1999-02-02",
+    "age": 27,
+    "nationality": "Espanha",
+    "countryCode": "ESP",
+    "photoUrl": "https://fbref.com/req/202608120/images/headshots/3ee0dd59_2022.jpg",
+    "heightCm": 181,
+    "weightKg": 74,
+    "preferredFoot": "right",
+    "position": "Midfielder",
+    "currentTeam": {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "Real Madrid"
+    },
+    "shirtNumber": 4,
+    "marketValueEur": 60000000,
+    "contractUntil": "2029-06-30",
+    "fbrefId": "3ee0dd59",
+    "stats": [
+      {
+        "season": "2026/27",
+        "leagueId": "esp-laliga-2026",
+        "leagueName": "LaLiga 2026/27",
+        "appearances": 6,
+        "minutesPlayed": 510,
+        "goals": 1,
+        "assists": 2,
+        "passAccuracyPercent": 91,
+        "keyPasses": 14,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.35
+      }
+    ]
+  },
+  {
+    "id": "ryan-sessegnon",
+    "slug": "ryan-sessegnon",
+    "name": "Ryan Sessegnon",
+    "fullName": "Ryan Kouame Sessegnon",
+    "birthDate": "2000-05-18",
+    "age": 26,
+    "nationality": "Inglaterra",
+    "countryCode": "ENG",
+    "photoUrl": "https://fbref.com/req/202608120/images/headshots/6aa3e78b_2022.jpg",
+    "heightCm": 178,
+    "weightKg": 70,
+    "preferredFoot": "left",
+    "position": "Defender",
+    "currentTeam": {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "shortName": "Arsenal"
+    },
+    "shirtNumber": 3,
+    "marketValueEur": 18000000,
+    "fbrefId": "6aa3e78b",
+    "stats": [
+      {
+        "season": "2026/27",
+        "leagueId": "eng-premier-league-2026",
+        "leagueName": "Premier League 2026/27",
+        "appearances": 4,
+        "minutesPlayed": 290,
+        "goals": 0,
+        "assists": 1,
+        "passAccuracyPercent": 84,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 6.95
+      }
+    ]
+  },
+  {
+    "id": "chloe-kelly",
+    "slug": "chloe-kelly",
+    "name": "Chloe Kelly",
+    "fullName": "Chloe Maggie Kelly",
+    "birthDate": "1998-01-15",
+    "age": 28,
+    "nationality": "Inglaterra",
+    "countryCode": "ENG",
+    "photoUrl": "https://fbref.com/req/202608120/images/headshots/9ff67bf9_2022.jpg",
+    "heightCm": 168,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "manchester-city",
+      "name": "Manchester City Women",
+      "shortName": "Man City Fem"
+    },
+    "shirtNumber": 9,
+    "fbrefId": "9ff67bf9",
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "uefa-wcl-2026",
+        "leagueName": "UEFA Women's Champions League 2026",
+        "appearances": 5,
+        "minutesPlayed": 410,
+        "goals": 4,
+        "assists": 3,
+        "passAccuracyPercent": 80,
+        "yellowCards": 0,
+        "redCards": 0,
+        "sofascoreRating": 7.85
+      }
+    ]
+  },
+  {
+    "id": "alisha-lehmann",
+    "slug": "alisha-lehmann",
+    "name": "Alisha Lehmann",
+    "fullName": "Alisha Lehmann",
+    "birthDate": "1999-01-21",
+    "age": 27,
+    "nationality": "Suíça",
+    "countryCode": "SUI",
+    "photoUrl": "https://fbref.com/req/202302030/images/headshots/f32bb122_2022.jpg",
+    "heightCm": 165,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "juventus-women",
+      "name": "Juventus Women",
+      "shortName": "Juventus Fem"
+    },
+    "shirtNumber": 7,
+    "fbrefId": "f32bb122",
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "uefa-wcl-2026",
+        "leagueName": "UEFA Women's Champions League 2026",
+        "appearances": 4,
+        "minutesPlayed": 280,
+        "goals": 2,
+        "assists": 2,
+        "yellowCards": 0,
+        "redCards": 0,
+        "sofascoreRating": 7.2
+      }
+    ]
+  },
+  {
+    "id": "christian-eriksen",
+    "slug": "christian-eriksen",
+    "name": "Christian Eriksen",
+    "fullName": "Christian Dannemann Eriksen",
+    "birthDate": "1992-02-14",
+    "age": 34,
+    "nationality": "Dinamarca",
+    "countryCode": "DEN",
+    "photoUrl": "https://fbref.com/req/202608120/images/headshots/980522ec_2022.jpg",
+    "heightCm": 182,
+    "weightKg": 76,
+    "preferredFoot": "both",
+    "position": "Midfielder",
+    "currentTeam": {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "shortName": "Man City"
+    },
+    "shirtNumber": 14,
+    "fbrefId": "980522ec",
+    "stats": [
+      {
+        "season": "2026/27",
+        "leagueId": "eng-premier-league-2026",
+        "leagueName": "Premier League 2026/27",
+        "appearances": 5,
+        "minutesPlayed": 340,
+        "goals": 1,
+        "assists": 3,
+        "passAccuracyPercent": 89,
+        "yellowCards": 0,
+        "redCards": 0,
+        "sofascoreRating": 7.4
+      }
+    ]
+  },
+  {
+    "id": "mallory-swanson",
+    "slug": "mallory-swanson",
+    "name": "Mallory Swanson",
+    "fullName": "Mallory Diane Swanson (Pugh)",
+    "birthDate": "1998-04-29",
+    "age": 28,
+    "nationality": "Estados Unidos",
+    "countryCode": "USA",
+    "photoUrl": "https://fbref.com/req/202302030/images/headshots/70b0fd86_2022.jpg",
+    "heightCm": 163,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "usa-women-u20",
+      "name": "USWNT / Chicago Red Stars",
+      "shortName": "USA"
+    },
+    "shirtNumber": 9,
+    "fbrefId": "70b0fd86",
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "fifa-wwc-u20-2026",
+        "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+        "appearances": 5,
+        "minutesPlayed": 430,
+        "goals": 5,
+        "assists": 4,
+        "yellowCards": 0,
+        "redCards": 0,
+        "sofascoreRating": 8.1
+      }
+    ]
+  }
+]

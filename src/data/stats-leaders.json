@@ -1,0 +1,241 @@
+[
+  {
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "season": "2026",
+    "topScorers": [
+      {
+        "rank": 1,
+        "player": {
+          "id": "pedro-flamengo",
+          "name": "Pedro",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "flamengo",
+          "name": "Flamengo"
+        },
+        "goals": 14,
+        "penaltyGoals": 2,
+        "assists": 4,
+        "matchesPlayed": 21,
+        "minutesPerGoal": 118
+      },
+      {
+        "rank": 2,
+        "player": {
+          "id": "estevao-willian",
+          "name": "Estêvão",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "palmeiras",
+          "name": "Palmeiras"
+        },
+        "goals": 11,
+        "penaltyGoals": 1,
+        "assists": 8,
+        "matchesPlayed": 23,
+        "minutesPerGoal": 161
+      },
+      {
+        "rank": 3,
+        "player": {
+          "id": "flaco-lopez",
+          "name": "Flaco López",
+          "nationality": "Argentina"
+        },
+        "team": {
+          "id": "palmeiras",
+          "name": "Palmeiras"
+        },
+        "goals": 10,
+        "penaltyGoals": 0,
+        "assists": 3,
+        "matchesPlayed": 24,
+        "minutesPerGoal": 175
+      },
+      {
+        "rank": 4,
+        "player": {
+          "id": "luiz-henrique-botafogo",
+          "name": "Luiz Henrique",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "botafogo",
+          "name": "Botafogo"
+        },
+        "goals": 8,
+        "penaltyGoals": 0,
+        "assists": 6,
+        "matchesPlayed": 25,
+        "minutesPerGoal": 256
+      },
+      {
+        "rank": 5,
+        "player": {
+          "id": "lucas-moura",
+          "name": "Lucas Moura",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "sao-paulo",
+          "name": "São Paulo"
+        },
+        "goals": 8,
+        "penaltyGoals": 2,
+        "assists": 5,
+        "matchesPlayed": 22,
+        "minutesPerGoal": 220
+      }
+    ],
+    "topAssists": [
+      {
+        "rank": 1,
+        "player": {
+          "id": "estevao-willian",
+          "name": "Estêvão",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "palmeiras",
+          "name": "Palmeiras"
+        },
+        "assists": 8,
+        "keyPasses": 46,
+        "matchesPlayed": 23
+      },
+      {
+        "rank": 2,
+        "player": {
+          "id": "raphael-veiga",
+          "name": "Raphael Veiga",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "palmeiras",
+          "name": "Palmeiras"
+        },
+        "assists": 7,
+        "keyPasses": 52,
+        "matchesPlayed": 24
+      },
+      {
+        "rank": 3,
+        "player": {
+          "id": "luiz-henrique-botafogo",
+          "name": "Luiz Henrique",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "botafogo",
+          "name": "Botafogo"
+        },
+        "assists": 6,
+        "keyPasses": 39,
+        "matchesPlayed": 25
+      },
+      {
+        "rank": 4,
+        "player": {
+          "id": "rodrigo-garro",
+          "name": "Rodrigo Garro",
+          "nationality": "Argentina"
+        },
+        "team": {
+          "id": "corinthians",
+          "name": "Corinthians"
+        },
+        "assists": 6,
+        "keyPasses": 58,
+        "matchesPlayed": 26
+      },
+      {
+        "rank": 5,
+        "player": {
+          "id": "matheus-pereira",
+          "name": "Matheus Pereira",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "cruzeiro",
+          "name": "Cruzeiro"
+        },
+        "assists": 6,
+        "keyPasses": 49,
+        "matchesPlayed": 25
+      }
+    ],
+    "topRatings": [
+      {
+        "rank": 1,
+        "player": {
+          "id": "estevao-willian",
+          "name": "Estêvão",
+          "position": "Forward",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "palmeiras",
+          "name": "Palmeiras"
+        },
+        "rating": 7.78,
+        "matchesPlayed": 23,
+        "goals": 11,
+        "assists": 8
+      },
+      {
+        "rank": 2,
+        "player": {
+          "id": "pedro-flamengo",
+          "name": "Pedro",
+          "position": "Forward",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "flamengo",
+          "name": "Flamengo"
+        },
+        "rating": 7.64,
+        "matchesPlayed": 21,
+        "goals": 14,
+        "assists": 4
+      },
+      {
+        "rank": 3,
+        "player": {
+          "id": "luiz-henrique-botafogo",
+          "name": "Luiz Henrique",
+          "position": "Forward",
+          "nationality": "Brasil"
+        },
+        "team": {
+          "id": "botafogo",
+          "name": "Botafogo"
+        },
+        "rating": 7.55,
+        "matchesPlayed": 25,
+        "goals": 8,
+        "assists": 6
+      },
+      {
+        "rank": 4,
+        "player": {
+          "id": "rodrigo-garro",
+          "name": "Rodrigo Garro",
+          "position": "Midfielder",
+          "nationality": "Argentina"
+        },
+        "team": {
+          "id": "corinthians",
+          "name": "Corinthians"
+        },
+        "rating": 7.51,
+        "matchesPlayed": 26,
+        "goals": 5,
+        "assists": 6
+      }
+    ]
+  }
+]

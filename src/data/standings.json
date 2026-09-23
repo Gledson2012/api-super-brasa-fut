@@ -1,0 +1,844 @@
+[
+  {
+    "id": "standing-bra-serie-a-2026",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "country": "Brasil",
+    "season": "2026",
+    "updatedAt": "2026-09-22T23:59:00Z",
+    "groups": [
+      {
+        "groupName": "Tabela Única",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "botafogo",
+              "name": "Botafogo",
+              "shortName": "Botafogo",
+              "code": "BOT",
+              "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
+            },
+            "played": 27,
+            "won": 17,
+            "drawn": 5,
+            "lost": 5,
+            "goalsFor": 46,
+            "goalsAgainst": 24,
+            "goalDifference": 22,
+            "points": 56,
+            "pointsPercentage": 69.1,
+            "form": [
+              "W",
+              "W",
+              "D",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Libertadores",
+              "type": "libertadores",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "palmeiras",
+              "name": "Palmeiras",
+              "shortName": "Palmeiras",
+              "code": "PAL",
+              "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
+            },
+            "played": 27,
+            "won": 16,
+            "drawn": 5,
+            "lost": 6,
+            "goalsFor": 44,
+            "goalsAgainst": 19,
+            "goalDifference": 25,
+            "points": 53,
+            "pointsPercentage": 65.4,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Libertadores",
+              "type": "libertadores",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "fortaleza",
+              "name": "Fortaleza",
+              "shortName": "Fortaleza",
+              "code": "FOR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
+            },
+            "played": 27,
+            "won": 15,
+            "drawn": 7,
+            "lost": 5,
+            "goalsFor": 37,
+            "goalsAgainst": 25,
+            "goalDifference": 12,
+            "points": 52,
+            "pointsPercentage": 64.2,
+            "form": [
+              "W",
+              "L",
+              "L",
+              "D",
+              "W"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Libertadores",
+              "type": "libertadores",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "flamengo",
+              "name": "Flamengo",
+              "shortName": "Flamengo",
+              "code": "FLA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
+            },
+            "played": 26,
+            "won": 14,
+            "drawn": 6,
+            "lost": 6,
+            "goalsFor": 43,
+            "goalsAgainst": 29,
+            "goalDifference": 14,
+            "points": 48,
+            "pointsPercentage": 61.5,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "L",
+              "W"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Libertadores",
+              "type": "libertadores",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 5,
+            "team": {
+              "id": "sao-paulo",
+              "name": "São Paulo",
+              "shortName": "São Paulo",
+              "code": "SAO",
+              "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
+            },
+            "played": 27,
+            "won": 13,
+            "drawn": 5,
+            "lost": 9,
+            "goalsFor": 35,
+            "goalsAgainst": 27,
+            "goalDifference": 8,
+            "points": 44,
+            "pointsPercentage": 54.3,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Qualificação da Copa Libertadores",
+              "type": "pre_libertadores",
+              "color": "#2e7d32"
+            }
+          },
+          {
+            "position": 6,
+            "team": {
+              "id": "bahia",
+              "name": "Bahia",
+              "shortName": "Bahia",
+              "code": "BAH",
+              "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
+            },
+            "played": 27,
+            "won": 12,
+            "drawn": 6,
+            "lost": 9,
+            "goalsFor": 38,
+            "goalsAgainst": 31,
+            "goalDifference": 7,
+            "points": 42,
+            "pointsPercentage": 51.8,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "D",
+              "W"
+            ],
+            "zone": {
+              "name": "Qualificação da Copa Libertadores",
+              "type": "pre_libertadores",
+              "color": "#2e7d32"
+            }
+          },
+          {
+            "position": 7,
+            "team": {
+              "id": "cruzeiro",
+              "name": "Cruzeiro",
+              "shortName": "Cruzeiro",
+              "code": "CRU",
+              "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
+            },
+            "played": 27,
+            "won": 12,
+            "drawn": 6,
+            "lost": 9,
+            "goalsFor": 34,
+            "goalsAgainst": 27,
+            "goalDifference": 7,
+            "points": 42,
+            "pointsPercentage": 51.8,
+            "form": [
+              "D",
+              "L",
+              "W",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Sul-Americana",
+              "type": "sudamericana",
+              "color": "#0288d1"
+            }
+          },
+          {
+            "position": 8,
+            "team": {
+              "id": "internacional",
+              "name": "Internacional",
+              "shortName": "Internacional",
+              "code": "INT",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
+            },
+            "played": 25,
+            "won": 11,
+            "drawn": 8,
+            "lost": 6,
+            "goalsFor": 33,
+            "goalsAgainst": 23,
+            "goalDifference": 10,
+            "points": 41,
+            "pointsPercentage": 54.7,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "D"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Sul-Americana",
+              "type": "sudamericana",
+              "color": "#0288d1"
+            }
+          },
+          {
+            "position": 9,
+            "team": {
+              "id": "atletico-mg",
+              "name": "Atlético-MG",
+              "shortName": "Atlético-MG",
+              "code": "CAM",
+              "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
+            },
+            "played": 25,
+            "won": 9,
+            "drawn": 9,
+            "lost": 7,
+            "goalsFor": 36,
+            "goalsAgainst": 36,
+            "goalDifference": 0,
+            "points": 36,
+            "pointsPercentage": 48.0,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "D",
+              "D"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Sul-Americana",
+              "type": "sudamericana",
+              "color": "#0288d1"
+            }
+          },
+          {
+            "position": 10,
+            "team": {
+              "id": "vasco",
+              "name": "Vasco da Gama",
+              "shortName": "Vasco",
+              "code": "VAS",
+              "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
+            },
+            "played": 26,
+            "won": 10,
+            "drawn": 5,
+            "lost": 11,
+            "goalsFor": 30,
+            "goalsAgainst": 35,
+            "goalDifference": -5,
+            "points": 35,
+            "pointsPercentage": 44.8,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Sul-Americana",
+              "type": "sudamericana",
+              "color": "#0288d1"
+            }
+          },
+          {
+            "position": 11,
+            "team": {
+              "id": "bragantino",
+              "name": "Red Bull Bragantino",
+              "shortName": "Bragantino",
+              "code": "RBB",
+              "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
+            },
+            "played": 27,
+            "won": 8,
+            "drawn": 8,
+            "lost": 11,
+            "goalsFor": 34,
+            "goalsAgainst": 38,
+            "goalDifference": -4,
+            "points": 32,
+            "pointsPercentage": 39.5,
+            "form": [
+              "D",
+              "D",
+              "W",
+              "L",
+              "L"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Sul-Americana",
+              "type": "sudamericana",
+              "color": "#0288d1"
+            }
+          },
+          {
+            "position": 12,
+            "team": {
+              "id": "juventude",
+              "name": "Juventude",
+              "shortName": "Juventude",
+              "code": "JUV",
+              "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
+            },
+            "played": 27,
+            "won": 8,
+            "drawn": 8,
+            "lost": 11,
+            "goalsFor": 32,
+            "goalsAgainst": 38,
+            "goalDifference": -6,
+            "points": 32,
+            "pointsPercentage": 39.5,
+            "form": [
+              "L",
+              "W",
+              "D",
+              "L",
+              "D"
+            ],
+            "zone": {
+              "name": "Fase de Grupos da Copa Sul-Americana",
+              "type": "sudamericana",
+              "color": "#0288d1"
+            }
+          },
+          {
+            "position": 13,
+            "team": {
+              "id": "gremio",
+              "name": "Grêmio",
+              "shortName": "Grêmio",
+              "code": "GRE",
+              "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
+            },
+            "played": 26,
+            "won": 9,
+            "drawn": 4,
+            "lost": 13,
+            "goalsFor": 26,
+            "goalsAgainst": 34,
+            "goalDifference": -8,
+            "points": 31,
+            "pointsPercentage": 39.7,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "L",
+              "W"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 14,
+            "team": {
+              "id": "athletico-pr",
+              "name": "Athletico-PR",
+              "shortName": "Athletico-PR",
+              "code": "CAP",
+              "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
+            },
+            "played": 25,
+            "won": 8,
+            "drawn": 6,
+            "lost": 11,
+            "goalsFor": 27,
+            "goalsAgainst": 30,
+            "goalDifference": -3,
+            "points": 30,
+            "pointsPercentage": 40.0,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "L",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 15,
+            "team": {
+              "id": "criciuma",
+              "name": "Criciúma",
+              "shortName": "Criciúma",
+              "code": "CRI",
+              "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
+            },
+            "played": 27,
+            "won": 7,
+            "drawn": 8,
+            "lost": 12,
+            "goalsFor": 32,
+            "goalsAgainst": 42,
+            "goalDifference": -10,
+            "points": 29,
+            "pointsPercentage": 35.8,
+            "form": [
+              "D",
+              "L",
+              "W",
+              "L",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 16,
+            "team": {
+              "id": "vitoria",
+              "name": "Vitória",
+              "shortName": "Vitória",
+              "code": "VIT",
+              "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
+            },
+            "played": 27,
+            "won": 8,
+            "drawn": 4,
+            "lost": 15,
+            "goalsFor": 30,
+            "goalsAgainst": 42,
+            "goalDifference": -12,
+            "points": 28,
+            "pointsPercentage": 34.6,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 17,
+            "team": {
+              "id": "corinthians",
+              "name": "Corinthians",
+              "shortName": "Corinthians",
+              "code": "COR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
+            },
+            "played": 27,
+            "won": 6,
+            "drawn": 10,
+            "lost": 11,
+            "goalsFor": 26,
+            "goalsAgainst": 34,
+            "goalDifference": -8,
+            "points": 28,
+            "pointsPercentage": 34.6,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "L",
+              "D"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série B",
+              "type": "relegation",
+              "color": "#d32f2f"
+            }
+          },
+          {
+            "position": 18,
+            "team": {
+              "id": "fluminense",
+              "name": "Fluminense",
+              "shortName": "Fluminense",
+              "code": "FLU",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
+            },
+            "played": 26,
+            "won": 7,
+            "drawn": 6,
+            "lost": 13,
+            "goalsFor": 21,
+            "goalsAgainst": 28,
+            "goalDifference": -7,
+            "points": 27,
+            "pointsPercentage": 34.6,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "W",
+              "D"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série B",
+              "type": "relegation",
+              "color": "#d32f2f"
+            }
+          },
+          {
+            "position": 19,
+            "team": {
+              "id": "cuiaba",
+              "name": "Cuiabá",
+              "shortName": "Cuiabá",
+              "code": "CUI",
+              "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
+            },
+            "played": 26,
+            "won": 5,
+            "drawn": 8,
+            "lost": 13,
+            "goalsFor": 23,
+            "goalsAgainst": 38,
+            "goalDifference": -15,
+            "points": 23,
+            "pointsPercentage": 29.5,
+            "form": [
+              "D",
+              "D",
+              "W",
+              "L",
+              "D"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série B",
+              "type": "relegation",
+              "color": "#d32f2f"
+            }
+          },
+          {
+            "position": 20,
+            "team": {
+              "id": "atletico-go",
+              "name": "Atlético-GO",
+              "shortName": "Atlético-GO",
+              "code": "ACG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
+            },
+            "played": 27,
+            "won": 4,
+            "drawn": 6,
+            "lost": 17,
+            "goalsFor": 19,
+            "goalsAgainst": 42,
+            "goalDifference": -23,
+            "points": 18,
+            "pointsPercentage": 22.2,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "L"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série B",
+              "type": "relegation",
+              "color": "#d32f2f"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "standing-bra-serie-b-2026",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "country": "Brasil",
+    "season": "2026",
+    "updatedAt": "2026-09-22T23:59:00Z",
+    "groups": [
+      {
+        "groupName": "Tabela Única",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "novorizontino",
+              "name": "Novorizontino",
+              "shortName": "Novorizontino",
+              "code": "NOV"
+            },
+            "played": 28,
+            "won": 14,
+            "drawn": 9,
+            "lost": 5,
+            "goalsFor": 36,
+            "goalsAgainst": 24,
+            "goalDifference": 12,
+            "points": 51,
+            "pointsPercentage": 60.7,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W",
+              "D"
+            ],
+            "zone": {
+              "name": "Acesso à Série A",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "santos",
+              "name": "Santos",
+              "shortName": "Santos",
+              "code": "SAN",
+              "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
+            },
+            "played": 28,
+            "won": 14,
+            "drawn": 8,
+            "lost": 6,
+            "goalsFor": 41,
+            "goalsAgainst": 21,
+            "goalDifference": 20,
+            "points": 50,
+            "pointsPercentage": 59.5,
+            "form": [
+              "D",
+              "W",
+              "W",
+              "W",
+              "D"
+            ],
+            "zone": {
+              "name": "Acesso à Série A",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "sport-recife",
+              "name": "Sport Recife",
+              "shortName": "Sport",
+              "code": "SPT"
+            },
+            "played": 27,
+            "won": 13,
+            "drawn": 7,
+            "lost": 7,
+            "goalsFor": 37,
+            "goalsAgainst": 26,
+            "goalDifference": 11,
+            "points": 46,
+            "pointsPercentage": 56.8,
+            "form": [
+              "W",
+              "W",
+              "D",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Acesso à Série A",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "operario-pr",
+              "name": "Operário-PR",
+              "shortName": "Operário",
+              "code": "OPE"
+            },
+            "played": 27,
+            "won": 11,
+            "drawn": 6,
+            "lost": 10,
+            "goalsFor": 24,
+            "goalsAgainst": 22,
+            "goalDifference": 2,
+            "points": 39,
+            "pointsPercentage": 48.1,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "L",
+              "W"
+            ],
+            "zone": {
+              "name": "Acesso à Série A",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "standing-fifa-wwc-u20-2026",
+    "leagueId": "fifa-wwc-u20-2026",
+    "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+    "country": "Internacional",
+    "season": "2026",
+    "updatedAt": "2026-09-22T23:59:00Z",
+    "groups": [
+      {
+        "groupName": "Grupo B",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "brazil-women-u20",
+              "name": "Brasil Sub-20 Fem",
+              "shortName": "Brasil",
+              "code": "BRA"
+            },
+            "played": 3,
+            "won": 3,
+            "drawn": 0,
+            "lost": 0,
+            "goalsFor": 14,
+            "goalsAgainst": 0,
+            "goalDifference": 14,
+            "points": 9,
+            "pointsPercentage": 100.0,
+            "form": [
+              "W",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "usa-women-u20",
+              "name": "EUA Sub-20 Fem",
+              "shortName": "EUA",
+              "code": "USA"
+            },
+            "played": 3,
+            "won": 2,
+            "drawn": 0,
+            "lost": 1,
+            "goalsFor": 9,
+            "goalsAgainst": 3,
+            "goalDifference": 6,
+            "points": 6,
+            "pointsPercentage": 66.7,
+            "form": [
+              "W",
+              "L",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,876 @@
+[
+  {
+    "id": "match-pal-bot-2026",
+    "slug": "palmeiras-vs-botafogo-2026",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 28,
+    "season": "2026",
+    "status": "LIVE",
+    "minute": 72,
+    "period": "2H",
+    "kickoffTime": "2026-09-22T21:30:00Z",
+    "stadium": "Allianz Parque",
+    "city": "São Paulo",
+    "referee": "Wilton Pereira Sampaio",
+    "homeTeam": {
+      "id": "palmeiras",
+      "name": "Palmeiras",
+      "shortName": "Palmeiras",
+      "code": "PAL",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
+    },
+    "awayTeam": {
+      "id": "botafogo",
+      "name": "Botafogo",
+      "shortName": "Botafogo",
+      "code": "BOT",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
+    },
+    "score": {
+      "home": 2,
+      "away": 1,
+      "halftime": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    "events": [
+      {
+        "id": "evt-1",
+        "type": "GOAL",
+        "minute": 34,
+        "teamId": "palmeiras",
+        "teamName": "Palmeiras",
+        "primaryPlayer": "Estêvão",
+        "secondaryPlayer": "Raphael Veiga",
+        "detail": "Golaço de canhota de fora da área",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-2",
+        "type": "YELLOW_CARD",
+        "minute": 42,
+        "teamId": "botafogo",
+        "teamName": "Botafogo",
+        "primaryPlayer": "Alexander Barboza",
+        "detail": "Falta tática"
+      },
+      {
+        "id": "evt-3",
+        "type": "GOAL",
+        "minute": 55,
+        "teamId": "botafogo",
+        "teamName": "Botafogo",
+        "primaryPlayer": "Luiz Henrique",
+        "secondaryPlayer": "Thiago Almada",
+        "detail": "Finalização cruzada rasteira",
+        "scoreAfter": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      {
+        "id": "evt-4",
+        "type": "GOAL",
+        "minute": 68,
+        "teamId": "palmeiras",
+        "teamName": "Palmeiras",
+        "primaryPlayer": "Flaco López",
+        "secondaryPlayer": "Estêvão",
+        "detail": "Cabeceio no canto direito",
+        "scoreAfter": {
+          "home": 2,
+          "away": 1
+        }
+      }
+    ],
+    "stats": {
+      "home": {
+        "possessionPercent": 54,
+        "expectedGoals": 1.85,
+        "totalShots": 14,
+        "shotsOnTarget": 6,
+        "shotsOffTarget": 5,
+        "blockedShots": 3,
+        "cornerKicks": 7,
+        "offsides": 2,
+        "fouls": 11,
+        "yellowCards": 1,
+        "redCards": 0,
+        "goalkeeperSaves": 3,
+        "totalPasses": 380,
+        "accuratePasses": 324,
+        "passAccuracyPercent": 85
+      },
+      "away": {
+        "possessionPercent": 46,
+        "expectedGoals": 1.12,
+        "totalShots": 9,
+        "shotsOnTarget": 4,
+        "shotsOffTarget": 3,
+        "blockedShots": 2,
+        "cornerKicks": 4,
+        "offsides": 1,
+        "fouls": 14,
+        "yellowCards": 2,
+        "redCards": 0,
+        "goalkeeperSaves": 4,
+        "totalPasses": 320,
+        "accuratePasses": 262,
+        "passAccuracyPercent": 82
+      }
+    },
+    "lineups": {
+      "home": {
+        "formation": "4-2-3-1",
+        "coach": "Abel Ferreira",
+        "starters": [
+          {
+            "number": 21,
+            "name": "Weverton",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Marcos Rocha",
+            "position": "DF"
+          },
+          {
+            "number": 15,
+            "name": "Gustavo Gómez",
+            "position": "DF",
+            "isCaptain": true
+          },
+          {
+            "number": 26,
+            "name": "Murilo",
+            "position": "DF"
+          },
+          {
+            "number": 22,
+            "name": "Joaquín Piquerez",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Aníbal Moreno",
+            "position": "MF"
+          },
+          {
+            "number": 8,
+            "name": "Zé Rafael",
+            "position": "MF"
+          },
+          {
+            "number": 41,
+            "name": "Estêvão",
+            "position": "FW",
+            "rating": 8.7
+          },
+          {
+            "number": 23,
+            "name": "Raphael Veiga",
+            "position": "MF",
+            "rating": 7.9
+          },
+          {
+            "number": 7,
+            "name": "Dudu",
+            "position": "FW"
+          },
+          {
+            "number": 42,
+            "name": "Flaco López",
+            "position": "FW",
+            "rating": 8.1
+          }
+        ],
+        "substitutes": [
+          {
+            "number": 14,
+            "name": "Marcelo Lomba",
+            "position": "GK"
+          },
+          {
+            "number": 33,
+            "name": "Vanderlan",
+            "position": "DF"
+          },
+          {
+            "number": 17,
+            "name": "Lázaro",
+            "position": "FW"
+          },
+          {
+            "number": 9,
+            "name": "Felipe Anderson",
+            "position": "MF"
+          }
+        ]
+      },
+      "away": {
+        "formation": "4-3-3",
+        "coach": "Artur Jorge",
+        "starters": [
+          {
+            "number": 1,
+            "name": "John",
+            "position": "GK"
+          },
+          {
+            "number": 22,
+            "name": "Vitinho",
+            "position": "DF"
+          },
+          {
+            "number": 3,
+            "name": "Lucas Halter",
+            "position": "DF"
+          },
+          {
+            "number": 20,
+            "name": "Alexander Barboza",
+            "position": "DF"
+          },
+          {
+            "number": 13,
+            "name": "Alex Telles",
+            "position": "DF"
+          },
+          {
+            "number": 5,
+            "name": "Danilo Barbosa",
+            "position": "MF"
+          },
+          {
+            "number": 17,
+            "name": "Marlon Freitas",
+            "position": "MF",
+            "isCaptain": true
+          },
+          {
+            "number": 23,
+            "name": "Thiago Almada",
+            "position": "MF",
+            "rating": 7.6
+          },
+          {
+            "number": 7,
+            "name": "Luiz Henrique",
+            "position": "FW",
+            "rating": 8.0
+          },
+          {
+            "number": 99,
+            "name": "Igor Jesus",
+            "position": "FW"
+          },
+          {
+            "number": 10,
+            "name": "Jefferson Savarino",
+            "position": "FW"
+          }
+        ],
+        "substitutes": [
+          {
+            "number": 12,
+            "name": "Gatito Fernández",
+            "position": "GK"
+          },
+          {
+            "number": 2,
+            "name": "Rafael",
+            "position": "DF"
+          },
+          {
+            "number": 9,
+            "name": "Tiquinho Soares",
+            "position": "FW"
+          },
+          {
+            "number": 11,
+            "name": "Júnior Santos",
+            "position": "FW"
+          }
+        ]
+      }
+    },
+    "odds": {
+      "homeWin": 2.1,
+      "draw": 3.25,
+      "awayWin": 3.6,
+      "over25": 1.95,
+      "under25": 1.85,
+      "bttsYes": 1.8,
+      "bttsNo": 1.95,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Globo",
+      "Premiere",
+      "CazéTV"
+    ]
+  },
+  {
+    "id": "match-aud-col-2026",
+    "slug": "audax-italiano-vs-colo-colo-2026",
+    "leagueId": "chi-copa-chile-2026",
+    "leagueName": "Copa Chile 2026 - Playoffs",
+    "leagueCountry": "Chile",
+    "leagueRound": "Quartas de Final",
+    "season": "2026",
+    "status": "LIVE",
+    "minute": 47,
+    "period": "2H",
+    "kickoffTime": "2026-09-22T22:30:00Z",
+    "stadium": "Estadio Bicentenario de La Florida",
+    "city": "Santiago",
+    "homeTeam": {
+      "id": "audax-italiano",
+      "name": "Audax Italiano",
+      "shortName": "Audax Italiano",
+      "code": "AUD",
+      "logoUrl": "https://static.flashscore.com/res/image/data/I9BmV0jC-6kEqxN0C.png"
+    },
+    "awayTeam": {
+      "id": "colo-colo",
+      "name": "Colo Colo",
+      "shortName": "Colo Colo",
+      "code": "COL",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 1,
+      "halftime": {
+        "home": 0,
+        "away": 1
+      }
+    },
+    "events": [
+      {
+        "id": "evt-cc-1",
+        "type": "GOAL",
+        "minute": 29,
+        "teamId": "colo-colo",
+        "teamName": "Colo Colo",
+        "primaryPlayer": "Carlos Palacios",
+        "detail": "Cobrança de falta com perfeição",
+        "scoreAfter": {
+          "home": 0,
+          "away": 1
+        }
+      }
+    ],
+    "stats": {
+      "home": {
+        "possessionPercent": 41,
+        "totalShots": 4,
+        "shotsOnTarget": 1,
+        "shotsOffTarget": 3,
+        "blockedShots": 0,
+        "cornerKicks": 2,
+        "offsides": 1,
+        "fouls": 8,
+        "yellowCards": 1,
+        "redCards": 0,
+        "goalkeeperSaves": 2,
+        "totalPasses": 160,
+        "accuratePasses": 120,
+        "passAccuracyPercent": 75
+      },
+      "away": {
+        "possessionPercent": 59,
+        "totalShots": 8,
+        "shotsOnTarget": 3,
+        "shotsOffTarget": 4,
+        "blockedShots": 1,
+        "cornerKicks": 5,
+        "offsides": 2,
+        "fouls": 6,
+        "yellowCards": 0,
+        "redCards": 0,
+        "goalkeeperSaves": 1,
+        "totalPasses": 240,
+        "accuratePasses": 204,
+        "passAccuracyPercent": 85
+      }
+    },
+    "odds": {
+      "homeWin": 4.2,
+      "draw": 3.4,
+      "awayWin": 1.85,
+      "provider": "bet365"
+    },
+    "broadcast": [
+      "bet365",
+      "Betano.br"
+    ]
+  },
+  {
+    "id": "match-dim-jag-2026",
+    "slug": "ind-medellin-vs-jaguares-de-cordoba-2026",
+    "leagueId": "col-primera-a-2026",
+    "leagueName": "Primeira A Colômbia 2026 - Encerramento",
+    "leagueCountry": "Colômbia",
+    "leagueRound": 11,
+    "season": "2026-II",
+    "status": "LIVE",
+    "minute": 18,
+    "period": "1H",
+    "kickoffTime": "2026-09-22T23:00:00Z",
+    "stadium": "Estadio Atanasio Girardot",
+    "city": "Medellín",
+    "homeTeam": {
+      "id": "ind-medellin",
+      "name": "Ind. Medellín",
+      "shortName": "Ind. Medellín",
+      "code": "DIM",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png"
+    },
+    "awayTeam": {
+      "id": "jaguares-cordoba",
+      "name": "Jaguares de Córdoba",
+      "shortName": "Jaguares",
+      "code": "JAG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png"
+    },
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "events": [
+      {
+        "id": "evt-dim-1",
+        "type": "GOAL",
+        "minute": 12,
+        "teamId": "ind-medellin",
+        "teamName": "Ind. Medellín",
+        "primaryPlayer": "Brayan León",
+        "detail": "Chute no ângulo direito",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      }
+    ],
+    "odds": {
+      "homeWin": 1.55,
+      "draw": 3.8,
+      "awayWin": 6.5,
+      "provider": "bet365"
+    },
+    "broadcast": [
+      "Win Sports",
+      "bet365",
+      "Betano.br"
+    ]
+  },
+  {
+    "id": "match-ope-cri-2026",
+    "slug": "operario-pr-vs-criciuma-2026",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 27,
+    "season": "2026",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
+    "kickoffTime": "2026-09-21T19:00:00Z",
+    "stadium": "Estádio Germano Krüger",
+    "city": "Ponta Grossa",
+    "homeTeam": {
+      "id": "operario-pr",
+      "name": "Operário-PR",
+      "shortName": "Operário",
+      "code": "OPE",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
+    },
+    "awayTeam": {
+      "id": "criciuma",
+      "name": "Criciúma",
+      "shortName": "Criciúma",
+      "code": "CRI",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
+    },
+    "score": {
+      "home": 1,
+      "away": 0,
+      "halftime": {
+        "home": 0,
+        "away": 0
+      },
+      "fulltime": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    "events": [
+      {
+        "id": "evt-ope-1",
+        "type": "YELLOW_CARD",
+        "minute": 38,
+        "teamId": "criciuma",
+        "teamName": "Criciúma",
+        "primaryPlayer": "Fellipe Mateus"
+      },
+      {
+        "id": "evt-ope-2",
+        "type": "GOAL",
+        "minute": 79,
+        "teamId": "operario-pr",
+        "teamName": "Operário-PR",
+        "primaryPlayer": "Vinicius Mingotti",
+        "secondaryPlayer": "Rodrigo Lindoso",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      }
+    ],
+    "stats": {
+      "home": {
+        "possessionPercent": 52,
+        "totalShots": 12,
+        "shotsOnTarget": 4,
+        "shotsOffTarget": 5,
+        "blockedShots": 3,
+        "cornerKicks": 6,
+        "offsides": 0,
+        "fouls": 13,
+        "yellowCards": 2,
+        "redCards": 0,
+        "goalkeeperSaves": 2,
+        "totalPasses": 410,
+        "accuratePasses": 345,
+        "passAccuracyPercent": 84
+      },
+      "away": {
+        "possessionPercent": 48,
+        "totalShots": 8,
+        "shotsOnTarget": 2,
+        "shotsOffTarget": 4,
+        "blockedShots": 2,
+        "cornerKicks": 3,
+        "offsides": 2,
+        "fouls": 17,
+        "yellowCards": 3,
+        "redCards": 0,
+        "goalkeeperSaves": 3,
+        "totalPasses": 370,
+        "accuratePasses": 301,
+        "passAccuracyPercent": 81
+      }
+    },
+    "broadcast": [
+      "Premiere",
+      "SporTV"
+    ]
+  },
+  {
+    "id": "match-bra-usa-fem-2026",
+    "slug": "brasil-sub-20-fem-vs-eua-sub-20-fem-2026",
+    "leagueId": "fifa-wwc-u20-2026",
+    "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+    "leagueCountry": "Internacional",
+    "leagueRound": "Fase de Grupos",
+    "season": "2026",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
+    "kickoffTime": "2026-09-20T18:00:00Z",
+    "stadium": "Estadio Pascual Guerrero",
+    "city": "Cali",
+    "homeTeam": {
+      "id": "brazil-women-u20",
+      "name": "Brasil Sub-20 Fem",
+      "shortName": "Brasil",
+      "code": "BRA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cbf_fem.png"
+    },
+    "awayTeam": {
+      "id": "usa-women-u20",
+      "name": "EUA Sub-20 Fem",
+      "shortName": "EUA",
+      "code": "USA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/ussoccer.png"
+    },
+    "score": {
+      "home": 3,
+      "away": 1,
+      "halftime": {
+        "home": 2,
+        "away": 0
+      },
+      "fulltime": {
+        "home": 3,
+        "away": 1
+      }
+    },
+    "events": [
+      {
+        "id": "evt-fem-1",
+        "type": "GOAL",
+        "minute": 14,
+        "teamId": "brazil-women-u20",
+        "teamName": "Brasil Sub-20 Fem",
+        "primaryPlayer": "Dudinha",
+        "secondaryPlayer": "Vendito",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-fem-2",
+        "type": "GOAL",
+        "minute": 38,
+        "teamId": "brazil-women-u20",
+        "teamName": "Brasil Sub-20 Fem",
+        "primaryPlayer": "Vendito",
+        "scoreAfter": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-fem-3",
+        "type": "GOAL",
+        "minute": 62,
+        "teamId": "usa-women-u20",
+        "teamName": "EUA Sub-20 Fem",
+        "primaryPlayer": "Pietra Tordin",
+        "scoreAfter": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      {
+        "id": "evt-fem-4",
+        "type": "GOAL",
+        "minute": 84,
+        "teamId": "brazil-women-u20",
+        "teamName": "Brasil Sub-20 Fem",
+        "primaryPlayer": "Priscila",
+        "detail": "Pênalti convertido",
+        "scoreAfter": {
+          "home": 3,
+          "away": 1
+        }
+      }
+    ],
+    "stats": {
+      "home": {
+        "possessionPercent": 53,
+        "totalShots": 15,
+        "shotsOnTarget": 7,
+        "shotsOffTarget": 5,
+        "blockedShots": 3,
+        "cornerKicks": 5,
+        "offsides": 1,
+        "fouls": 10,
+        "yellowCards": 1,
+        "redCards": 0,
+        "goalkeeperSaves": 4,
+        "totalPasses": 420,
+        "accuratePasses": 355,
+        "passAccuracyPercent": 84
+      },
+      "away": {
+        "possessionPercent": 47,
+        "totalShots": 11,
+        "shotsOnTarget": 5,
+        "shotsOffTarget": 4,
+        "blockedShots": 2,
+        "cornerKicks": 4,
+        "offsides": 3,
+        "fouls": 12,
+        "yellowCards": 2,
+        "redCards": 0,
+        "goalkeeperSaves": 4,
+        "totalPasses": 370,
+        "accuratePasses": 303,
+        "passAccuracyPercent": 81
+      }
+    },
+    "broadcast": [
+      "CazéTV",
+      "FIFA+"
+    ]
+  },
+  {
+    "id": "match-cor-juv-u17-2026",
+    "slug": "corinthians-u17-vs-juventude-u17-2026",
+    "leagueId": "bra-sub-17-2026",
+    "leagueName": "Brasileirão Sub-17 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 9,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-23T14:00:00Z",
+    "stadium": "Parque São Jorge",
+    "city": "São Paulo",
+    "homeTeam": {
+      "id": "corinthians",
+      "name": "Corinthians U17",
+      "shortName": "Corinthians U17",
+      "code": "COR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
+    },
+    "awayTeam": {
+      "id": "juventude",
+      "name": "Juventude U17",
+      "shortName": "Juventude U17",
+      "code": "JUV",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.65,
+      "draw": 3.75,
+      "awayWin": 4.5,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "CBF TV"
+    ]
+  },
+  {
+    "id": "match-fla-rbb-u17-2026",
+    "slug": "flamengo-u17-vs-bragantino-u17-2026",
+    "leagueId": "bra-sub-17-2026",
+    "leagueName": "Brasileirão Sub-17 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 9,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-23T14:00:00Z",
+    "stadium": "Estádio da Gávea",
+    "city": "Rio de Janeiro",
+    "homeTeam": {
+      "id": "flamengo",
+      "name": "Flamengo U17",
+      "shortName": "Flamengo U17",
+      "code": "FLA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
+    },
+    "awayTeam": {
+      "id": "bragantino",
+      "name": "Red Bull Bragantino U17",
+      "shortName": "Bragantino U17",
+      "code": "RBB",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.8,
+      "draw": 3.6,
+      "awayWin": 3.8,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "FlaTV",
+      "CBF TV"
+    ]
+  },
+  {
+    "id": "match-mci-ars-2026",
+    "slug": "man-city-vs-arsenal-2026",
+    "leagueId": "eng-premier-league-2026",
+    "leagueName": "Premier League 2026/27",
+    "leagueCountry": "Inglaterra",
+    "leagueRound": 6,
+    "season": "2026/27",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-24T16:30:00Z",
+    "stadium": "Etihad Stadium",
+    "city": "Manchester",
+    "homeTeam": {
+      "id": "manchester-city",
+      "name": "Manchester City",
+      "shortName": "Man City",
+      "code": "MCI",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
+    },
+    "awayTeam": {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "shortName": "Arsenal",
+      "code": "ARS",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.05,
+      "draw": 3.5,
+      "awayWin": 3.4,
+      "over25": 1.85,
+      "under25": 1.95,
+      "bttsYes": 1.7,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "ESPN",
+      "Disney+"
+    ]
+  },
+  {
+    "id": "match-rma-bar-2026",
+    "slug": "real-madrid-vs-barcelona-2026",
+    "leagueId": "esp-laliga-2026",
+    "leagueName": "LaLiga 2026/27",
+    "leagueCountry": "Espanha",
+    "leagueRound": 7,
+    "season": "2026/27",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-28T20:00:00Z",
+    "stadium": "Santiago Bernabéu",
+    "city": "Madrid",
+    "homeTeam": {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "Real Madrid",
+      "code": "RMA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
+    },
+    "awayTeam": {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "shortName": "Barcelona",
+      "code": "BAR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.2,
+      "draw": 3.6,
+      "awayWin": 3.1,
+      "over25": 1.6,
+      "under25": 2.3,
+      "bttsYes": 1.55,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "ESPN",
+      "Disney+"
+    ]
+  }
+]

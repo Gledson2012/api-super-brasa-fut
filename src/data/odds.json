@@ -1,0 +1,99 @@
+[
+  {
+    "matchId": "match-pal-bot-2026",
+    "matchSlug": "palmeiras-vs-botafogo-2026",
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Botafogo",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "kickoffTime": "2026-09-22T21:30:00Z",
+    "status": "LIVE",
+    "averageOdds": {
+      "homeWin": 2.12,
+      "draw": 3.28,
+      "awayWin": 3.55,
+      "over25": 1.94,
+      "under25": 1.86,
+      "bttsYes": 1.82,
+      "bttsNo": 1.94
+    },
+    "bookmakers": [
+      {
+        "bookmaker": "Betano",
+        "homeWin": 2.1,
+        "draw": 3.25,
+        "awayWin": 3.6,
+        "over25": 1.95,
+        "under25": 1.85,
+        "bttsYes": 1.8,
+        "bttsNo": 1.95,
+        "updatedAt": "2026-09-22T21:30:00Z"
+      },
+      {
+        "bookmaker": "bet365",
+        "homeWin": 2.15,
+        "draw": 3.3,
+        "awayWin": 3.5,
+        "over25": 1.92,
+        "under25": 1.88,
+        "bttsYes": 1.83,
+        "bttsNo": 1.92,
+        "updatedAt": "2026-09-22T21:30:00Z"
+      },
+      {
+        "bookmaker": "Sportingbet",
+        "homeWin": 2.1,
+        "draw": 3.3,
+        "awayWin": 3.55,
+        "over25": 1.95,
+        "under25": 1.85,
+        "bttsYes": 1.82,
+        "bttsNo": 1.95,
+        "updatedAt": "2026-09-22T21:30:00Z"
+      }
+    ]
+  },
+  {
+    "matchId": "match-mci-ars-2026",
+    "matchSlug": "man-city-vs-arsenal-2026",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Arsenal",
+    "leagueId": "eng-premier-league-2026",
+    "leagueName": "Premier League 2026/27",
+    "kickoffTime": "2026-09-24T16:30:00Z",
+    "status": "UPCOMING",
+    "averageOdds": {
+      "homeWin": 2.05,
+      "draw": 3.5,
+      "awayWin": 3.45,
+      "over25": 1.85,
+      "under25": 1.95,
+      "bttsYes": 1.7,
+      "bttsNo": 2.05
+    },
+    "bookmakers": [
+      {
+        "bookmaker": "Betano",
+        "homeWin": 2.05,
+        "draw": 3.5,
+        "awayWin": 3.4,
+        "over25": 1.85,
+        "under25": 1.95,
+        "bttsYes": 1.7,
+        "bttsNo": 2.05,
+        "updatedAt": "2026-09-22T20:00:00Z"
+      },
+      {
+        "bookmaker": "bet365",
+        "homeWin": 2.05,
+        "draw": 3.5,
+        "awayWin": 3.5,
+        "over25": 1.86,
+        "under25": 1.94,
+        "bttsYes": 1.71,
+        "bttsNo": 2.05,
+        "updatedAt": "2026-09-22T20:00:00Z"
+      }
+    ]
+  }
+]

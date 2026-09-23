@@ -1,0 +1,976 @@
+[
+  {
+    "id": "botafogo",
+    "slug": "botafogo",
+    "name": "Botafogo de Futebol e Regatas",
+    "shortName": "Botafogo",
+    "code": "BOT",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png",
+    "stadium": {
+      "name": "Estádio Nilton Santos (Engenhão)",
+      "city": "Rio de Janeiro",
+      "capacity": 44661
+    },
+    "founded": 1904,
+    "coach": "Artur Jorge",
+    "marketValueEur": 135000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 17,
+      "draws": 5,
+      "losses": 5,
+      "goalsScored": 46,
+      "goalsConceded": 24,
+      "cleanSheets": 12
+    }
+  },
+  {
+    "id": "palmeiras",
+    "slug": "palmeiras",
+    "name": "Sociedade Esportiva Palmeiras",
+    "shortName": "Palmeiras",
+    "code": "PAL",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png",
+    "stadium": {
+      "name": "Allianz Parque",
+      "city": "São Paulo",
+      "capacity": 43713
+    },
+    "founded": 1914,
+    "coach": "Abel Ferreira",
+    "marketValueEur": 210000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 16,
+      "draws": 5,
+      "losses": 6,
+      "goalsScored": 44,
+      "goalsConceded": 19,
+      "cleanSheets": 13
+    }
+  },
+  {
+    "id": "fortaleza",
+    "slug": "fortaleza",
+    "name": "Fortaleza Esporte Clube",
+    "shortName": "Fortaleza",
+    "code": "FOR",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png",
+    "stadium": {
+      "name": "Arena Castelão",
+      "city": "Fortaleza",
+      "capacity": 63903
+    },
+    "founded": 1918,
+    "coach": "Juan Pablo Vojvoda",
+    "marketValueEur": 45000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 15,
+      "draws": 7,
+      "losses": 5,
+      "goalsScored": 37,
+      "goalsConceded": 25,
+      "cleanSheets": 11
+    }
+  },
+  {
+    "id": "flamengo",
+    "slug": "flamengo",
+    "name": "Clube de Regatas do Flamengo",
+    "shortName": "Flamengo",
+    "code": "FLA",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png",
+    "stadium": {
+      "name": "Maracanã",
+      "city": "Rio de Janeiro",
+      "capacity": 78838
+    },
+    "founded": 1895,
+    "coach": "Filipe Luís",
+    "marketValueEur": 225000000,
+    "stats": {
+      "matchesPlayed": 26,
+      "wins": 14,
+      "draws": 6,
+      "losses": 6,
+      "goalsScored": 43,
+      "goalsConceded": 29,
+      "cleanSheets": 9
+    }
+  },
+  {
+    "id": "sao-paulo",
+    "slug": "sao-paulo",
+    "name": "São Paulo Futebol Clube",
+    "shortName": "São Paulo",
+    "code": "SAO",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png",
+    "stadium": {
+      "name": "MorumBIS",
+      "city": "São Paulo",
+      "capacity": 66795
+    },
+    "founded": 1930,
+    "coach": "Luis Zubeldía",
+    "marketValueEur": 105000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 13,
+      "draws": 5,
+      "losses": 9,
+      "goalsScored": 35,
+      "goalsConceded": 27,
+      "cleanSheets": 10
+    }
+  },
+  {
+    "id": "internacional",
+    "slug": "internacional",
+    "name": "Sport Club Internacional",
+    "shortName": "Internacional",
+    "code": "INT",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png",
+    "stadium": {
+      "name": "Estádio Beira-Rio",
+      "city": "Porto Alegre",
+      "capacity": 50128
+    },
+    "founded": 1909,
+    "coach": "Roger Machado",
+    "marketValueEur": 95000000,
+    "stats": {
+      "matchesPlayed": 25,
+      "wins": 11,
+      "draws": 8,
+      "losses": 6,
+      "goalsScored": 33,
+      "goalsConceded": 23,
+      "cleanSheets": 9
+    }
+  },
+  {
+    "id": "bahia",
+    "slug": "bahia",
+    "name": "Esporte Clube Bahia",
+    "shortName": "Bahia",
+    "code": "BAH",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png",
+    "stadium": {
+      "name": "Arena Fonte Nova",
+      "city": "Salvador",
+      "capacity": 50025
+    },
+    "founded": 1931,
+    "coach": "Rogério Ceni",
+    "marketValueEur": 80000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 12,
+      "draws": 6,
+      "losses": 9,
+      "goalsScored": 38,
+      "goalsConceded": 31,
+      "cleanSheets": 8
+    }
+  },
+  {
+    "id": "cruzeiro",
+    "slug": "cruzeiro",
+    "name": "Cruzeiro Esporte Clube",
+    "shortName": "Cruzeiro",
+    "code": "CRU",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png",
+    "stadium": {
+      "name": "Mineirão",
+      "city": "Belo Horizonte",
+      "capacity": 61846
+    },
+    "founded": 1921,
+    "coach": "Fernando Diniz",
+    "marketValueEur": 88000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 12,
+      "draws": 6,
+      "losses": 9,
+      "goalsScored": 34,
+      "goalsConceded": 27,
+      "cleanSheets": 9
+    }
+  },
+  {
+    "id": "atletico-mg",
+    "slug": "atletico-mg",
+    "name": "Clube Atlético Mineiro",
+    "shortName": "Atlético-MG",
+    "code": "CAM",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png",
+    "stadium": {
+      "name": "Arena MRV",
+      "city": "Belo Horizonte",
+      "capacity": 46000
+    },
+    "founded": 1908,
+    "coach": "Gabriel Milito",
+    "marketValueEur": 110000000,
+    "stats": {
+      "matchesPlayed": 25,
+      "wins": 9,
+      "draws": 9,
+      "losses": 7,
+      "goalsScored": 36,
+      "goalsConceded": 36,
+      "cleanSheets": 7
+    }
+  },
+  {
+    "id": "vasco",
+    "slug": "vasco",
+    "name": "Club de Regatas Vasco da Gama",
+    "shortName": "Vasco",
+    "code": "VAS",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png",
+    "stadium": {
+      "name": "São Januário",
+      "city": "Rio de Janeiro",
+      "capacity": 21880
+    },
+    "founded": 1898,
+    "coach": "Rafael Paiva",
+    "marketValueEur": 75000000,
+    "stats": {
+      "matchesPlayed": 26,
+      "wins": 10,
+      "draws": 5,
+      "losses": 11,
+      "goalsScored": 30,
+      "goalsConceded": 35,
+      "cleanSheets": 6
+    }
+  },
+  {
+    "id": "bragantino",
+    "slug": "red-bull-bragantino",
+    "name": "Red Bull Bragantino",
+    "shortName": "Bragantino",
+    "code": "RBB",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png",
+    "stadium": {
+      "name": "Estádio Nabi Abi Chedid",
+      "city": "Bragança Paulista",
+      "capacity": 17128
+    },
+    "founded": 1928,
+    "coach": "Pedro Caixinha",
+    "marketValueEur": 72000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 8,
+      "draws": 8,
+      "losses": 11,
+      "goalsScored": 34,
+      "goalsConceded": 38,
+      "cleanSheets": 5
+    }
+  },
+  {
+    "id": "gremio",
+    "slug": "gremio",
+    "name": "Grêmio Foot-Ball Porto Alegrense",
+    "shortName": "Grêmio",
+    "code": "GRE",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png",
+    "stadium": {
+      "name": "Arena do Grêmio",
+      "city": "Porto Alegre",
+      "capacity": 55662
+    },
+    "founded": 1903,
+    "coach": "Renato Portaluppi",
+    "marketValueEur": 85000000,
+    "stats": {
+      "matchesPlayed": 26,
+      "wins": 9,
+      "draws": 4,
+      "losses": 13,
+      "goalsScored": 26,
+      "goalsConceded": 34,
+      "cleanSheets": 6
+    }
+  },
+  {
+    "id": "criciuma",
+    "slug": "criciuma",
+    "name": "Criciúma Esporte Clube",
+    "shortName": "Criciúma",
+    "code": "CRI",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png",
+    "stadium": {
+      "name": "Estádio Heriberto Hülse",
+      "city": "Criciúma",
+      "capacity": 19225
+    },
+    "founded": 1947,
+    "coach": "Cláudio Tencati",
+    "marketValueEur": 28000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 7,
+      "draws": 8,
+      "losses": 12,
+      "goalsScored": 32,
+      "goalsConceded": 42,
+      "cleanSheets": 4
+    }
+  },
+  {
+    "id": "juventude",
+    "slug": "juventude",
+    "name": "Esporte Clube Juventude",
+    "shortName": "Juventude",
+    "code": "JUV",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png",
+    "stadium": {
+      "name": "Estádio Alfredo Jaconi",
+      "city": "Caxias do Sul",
+      "capacity": 19924
+    },
+    "founded": 1913,
+    "coach": "Jair Ventura",
+    "marketValueEur": 24000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 8,
+      "draws": 8,
+      "losses": 11,
+      "goalsScored": 32,
+      "goalsConceded": 38,
+      "cleanSheets": 5
+    }
+  },
+  {
+    "id": "fluminense",
+    "slug": "fluminense",
+    "name": "Fluminense Football Club",
+    "shortName": "Fluminense",
+    "code": "FLU",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png",
+    "stadium": {
+      "name": "Maracanã",
+      "city": "Rio de Janeiro",
+      "capacity": 78838
+    },
+    "founded": 1902,
+    "coach": "Mano Menezes",
+    "marketValueEur": 80000000,
+    "stats": {
+      "matchesPlayed": 26,
+      "wins": 7,
+      "draws": 6,
+      "losses": 13,
+      "goalsScored": 21,
+      "goalsConceded": 28,
+      "cleanSheets": 8
+    }
+  },
+  {
+    "id": "vitoria",
+    "slug": "vitoria",
+    "name": "Esporte Clube Vitória",
+    "shortName": "Vitória",
+    "code": "VIT",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png",
+    "stadium": {
+      "name": "Barradão",
+      "city": "Salvador",
+      "capacity": 35000
+    },
+    "founded": 1899,
+    "coach": "Thiago Carpini",
+    "marketValueEur": 32000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 8,
+      "draws": 4,
+      "losses": 15,
+      "goalsScored": 30,
+      "goalsConceded": 42,
+      "cleanSheets": 5
+    }
+  },
+  {
+    "id": "corinthians",
+    "slug": "corinthians",
+    "name": "Sport Club Corinthians Paulista",
+    "shortName": "Corinthians",
+    "code": "COR",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png",
+    "stadium": {
+      "name": "Neo Química Arena",
+      "city": "São Paulo",
+      "capacity": 49205
+    },
+    "founded": 1910,
+    "coach": "Ramón Díaz",
+    "marketValueEur": 115000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 6,
+      "draws": 10,
+      "losses": 11,
+      "goalsScored": 26,
+      "goalsConceded": 34,
+      "cleanSheets": 6
+    }
+  },
+  {
+    "id": "athletico-pr",
+    "slug": "athletico-pr",
+    "name": "Club Athletico Paranaense",
+    "shortName": "Athletico-PR",
+    "code": "CAP",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png",
+    "stadium": {
+      "name": "Ligga Arena",
+      "city": "Curitiba",
+      "capacity": 42370
+    },
+    "founded": 1924,
+    "coach": "Lucho González",
+    "marketValueEur": 74000000,
+    "stats": {
+      "matchesPlayed": 25,
+      "wins": 8,
+      "draws": 6,
+      "losses": 11,
+      "goalsScored": 27,
+      "goalsConceded": 30,
+      "cleanSheets": 6
+    }
+  },
+  {
+    "id": "cuiaba",
+    "slug": "cuiaba",
+    "name": "Cuiabá Esporte Clube",
+    "shortName": "Cuiabá",
+    "code": "CUI",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png",
+    "stadium": {
+      "name": "Arena Pantanal",
+      "city": "Cuiabá",
+      "capacity": 44097
+    },
+    "founded": 2001,
+    "coach": "Bernardo Franco",
+    "marketValueEur": 26000000,
+    "stats": {
+      "matchesPlayed": 26,
+      "wins": 5,
+      "draws": 8,
+      "losses": 13,
+      "goalsScored": 23,
+      "goalsConceded": 38,
+      "cleanSheets": 6
+    }
+  },
+  {
+    "id": "atletico-go",
+    "slug": "atletico-go",
+    "name": "Atlético Clube Goianiense",
+    "shortName": "Atlético-GO",
+    "code": "ACG",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png",
+    "stadium": {
+      "name": "Estádio Antônio Accioly",
+      "city": "Goiânia",
+      "capacity": 12500
+    },
+    "founded": 1937,
+    "coach": "Umberto Louzer",
+    "marketValueEur": 22000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 4,
+      "draws": 6,
+      "losses": 17,
+      "goalsScored": 19,
+      "goalsConceded": 42,
+      "cleanSheets": 4
+    }
+  },
+  {
+    "id": "santos",
+    "slug": "santos",
+    "name": "Santos Futebol Clube",
+    "shortName": "Santos",
+    "code": "SAN",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png",
+    "stadium": {
+      "name": "Vila Belmiro",
+      "city": "Santos",
+      "capacity": 16068
+    },
+    "founded": 1912,
+    "coach": "Fábio Carille",
+    "marketValueEur": 42000000,
+    "stats": {
+      "matchesPlayed": 28,
+      "wins": 15,
+      "draws": 7,
+      "losses": 6,
+      "goalsScored": 41,
+      "goalsConceded": 21,
+      "cleanSheets": 13
+    }
+  },
+  {
+    "id": "novorizontino",
+    "slug": "novorizontino",
+    "name": "Grêmio Novorizontino",
+    "shortName": "Novorizontino",
+    "code": "NOV",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png",
+    "stadium": {
+      "name": "Estádio Jorge Ismael de Biasi",
+      "city": "Novo Horizonte",
+      "capacity": 16000
+    },
+    "founded": 2010,
+    "coach": "Eduardo Baptista",
+    "marketValueEur": 18000000,
+    "stats": {
+      "matchesPlayed": 28,
+      "wins": 14,
+      "draws": 9,
+      "losses": 5,
+      "goalsScored": 36,
+      "goalsConceded": 24,
+      "cleanSheets": 11
+    }
+  },
+  {
+    "id": "sport-recife",
+    "slug": "sport-recife",
+    "name": "Sport Club do Recife",
+    "shortName": "Sport",
+    "code": "SPT",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/sport.png",
+    "stadium": {
+      "name": "Ilha do Retiro",
+      "city": "Recife",
+      "capacity": 32983
+    },
+    "founded": 1905,
+    "coach": "Pepa",
+    "marketValueEur": 22000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 13,
+      "draws": 7,
+      "losses": 7,
+      "goalsScored": 37,
+      "goalsConceded": 26,
+      "cleanSheets": 10
+    }
+  },
+  {
+    "id": "operario-pr",
+    "slug": "operario-pr",
+    "name": "Operário Ferroviário Esporte Clube",
+    "shortName": "Operário",
+    "code": "OPE",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/operario.png",
+    "stadium": {
+      "name": "Estádio Germano Krüger",
+      "city": "Ponta Grossa",
+      "capacity": 10632
+    },
+    "founded": 1912,
+    "coach": "Rafael Guanaes",
+    "marketValueEur": 14000000,
+    "stats": {
+      "matchesPlayed": 27,
+      "wins": 11,
+      "draws": 6,
+      "losses": 10,
+      "goalsScored": 24,
+      "goalsConceded": 22,
+      "cleanSheets": 11
+    }
+  },
+  {
+    "id": "real-madrid",
+    "slug": "real-madrid",
+    "name": "Real Madrid Club de Fútbol",
+    "shortName": "Real Madrid",
+    "code": "RMA",
+    "country": "Espanha",
+    "countryCode": "ESP",
+    "leagueId": "esp-laliga-2026",
+    "leagueName": "LaLiga 2026/27",
+    "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png",
+    "stadium": {
+      "name": "Santiago Bernabéu",
+      "city": "Madrid",
+      "capacity": 81044
+    },
+    "founded": 1902,
+    "coach": "Carlo Ancelotti",
+    "marketValueEur": 1340000000,
+    "stats": {
+      "matchesPlayed": 6,
+      "wins": 4,
+      "draws": 2,
+      "losses": 0,
+      "goalsScored": 13,
+      "goalsConceded": 3,
+      "cleanSheets": 3
+    }
+  },
+  {
+    "id": "barcelona",
+    "slug": "barcelona",
+    "name": "Futbol Club Barcelona",
+    "shortName": "Barcelona",
+    "code": "BAR",
+    "country": "Espanha",
+    "countryCode": "ESP",
+    "leagueId": "esp-laliga-2026",
+    "leagueName": "LaLiga 2026/27",
+    "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png",
+    "stadium": {
+      "name": "Estadi Olímpic Lluís Companys",
+      "city": "Barcelona",
+      "capacity": 55926
+    },
+    "founded": 1899,
+    "coach": "Hansi Flick",
+    "marketValueEur": 940000000,
+    "stats": {
+      "matchesPlayed": 6,
+      "wins": 6,
+      "draws": 0,
+      "losses": 0,
+      "goalsScored": 22,
+      "goalsConceded": 5,
+      "cleanSheets": 2
+    }
+  },
+  {
+    "id": "manchester-city",
+    "slug": "manchester-city",
+    "name": "Manchester City Football Club",
+    "shortName": "Man City",
+    "code": "MCI",
+    "country": "Inglaterra",
+    "countryCode": "ENG",
+    "leagueId": "eng-premier-league-2026",
+    "leagueName": "Premier League 2026/27",
+    "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png",
+    "stadium": {
+      "name": "Etihad Stadium",
+      "city": "Manchester",
+      "capacity": 53400
+    },
+    "founded": 1880,
+    "coach": "Pep Guardiola",
+    "marketValueEur": 1260000000,
+    "stats": {
+      "matchesPlayed": 5,
+      "wins": 4,
+      "draws": 1,
+      "losses": 0,
+      "goalsScored": 13,
+      "goalsConceded": 5,
+      "cleanSheets": 2
+    }
+  },
+  {
+    "id": "arsenal",
+    "slug": "arsenal",
+    "name": "Arsenal Football Club",
+    "shortName": "Arsenal",
+    "code": "ARS",
+    "country": "Inglaterra",
+    "countryCode": "ENG",
+    "leagueId": "eng-premier-league-2026",
+    "leagueName": "Premier League 2026/27",
+    "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png",
+    "stadium": {
+      "name": "Emirates Stadium",
+      "city": "London",
+      "capacity": 60704
+    },
+    "founded": 1886,
+    "coach": "Mikel Arteta",
+    "marketValueEur": 1170000000,
+    "stats": {
+      "matchesPlayed": 5,
+      "wins": 3,
+      "draws": 2,
+      "losses": 0,
+      "goalsScored": 8,
+      "goalsConceded": 3,
+      "cleanSheets": 3
+    }
+  },
+  {
+    "id": "brazil-women-u20",
+    "slug": "brasil-feminino-sub-20",
+    "name": "Seleção Brasileira Feminina Sub-20",
+    "shortName": "Brasil Sub-20 Fem",
+    "code": "BRA",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "fifa-wwc-u20-2026",
+    "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/cbf_fem.png",
+    "founded": 2002,
+    "coach": "Rosana Augusto",
+    "stats": {
+      "matchesPlayed": 5,
+      "wins": 4,
+      "draws": 0,
+      "losses": 1,
+      "goalsScored": 15,
+      "goalsConceded": 3,
+      "cleanSheets": 3
+    }
+  },
+  {
+    "id": "usa-women-u20",
+    "slug": "usa-women-u20",
+    "name": "United States Women's U-20 National Team",
+    "shortName": "EUA Sub-20 Fem",
+    "code": "USA",
+    "country": "Estados Unidos",
+    "countryCode": "USA",
+    "leagueId": "fifa-wwc-u20-2026",
+    "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/ussoccer.png",
+    "founded": 1998,
+    "coach": "Tracey Kevins",
+    "stats": {
+      "matchesPlayed": 5,
+      "wins": 3,
+      "draws": 1,
+      "losses": 1,
+      "goalsScored": 12,
+      "goalsConceded": 5,
+      "cleanSheets": 2
+    }
+  },
+  {
+    "id": "colo-colo",
+    "slug": "colo-colo",
+    "name": "Club Social y Deportivo Colo-Colo",
+    "shortName": "Colo Colo",
+    "code": "COL",
+    "country": "Chile",
+    "countryCode": "CHI",
+    "leagueId": "chi-copa-chile-2026",
+    "leagueName": "Copa Chile 2026 - Playoffs",
+    "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png",
+    "stadium": {
+      "name": "Estadio Monumental David Arellano",
+      "city": "Santiago",
+      "capacity": 47347
+    },
+    "founded": 1925,
+    "coach": "Jorge Almirón",
+    "marketValueEur": 29000000,
+    "stats": {
+      "matchesPlayed": 4,
+      "wins": 3,
+      "draws": 1,
+      "losses": 0,
+      "goalsScored": 9,
+      "goalsConceded": 3,
+      "cleanSheets": 2
+    }
+  },
+  {
+    "id": "audax-italiano",
+    "slug": "audax-italiano",
+    "name": "Audax Italiano La Florida",
+    "shortName": "Audax Italiano",
+    "code": "AUD",
+    "country": "Chile",
+    "countryCode": "CHI",
+    "leagueId": "chi-copa-chile-2026",
+    "leagueName": "Copa Chile 2026 - Playoffs",
+    "logoUrl": "https://static.flashscore.com/res/image/data/I9BmV0jC-6kEqxN0C.png",
+    "stadium": {
+      "name": "Estadio Bicentenario de La Florida",
+      "city": "Santiago",
+      "capacity": 12000
+    },
+    "founded": 1910,
+    "coach": "Juan José Ribera",
+    "marketValueEur": 11000000,
+    "stats": {
+      "matchesPlayed": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "goalsScored": 6,
+      "goalsConceded": 4,
+      "cleanSheets": 1
+    }
+  },
+  {
+    "id": "ind-medellin",
+    "slug": "ind-medellin",
+    "name": "Corporación Deportiva Independiente Medellín",
+    "shortName": "Ind. Medellín",
+    "code": "DIM",
+    "country": "Colômbia",
+    "countryCode": "COL",
+    "leagueId": "col-primera-a-2026",
+    "leagueName": "Primeira A Colômbia 2026 - Encerramento",
+    "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png",
+    "stadium": {
+      "name": "Estadio Atanasio Girardot",
+      "city": "Medellín",
+      "capacity": 40043
+    },
+    "founded": 1913,
+    "coach": "Alejandro Restrepo",
+    "marketValueEur": 16000000,
+    "stats": {
+      "matchesPlayed": 10,
+      "wins": 3,
+      "draws": 5,
+      "losses": 2,
+      "goalsScored": 11,
+      "goalsConceded": 9,
+      "cleanSheets": 4
+    }
+  },
+  {
+    "id": "jaguares-cordoba",
+    "slug": "jaguares-de-cordoba",
+    "name": "Jaguares de Córdoba",
+    "shortName": "Jaguares",
+    "code": "JAG",
+    "country": "Colômbia",
+    "countryCode": "COL",
+    "leagueId": "col-primera-a-2026",
+    "leagueName": "Primeira A Colômbia 2026 - Encerramento",
+    "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png",
+    "stadium": {
+      "name": "Estadio Jaraguay",
+      "city": "Montería",
+      "capacity": 12000
+    },
+    "founded": 2012,
+    "coach": "Edgar Carvajal",
+    "marketValueEur": 7000000,
+    "stats": {
+      "matchesPlayed": 10,
+      "wins": 1,
+      "draws": 4,
+      "losses": 5,
+      "goalsScored": 4,
+      "goalsConceded": 12,
+      "cleanSheets": 3
+    }
+  }
+]
