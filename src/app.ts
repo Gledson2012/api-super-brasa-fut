@@ -12,8 +12,9 @@ export function createApp(): Express {
   const app = express();
 
   // Basic security and parsing middlewares
+  const helmetMiddleware = (typeof helmet === 'function' ? helmet : (helmet as unknown as { default: typeof helmet }).default) as typeof helmet;
   app.use(
-    helmet({
+    (helmetMiddleware as unknown as (options?: Record<string, unknown>) => express.RequestHandler)({
       contentSecurityPolicy: false, // Allows Swagger UI assets
     })
   );
@@ -64,3 +65,4 @@ export function createApp(): Express {
 }
 
 export const app = createApp();
+export default app;
