@@ -36,6 +36,12 @@ export interface LeagueStanding {
   country: string;
   season: string;
   updatedAt: string;
+  /**
+   * Tabela amostral: cobre apenas parte dos clubes da competição (ex.: só 4 dos
+   * 20 clubes da Série B), então os balanços coletivos da tabela (total de jogos
+   * par, vitórias = derrotas, gols marcados = gols sofridos) não se aplicam.
+   */
+  partial?: boolean;
   groups: StandingGroup[];
 }
 

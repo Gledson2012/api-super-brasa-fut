@@ -263,7 +263,7 @@
     "preferredFoot": "right",
     "position": "Forward",
     "currentTeam": {
-      "id": "manchester-city",
+      "id": "manchester-city-women",
       "name": "Manchester City Women",
       "shortName": "Man City Fem"
     },
@@ -382,13 +382,442 @@
         "season": "2026",
         "leagueId": "fifa-wwc-u20-2026",
         "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
-        "appearances": 5,
-        "minutesPlayed": 430,
+        "appearances": 6,
+        "minutesPlayed": 510,
         "goals": 5,
         "assists": 4,
         "yellowCards": 0,
         "redCards": 0,
         "sofascoreRating": 8.1
+      }
+    ]
+  },
+  {
+    "id": "vinicius-mingotti",
+    "slug": "vinicius-mingotti",
+    "name": "Vinicius Mingotti",
+    "fullName": "Vinicius Mingotti",
+    "birthDate": "2000-04-11",
+    "age": 26,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/mingotti.png",
+    "heightCm": 182,
+    "weightKg": 76,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "operario-pr",
+      "name": "Operário-PR",
+      "shortName": "Operário"
+    },
+    "shirtNumber": 9,
+    "marketValueEur": 2200000,
+    "contractUntil": "2027-12-31",
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-serie-b-2026",
+        "leagueName": "Brasileirão Série B 2026",
+        "appearances": 24,
+        "minutesPlayed": 1620,
+        "goals": 7,
+        "expectedGoals": 6.1,
+        "assists": 3,
+        "shotsOnTarget": 19,
+        "passAccuracyPercent": 72,
+        "keyPasses": 16,
+        "yellowCards": 3,
+        "redCards": 0,
+        "sofascoreRating": 6.92
+      }
+    ]
+  },
+  {
+    "id": "dudinha",
+    "slug": "dudinha",
+    "name": "Dudinha",
+    "fullName": "Dudinha",
+    "birthDate": "2005-02-14",
+    "age": 21,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/dudinha.png",
+    "heightCm": 165,
+    "weightKg": 58,
+    "preferredFoot": "left",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "brazil-women-u20",
+      "name": "Brasil Sub-20 Fem",
+      "shortName": "Brasil"
+    },
+    "shirtNumber": 10,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "fifa-wwc-u20-2026",
+        "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+        "appearances": 4,
+        "minutesPlayed": 330,
+        "goals": 3,
+        "expectedGoals": 2.6,
+        "assists": 2,
+        "shotsOnTarget": 9,
+        "passAccuracyPercent": 79,
+        "keyPasses": 11,
+        "yellowCards": 0,
+        "redCards": 0,
+        "sofascoreRating": 7.81
+      }
+    ]
+  },
+  {
+    "id": "vendito",
+    "slug": "vendito",
+    "name": "Vendito",
+    "fullName": "Vendito",
+    "birthDate": "2004-11-08",
+    "age": 21,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/vendito.png",
+    "heightCm": 170,
+    "weightKg": 63,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "brazil-women-u20",
+      "name": "Brasil Sub-20 Fem",
+      "shortName": "Brasil"
+    },
+    "shirtNumber": 9,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "fifa-wwc-u20-2026",
+        "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+        "appearances": 4,
+        "minutesPlayed": 350,
+        "goals": 3,
+        "expectedGoals": 2.4,
+        "assists": 1,
+        "shotsOnTarget": 8,
+        "passAccuracyPercent": 76,
+        "keyPasses": 7,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.63
+      }
+    ]
+  },
+  {
+    "id": "priscila",
+    "slug": "priscila",
+    "name": "Priscila",
+    "fullName": "Priscila",
+    "birthDate": "2004-08-22",
+    "age": 22,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/priscila.png",
+    "heightCm": 167,
+    "weightKg": 60,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "brazil-women-u20",
+      "name": "Brasil Sub-20 Fem",
+      "shortName": "Brasil"
+    },
+    "shirtNumber": 11,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "fifa-wwc-u20-2026",
+        "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+        "appearances": 4,
+        "minutesPlayed": 300,
+        "goals": 2,
+        "expectedGoals": 1.9,
+        "assists": 1,
+        "shotsOnTarget": 6,
+        "passAccuracyPercent": 77,
+        "keyPasses": 5,
+        "yellowCards": 0,
+        "redCards": 0,
+        "sofascoreRating": 7.35
+      }
+    ]
+  },
+  {
+    "id": "pietra-tordin",
+    "slug": "pietra-tordin",
+    "name": "Pietra Tordin",
+    "fullName": "Pietra Tordin",
+    "birthDate": "2004-07-15",
+    "age": 22,
+    "nationality": "Estados Unidos",
+    "countryCode": "USA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/pietra-tordin.png",
+    "heightCm": 170,
+    "weightKg": 64,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "usa-women-u20",
+      "name": "EUA Sub-20 Fem",
+      "shortName": "EUA"
+    },
+    "shirtNumber": 7,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "fifa-wwc-u20-2026",
+        "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
+        "appearances": 4,
+        "minutesPlayed": 320,
+        "goals": 2,
+        "expectedGoals": 1.8,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "passAccuracyPercent": 74,
+        "keyPasses": 4,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.08
+      }
+    ]
+  },
+  {
+    "id": "guilherme-souza-u17",
+    "slug": "guilherme-souza",
+    "name": "Guilherme Souza",
+    "fullName": "Guilherme Souza",
+    "birthDate": "2009-03-12",
+    "age": 17,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/guilherme-souza.png",
+    "heightCm": 178,
+    "weightKg": 68,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "corinthians-u17",
+      "name": "Corinthians Sub-17",
+      "shortName": "Corinthians U17"
+    },
+    "shirtNumber": 9,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-sub-17-2026",
+        "leagueName": "Brasileirão Sub-17 2026",
+        "appearances": 8,
+        "minutesPlayed": 720,
+        "goals": 3,
+        "expectedGoals": 2.5,
+        "assists": 1,
+        "shotsOnTarget": 7,
+        "passAccuracyPercent": 74,
+        "keyPasses": 6,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.4
+      }
+    ]
+  },
+  {
+    "id": "vitor-meireles-u17",
+    "slug": "vitor-meireles",
+    "name": "Vitor Meireles",
+    "fullName": "Vitor Meireles",
+    "birthDate": "2009-07-05",
+    "age": 17,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/vitor-meireles.png",
+    "heightCm": 175,
+    "weightKg": 66,
+    "preferredFoot": "right",
+    "position": "Midfielder",
+    "currentTeam": {
+      "id": "corinthians-u17",
+      "name": "Corinthians Sub-17",
+      "shortName": "Corinthians U17"
+    },
+    "shirtNumber": 8,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-sub-17-2026",
+        "leagueName": "Brasileirão Sub-17 2026",
+        "appearances": 7,
+        "minutesPlayed": 610,
+        "goals": 1,
+        "assists": 0,
+        "passAccuracyPercent": 82,
+        "keyPasses": 5,
+        "yellowCards": 2,
+        "redCards": 0,
+        "sofascoreRating": 7.0
+      }
+    ]
+  },
+  {
+    "id": "rafael-bordignon-u17",
+    "slug": "rafael-bordignon",
+    "name": "Rafael Bordignon",
+    "fullName": "Rafael Bordignon",
+    "birthDate": "2010-01-22",
+    "age": 16,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/rafael-bordignon.png",
+    "heightCm": 176,
+    "weightKg": 67,
+    "preferredFoot": "left",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "juventude-u17",
+      "name": "Juventude Sub-17",
+      "shortName": "Juventude U17"
+    },
+    "shirtNumber": 11,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-sub-17-2026",
+        "leagueName": "Brasileirão Sub-17 2026",
+        "appearances": 8,
+        "minutesPlayed": 700,
+        "goals": 2,
+        "expectedGoals": 1.8,
+        "assists": 1,
+        "shotsOnTarget": 5,
+        "passAccuracyPercent": 73,
+        "keyPasses": 4,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.1
+      }
+    ]
+  },
+  {
+    "id": "ryan-lucas-u17",
+    "slug": "ryan-lucas",
+    "name": "Ryan Lucas",
+    "fullName": "Ryan Lucas",
+    "birthDate": "2009-05-30",
+    "age": 17,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/ryan-lucas.png",
+    "heightCm": 172,
+    "weightKg": 64,
+    "preferredFoot": "left",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "flamengo-u17",
+      "name": "Flamengo Sub-17",
+      "shortName": "Flamengo U17"
+    },
+    "shirtNumber": 10,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-sub-17-2026",
+        "leagueName": "Brasileirão Sub-17 2026",
+        "appearances": 9,
+        "minutesPlayed": 800,
+        "goals": 5,
+        "expectedGoals": 4.2,
+        "assists": 1,
+        "shotsOnTarget": 11,
+        "passAccuracyPercent": 78,
+        "keyPasses": 9,
+        "yellowCards": 0,
+        "redCards": 0,
+        "sofascoreRating": 7.6
+      }
+    ]
+  },
+  {
+    "id": "lucas-silva-u17",
+    "slug": "lucas-silva",
+    "name": "Lucas Silva",
+    "fullName": "Lucas Silva",
+    "birthDate": "2009-10-14",
+    "age": 16,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/lucas-silva.png",
+    "heightCm": 174,
+    "weightKg": 65,
+    "preferredFoot": "right",
+    "position": "Midfielder",
+    "currentTeam": {
+      "id": "flamengo-u17",
+      "name": "Flamengo Sub-17",
+      "shortName": "Flamengo U17"
+    },
+    "shirtNumber": 8,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-sub-17-2026",
+        "leagueName": "Brasileirão Sub-17 2026",
+        "appearances": 7,
+        "minutesPlayed": 580,
+        "goals": 2,
+        "expectedGoals": 1.5,
+        "assists": 1,
+        "shotsOnTarget": 4,
+        "passAccuracyPercent": 84,
+        "keyPasses": 7,
+        "yellowCards": 1,
+        "redCards": 0,
+        "sofascoreRating": 7.2
+      }
+    ]
+  },
+  {
+    "id": "kaio-andrade-u17",
+    "slug": "kaio-andrade",
+    "name": "Kaio Andrade",
+    "fullName": "Kaio Andrade",
+    "birthDate": "2010-04-03",
+    "age": 16,
+    "nationality": "Brasil",
+    "countryCode": "BRA",
+    "photoUrl": "https://static.flashscore.com/res/image/data/kaio-andrade.png",
+    "heightCm": 170,
+    "weightKg": 62,
+    "preferredFoot": "right",
+    "position": "Forward",
+    "currentTeam": {
+      "id": "bragantino-u17",
+      "name": "Red Bull Bragantino Sub-17",
+      "shortName": "Bragantino U17"
+    },
+    "shirtNumber": 7,
+    "stats": [
+      {
+        "season": "2026",
+        "leagueId": "bra-sub-17-2026",
+        "leagueName": "Brasileirão Sub-17 2026",
+        "appearances": 8,
+        "minutesPlayed": 690,
+        "goals": 2,
+        "expectedGoals": 1.6,
+        "assists": 0,
+        "shotsOnTarget": 5,
+        "passAccuracyPercent": 75,
+        "keyPasses": 4,
+        "yellowCards": 2,
+        "redCards": 0,
+        "sofascoreRating": 7.0
       }
     ]
   }

@@ -14,11 +14,11 @@ export class TeamRepository {
       result = result.filter((t) => t.country.toLowerCase().includes(country));
     }
 
-    if (filters.gender) {
+    if (filters.gender && filters.gender !== 'all') {
       result = result.filter((t) => t.gender === filters.gender);
     }
 
-    if (filters.ageCategory) {
+    if (filters.ageCategory && filters.ageCategory !== 'all') {
       result = result.filter((t) => t.ageCategory === filters.ageCategory);
     }
 

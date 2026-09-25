@@ -10,10 +10,12 @@
     "status": "LIVE",
     "minute": 72,
     "period": "2H",
-    "kickoffTime": "2026-09-22T21:30:00Z",
+    "kickoffTime": "2026-09-25T14:00:00Z",
     "stadium": "Allianz Parque",
     "city": "São Paulo",
     "referee": "Wilton Pereira Sampaio",
+    "gender": "men",
+    "ageCategory": "senior",
     "homeTeam": {
       "id": "palmeiras",
       "name": "Palmeiras",
@@ -327,9 +329,11 @@
     "status": "LIVE",
     "minute": 47,
     "period": "2H",
-    "kickoffTime": "2026-09-22T22:30:00Z",
+    "kickoffTime": "2026-09-25T15:00:00Z",
     "stadium": "Estadio Bicentenario de La Florida",
     "city": "Santiago",
+    "gender": "men",
+    "ageCategory": "senior",
     "homeTeam": {
       "id": "audax-italiano",
       "name": "Audax Italiano",
@@ -423,9 +427,11 @@
     "status": "LIVE",
     "minute": 18,
     "period": "1H",
-    "kickoffTime": "2026-09-22T23:00:00Z",
+    "kickoffTime": "2026-09-25T15:30:00Z",
     "stadium": "Estadio Atanasio Girardot",
     "city": "Medellín",
+    "gender": "men",
+    "ageCategory": "senior",
     "homeTeam": {
       "id": "ind-medellin",
       "name": "Ind. Medellín",
@@ -485,6 +491,8 @@
     "kickoffTime": "2026-09-21T19:00:00Z",
     "stadium": "Estádio Germano Krüger",
     "city": "Ponta Grossa",
+    "gender": "men",
+    "ageCategory": "senior",
     "homeTeam": {
       "id": "operario-pr",
       "name": "Operário-PR",
@@ -587,6 +595,8 @@
     "kickoffTime": "2026-09-20T18:00:00Z",
     "stadium": "Estadio Pascual Guerrero",
     "city": "Cali",
+    "gender": "women",
+    "ageCategory": "u20",
     "homeTeam": {
       "id": "brazil-women-u20",
       "name": "Brasil Sub-20 Fem",
@@ -712,28 +722,80 @@
     "leagueCountry": "Brasil",
     "leagueRound": 9,
     "season": "2026",
-    "status": "UPCOMING",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
     "kickoffTime": "2026-09-23T14:00:00Z",
     "stadium": "Parque São Jorge",
     "city": "São Paulo",
+    "gender": "men",
+    "ageCategory": "u17",
     "homeTeam": {
-      "id": "corinthians",
-      "name": "Corinthians U17",
+      "id": "corinthians-u17",
+      "name": "Corinthians Sub-17",
       "shortName": "Corinthians U17",
-      "code": "COR",
+      "code": "COR17",
       "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "awayTeam": {
-      "id": "juventude",
-      "name": "Juventude U17",
+      "id": "juventude-u17",
+      "name": "Juventude Sub-17",
       "shortName": "Juventude U17",
-      "code": "JUV",
+      "code": "JUV17",
       "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "score": {
-      "home": 0,
-      "away": 0
+      "home": 2,
+      "away": 1,
+      "halftime": {
+        "home": 1,
+        "away": 0
+      },
+      "fulltime": {
+        "home": 2,
+        "away": 1
+      }
     },
+    "events": [
+      {
+        "id": "evt-cor-u17-1",
+        "type": "GOAL",
+        "minute": 23,
+        "teamId": "corinthians-u17",
+        "teamName": "Corinthians Sub-17",
+        "primaryPlayer": "Guilherme Souza",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-cor-u17-2",
+        "type": "GOAL",
+        "minute": 51,
+        "teamId": "juventude-u17",
+        "teamName": "Juventude Sub-17",
+        "primaryPlayer": "Rafael Bordignon",
+        "scoreAfter": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      {
+        "id": "evt-cor-u17-3",
+        "type": "GOAL",
+        "minute": 78,
+        "teamId": "corinthians-u17",
+        "teamName": "Corinthians Sub-17",
+        "primaryPlayer": "Vitor Meireles",
+        "secondaryPlayer": "Guilherme Souza",
+        "detail": "Contra-ataque finalizado de primeira",
+        "scoreAfter": {
+          "home": 2,
+          "away": 1
+        }
+      }
+    ],
     "odds": {
       "homeWin": 1.65,
       "draw": 3.75,
@@ -752,28 +814,92 @@
     "leagueCountry": "Brasil",
     "leagueRound": 9,
     "season": "2026",
-    "status": "UPCOMING",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
     "kickoffTime": "2026-09-23T14:00:00Z",
     "stadium": "Estádio da Gávea",
     "city": "Rio de Janeiro",
+    "gender": "men",
+    "ageCategory": "u17",
     "homeTeam": {
-      "id": "flamengo",
-      "name": "Flamengo U17",
+      "id": "flamengo-u17",
+      "name": "Flamengo Sub-17",
       "shortName": "Flamengo U17",
-      "code": "FLA",
+      "code": "FLA17",
       "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "awayTeam": {
-      "id": "bragantino",
-      "name": "Red Bull Bragantino U17",
+      "id": "bragantino-u17",
+      "name": "Red Bull Bragantino Sub-17",
       "shortName": "Bragantino U17",
-      "code": "RBB",
+      "code": "RBB17",
       "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "score": {
-      "home": 0,
-      "away": 0
+      "home": 3,
+      "away": 1,
+      "halftime": {
+        "home": 2,
+        "away": 1
+      },
+      "fulltime": {
+        "home": 3,
+        "away": 1
+      }
     },
+    "events": [
+      {
+        "id": "evt-fla-u17-1",
+        "type": "GOAL",
+        "minute": 11,
+        "teamId": "flamengo-u17",
+        "teamName": "Flamengo Sub-17",
+        "primaryPlayer": "Ryan Lucas",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-fla-u17-2",
+        "type": "GOAL",
+        "minute": 37,
+        "teamId": "bragantino-u17",
+        "teamName": "Red Bull Bragantino Sub-17",
+        "primaryPlayer": "Kaio Andrade",
+        "scoreAfter": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      {
+        "id": "evt-fla-u17-3",
+        "type": "GOAL",
+        "minute": 44,
+        "teamId": "flamengo-u17",
+        "teamName": "Flamengo Sub-17",
+        "primaryPlayer": "Ryan Lucas",
+        "detail": "Pênalti convertido",
+        "scoreAfter": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      {
+        "id": "evt-fla-u17-4",
+        "type": "GOAL",
+        "minute": 71,
+        "teamId": "flamengo-u17",
+        "teamName": "Flamengo Sub-17",
+        "primaryPlayer": "Lucas Silva",
+        "secondaryPlayer": "Ryan Lucas",
+        "scoreAfter": {
+          "home": 3,
+          "away": 1
+        }
+      }
+    ],
     "odds": {
       "homeWin": 1.8,
       "draw": 3.6,
@@ -794,9 +920,11 @@
     "leagueRound": 6,
     "season": "2026/27",
     "status": "UPCOMING",
-    "kickoffTime": "2026-09-24T16:30:00Z",
+    "kickoffTime": "2026-09-25T16:30:00Z",
     "stadium": "Etihad Stadium",
     "city": "Manchester",
+    "gender": "men",
+    "ageCategory": "senior",
     "homeTeam": {
       "id": "manchester-city",
       "name": "Manchester City",
@@ -841,6 +969,8 @@
     "kickoffTime": "2026-09-28T20:00:00Z",
     "stadium": "Santiago Bernabéu",
     "city": "Madrid",
+    "gender": "men",
+    "ageCategory": "senior",
     "homeTeam": {
       "id": "real-madrid",
       "name": "Real Madrid",
@@ -871,6 +1001,482 @@
     "broadcast": [
       "ESPN",
       "Disney+"
+    ]
+  },
+  {
+    "id": "match-fla-sao-2026",
+    "slug": "flamengo-vs-sao-paulo-2026",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 28,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-25T19:00:00Z",
+    "stadium": "Maracanã",
+    "city": "Rio de Janeiro",
+    "referee": "Raphael Claus",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "flamengo",
+      "name": "Flamengo",
+      "shortName": "Flamengo",
+      "code": "FLA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
+    },
+    "awayTeam": {
+      "id": "sao-paulo",
+      "name": "São Paulo",
+      "shortName": "São Paulo",
+      "code": "SAO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.85,
+      "draw": 3.4,
+      "awayWin": 4.1,
+      "over25": 1.9,
+      "under25": 1.9,
+      "bttsYes": 1.85,
+      "bttsNo": 1.9,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Globo",
+      "Premiere"
+    ]
+  },
+  {
+    "id": "match-cru-cam-2026",
+    "slug": "cruzeiro-vs-atletico-mg-2026",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 28,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-25T21:30:00Z",
+    "stadium": "Mineirão",
+    "city": "Belo Horizonte",
+    "referee": "Anderson Daronco",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "cruzeiro",
+      "name": "Cruzeiro",
+      "shortName": "Cruzeiro",
+      "code": "CRU",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
+    },
+    "awayTeam": {
+      "id": "atletico-mg",
+      "name": "Atlético-MG",
+      "shortName": "Atlético-MG",
+      "code": "CAM",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.4,
+      "draw": 3.1,
+      "awayWin": 2.9,
+      "over25": 2.1,
+      "under25": 1.7,
+      "bttsYes": 1.95,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Premiere",
+      "SporTV"
+    ]
+  },
+  {
+    "id": "match-san-spt-2026",
+    "slug": "santos-vs-sport-2026",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 28,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-25T22:00:00Z",
+    "stadium": "Vila Belmiro",
+    "city": "Santos",
+    "referee": "Flávio de Souza",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "santos",
+      "name": "Santos",
+      "shortName": "Santos",
+      "code": "SAN",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
+    },
+    "awayTeam": {
+      "id": "sport-recife",
+      "name": "Sport",
+      "shortName": "Sport",
+      "code": "SPT",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.7,
+      "draw": 3.6,
+      "awayWin": 4.6,
+      "over25": 2.0,
+      "under25": 1.8,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Premiere",
+      "ESPN"
+    ]
+  },
+  {
+    "id": "match-for-bah-2026",
+    "slug": "fortaleza-vs-bahia-2026",
+    "leagueId": "conmebol-libertadores-2026",
+    "leagueName": "Copa Libertadores 2026",
+    "leagueCountry": "América do Sul",
+    "leagueRound": "Semifinal - Ida",
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-25T23:30:00Z",
+    "stadium": "Arena Castelão",
+    "city": "Fortaleza",
+    "referee": "Wilton Pereira Sampaio",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "fortaleza",
+      "name": "Fortaleza",
+      "shortName": "Fortaleza",
+      "code": "FOR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
+    },
+    "awayTeam": {
+      "id": "bahia",
+      "name": "Bahia",
+      "shortName": "Bahia",
+      "code": "BAH",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.15,
+      "draw": 3.0,
+      "awayWin": 3.3,
+      "over25": 2.0,
+      "under25": 1.8,
+      "bttsYes": 2.0,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "ESPN",
+      "Disney+",
+      "Paramount+"
+    ]
+  },
+  {
+    "id": "match-fla-cor-cdb-2026",
+    "slug": "flamengo-vs-corinthians-cdb-2026",
+    "leagueId": "bra-copa-do-brasil-2026",
+    "leagueName": "Copa do Brasil 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": "Semifinal - Ida",
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-30T21:30:00Z",
+    "stadium": "Maracanã",
+    "city": "Rio de Janeiro",
+    "referee": "Anderson Daronco",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "flamengo",
+      "name": "Flamengo",
+      "shortName": "Flamengo",
+      "code": "FLA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
+    },
+    "awayTeam": {
+      "id": "corinthians",
+      "name": "Corinthians",
+      "shortName": "Corinthians",
+      "code": "COR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.85,
+      "draw": 3.4,
+      "awayWin": 4.2,
+      "over25": 1.95,
+      "under25": 1.85,
+      "bttsYes": 1.9,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "TV Globo",
+      "SporTV",
+      "Premiere",
+      "Prime Video"
+    ]
+  },
+  {
+    "id": "match-rma-mci-ucl-2026",
+    "slug": "real-madrid-vs-manchester-city-ucl-2026",
+    "leagueId": "uefa-champions-league-2026",
+    "leagueName": "UEFA Champions League 2026/27",
+    "leagueCountry": "Europa",
+    "leagueRound": "Fase da Liga - Rodada 2",
+    "season": "2026/27",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-10-01T20:00:00Z",
+    "stadium": "Santiago Bernabéu",
+    "city": "Madrid",
+    "referee": "Szymon Marciniak",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "Real Madrid",
+      "code": "RMA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
+    },
+    "awayTeam": {
+      "id": "manchester-city",
+      "name": "Man City",
+      "shortName": "Man City",
+      "code": "MCI",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.4,
+      "draw": 3.5,
+      "awayWin": 2.8,
+      "over25": 1.75,
+      "under25": 2.1,
+      "bttsYes": 1.6,
+      "provider": "Bet365"
+    },
+    "broadcast": [
+      "TNT Sports",
+      "Max",
+      "SBT"
+    ]
+  },
+  {
+    "id": "match-bra-arg-wcq-2026",
+    "slug": "brasil-vs-argentina-wcq-2026",
+    "leagueId": "conmebol-wc-qualifiers-2026",
+    "leagueName": "Eliminatórias Copa do Mundo - América do Sul 2026",
+    "leagueCountry": "América do Sul",
+    "leagueRound": 14,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-10-15T21:45:00Z",
+    "stadium": "Estádio do Maracanã",
+    "city": "Rio de Janeiro",
+    "referee": "Piero Maza",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "brazil-national",
+      "name": "Brasil",
+      "shortName": "Brasil",
+      "code": "BRA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
+    },
+    "awayTeam": {
+      "id": "argentina-national",
+      "name": "Argentina",
+      "shortName": "Argentina",
+      "code": "ARG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.1,
+      "draw": 3.2,
+      "awayWin": 3.4,
+      "over25": 1.9,
+      "under25": 1.9,
+      "bttsYes": 1.8,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "TV Globo",
+      "SporTV"
+    ]
+  },
+  {
+    "id": "match-fra-ger-unl-2026",
+    "slug": "franca-vs-alemanha-unl-2026",
+    "leagueId": "uefa-nations-league-2026",
+    "leagueName": "UEFA Nations League 2026/27",
+    "leagueCountry": "Europa",
+    "leagueRound": "Fase de Grupos - Rodada 3",
+    "season": "2026/27",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-10-16T19:45:00Z",
+    "stadium": "Stade de France",
+    "city": "Saint-Denis",
+    "referee": "Michael Oliver",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "france-national",
+      "name": "França",
+      "shortName": "França",
+      "code": "FRA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
+    },
+    "awayTeam": {
+      "id": "germany-national",
+      "name": "Alemanha",
+      "shortName": "Alemanha",
+      "code": "GER",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.25,
+      "draw": 3.4,
+      "awayWin": 3.1,
+      "over25": 1.8,
+      "under25": 2.0,
+      "bttsYes": 1.65,
+      "provider": "Bet365"
+    },
+    "broadcast": [
+      "ESPN",
+      "Disney+"
+    ]
+  },
+  {
+    "id": "match-rma-hil-cwc-2026",
+    "slug": "real-madrid-vs-al-hilal-cwc-2026",
+    "leagueId": "fifa-club-world-cup-2026",
+    "leagueName": "Mundial de Clubes FIFA 2026",
+    "leagueCountry": "Internacional",
+    "leagueRound": "Fase de Grupos",
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-06-20T20:00:00Z",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford",
+    "referee": "Wilmar Roldán",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "real-madrid",
+      "name": "Real Madrid",
+      "shortName": "Real Madrid",
+      "code": "RMA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
+    },
+    "awayTeam": {
+      "id": "al-hilal",
+      "name": "Al-Hilal",
+      "shortName": "Al-Hilal",
+      "code": "HIL",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.5,
+      "draw": 4.2,
+      "awayWin": 6.5,
+      "over25": 1.65,
+      "under25": 2.2,
+      "bttsYes": 1.75,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "CazéTV",
+      "TV Globo",
+      "FIFA+"
+    ]
+  },
+  {
+    "id": "match-pal-ahl-cwc-2026",
+    "slug": "palmeiras-vs-al-ahly-cwc-2026",
+    "leagueId": "fifa-club-world-cup-2026",
+    "leagueName": "Mundial de Clubes FIFA 2026",
+    "leagueCountry": "Internacional",
+    "leagueRound": "Fase de Grupos",
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-06-22T18:00:00Z",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami",
+    "referee": "Daniele Orsato",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "palmeiras",
+      "name": "Palmeiras",
+      "shortName": "Palmeiras",
+      "code": "PAL",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
+    },
+    "awayTeam": {
+      "id": "al-ahly",
+      "name": "Al-Ahly",
+      "shortName": "Al-Ahly",
+      "code": "AHL",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.75,
+      "draw": 3.6,
+      "awayWin": 4.8,
+      "over25": 1.85,
+      "under25": 1.95,
+      "bttsYes": 1.9,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "CazéTV",
+      "TV Globo",
+      "FIFA+"
     ]
   }
 ]

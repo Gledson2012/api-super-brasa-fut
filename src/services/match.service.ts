@@ -1,8 +1,10 @@
 import { matchRepository } from '../repositories/match.repository.js';
+import { db } from '../repositories/db.js';
 import { Match, MatchFilterQuery, MatchEvent, MatchStatus } from '../models/match.model.js';
 import { PaginatedResult, PaginationQuery } from '../models/common.js';
 import { paginate } from '../utils/pagination.js';
 import { NotFoundError, BadRequestError } from '../utils/errors.js';
+import { webhookService } from './webhook.service.js';
 
 export class MatchService {
   public async getMatches(
@@ -88,15 +90,124 @@ export class MatchService {
       nextStatus = 'LIVE';
     }
 
+    // Dynamic stats update: slightly increment passes, shots and possession fluctuations
+    let stats = match.stats ? { ...match.stats } : undefined;
+    if (stats) {
+      stats = {
+        home: {
+          ...stats.home,
+          totalPasses: stats.home.totalPasses + 4,
+          accuratePasses: stats.home.accuratePasses + 3,
+        },
+        away: {
+          ...stats.away,
+          totalPasses: stats.away.totalPasses + 4,
+          accuratePasses: stats.away.accuratePasses + 3,
+        },
+      };
+    }
+
     const updated = await matchRepository.update(match.id, {
       minute: nextMinute,
       status: nextStatus,
       score,
       events,
+      stats,
     });
 
+    // Notifica assinantes quando o status muda (LIVE -> HALFTIME, -> FINISHED,
+    // retomada do intervalo e afins).
+    if (updated && updated.status !== match.status) {
+      webhookService
+        .notify('MATCH_STATUS_CHANGE', {
+          matchId: updated.id,
+          matchSlug: updated.slug,
+          status: updated.status,
+          previousStatus: match.status,
+          minute: updated.minute,
+          score: updated.score,
+        })
+        .catch(() => {});
+    }
+
     return updated || match;
+  }
+
+  public async simulateLiveEvent(
+    id: string,
+    options?: {
+      type?: 'GOAL' | 'YELLOW_CARD' | 'RED_CARD' | 'SUBSTITUTION';
+      team?: 'home' | 'away';
+      player?: string;
+      minute?: number;
+    }
+  ): Promise<Match> {
+    const match = await this.getMatchById(id);
+    const events: MatchEvent[] = [...(match.events || [])];
+    const score = { ...match.score };
+    const currentMinute = options?.minute || (match.minute ? Math.min(match.minute + 2, 90) : 55);
+
+    const targetTeamKey = options?.team || 'home';
+    const targetTeam = targetTeamKey === 'home' ? match.homeTeam : match.awayTeam;
+
+    const eventType = options?.type || 'GOAL';
+    let detail = '';
+
+    if (eventType === 'GOAL') {
+      if (targetTeamKey === 'home') {
+        score.home = (score.home || 0) + 1;
+      } else {
+        score.away = (score.away || 0) + 1;
+      }
+      detail = 'Gol marcado com precisão!';
+    } else if (eventType === 'YELLOW_CARD') {
+      detail = 'Falta tática no meio de campo';
+    } else if (eventType === 'RED_CARD') {
+      detail = 'Entrada dura e cartão vermelho direto';
+    } else if (eventType === 'SUBSTITUTION') {
+      detail = 'Substituição tática de jogo';
+    }
+
+    const newEvent: MatchEvent = {
+      id: `evt-sim-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
+      type: eventType,
+      minute: currentMinute,
+      teamId: targetTeam.id,
+      teamName: targetTeam.name,
+      primaryPlayer: options?.player || (eventType === 'GOAL' ? `${targetTeam.shortName} Craque` : 'Jogador'),
+      detail,
+      scoreAfter: eventType === 'GOAL' ? { home: score.home || 0, away: score.away || 0 } : undefined,
+    };
+
+    events.push(newEvent);
+
+    const updated = await matchRepository.update(match.id, {
+      score,
+      events,
+      status: match.status === 'UPCOMING' ? 'LIVE' : match.status,
+      minute: currentMinute,
+    });
+
+    // Notificar assinantes de webhook
+    webhookService.notify(eventType === 'GOAL' ? 'GOAL' : 'MATCH_EVENT', {
+      matchId: match.id,
+      matchSlug: match.slug,
+      event: newEvent,
+      score,
+      minute: currentMinute,
+    }).catch(() => {});
+
+    return updated || match;
+  }
+
+  public async resetAllMatches(): Promise<{ message: string; count: number }> {
+    await db.resetAll();
+    return {
+      message: 'Todas as partidas foram restauradas para o estado inicial com sucesso.',
+      count: db.matches.length,
+    };
   }
 }
 
 export const matchService = new MatchService();
+

@@ -1,5 +1,6 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { matchService } from '../../src/services/match.service.js';
+import { webhookService } from '../../src/services/webhook.service.js';
 
 describe('Match Service Unit Tests', () => {
   it('should list matches with pagination', async () => {
@@ -27,5 +28,29 @@ describe('Match Service Unit Tests', () => {
     const updated = await matchService.simulateLiveTick('match-pal-bot-2026');
     expect(updated.id).toBe('match-pal-bot-2026');
     expect(updated.minute).toBeGreaterThanOrEqual(72);
+  });
+
+  it('should emit MATCH_STATUS_CHANGE when a match reaches full time', async () => {
+    await matchService.resetAllMatches();
+    const notifySpy = vi.spyOn(webhookService, 'notify').mockResolvedValue(undefined);
+
+    try {
+      const current = await matchService.getMatchById('match-pal-bot-2026');
+      const ticksNeeded = Math.max(1, Math.ceil((90 - (current.minute ?? 0)) / 5));
+
+      for (let i = 0; i < ticksNeeded; i++) {
+        await matchService.simulateLiveTick('match-pal-bot-2026');
+      }
+
+      const statusChanges = notifySpy.mock.calls
+        .filter(([event]) => event === 'MATCH_STATUS_CHANGE')
+        .map(([, payload]) => payload as { status?: string; previousStatus?: string });
+
+      expect(statusChanges).toContainEqual(
+        expect.objectContaining({ status: 'FINISHED', previousStatus: 'LIVE' })
+      );
+    } finally {
+      notifySpy.mockRestore();
+    }
   });
 });

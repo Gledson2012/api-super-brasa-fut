@@ -26,8 +26,8 @@ export interface League {
 
 export interface LeagueFilterQuery {
   country?: string;
-  gender?: GenderCategory;
-  ageCategory?: AgeCategory;
+  gender?: GenderCategory | 'all';
+  ageCategory?: AgeCategory | 'all';
   tier?: LeagueTier;
   search?: string;
   season?: string;

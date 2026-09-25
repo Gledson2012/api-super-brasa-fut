@@ -137,6 +137,6 @@ export interface MatchFilterQuery {
   season?: string;
   round?: string | number;
   search?: string;
-  gender?: GenderCategory;
-  ageCategory?: AgeCategory;
+  gender?: GenderCategory | 'all';
+  ageCategory?: AgeCategory | 'all';
 }

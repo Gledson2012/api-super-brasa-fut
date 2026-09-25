@@ -21,6 +21,8 @@ export function errorHandler(
         ? 'FORBIDDEN'
         : err.statusCode === 409
         ? 'CONFLICT'
+        : err.statusCode === 422
+        ? 'VALIDATION_ERROR'
         : `STATUS_${err.statusCode}`;
     res.status(err.statusCode).json(errorResponse(err.message, code, err.details));
     return;

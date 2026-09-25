@@ -1,5 +1,6 @@
 import { Match, MatchFilterQuery } from '../models/match.model.js';
 import { db } from './db.js';
+import { todayInTimeZone } from '../utils/date.js';
 
 export class MatchRepository {
   public async findAll(filters: MatchFilterQuery = {}): Promise<Match[]> {
@@ -14,7 +15,8 @@ export class MatchRepository {
     }
 
     if (filters.date) {
-      result = result.filter((m) => m.kickoffTime.startsWith(filters.date!));
+      const targetDate = filters.date === 'today' ? todayInTimeZone() : filters.date;
+      result = result.filter((m) => m.kickoffTime.startsWith(targetDate));
     }
 
     if (filters.teamId) {
@@ -25,11 +27,11 @@ export class MatchRepository {
       result = result.filter((m) => String(m.round || m.leagueRound) === String(filters.round));
     }
 
-    if (filters.gender) {
+    if (filters.gender && filters.gender !== 'all') {
       result = result.filter((m) => m.gender === filters.gender);
     }
 
-    if (filters.ageCategory) {
+    if (filters.ageCategory && filters.ageCategory !== 'all') {
       result = result.filter((m) => m.ageCategory === filters.ageCategory);
     }
 
@@ -65,6 +67,7 @@ export class MatchRepository {
       ...db.matches[index],
       ...updates,
     };
+    db.persist('matches');
     return db.matches[index];
   }
 }

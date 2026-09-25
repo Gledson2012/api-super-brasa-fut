@@ -14,11 +14,11 @@ export class LeagueRepository {
       result = result.filter((l) => l.tier === filters.tier);
     }
 
-    if (filters.gender) {
+    if (filters.gender && filters.gender !== 'all') {
       result = result.filter((l) => l.gender === filters.gender);
     }
 
-    if (filters.ageCategory) {
+    if (filters.ageCategory && filters.ageCategory !== 'all') {
       result = result.filter((l) => l.ageCategory === filters.ageCategory);
     }
 

@@ -7,23 +7,11 @@ import { config } from './config/environment.js';
 import { apiRouter } from './routes/index.js';
 import { errorHandler, notFoundHandler } from './middlewares/error.middleware.js';
 import { swaggerDocument } from './docs/swagger.js';
-import { globalRateLimiter } from './middlewares/rate-limit.middleware.js';
 
 export function createApp(): Express {
   const app = express();
 
-  // Rate limiting (skip in test mode or custom headers)
-  if (config.env !== 'test') {
-    app.use(globalRateLimiter);
-  }
-
-  // Basic security and parsing middlewares
-  const helmetFn = helmet as unknown as (options?: Record<string, unknown>) => express.RequestHandler;
-  app.use(
-    helmetFn({
-      contentSecurityPolicy: false, // Allows Swagger UI assets
-    })
-  );
+  // Basic parsing/CORS middlewares
   app.use(cors({ origin: config.corsOrigin }));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
@@ -32,6 +20,17 @@ export function createApp(): Express {
   if (config.env !== 'test') {
     app.use(morgan('dev'));
   }
+
+  // Swagger UI documentation: Helmet sem CSP (os assets do Swagger UI usam
+  // scripts/estilos inline injetados pela própria lib), mas com os demais
+  // cabeçalhos de segurança.
+  const helmetFn = helmet as unknown as (options?: Record<string, unknown>) => express.RequestHandler;
+  const helmetForDocs = helmetFn({ contentSecurityPolicy: false });
+  app.use('/docs', helmetForDocs, swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+  app.use('/api-docs', helmetForDocs, swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+  // Demais rotas (inclui toda a API) com a CSP padrão do Helmet.
+  app.use(helmetFn());
 
   // Root endpoint with API metadata
   app.get('/', (_req, res) => {
@@ -58,10 +57,6 @@ export function createApp(): Express {
       },
     });
   });
-
-  // Swagger UI documentation
-  app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
   // Mount API routes
   app.use(config.apiPrefix, apiRouter);

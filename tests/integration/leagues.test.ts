@@ -53,4 +53,70 @@ describe('Leagues API Integration Tests', () => {
     expect(res.body.success).toBe(true);
     expect(res.body.data.topScorers.length).toBeGreaterThan(0);
   });
+
+  it('GET /api/v1/leagues/bra-copa-do-brasil-2026 should return Copa do Brasil 2026', async () => {
+    const res = await request(app).get('/api/v1/leagues/bra-copa-do-brasil-2026');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.name).toBe('Copa do Brasil 2026');
+    expect(res.body.data.tier).toBe('cup');
+  });
+
+  it('GET /api/v1/leagues/uefa-champions-league-2026 should return UEFA Champions League 2026/27', async () => {
+    const res = await request(app).get('/api/v1/leagues/uefa-champions-league-2026');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.name).toBe('UEFA Champions League 2026/27');
+    expect(res.body.data.tier).toBe('continental');
+  });
+
+  it('GET /api/v1/leagues/bra-copa-do-brasil-2026/matches should return Flamengo x Corinthians match', async () => {
+    const res = await request(app).get('/api/v1/leagues/bra-copa-do-brasil-2026/matches');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    expect(res.body.data[0].id).toBe('match-fla-cor-cdb-2026');
+  });
+
+  it('GET /api/v1/leagues/uefa-champions-league-2026/matches should return Real Madrid x Man City match', async () => {
+    const res = await request(app).get('/api/v1/leagues/uefa-champions-league-2026/matches');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    expect(res.body.data[0].id).toBe('match-rma-mci-ucl-2026');
+  });
+
+  it('GET /api/v1/leagues/fifa-world-cup-2026 should return Copa do Mundo FIFA 2026', async () => {
+    const res = await request(app).get('/api/v1/leagues/fifa-world-cup-2026');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.name).toBe('Copa do Mundo FIFA 2026');
+    expect(res.body.data.tier).toBe('international');
+  });
+
+  it('GET /api/v1/leagues/fifa-club-world-cup-2026 should return Mundial de Clubes FIFA 2026', async () => {
+    const res = await request(app).get('/api/v1/leagues/fifa-club-world-cup-2026');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.name).toBe('Mundial de Clubes FIFA 2026');
+    expect(res.body.data.countryCode).toBe('FIFA');
+  });
+
+  it('GET /api/v1/leagues/conmebol-wc-qualifiers-2026/matches should return Brasil x Argentina match', async () => {
+    const res = await request(app).get('/api/v1/leagues/conmebol-wc-qualifiers-2026/matches');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    expect(res.body.data[0].id).toBe('match-bra-arg-wcq-2026');
+  });
+
+  it('GET /api/v1/leagues/uefa-nations-league-2026/matches should return França x Alemanha match', async () => {
+    const res = await request(app).get('/api/v1/leagues/uefa-nations-league-2026/matches');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    expect(res.body.data[0].id).toBe('match-fra-ger-unl-2026');
+  });
 });
+
+

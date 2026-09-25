@@ -39,3 +39,23 @@ export function validateParams(schema: ZodSchema) {
     }
   };
 }
+
+export function validateBody(schema: ZodSchema) {
+  return (req: Request, _res: Response, next: NextFunction): void => {
+    try {
+      req.body = schema.parse(req.body);
+      next();
+    } catch (error) {
+      if (error instanceof ZodError) {
+        const issues = error.issues.map((i) => ({
+          field: i.path.join('.'),
+          message: i.message,
+        }));
+        next(new ValidationError('Erro de validação no corpo da requisição.', issues));
+      } else {
+        next(error);
+      }
+    }
+  };
+}
+

@@ -26,26 +26,43 @@ export class PlayerService {
     const player2 = await this.getPlayerById(id2);
 
     const summarize = (p: Player) => {
-      const totalGoals = p.stats.reduce((acc, s) => acc + (s.goals || 0), 0);
-      const totalAssists = p.stats.reduce((acc, s) => acc + (s.assists || 0), 0);
-      const totalAppearances = p.stats.reduce((acc, s) => acc + (s.appearances || 0), 0);
-      const totalMinutes = p.stats.reduce((acc, s) => acc + (s.minutesPlayed || 0), 0);
-      const totalYellows = p.stats.reduce((acc, s) => acc + (s.yellowCards || 0), 0);
-      const totalReds = p.stats.reduce((acc, s) => acc + (s.redCards || 0), 0);
+      const totals = p.stats.reduce(
+        (acc, s) => {
+          acc.goals += s.goals || 0;
+          acc.assists += s.assists || 0;
+          acc.appearances += s.appearances || 0;
+          acc.minutesPlayed += s.minutesPlayed || 0;
+          acc.yellowCards += s.yellowCards || 0;
+          acc.redCards += s.redCards || 0;
+          if (typeof s.sofascoreRating === 'number') {
+            acc.ratings.push(s.sofascoreRating);
+          }
+          return acc;
+        },
+        {
+          goals: 0,
+          assists: 0,
+          appearances: 0,
+          minutesPlayed: 0,
+          yellowCards: 0,
+          redCards: 0,
+          ratings: [] as number[],
+        }
+      );
 
-      const ratings = p.stats.filter((s) => s.sofascoreRating).map((s) => s.sofascoreRating as number);
-      const avgRating = ratings.length > 0
-        ? Number((ratings.reduce((a, b) => a + b, 0) / ratings.length).toFixed(2))
-        : undefined;
+      const avgRating =
+        totals.ratings.length > 0
+          ? Number((totals.ratings.reduce((a, b) => a + b, 0) / totals.ratings.length).toFixed(2))
+          : undefined;
 
-      const goalsPerMatch = totalAppearances > 0
-        ? Number((totalGoals / totalAppearances).toFixed(2))
+      const goalsPerMatch = totals.appearances > 0
+        ? Number((totals.goals / totals.appearances).toFixed(2))
         : 0;
-      const assistsPerMatch = totalAppearances > 0
-        ? Number((totalAssists / totalAppearances).toFixed(2))
+      const assistsPerMatch = totals.appearances > 0
+        ? Number((totals.assists / totals.appearances).toFixed(2))
         : 0;
-      const minutesPerGoal = totalGoals > 0
-        ? Math.round(totalMinutes / totalGoals)
+      const minutesPerGoal = totals.goals > 0
+        ? Math.round(totals.minutesPlayed / totals.goals)
         : null;
 
       return {
@@ -55,12 +72,12 @@ export class PlayerService {
         position: p.position,
         age: p.age,
         marketValueEur: p.marketValueEur,
-        goals: totalGoals,
-        assists: totalAssists,
-        appearances: totalAppearances,
-        minutesPlayed: totalMinutes,
-        yellowCards: totalYellows,
-        redCards: totalReds,
+        goals: totals.goals,
+        assists: totals.assists,
+        appearances: totals.appearances,
+        minutesPlayed: totals.minutesPlayed,
+        yellowCards: totals.yellowCards,
+        redCards: totals.redCards,
         averageRating: avgRating,
         goalsPerMatch,
         assistsPerMatch,

@@ -25,6 +25,8 @@ export const swaggerDocument = {
     { name: 'News', description: 'Notícias esportivas, transferências e análises' },
     { name: 'Odds', description: 'Cotações médias e linhas de apostas das principais casas' },
     { name: 'Search', description: 'Busca global unificada em múltiplas entidades do futebol' },
+    { name: 'Auth', description: 'Autenticação e verificação de chave de API (X-API-Key)' },
+    { name: 'Webhooks', description: 'Assinatura e gerenciamento de notificações instantâneas' },
     { name: 'Health', description: 'Diagnóstico e integridade da API' },
   ],
   paths: {
@@ -214,6 +216,40 @@ export const swaggerDocument = {
         },
       },
     },
+    '/matches/{id}/simulate-event': {
+      post: {
+        tags: ['Matches'],
+        summary: 'Simula a ocorrência de um evento dinâmico na partida (Gol, Cartão, Substituição)',
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        requestBody: {
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                properties: {
+                  type: { type: 'string', enum: ['GOAL', 'YELLOW_CARD', 'RED_CARD', 'SUBSTITUTION'] },
+                  team: { type: 'string', enum: ['home', 'away'] },
+                  player: { type: 'string', example: 'Pedro' },
+                  minute: { type: 'integer', example: 78 },
+                },
+              },
+            },
+          },
+        },
+        responses: {
+          200: { description: 'Evento registrado e placar atualizado com sucesso' },
+        },
+      },
+    },
+    '/matches/reset': {
+      post: {
+        tags: ['Matches'],
+        summary: 'Restaura todas as partidas para o estado inicial das sementes de dados',
+        responses: {
+          200: { description: 'Partidas restauradas para o estado padrão' },
+        },
+      },
+    },
     '/teams': {
       get: {
         tags: ['Teams'],
@@ -290,6 +326,15 @@ export const swaggerDocument = {
         ],
         responses: {
           200: { description: 'Lista de tabelas de classificação' },
+        },
+      },
+    },
+    '/standings/validate': {
+      get: {
+        tags: ['Standings'],
+        summary: 'Valida as invariantes matemáticas das tabelas de classificação',
+        responses: {
+          200: { description: 'Relatório de consistência das classificações' },
         },
       },
     },
@@ -447,6 +492,108 @@ export const swaggerDocument = {
         responses: {
           200: { description: 'Odds da partida' },
           404: { description: 'Odds não encontradas' },
+        },
+      },
+    },
+    '/auth/verify': {
+      get: {
+        tags: ['Auth'],
+        summary: 'Verifica o status e o plano da chave de API fornecida (X-API-Key)',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: false,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de acesso à API (brasa-free-key, brasa-pro-2026 ou brasa-enterprise-secret)',
+          },
+        ],
+        responses: {
+          200: { description: 'Status de autenticação, plano e limites de requisição' },
+          401: { description: 'Chave de API inválida' },
+        },
+      },
+    },
+    '/webhooks': {
+      get: {
+        tags: ['Webhooks'],
+        summary: 'Lista assinaturas ativas de webhooks',
+        description: 'Exige uma chave de API do plano Pro ou Enterprise (header `x-api-key`).',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        responses: {
+          200: { description: 'Lista de webhooks cadastrados' },
+          403: { description: 'Plano insuficiente (requer Pro/Enterprise)' },
+        },
+      },
+      post: {
+        tags: ['Webhooks'],
+        summary: 'Cadastra um novo webhook para receber notificações de eventos (gols, cartões)',
+        description:
+          'Exige uma chave de API do plano Pro ou Enterprise. A URL é validada contra SSRF (apenas http(s) para hosts públicos; bloqueia localhost, IPs privados/reservados e metadata de nuvem). Cada entrega inclui os cabeçalhos `X-SuperBrasa-Event`, `X-SuperBrasa-Timestamp` e, quando há `secret`, `X-SuperBrasa-Signature` = HMAC-SHA256 (hex) de `timestamp.body`.',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        requestBody: {
+          required: true,
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                required: ['url'],
+                properties: {
+                  url: { type: 'string', example: 'https://meu-app.com/webhook/gols' },
+                  events: {
+                    type: 'array',
+                    items: { type: 'string', enum: ['GOAL', 'MATCH_EVENT', 'MATCH_STATUS_CHANGE', 'ALL'] },
+                    example: ['GOAL'],
+                  },
+                  matchId: { type: 'string', example: 'match-pal-bot-2026' },
+                  secret: { type: 'string', example: 'meu-token-secreto' },
+                },
+              },
+            },
+          },
+        },
+        responses: {
+          201: { description: 'Webhook cadastrado com sucesso' },
+          400: { description: 'URL inválida, ausente ou bloqueada por SSRF' },
+          403: { description: 'Plano insuficiente (requer Pro/Enterprise)' },
+        },
+      },
+    },
+    '/webhooks/{id}': {
+      delete: {
+        tags: ['Webhooks'],
+        summary: 'Cancela a assinatura de um webhook existente',
+        description: 'Exige uma chave de API do plano Pro ou Enterprise (header `x-api-key`).',
+        parameters: [
+          { name: 'id', in: 'path', required: true, schema: { type: 'string' } },
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        responses: {
+          200: { description: 'Webhook cancelado com sucesso' },
+          403: { description: 'Plano insuficiente (requer Pro/Enterprise)' },
+          404: { description: 'Webhook não encontrado' },
         },
       },
     },

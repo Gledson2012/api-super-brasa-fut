@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc && node -e \"require('fs').cpSync('src/data', 'dist/data', { recursive: true })\"",
+    "build": "tsc && node -e \"import('node:fs').then(fs => fs.cpSync('src/data', 'dist/data', { recursive: true }))\"",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
     "start": "node dist/server.js",
     "seed": "tsx src/scripts/generate-seeds.ts",
     "test": "vitest run",
@@ -30,6 +31,7 @@
   "author": "Antigravity",
   "license": "MIT",
   "dependencies": {
+    "@upstash/redis": "^1.39.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
@@ -46,6 +48,7 @@
     "@types/node": "^22.13.9",
     "@types/supertest": "^6.0.2",
     "@types/swagger-ui-express": "^4.1.7",
+    "@vitest/coverage-v8": "^3.2.7",
     "supertest": "^7.0.0",
     "tsx": "^4.19.3",
     "typescript": "^5.7.3",

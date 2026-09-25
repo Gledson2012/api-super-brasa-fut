@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import request from 'supertest';
 import { app } from '../../src/app.js';
+import { apiKeys } from '../../src/config/environment.js';
 
 describe('Matches API Integration Tests', () => {
   it('GET /api/v1/matches should return paginated matches', async () => {
@@ -22,6 +23,24 @@ describe('Matches API Integration Tests', () => {
     });
   });
 
+  it('GET /api/v1/matches?date=2026-09-25 should return matches scheduled for today', async () => {
+    const res = await request(app).get('/api/v1/matches?date=2026-09-25');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    res.body.data.forEach((m: any) => {
+      expect(m.kickoffTime.startsWith('2026-09-25')).toBe(true);
+    });
+  });
+
+  it('GET /api/v1/matches?date=today should resolve dynamically to current day', async () => {
+    const res = await request(app).get('/api/v1/matches?date=today');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(Array.isArray(res.body.data)).toBe(true);
+  });
+
+
   it('GET /api/v1/matches/h2h should return confrontation stats', async () => {
     const res = await request(app).get('/api/v1/matches/h2h?team1Id=palmeiras&team2Id=botafogo');
     expect(res.status).toBe(200);
@@ -40,7 +59,9 @@ describe('Matches API Integration Tests', () => {
   });
 
   it('POST /api/v1/matches/:id/simulate-tick should progress match minute', async () => {
-    const res = await request(app).post('/api/v1/matches/match-pal-bot-2026/simulate-tick');
+    const res = await request(app)
+      .post('/api/v1/matches/match-pal-bot-2026/simulate-tick')
+      .set('x-api-key', apiKeys.pro);
     expect(res.status).toBe(200);
     expect(res.body.success).toBe(true);
     expect(res.body.data.minute).toBeGreaterThanOrEqual(72);
@@ -53,4 +74,34 @@ describe('Matches API Integration Tests', () => {
     expect(res.body.data.matchId).toBe('match-pal-bot-2026');
     expect(res.body.data.bookmakers.length).toBeGreaterThan(0);
   });
+
+  it('POST /api/v1/matches/:id/simulate-event should add a goal event and update score', async () => {
+    const res = await request(app)
+      .post('/api/v1/matches/match-pal-bot-2026/simulate-event')
+      .set('x-api-key', apiKeys.pro)
+      .send({ type: 'GOAL', team: 'home', player: 'Raphael Veiga', minute: 75 });
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.score.home).toBeGreaterThanOrEqual(3);
+    const lastEvent = res.body.data.events[res.body.data.events.length - 1];
+    expect(lastEvent.type).toBe('GOAL');
+    expect(lastEvent.primaryPlayer).toBe('Raphael Veiga');
+  });
+
+  it('POST /api/v1/matches/reset should restore matches to initial seed state', async () => {
+    const res = await request(app)
+      .post('/api/v1/matches/reset')
+      .set('x-api-key', apiKeys.pro);
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.count).toBeGreaterThan(0);
+  });
+
+  it('POST /api/v1/matches/reset without a Pro key should be forbidden', async () => {
+    const res = await request(app).post('/api/v1/matches/reset');
+    expect(res.status).toBe(403);
+    expect(res.body.success).toBe(false);
+    expect(res.body.error.code).toBe('FORBIDDEN_TIER');
+  });
 });
+

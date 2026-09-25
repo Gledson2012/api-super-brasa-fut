@@ -5,7 +5,7 @@
     "leagueName": "Brasileirão Série A 2026",
     "country": "Brasil",
     "season": "2026",
-    "updatedAt": "2026-09-22T23:59:00Z",
+    "updatedAt": "2026-09-25T12:00:00Z",
     "groups": [
       {
         "groupName": "Tabela Única",
@@ -182,7 +182,7 @@
             "goalsAgainst": 31,
             "goalDifference": 7,
             "points": 42,
-            "pointsPercentage": 51.8,
+            "pointsPercentage": 51.9,
             "form": [
               "W",
               "L",
@@ -213,7 +213,7 @@
             "goalsAgainst": 27,
             "goalDifference": 7,
             "points": 42,
-            "pointsPercentage": 51.8,
+            "pointsPercentage": 51.9,
             "form": [
               "D",
               "L",
@@ -267,15 +267,15 @@
               "code": "CAM",
               "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
             },
-            "played": 25,
-            "won": 9,
+            "played": 26,
+            "won": 10,
             "drawn": 9,
             "lost": 7,
             "goalsFor": 36,
-            "goalsAgainst": 36,
-            "goalDifference": 0,
-            "points": 36,
-            "pointsPercentage": 48.0,
+            "goalsAgainst": 40,
+            "goalDifference": -4,
+            "points": 39,
+            "pointsPercentage": 50.0,
             "form": [
               "W",
               "L",
@@ -306,7 +306,7 @@
             "goalsAgainst": 35,
             "goalDifference": -5,
             "points": 35,
-            "pointsPercentage": 44.8,
+            "pointsPercentage": 44.9,
             "form": [
               "L",
               "D",
@@ -640,7 +640,8 @@
     "leagueName": "Brasileirão Série B 2026",
     "country": "Brasil",
     "season": "2026",
-    "updatedAt": "2026-09-22T23:59:00Z",
+    "updatedAt": "2026-09-25T12:00:00Z",
+    "partial": true,
     "groups": [
       {
         "groupName": "Tabela Única",
@@ -744,20 +745,20 @@
               "shortName": "Operário",
               "code": "OPE"
             },
-            "played": 27,
-            "won": 11,
+            "played": 28,
+            "won": 12,
             "drawn": 6,
             "lost": 10,
-            "goalsFor": 24,
+            "goalsFor": 25,
             "goalsAgainst": 22,
-            "goalDifference": 2,
-            "points": 39,
-            "pointsPercentage": 48.1,
+            "goalDifference": 3,
+            "points": 42,
+            "pointsPercentage": 50.0,
             "form": [
               "W",
+              "L",
+              "L",
               "W",
-              "L",
-              "L",
               "W"
             ],
             "zone": {
@@ -776,7 +777,8 @@
     "leagueName": "Campeonato Mundial Sub-20 Feminino 2026",
     "country": "Internacional",
     "season": "2026",
-    "updatedAt": "2026-09-22T23:59:00Z",
+    "updatedAt": "2026-09-25T12:00:00Z",
+    "partial": true,
     "groups": [
       {
         "groupName": "Grupo B",
@@ -789,16 +791,17 @@
               "shortName": "Brasil",
               "code": "BRA"
             },
-            "played": 3,
-            "won": 3,
+            "played": 4,
+            "won": 4,
             "drawn": 0,
             "lost": 0,
-            "goalsFor": 14,
-            "goalsAgainst": 0,
-            "goalDifference": 14,
-            "points": 9,
+            "goalsFor": 17,
+            "goalsAgainst": 1,
+            "goalDifference": 16,
+            "points": 12,
             "pointsPercentage": 100.0,
             "form": [
+              "W",
               "W",
               "W",
               "W"
@@ -817,17 +820,243 @@
               "shortName": "EUA",
               "code": "USA"
             },
-            "played": 3,
+            "played": 4,
             "won": 2,
             "drawn": 0,
-            "lost": 1,
-            "goalsFor": 9,
-            "goalsAgainst": 3,
-            "goalDifference": 6,
+            "lost": 2,
+            "goalsFor": 10,
+            "goalsAgainst": 6,
+            "goalDifference": 4,
             "points": 6,
-            "pointsPercentage": 66.7,
+            "pointsPercentage": 50.0,
             "form": [
               "W",
+              "L",
+              "W",
+              "L"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "standing-bra-sub-17-2026",
+    "leagueId": "bra-sub-17-2026",
+    "leagueName": "Brasileirão Sub-17 2026",
+    "country": "Brasil",
+    "season": "2026",
+    "updatedAt": "2026-09-25T12:00:00Z",
+    "groups": [
+      {
+        "groupName": "Tabela Única",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "palmeiras-u17",
+              "name": "Palmeiras Sub-17",
+              "shortName": "Palmeiras U17",
+              "code": "PAL17"
+            },
+            "played": 9,
+            "won": 7,
+            "drawn": 2,
+            "lost": 0,
+            "goalsFor": 19,
+            "goalsAgainst": 5,
+            "goalDifference": 14,
+            "points": 23,
+            "pointsPercentage": 85.2,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "internacional-u17",
+              "name": "Internacional Sub-17",
+              "shortName": "Internacional U17",
+              "code": "INT17"
+            },
+            "played": 9,
+            "won": 6,
+            "drawn": 1,
+            "lost": 2,
+            "goalsFor": 10,
+            "goalsAgainst": 8,
+            "goalDifference": 2,
+            "points": 19,
+            "pointsPercentage": 70.4,
+            "form": [
+              "L",
+              "W",
+              "W",
+              "W",
+              "L"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "atletico-mg-u17",
+              "name": "Atlético-MG Sub-17",
+              "shortName": "Atlético-MG U17",
+              "code": "CAM17"
+            },
+            "played": 9,
+            "won": 5,
+            "drawn": 2,
+            "lost": 2,
+            "goalsFor": 15,
+            "goalsAgainst": 10,
+            "goalDifference": 5,
+            "points": 17,
+            "pointsPercentage": 63.0,
+            "form": [
+              "W",
+              "D",
+              "W",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "vasco-u17",
+              "name": "Vasco Sub-17",
+              "shortName": "Vasco U17",
+              "code": "VAS17"
+            },
+            "played": 9,
+            "won": 5,
+            "drawn": 2,
+            "lost": 2,
+            "goalsFor": 11,
+            "goalsAgainst": 6,
+            "goalDifference": 5,
+            "points": 17,
+            "pointsPercentage": 63.0,
+            "form": [
+              "W",
+              "L",
+              "W",
+              "L",
+              "D"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 5,
+            "team": {
+              "id": "bahia-u17",
+              "name": "Bahia Sub-17",
+              "shortName": "Bahia U17",
+              "code": "BAH17"
+            },
+            "played": 9,
+            "won": 4,
+            "drawn": 2,
+            "lost": 3,
+            "goalsFor": 11,
+            "goalsAgainst": 8,
+            "goalDifference": 3,
+            "points": 14,
+            "pointsPercentage": 51.9,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "W",
+              "D"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 6,
+            "team": {
+              "id": "botafogo-u17",
+              "name": "Botafogo Sub-17",
+              "shortName": "Botafogo U17",
+              "code": "BOT17"
+            },
+            "played": 9,
+            "won": 4,
+            "drawn": 2,
+            "lost": 3,
+            "goalsFor": 8,
+            "goalsAgainst": 5,
+            "goalDifference": 3,
+            "points": 14,
+            "pointsPercentage": 51.9,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 7,
+            "team": {
+              "id": "gremio-u17",
+              "name": "Grêmio Sub-17",
+              "shortName": "Grêmio U17",
+              "code": "GRE17"
+            },
+            "played": 9,
+            "won": 4,
+            "drawn": 2,
+            "lost": 3,
+            "goalsFor": 9,
+            "goalsAgainst": 7,
+            "goalDifference": 2,
+            "points": 14,
+            "pointsPercentage": 51.9,
+            "form": [
+              "W",
+              "L",
+              "D",
               "L",
               "W"
             ],
@@ -835,6 +1064,396 @@
               "name": "Classificado para as Quartas",
               "type": "promotion",
               "color": "#008000"
+            }
+          },
+          {
+            "position": 8,
+            "team": {
+              "id": "vitoria-u17",
+              "name": "Vitória Sub-17",
+              "shortName": "Vitória U17",
+              "code": "VIT17"
+            },
+            "played": 9,
+            "won": 4,
+            "drawn": 2,
+            "lost": 3,
+            "goalsFor": 9,
+            "goalsAgainst": 9,
+            "goalDifference": 0,
+            "points": 14,
+            "pointsPercentage": 51.9,
+            "form": [
+              "L",
+              "L",
+              "D",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Quartas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 9,
+            "team": {
+              "id": "corinthians-u17",
+              "name": "Corinthians Sub-17",
+              "shortName": "Corinthians U17",
+              "code": "COR17"
+            },
+            "played": 9,
+            "won": 4,
+            "drawn": 1,
+            "lost": 4,
+            "goalsFor": 6,
+            "goalsAgainst": 7,
+            "goalDifference": -1,
+            "points": 13,
+            "pointsPercentage": 48.1,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "L",
+              "D"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 10,
+            "team": {
+              "id": "juventude-u17",
+              "name": "Juventude Sub-17",
+              "shortName": "Juventude U17",
+              "code": "JUV17"
+            },
+            "played": 9,
+            "won": 3,
+            "drawn": 3,
+            "lost": 3,
+            "goalsFor": 9,
+            "goalsAgainst": 11,
+            "goalDifference": -2,
+            "points": 12,
+            "pointsPercentage": 44.4,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "W",
+              "D"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 11,
+            "team": {
+              "id": "flamengo-u17",
+              "name": "Flamengo Sub-17",
+              "shortName": "Flamengo U17",
+              "code": "FLA17"
+            },
+            "played": 9,
+            "won": 2,
+            "drawn": 5,
+            "lost": 2,
+            "goalsFor": 16,
+            "goalsAgainst": 14,
+            "goalDifference": 2,
+            "points": 11,
+            "pointsPercentage": 40.7,
+            "form": [
+              "L",
+              "D",
+              "D",
+              "D",
+              "W"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 12,
+            "team": {
+              "id": "criciuma-u17",
+              "name": "Criciúma Sub-17",
+              "shortName": "Criciúma U17",
+              "code": "CRI17"
+            },
+            "played": 9,
+            "won": 2,
+            "drawn": 5,
+            "lost": 2,
+            "goalsFor": 6,
+            "goalsAgainst": 5,
+            "goalDifference": 1,
+            "points": 11,
+            "pointsPercentage": 40.7,
+            "form": [
+              "D",
+              "L",
+              "W",
+              "D",
+              "D"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 13,
+            "team": {
+              "id": "athletico-pr-u17",
+              "name": "Athletico-PR Sub-17",
+              "shortName": "Athletico-PR U17",
+              "code": "CAP17"
+            },
+            "played": 9,
+            "won": 3,
+            "drawn": 2,
+            "lost": 4,
+            "goalsFor": 10,
+            "goalsAgainst": 11,
+            "goalDifference": -1,
+            "points": 11,
+            "pointsPercentage": 40.7,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "D",
+              "W"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 14,
+            "team": {
+              "id": "cuiaba-u17",
+              "name": "Cuiabá Sub-17",
+              "shortName": "Cuiabá U17",
+              "code": "CUI17"
+            },
+            "played": 9,
+            "won": 3,
+            "drawn": 2,
+            "lost": 4,
+            "goalsFor": 7,
+            "goalsAgainst": 9,
+            "goalDifference": -2,
+            "points": 11,
+            "pointsPercentage": 40.7,
+            "form": [
+              "D",
+              "W",
+              "L",
+              "L",
+              "W"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 15,
+            "team": {
+              "id": "fortaleza-u17",
+              "name": "Fortaleza Sub-17",
+              "shortName": "Fortaleza U17",
+              "code": "FOR17"
+            },
+            "played": 9,
+            "won": 2,
+            "drawn": 4,
+            "lost": 3,
+            "goalsFor": 12,
+            "goalsAgainst": 15,
+            "goalDifference": -3,
+            "points": 10,
+            "pointsPercentage": 37.0,
+            "form": [
+              "L",
+              "D",
+              "L",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 16,
+            "team": {
+              "id": "cruzeiro-u17",
+              "name": "Cruzeiro Sub-17",
+              "shortName": "Cruzeiro U17",
+              "code": "CRU17"
+            },
+            "played": 9,
+            "won": 2,
+            "drawn": 3,
+            "lost": 4,
+            "goalsFor": 7,
+            "goalsAgainst": 11,
+            "goalDifference": -4,
+            "points": 9,
+            "pointsPercentage": 33.3,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 17,
+            "team": {
+              "id": "sao-paulo-u17",
+              "name": "São Paulo Sub-17",
+              "shortName": "São Paulo U17",
+              "code": "SAO17"
+            },
+            "played": 9,
+            "won": 2,
+            "drawn": 2,
+            "lost": 5,
+            "goalsFor": 10,
+            "goalsAgainst": 13,
+            "goalDifference": -3,
+            "points": 8,
+            "pointsPercentage": 29.6,
+            "form": [
+              "W",
+              "L",
+              "D",
+              "L",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 18,
+            "team": {
+              "id": "atletico-go-u17",
+              "name": "Atlético-GO Sub-17",
+              "shortName": "Atlético-GO U17",
+              "code": "ACG17"
+            },
+            "played": 9,
+            "won": 2,
+            "drawn": 2,
+            "lost": 5,
+            "goalsFor": 6,
+            "goalsAgainst": 10,
+            "goalDifference": -4,
+            "points": 8,
+            "pointsPercentage": 29.6,
+            "form": [
+              "L",
+              "W",
+              "L",
+              "L",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 19,
+            "team": {
+              "id": "fluminense-u17",
+              "name": "Fluminense Sub-17",
+              "shortName": "Fluminense U17",
+              "code": "FLU17"
+            },
+            "played": 9,
+            "won": 1,
+            "drawn": 2,
+            "lost": 6,
+            "goalsFor": 3,
+            "goalsAgainst": 13,
+            "goalDifference": -10,
+            "points": 5,
+            "pointsPercentage": 18.5,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
+            }
+          },
+          {
+            "position": 20,
+            "team": {
+              "id": "bragantino-u17",
+              "name": "Red Bull Bragantino Sub-17",
+              "shortName": "Bragantino U17",
+              "code": "RBB17"
+            },
+            "played": 9,
+            "won": 0,
+            "drawn": 4,
+            "lost": 5,
+            "goalsFor": 7,
+            "goalsAgainst": 14,
+            "goalDifference": -7,
+            "points": 4,
+            "pointsPercentage": 14.8,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "D",
+              "D"
+            ],
+            "zone": {
+              "name": "Neutro",
+              "type": "neutral",
+              "color": "#757575"
             }
           }
         ]

@@ -1,49 +1,38 @@
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response } from 'express';
 import { matchService } from '../services/match.service.js';
 import { successResponse, sendPaginatedResponse } from '../utils/response.js';
+import { asyncHandler } from '../utils/async-handler.js';
 
 export class MatchController {
-  public async getAll(req: Request, res: Response, next: NextFunction): Promise<void> {
-    try {
-      const { page, limit, leagueId, status, date, teamId, round, gender, ageCategory } = req.query;
-      const result = await matchService.getMatches(
-        {
-          leagueId: leagueId as string,
-          status: status as any,
-          date: date as string,
-          teamId: teamId as string,
-          round: round ? parseInt(round as string, 10) : undefined,
-          gender: gender as any,
-          ageCategory: ageCategory as any,
-        },
-        { page: page as any, limit: limit as any }
-      );
-      sendPaginatedResponse(res, result);
-    } catch (error) {
-      next(error);
-    }
-  }
+  public getAll = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { page, limit, leagueId, status, date, teamId, round, gender, ageCategory } = req.query;
+    const result = await matchService.getMatches(
+      {
+        leagueId: leagueId as string,
+        status: status as any,
+        date: date as string,
+        teamId: teamId as string,
+        round: round ? parseInt(round as string, 10) : undefined,
+        gender: gender as any,
+        ageCategory: ageCategory as any,
+      },
+      { page: page as any, limit: limit as any }
+    );
+    sendPaginatedResponse(res, result);
+  });
 
-  public async getById(req: Request, res: Response, next: NextFunction): Promise<void> {
-    try {
-      const { id } = req.params;
-      const match = await matchService.getMatchById(id);
-      res.json(successResponse(match));
-    } catch (error) {
-      next(error);
-    }
-  }
+  public getById = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const match = await matchService.getMatchById(id);
+    res.json(successResponse(match));
+  });
 
-  public async getLive(_req: Request, res: Response, next: NextFunction): Promise<void> {
-    try {
-      const liveMatches = await matchService.getLiveMatches();
-      res.json(successResponse(liveMatches));
-    } catch (error) {
-      next(error);
-    }
-  }
+  public getLive = asyncHandler(async (_req: Request, res: Response): Promise<void> => {
+    const liveMatches = await matchService.getLiveMatches();
+    res.json(successResponse(liveMatches));
+  });
 
-  public async streamLive(req: Request, res: Response): Promise<void> {
+  public streamLive = (req: Request, res: Response): void => {
     res.setHeader('Content-Type', 'text/event-stream');
     res.setHeader('Cache-Control', 'no-cache, no-transform');
     res.setHeader('Connection', 'keep-alive');
@@ -60,47 +49,75 @@ export class MatchController {
       })}\n\n`
     );
 
-    try {
-      const initialMatches = await matchService.getLiveMatches();
-      res.write(`event: matches\ndata: ${JSON.stringify(initialMatches)}\n\n`);
-    } catch {
-      // ignore initial fetch error
-    }
+    matchService
+      .getLiveMatches()
+      .then((initialMatches) => {
+        if (!res.writableEnded) {
+          res.write(`event: matches\ndata: ${JSON.stringify(initialMatches)}\n\n`);
+        }
+      })
+      .catch(() => {});
 
+    let isClosed = false;
     const interval = setInterval(async () => {
+      if (isClosed || res.writableEnded) {
+        clearInterval(interval);
+        return;
+      }
+
       try {
         const liveMatches = await matchService.getLiveMatches();
-        res.write(`event: matches\ndata: ${JSON.stringify(liveMatches)}\n\n`);
+        if (!res.writableEnded) {
+          res.write(`event: matches\ndata: ${JSON.stringify(liveMatches)}\n\n`);
+        }
       } catch {
-        res.write(`event: ping\ndata: ${JSON.stringify({ timestamp: new Date().toISOString() })}\n\n`);
+        if (!res.writableEnded) {
+          res.write(`event: ping\ndata: ${JSON.stringify({ timestamp: new Date().toISOString() })}\n\n`);
+        }
       }
     }, 3000);
 
-    req.on('close', () => {
+    const cleanup = () => {
+      if (isClosed) return;
+      isClosed = true;
       clearInterval(interval);
-      res.end();
-    });
-  }
+      if (!res.writableEnded) {
+        res.end();
+      }
+    };
 
-  public async getHeadToHead(req: Request, res: Response, next: NextFunction): Promise<void> {
-    try {
-      const { team1Id, team2Id } = req.query;
-      const h2h = await matchService.getHeadToHead(team1Id as string, team2Id as string);
-      res.json(successResponse(h2h));
-    } catch (error) {
-      next(error);
-    }
-  }
+    req.on('close', cleanup);
+    req.on('end', cleanup);
+    req.on('error', cleanup);
+    res.on('close', cleanup);
+    res.on('finish', cleanup);
+    res.on('error', cleanup);
+  };
 
-  public async simulateTick(req: Request, res: Response, next: NextFunction): Promise<void> {
-    try {
-      const { id } = req.params;
-      const updatedMatch = await matchService.simulateLiveTick(id);
-      res.json(successResponse(updatedMatch, 'Simulação de minuto de jogo atualizada com sucesso.'));
-    } catch (error) {
-      next(error);
-    }
-  }
+  public getHeadToHead = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { team1Id, team2Id } = req.query;
+    const h2h = await matchService.getHeadToHead(team1Id as string, team2Id as string);
+    res.json(successResponse(h2h));
+  });
+
+  public simulateTick = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const updatedMatch = await matchService.simulateLiveTick(id);
+    res.json(successResponse(updatedMatch, 'Simulação de minuto de jogo atualizada com sucesso.'));
+  });
+
+  public simulateEvent = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const { type, team, player, minute } = req.body || {};
+    const updatedMatch = await matchService.simulateLiveEvent(id, { type, team, player, minute });
+    res.json(successResponse(updatedMatch, 'Evento de partida simulado com sucesso.'));
+  });
+
+  public resetMatches = asyncHandler(async (_req: Request, res: Response): Promise<void> => {
+    const result = await matchService.resetAllMatches();
+    res.json(successResponse(result, result.message));
+  });
 }
 
 export const matchController = new MatchController();
+

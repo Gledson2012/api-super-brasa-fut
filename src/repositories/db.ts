@@ -8,9 +8,18 @@ import { LeagueStanding } from '../models/standing.model.js';
 import { Player, StatsLeaders } from '../models/player.model.js';
 import { NewsArticle } from '../models/news.model.js';
 import { MatchOddsDetail } from '../models/odds.model.js';
+import { stateStore, STATE_PREFIX } from './state-store.js';
+import type { StateStore } from './state-store.js';
+import { withTimeout } from '../utils/with-timeout.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+type PersistentEntity = 'matches' | 'teams' | 'players' | 'leagues' | 'news' | 'standings';
+
+const PERSISTENT_ENTITIES: PersistentEntity[] = ['matches', 'teams', 'players', 'leagues', 'news', 'standings'];
+
+const HYDRATE_TIMEOUT_MS = 4000;
 
 function getDataDir(): string {
   const localDistData = path.resolve(__dirname, '../data');
@@ -33,6 +42,10 @@ function loadJson<T>(filename: string): T {
   const filePath = path.join(dataDir, filename);
   const rawData = fs.readFileSync(filePath, 'utf-8');
   return JSON.parse(rawData) as T;
+}
+
+function storeKey(entity: string): string {
+  return `${STATE_PREFIX}:${entity}`;
 }
 
 export class InMemoryDatabase {
@@ -58,6 +71,7 @@ export class InMemoryDatabase {
     return InMemoryDatabase.instance;
   }
 
+  /** Carrega (de forma síncrona) a linha de base a partir dos seeds JSON. */
   public reload(): void {
     this.leagues = loadJson<League[]>('leagues.json');
     this.teams = loadJson<Team[]>('teams.json');
@@ -67,6 +81,64 @@ export class InMemoryDatabase {
     this.news = loadJson<NewsArticle[]>('news.json');
     this.odds = loadJson<MatchOddsDetail[]>('odds.json');
     this.statsLeaders = loadJson<StatsLeaders[]>('stats-leaders.json');
+  }
+
+  /**
+   * Sobrepõe a linha de base com o estado persistido externamente, quando há um
+   * backend configurado. Deve ser chamado no boot da aplicação (inclusive a cada
+   * cold start em serverless). Erros de rede não derrubam o processo: a API
+   * segue com os dados dos seeds JSON.
+   */
+  public async hydrate(store: StateStore = stateStore): Promise<void> {
+    if (store.name === 'memory') return;
+
+    try {
+      await withTimeout(
+        (async () => {
+          for (const entity of PERSISTENT_ENTITIES) {
+            const stored = await store.get<unknown>(storeKey(entity));
+            if (Array.isArray(stored)) {
+              (this[entity] as unknown[]) = stored;
+            }
+          }
+        })(),
+        HYDRATE_TIMEOUT_MS,
+        'hydrate do banco de dados'
+      );
+    } catch (err) {
+      console.error('Falha ao hidratar estado externo. Usando seeds JSON.', err);
+    }
+  }
+
+  /** Restaura os seeds e limpa o estado persistido externamente. */
+  public async resetAll(store: StateStore = stateStore): Promise<void> {
+    this.reload();
+    await Promise.all(
+      PERSISTENT_ENTITIES.map((entity) =>
+        store.del(storeKey(entity)).catch(() => undefined)
+      )
+    );
+  }
+
+  public persist(entity: PersistentEntity): void {
+    const payload = this[entity];
+
+    if (process.env.PERSIST_CHANGES === 'true') {
+      try {
+        const dataDir = getDataDir();
+        const filePath = path.join(dataDir, `${entity}.json`);
+        fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), 'utf-8');
+      } catch (err) {
+        console.error(`Erro ao persistir ${entity} em disco:`, err);
+      }
+    }
+
+    // Write-through para o backend externo (quando configurado), sem bloquear.
+    if (stateStore.name !== 'memory') {
+      stateStore.set(storeKey(entity), payload).catch((err) => {
+        console.error(`Erro ao persistir ${entity} no estado externo:`, err);
+      });
+    }
   }
 }
 

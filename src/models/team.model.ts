@@ -35,7 +35,7 @@ export interface Team {
 export interface TeamFilterQuery {
   country?: string;
   leagueId?: string;
-  gender?: GenderCategory;
-  ageCategory?: AgeCategory;
+  gender?: GenderCategory | 'all';
+  ageCategory?: AgeCategory | 'all';
   search?: string;
 }

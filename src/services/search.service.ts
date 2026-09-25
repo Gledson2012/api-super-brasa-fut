@@ -1,6 +1,14 @@
 import { db } from '../repositories/db.js';
 import { SearchResults, SearchEntityType } from '../models/search.model.js';
 
+function matchesText(text: string | undefined | null, query: string): boolean {
+  return typeof text === 'string' && text.toLowerCase().includes(query);
+}
+
+function exactMatch(text: string | undefined | null, query: string): boolean {
+  return typeof text === 'string' && text.toLowerCase() === query;
+}
+
 export class SearchService {
   public async search(query: string, type: SearchEntityType = 'all', limit = 10): Promise<SearchResults> {
     const q = (query || '').trim().toLowerCase();
@@ -24,11 +32,11 @@ export class SearchService {
       ? db.leagues
           .filter(
             (l) =>
-              l.name.toLowerCase().includes(q) ||
-              l.originalName?.toLowerCase().includes(q) ||
-              l.slug.toLowerCase().includes(q) ||
-              l.country.toLowerCase().includes(q) ||
-              l.countryCode.toLowerCase() === q
+              matchesText(l.name, q) ||
+              matchesText(l.originalName, q) ||
+              matchesText(l.slug, q) ||
+              matchesText(l.country, q) ||
+              exactMatch(l.countryCode, q)
           )
           .slice(0, parsedLimit)
       : [];
@@ -37,13 +45,13 @@ export class SearchService {
       ? db.teams
           .filter(
             (t) =>
-              t.name.toLowerCase().includes(q) ||
-              t.shortName.toLowerCase().includes(q) ||
-              t.code.toLowerCase() === q ||
-              t.slug.toLowerCase().includes(q) ||
-              t.country.toLowerCase().includes(q) ||
-              t.stadium?.city?.toLowerCase().includes(q) ||
-              t.coach?.toLowerCase().includes(q)
+              matchesText(t.name, q) ||
+              matchesText(t.shortName, q) ||
+              exactMatch(t.code, q) ||
+              matchesText(t.slug, q) ||
+              matchesText(t.country, q) ||
+              matchesText(t.stadium?.city, q) ||
+              matchesText(t.coach, q)
           )
           .slice(0, parsedLimit)
       : [];
@@ -52,14 +60,14 @@ export class SearchService {
       ? db.players
           .filter(
             (p) =>
-              p.name.toLowerCase().includes(q) ||
-              p.fullName.toLowerCase().includes(q) ||
-              p.nickname?.toLowerCase().includes(q) ||
-              p.slug.toLowerCase().includes(q) ||
-              p.nationality.toLowerCase().includes(q) ||
-              p.currentTeam.name.toLowerCase().includes(q) ||
-              p.currentTeam.shortName.toLowerCase().includes(q) ||
-              p.position.toLowerCase().includes(q)
+              matchesText(p.name, q) ||
+              matchesText(p.fullName, q) ||
+              matchesText(p.nickname, q) ||
+              matchesText(p.slug, q) ||
+              matchesText(p.nationality, q) ||
+              matchesText(p.currentTeam?.name, q) ||
+              matchesText(p.currentTeam?.shortName, q) ||
+              matchesText(p.position, q)
           )
           .slice(0, parsedLimit)
       : [];
@@ -68,13 +76,13 @@ export class SearchService {
       ? db.matches
           .filter(
             (m) =>
-              m.homeTeam.name.toLowerCase().includes(q) ||
-              m.homeTeam.shortName.toLowerCase().includes(q) ||
-              m.awayTeam.name.toLowerCase().includes(q) ||
-              m.awayTeam.shortName.toLowerCase().includes(q) ||
-              m.leagueName.toLowerCase().includes(q) ||
-              m.stadium?.toLowerCase().includes(q) ||
-              m.city?.toLowerCase().includes(q)
+              matchesText(m.homeTeam?.name, q) ||
+              matchesText(m.homeTeam?.shortName, q) ||
+              matchesText(m.awayTeam?.name, q) ||
+              matchesText(m.awayTeam?.shortName, q) ||
+              matchesText(m.leagueName, q) ||
+              matchesText(m.stadium, q) ||
+              matchesText(m.city, q)
           )
           .slice(0, parsedLimit)
       : [];
@@ -83,11 +91,11 @@ export class SearchService {
       ? db.news
           .filter(
             (n) =>
-              n.title.toLowerCase().includes(q) ||
-              n.summary.toLowerCase().includes(q) ||
-              n.category.toLowerCase().includes(q) ||
-              n.tags.some((tag) => tag.toLowerCase().includes(q)) ||
-              n.author?.toLowerCase().includes(q)
+              matchesText(n.title, q) ||
+              matchesText(n.summary, q) ||
+              matchesText(n.category, q) ||
+              (Array.isArray(n.tags) && n.tags.some((tag) => matchesText(tag, q))) ||
+              matchesText(n.author, q)
           )
           .slice(0, parsedLimit)
       : [];
