@@ -1852,5 +1852,98 @@
       "goalsConceded": 4,
       "cleanSheets": 3
     }
+  },
+  {
+    "id": "crb",
+    "slug": "crb",
+    "name": "Clube de Regatas Brasil",
+    "shortName": "CRB",
+    "code": "CRB",
+    "gender": "men",
+    "ageCategory": "senior",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/crb.png",
+    "stadium": {
+      "name": "Estádio Rei Pelé",
+      "city": "Maceió",
+      "capacity": 17126
+    },
+    "founded": 1912,
+    "coach": "Hélio dos Anjos",
+    "marketValueEur": 14000000,
+    "stats": {
+      "matchesPlayed": 29,
+      "wins": 9,
+      "draws": 8,
+      "losses": 12,
+      "goalsScored": 28,
+      "goalsConceded": 35,
+      "cleanSheets": 7
+    }
+  },
+  {
+    "id": "avai",
+    "slug": "avai",
+    "name": "Avaí Futebol Clube",
+    "shortName": "Avaí",
+    "code": "AVA",
+    "gender": "men",
+    "ageCategory": "senior",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/avai.png",
+    "stadium": {
+      "name": "Estádio da Ressacada",
+      "city": "Florianópolis",
+      "capacity": 17800
+    },
+    "founded": 1923,
+    "coach": "Enderson Moreira",
+    "marketValueEur": 16000000,
+    "stats": {
+      "matchesPlayed": 29,
+      "wins": 11,
+      "draws": 7,
+      "losses": 11,
+      "goalsScored": 25,
+      "goalsConceded": 26,
+      "cleanSheets": 10
+    }
+  },
+  {
+    "id": "athletic-club",
+    "slug": "athletic-club-mg",
+    "name": "Athletic Club",
+    "shortName": "Athletic Club",
+    "code": "ATH",
+    "gender": "men",
+    "ageCategory": "senior",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/athletic.png",
+    "stadium": {
+      "name": "Estádio Joaquim Portugal",
+      "city": "São João del-Rei",
+      "capacity": 6000
+    },
+    "founded": 1909,
+    "coach": "Roger Silva",
+    "marketValueEur": 9000000,
+    "stats": {
+      "matchesPlayed": 29,
+      "wins": 12,
+      "draws": 5,
+      "losses": 12,
+      "goalsScored": 34,
+      "goalsConceded": 31,
+      "cleanSheets": 8
+    }
   }
 ]

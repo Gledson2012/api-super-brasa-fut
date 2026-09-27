@@ -1,5 +1,268 @@
 [
   {
+    "id": "match-crb-cui-2026",
+    "slug": "crb-vs-cuiaba-2026",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 30,
+    "season": "2026",
+    "status": "LIVE",
+    "minute": 55,
+    "period": "2H",
+    "kickoffTime": "2026-09-27T19:00:00Z",
+    "stadium": "Estádio Rei Pelé",
+    "city": "Maceió",
+    "referee": "Dyorgines José Padovani de Andrade",
+    "gender": "men",
+    "ageCategory": "senior",
+    "flashscoreUrl": "https://www.flashscore.com.br/jogo/25DbT184/",
+    "homeTeam": {
+      "id": "crb",
+      "name": "CRB",
+      "shortName": "CRB",
+      "code": "CRB",
+      "logoUrl": "https://static.flashscore.com/res/image/data/crb.png"
+    },
+    "awayTeam": {
+      "id": "cuiaba",
+      "name": "Cuiabá",
+      "shortName": "Cuiabá",
+      "code": "CUI",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
+    },
+    "score": {
+      "home": 1,
+      "away": 0,
+      "halftime": {
+        "home": 1,
+        "away": 0
+      }
+    },
+    "stats": {
+      "home": {
+        "possessionPercent": 48,
+        "totalShots": 9,
+        "shotsOnTarget": 4,
+        "shotsOffTarget": 3,
+        "blockedShots": 2,
+        "cornerKicks": 3,
+        "offsides": 1,
+        "fouls": 9,
+        "yellowCards": 1,
+        "redCards": 0,
+        "goalkeeperSaves": 3,
+        "totalPasses": 230,
+        "accuratePasses": 190,
+        "passAccuracyPercent": 82
+      },
+      "away": {
+        "possessionPercent": 52,
+        "totalShots": 7,
+        "shotsOnTarget": 3,
+        "shotsOffTarget": 3,
+        "blockedShots": 1,
+        "cornerKicks": 5,
+        "offsides": 2,
+        "fouls": 8,
+        "yellowCards": 2,
+        "redCards": 0,
+        "goalkeeperSaves": 3,
+        "totalPasses": 255,
+        "accuratePasses": 215,
+        "passAccuracyPercent": 84
+      }
+    },
+    "events": [
+      {
+        "id": "evt-crb-1",
+        "type": "GOAL",
+        "minute": 34,
+        "teamId": "crb",
+        "teamName": "CRB",
+        "primaryPlayer": "Anselmo Ramon",
+        "secondaryPlayer": "Gegê",
+        "detail": "Cabeçada firme após cruzamento na área",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-cui-1",
+        "type": "YELLOW_CARD",
+        "minute": 41,
+        "teamId": "cuiaba",
+        "teamName": "Cuiabá",
+        "primaryPlayer": "Lucas Mineiro",
+        "detail": "Falta tática no meio-campo"
+      }
+    ],
+    "odds": {
+      "homeWin": 2.6,
+      "draw": 2.9,
+      "awayWin": 2.8,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Premiere",
+      "SporTV"
+    ]
+  },
+  {
+    "id": "match-cri-ava-2026",
+    "slug": "criciuma-vs-avai-2026",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 30,
+    "season": "2026",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
+    "kickoffTime": "2026-09-27T14:00:00Z",
+    "stadium": "Estádio Heriberto Hülse",
+    "city": "Criciúma",
+    "referee": "Ramon Abatti Abel",
+    "gender": "men",
+    "ageCategory": "senior",
+    "flashscoreUrl": "https://www.flashscore.com.br/jogo/4EN47Koo/",
+    "homeTeam": {
+      "id": "criciuma",
+      "name": "Criciúma",
+      "shortName": "Criciúma",
+      "code": "CRI",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
+    },
+    "awayTeam": {
+      "id": "avai",
+      "name": "Avaí",
+      "shortName": "Avaí",
+      "code": "AVA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/avai.png"
+    },
+    "score": {
+      "home": 3,
+      "away": 0,
+      "halftime": {
+        "home": 1,
+        "away": 0
+      },
+      "fulltime": {
+        "home": 3,
+        "away": 0
+      }
+    },
+    "events": [
+      {
+        "id": "evt-cri-1",
+        "type": "GOAL",
+        "minute": 22,
+        "teamId": "criciuma",
+        "teamName": "Criciúma",
+        "primaryPlayer": "Yannick Bolasie",
+        "secondaryPlayer": "Fellipe Mateus",
+        "detail": "Finalização potente no canto",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-ava-red",
+        "type": "RED_CARD",
+        "minute": 61,
+        "teamId": "avai",
+        "teamName": "Avaí",
+        "primaryPlayer": "Tiago Pagnussat",
+        "detail": "Vermelho direto após falta violenta"
+      },
+      {
+        "id": "evt-cri-2",
+        "type": "GOAL",
+        "minute": 74,
+        "teamId": "criciuma",
+        "teamName": "Criciúma",
+        "primaryPlayer": "Arthur Caíke",
+        "secondaryPlayer": "Marcelo Hermes",
+        "detail": "Desvio de cabeça na pequena área",
+        "scoreAfter": {
+          "home": 2,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-cri-3",
+        "type": "GOAL",
+        "minute": 88,
+        "teamId": "criciuma",
+        "teamName": "Criciúma",
+        "primaryPlayer": "Fellipe Mateus",
+        "secondaryPlayer": "Claudinho",
+        "detail": "Chute de fora da área no ângulo",
+        "scoreAfter": {
+          "home": 3,
+          "away": 0
+        }
+      }
+    ],
+    "odds": {
+      "homeWin": 1.95,
+      "draw": 3.2,
+      "awayWin": 3.9,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Premiere",
+      "SporTV"
+    ]
+  },
+  {
+    "id": "match-for-ath-2026",
+    "slug": "fortaleza-vs-athletic-club-2026",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 30,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-27T21:30:00Z",
+    "stadium": "Arena Castelão",
+    "city": "Fortaleza",
+    "referee": "Flavio Rodrigues de Souza",
+    "gender": "men",
+    "ageCategory": "senior",
+    "flashscoreUrl": "https://www.flashscore.com.br/jogo/0IYQE2gB/",
+    "homeTeam": {
+      "id": "fortaleza",
+      "name": "Fortaleza",
+      "shortName": "Fortaleza",
+      "code": "FOR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/WvjL9wT0-Kz37r6jA.png"
+    },
+    "awayTeam": {
+      "id": "athletic-club",
+      "name": "Athletic Club",
+      "shortName": "Athletic Club",
+      "code": "ATH",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletic.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 1.65,
+      "draw": 3.6,
+      "awayWin": 5.2,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Premiere",
+      "SporTV"
+    ]
+  },
+  {
     "id": "match-cor-juv-2026",
     "slug": "corinthians-vs-juventude-2026",
     "leagueId": "bra-serie-a-2026",
@@ -1311,102 +1574,6 @@
       "Premiere",
       "SporTV"
     ]
-  },
-  {
-    "id": "match-cui-cri-2026",
-    "slug": "cuiaba-vs-criciuma-2026",
-    "leagueId": "bra-serie-a-2026",
-    "leagueName": "Brasileirão Série A 2026",
-    "leagueCountry": "Brasil",
-    "leagueRound": 28,
-    "season": "2026",
-    "status": "UPCOMING",
-    "kickoffTime": "2026-09-27T21:30:00Z",
-    "stadium": "Arena Pantanal",
-    "city": "Cuiabá",
-    "referee": "Bruno Arleu de Araújo",
-    "gender": "men",
-    "ageCategory": "senior",
-    "homeTeam": {
-      "id": "cuiaba",
-      "name": "Cuiabá",
-      "shortName": "Cuiabá",
-      "code": "CUI",
-      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
-    },
-    "awayTeam": {
-      "id": "criciuma",
-      "name": "Criciúma",
-      "shortName": "Criciúma",
-      "code": "CRI",
-      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
-    },
-    "score": {
-      "home": 0,
-      "away": 0
-    },
-    "odds": {
-      "homeWin": 2.15,
-      "draw": 3.10,
-      "awayWin": 3.70,
-      "over25": 2.20,
-      "under25": 1.65,
-      "bttsYes": 2.00,
-      "provider": "Betano"
-    },
-    "broadcast": [
-      "Premiere"
-    ],
-    "lineups": {
-      "home": {
-        "formation": "4-3-3",
-        "coach": "Bernardo Franco",
-        "starters": [
-          { "number": 1, "name": "Walter", "position": "GK", "isCaptain": true },
-          { "number": 2, "name": "Matheus Alexandre", "position": "DF" },
-          { "number": 4, "name": "Marllon", "position": "DF" },
-          { "number": 33, "name": "Alan Empereur", "position": "DF" },
-          { "number": 6, "name": "Ramon", "position": "DF" },
-          { "number": 5, "name": "Lucas Mineiro", "position": "MF" },
-          { "number": 8, "name": "Fernando Sobral", "position": "MF" },
-          { "number": 20, "name": "Lucas Fernandes", "position": "MF" },
-          { "number": 17, "name": "Derik Lacerda", "position": "FW" },
-          { "number": 29, "name": "Clayson", "position": "FW" },
-          { "number": 9, "name": "Isidro Pitta", "position": "FW" }
-        ],
-        "substitutes": [
-          { "number": 22, "name": "Mateus Pasinato", "position": "GK" },
-          { "number": 3, "name": "Bruno Alves", "position": "DF" },
-          { "number": 88, "name": "Denilson", "position": "MF" },
-          { "number": 10, "name": "Max", "position": "MF" },
-          { "number": 7, "name": "Jonathan Cafú", "position": "FW" }
-        ]
-      },
-      "away": {
-        "formation": "4-4-2",
-        "coach": "Cláudio Tencati",
-        "starters": [
-          { "number": 1, "name": "Gustavo", "position": "GK", "isCaptain": true },
-          { "number": 2, "name": "Claudinho", "position": "DF" },
-          { "number": 3, "name": "Rodrigo", "position": "DF" },
-          { "number": 4, "name": "Tobias Figueiredo", "position": "DF" },
-          { "number": 6, "name": "Marcelo Hermes", "position": "DF" },
-          { "number": 5, "name": "Barreto", "position": "MF" },
-          { "number": 8, "name": "Newton", "position": "MF" },
-          { "number": 10, "name": "Fellipe Mateus", "position": "MF" },
-          { "number": 11, "name": "Matheusinho", "position": "MF" },
-          { "number": 7, "name": "Arthur Caíke", "position": "FW" },
-          { "number": 9, "name": "Yannick Bolasie", "position": "FW" }
-        ],
-        "substitutes": [
-          { "number": 12, "name": "Alisson", "position": "GK" },
-          { "number": 13, "name": "Jonathan", "position": "DF" },
-          { "number": 15, "name": "Ronald", "position": "MF" },
-          { "number": 17, "name": "Allano", "position": "FW" },
-          { "number": 19, "name": "Felipe Vizeu", "position": "FW" }
-        ]
-      }
-    }
   },
   {
     "id": "match-san-spt-2026",
