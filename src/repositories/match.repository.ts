@@ -1,6 +1,6 @@
 import { Match, MatchFilterQuery } from '../models/match.model.js';
 import { db } from './db.js';
-import { todayInTimeZone } from '../utils/date.js';
+import { todayInTimeZone, tomorrowInTimeZone, yesterdayInTimeZone } from '../utils/date.js';
 
 export class MatchRepository {
   public async findAll(filters: MatchFilterQuery = {}): Promise<Match[]> {
@@ -15,7 +15,15 @@ export class MatchRepository {
     }
 
     if (filters.date) {
-      const targetDate = filters.date === 'today' ? todayInTimeZone() : filters.date;
+      let targetDate = filters.date;
+      if (filters.date === 'today' || filters.date === 'hoje') {
+        targetDate = todayInTimeZone();
+      } else if (filters.date === 'tomorrow' || filters.date === 'amanha' || filters.date === 'amanhã') {
+        targetDate = tomorrowInTimeZone();
+      } else if (filters.date === 'yesterday' || filters.date === 'ontem') {
+        targetDate = yesterdayInTimeZone();
+      }
+
       result = result.filter((m) => {
         const matchLocalDate = todayInTimeZone(undefined, new Date(m.kickoffTime));
         return m.kickoffTime.startsWith(targetDate) || matchLocalDate === targetDate;

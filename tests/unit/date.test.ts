@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { todayInTimeZone } from '../../src/utils/date.js';
+import { todayInTimeZone, tomorrowInTimeZone, yesterdayInTimeZone } from '../../src/utils/date.js';
 
 describe('todayInTimeZone', () => {
   it('formats as YYYY-MM-DD', () => {
@@ -12,4 +12,12 @@ describe('todayInTimeZone', () => {
     expect(todayInTimeZone('America/Sao_Paulo', instant)).toBe('2025-12-31');
     expect(todayInTimeZone('UTC', instant)).toBe('2026-01-01');
   });
+
+  it('correctly calculates tomorrow and yesterday', () => {
+    const instant = new Date('2026-09-27T15:00:00.000Z');
+    expect(todayInTimeZone('America/Sao_Paulo', instant)).toBe('2026-09-27');
+    expect(tomorrowInTimeZone('America/Sao_Paulo', instant)).toBe('2026-09-28');
+    expect(yesterdayInTimeZone('America/Sao_Paulo', instant)).toBe('2026-09-26');
+  });
 });
+
