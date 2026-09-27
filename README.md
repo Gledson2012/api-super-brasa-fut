@@ -3,11 +3,11 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-ES_Modules-green?logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.21-lightgrey?logo=express)](https://expressjs.com/)
-[![Vitest](https://img.shields.io/badge/Tests-147%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Tests-153%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
 [![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-orange?logo=prometheus)](http://localhost:3000/metrics)
 [![Swagger](https://img.shields.io/badge/OpenAPI-3.0_Swagger-brightgreen?logo=swagger)](http://localhost:3000/docs)
 
-**Super Brasa Fut** é uma API RESTful de alta performance para dados esportivos de futebol brasileiro, sul-americano e mundial. Fornece placares ao vivo, eventos de partidas, estatísticas detalhadas, tabelas de classificação, elencos, mercado, comparação de jogadores, cotações de apostas (odds), streaming em tempo real via Server-Sent Events (SSE), motor de simulação de partidas e sistema de Webhooks.
+**Super Brasa Fut** é uma API RESTful de alta performance para dados esportivos de futebol brasileiro, sul-americano e mundial. Fornece placares ao vivo, eventos de partidas, estatísticas detalhadas, tabelas de classificação, elencos reais completos (539 atletas cadastrados), estádios oficiais mapeados com capacidade de público, escudos de alta resolução, mercado, comparação de jogadores, cotações de apostas (odds), chaveamento de copas com playoffs, streaming em tempo real via Server-Sent Events (SSE), motor de simulação de partidas e sistema de Webhooks.
 
 ---
 
@@ -45,6 +45,13 @@ A API cobre 23 das maiores competições do planeta:
 * **Bundesliga 2026/27** (`ger-bundesliga-2026` - Alemanha)
 * **Primeira A Colômbia 2026** (`col-primera-a-2026` - Colômbia)
 * **Copa Chile 2026** (`chi-copa-chile-2026` - Chile)
+
+---
+
+## 👥 Elencos, Estádios e Escudos Oficiais
+* **539 Atletas Reais**: Elencos completos (16 a 20 atletas) para todos os 20 clubes do Brasileirão Série A, Série B (Santos, Sport, Novorizontino, Operário), Seleções Principais (Brasil, Argentina, França, Alemanha) e gigantes internacionais (Real Madrid, Barcelona, Man City, Arsenal, Al-Hilal), com números de camisa, posições, idades, valores de mercado e estatísticas de temporada.
+* **62 Estádios Mapeados**: 100% das equipes e partidas possuem estádios oficiais cadastrados com nome oficial, cidade e capacidade exata de público (ex: Maracanã, MorumBIS, Neo Química Arena, Allianz Parque, Mineirão, Beira-Rio, Santiago Bernabéu, etc.).
+* **Escudos Oficiais (Logos)**: 100% dos clubes com `logoUrl` em alta resolução sincronizado em tabelas de classificação, chaves de mata-mata, partidas e no objeto do clube em cada jogador.
 
 ---
 
