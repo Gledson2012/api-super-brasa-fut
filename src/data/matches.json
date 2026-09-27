@@ -10,7 +10,7 @@
     "status": "LIVE",
     "minute": 72,
     "period": "2H",
-    "kickoffTime": "2026-09-25T14:00:00Z",
+    "kickoffTime": "2026-09-27T16:00:00Z",
     "stadium": "Allianz Parque",
     "city": "São Paulo",
     "referee": "Wilton Pereira Sampaio",
@@ -265,7 +265,7 @@
             "number": 7,
             "name": "Luiz Henrique",
             "position": "FW",
-            "rating": 8.0
+            "rating": 8
           },
           {
             "number": 99,
@@ -313,15 +313,42 @@
       "provider": "Betano"
     },
     "momentum": [
-      { "minute": 5, "value": 15 },
-      { "minute": 15, "value": 35 },
-      { "minute": 30, "value": 65 },
-      { "minute": 34, "value": 90 },
-      { "minute": 45, "value": 20 },
-      { "minute": 55, "value": -75 },
-      { "minute": 65, "value": 40 },
-      { "minute": 68, "value": 85 },
-      { "minute": 72, "value": 30 }
+      {
+        "minute": 5,
+        "value": 15
+      },
+      {
+        "minute": 15,
+        "value": 35
+      },
+      {
+        "minute": 30,
+        "value": 65
+      },
+      {
+        "minute": 34,
+        "value": 90
+      },
+      {
+        "minute": 45,
+        "value": 20
+      },
+      {
+        "minute": 55,
+        "value": -75
+      },
+      {
+        "minute": 65,
+        "value": 40
+      },
+      {
+        "minute": 68,
+        "value": 85
+      },
+      {
+        "minute": 72,
+        "value": 30
+      }
     ],
     "broadcast": [
       "Globo",
@@ -340,7 +367,7 @@
     "status": "LIVE",
     "minute": 47,
     "period": "2H",
-    "kickoffTime": "2026-09-25T15:00:00Z",
+    "kickoffTime": "2026-09-27T17:00:00Z",
     "stadium": "Estadio Bicentenario de La Florida",
     "city": "Santiago",
     "gender": "men",
@@ -438,7 +465,7 @@
     "status": "LIVE",
     "minute": 18,
     "period": "1H",
-    "kickoffTime": "2026-09-25T15:30:00Z",
+    "kickoffTime": "2026-09-27T17:30:00Z",
     "stadium": "Estadio Atanasio Girardot",
     "city": "Medellín",
     "gender": "men",
@@ -1023,7 +1050,7 @@
     "leagueRound": 28,
     "season": "2026",
     "status": "UPCOMING",
-    "kickoffTime": "2026-09-25T19:00:00Z",
+    "kickoffTime": "2026-09-27T19:00:00Z",
     "stadium": "Maracanã",
     "city": "Rio de Janeiro",
     "referee": "Raphael Claus",
@@ -1071,7 +1098,7 @@
     "leagueRound": 28,
     "season": "2026",
     "status": "UPCOMING",
-    "kickoffTime": "2026-09-25T21:30:00Z",
+    "kickoffTime": "2026-09-27T21:30:00Z",
     "stadium": "Mineirão",
     "city": "Belo Horizonte",
     "referee": "Anderson Daronco",
@@ -1118,7 +1145,7 @@
     "leagueRound": 28,
     "season": "2026",
     "status": "UPCOMING",
-    "kickoffTime": "2026-09-25T22:00:00Z",
+    "kickoffTime": "2026-09-27T22:00:00Z",
     "stadium": "Vila Belmiro",
     "city": "Santos",
     "referee": "Flávio de Souza",
@@ -1146,7 +1173,7 @@
       "homeWin": 1.7,
       "draw": 3.6,
       "awayWin": 4.6,
-      "over25": 2.0,
+      "over25": 2,
       "under25": 1.8,
       "provider": "Betano"
     },
@@ -1164,7 +1191,7 @@
     "leagueRound": "Semifinal - Ida",
     "season": "2026",
     "status": "UPCOMING",
-    "kickoffTime": "2026-09-25T23:30:00Z",
+    "kickoffTime": "2026-09-27T23:30:00Z",
     "stadium": "Arena Castelão",
     "city": "Fortaleza",
     "referee": "Wilton Pereira Sampaio",
@@ -1190,11 +1217,11 @@
     },
     "odds": {
       "homeWin": 2.15,
-      "draw": 3.0,
+      "draw": 3,
       "awayWin": 3.3,
-      "over25": 2.0,
+      "over25": 2,
       "under25": 1.8,
-      "bttsYes": 2.0,
+      "bttsYes": 2,
       "provider": "Betano"
     },
     "broadcast": [
@@ -1385,7 +1412,7 @@
       "draw": 3.4,
       "awayWin": 3.1,
       "over25": 1.8,
-      "under25": 2.0,
+      "under25": 2,
       "bttsYes": 1.65,
       "provider": "Bet365"
     },

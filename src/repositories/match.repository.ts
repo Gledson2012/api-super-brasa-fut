@@ -16,7 +16,10 @@ export class MatchRepository {
 
     if (filters.date) {
       const targetDate = filters.date === 'today' ? todayInTimeZone() : filters.date;
-      result = result.filter((m) => m.kickoffTime.startsWith(targetDate));
+      result = result.filter((m) => {
+        const matchLocalDate = todayInTimeZone(undefined, new Date(m.kickoffTime));
+        return m.kickoffTime.startsWith(targetDate) || matchLocalDate === targetDate;
+      });
     }
 
     if (filters.teamId) {
