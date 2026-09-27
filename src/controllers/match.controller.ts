@@ -8,7 +8,7 @@ import { matchesToCsv } from '../utils/csv.js';
 
 export class MatchController {
   public getAll = asyncHandler(async (req: Request, res: Response): Promise<void> => {
-    const { page, limit, leagueId, league, status, date, teamId, team, round, gender, ageCategory, format } = req.query;
+    const { page, limit, leagueId, league, status, date, teamId, team, round, gender, ageCategory, format, search, q } = req.query;
     const result = await matchService.getMatches(
       {
         leagueId: (leagueId || league) as string,
@@ -18,6 +18,7 @@ export class MatchController {
         round: round ? parseInt(round as string, 10) : undefined,
         gender: gender as any,
         ageCategory: ageCategory as any,
+        search: (search || q) as string,
       },
       { page: page as any, limit: limit as any }
     );

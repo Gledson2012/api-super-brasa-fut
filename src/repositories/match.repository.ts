@@ -50,6 +50,20 @@ export class MatchRepository {
       result = result.filter((m) => m.status === 'LIVE' || m.status === 'HALFTIME');
     }
 
+    if (filters.search) {
+      const q = filters.search.toLowerCase().trim();
+      result = result.filter(
+        (m) =>
+          m.homeTeam.name.toLowerCase().includes(q) ||
+          m.awayTeam.name.toLowerCase().includes(q) ||
+          m.leagueName.toLowerCase().includes(q) ||
+          (m.homeTeam.shortName && m.homeTeam.shortName.toLowerCase().includes(q)) ||
+          (m.awayTeam.shortName && m.awayTeam.shortName.toLowerCase().includes(q)) ||
+          (m.homeTeam.code && m.homeTeam.code.toLowerCase().includes(q)) ||
+          (m.awayTeam.code && m.awayTeam.code.toLowerCase().includes(q))
+      );
+    }
+
     return result;
   }
 

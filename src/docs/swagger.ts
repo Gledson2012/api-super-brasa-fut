@@ -29,6 +29,7 @@ export const swaggerDocument = {
     { name: 'Webhooks', description: 'Assinatura e gerenciamento de notificações instantâneas' },
     { name: 'Health', description: 'Diagnóstico e integridade da API' },
     { name: 'Metrics', description: 'Métricas de desempenho e telemetria no formato Prometheus' },
+    { name: 'Sync', description: 'Ingestão e sincronização contínua com o Flashscore oficial' },
   ],
   paths: {
     '/': {
@@ -166,9 +167,10 @@ export const swaggerDocument = {
           { name: 'leagueId', in: 'query', schema: { type: 'string' } },
           { name: 'teamId', in: 'query', schema: { type: 'string' } },
           { name: 'status', in: 'query', schema: { type: 'string', enum: ['UPCOMING', 'LIVE', 'HALF_TIME', 'FINISHED'] } },
-          { name: 'date', in: 'query', schema: { type: 'string' }, description: 'Data no formato YYYY-MM-DD' },
-          { name: 'gender', in: 'query', schema: { type: 'string', enum: ['male', 'female'] } },
-          { name: 'ageCategory', in: 'query', schema: { type: 'string', enum: ['senior', 'u20', 'u17'] } },
+          { name: 'date', in: 'query', schema: { type: 'string' }, description: 'Data no formato YYYY-MM-DD, "today", "tomorrow" ou "yesterday"' },
+          { name: 'search', in: 'query', schema: { type: 'string' }, description: 'Busca textual por nome de clube ou liga' },
+          { name: 'gender', in: 'query', schema: { type: 'string', enum: ['men', 'women', 'all'] } },
+          { name: 'ageCategory', in: 'query', schema: { type: 'string', enum: ['senior', 'u20', 'u17', 'all'] } },
           { name: 'page', in: 'query', schema: { type: 'integer', default: 1 } },
           { name: 'limit', in: 'query', schema: { type: 'integer', default: 20 } },
         ],
@@ -770,6 +772,100 @@ export const swaggerDocument = {
               },
             },
           },
+        },
+      },
+    },
+    '/sync/status': {
+      get: {
+        tags: ['Sync'],
+        summary: 'Diagnóstico operacional do worker de sincronização Flashscore',
+        description: 'Retorna métricas de saúde do worker, status de execução, total de partidas sincronizadas, última execução e latência.',
+        responses: {
+          200: { description: 'Status retornado com sucesso' },
+        },
+      },
+    },
+    '/sync/flashscore': {
+      post: {
+        tags: ['Sync'],
+        summary: 'Dispara sincronização imediata de partidas com o Flashscore oficial',
+        description: 'Exige plano Pro ou Enterprise (header `x-api-key`). Aceita parâmetros de data (today, tomorrow, yesterday, YYYY-MM-DD) ou modo (live, all).',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+          {
+            name: 'date',
+            in: 'query',
+            schema: { type: 'string', enum: ['today', 'tomorrow', 'yesterday'] },
+            description: 'Data alvo da sincronização',
+          },
+          {
+            name: 'mode',
+            in: 'query',
+            schema: { type: 'string', enum: ['live', 'all'] },
+            description: 'Modo de varredura (live para ao vivo, all para varredura completa)',
+          },
+        ],
+        responses: {
+          200: { description: 'Sincronização executada com relatório de partidas e entidades cadastradas' },
+          403: { description: 'Acesso negado (requer plano Pro ou Enterprise)' },
+        },
+      },
+    },
+    '/sync/start': {
+      post: {
+        tags: ['Sync'],
+        summary: 'Inicia o worker periódico de sincronização em segundo plano',
+        description: 'Exige plano Pro ou Enterprise (header `x-api-key`).',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        requestBody: {
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                properties: {
+                  intervalMinutes: { type: 'integer', default: 5, description: 'Intervalo em minutos entre cada ciclo de sincronização' },
+                },
+              },
+            },
+          },
+        },
+        responses: {
+          200: { description: 'Worker iniciado com sucesso' },
+          403: { description: 'Acesso negado (requer plano Pro ou Enterprise)' },
+        },
+      },
+    },
+    '/sync/stop': {
+      post: {
+        tags: ['Sync'],
+        summary: 'Pausa o worker periódico de sincronização em segundo plano',
+        description: 'Exige plano Pro ou Enterprise (header `x-api-key`).',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        responses: {
+          200: { description: 'Worker pausado com sucesso' },
+          403: { description: 'Acesso negado (requer plano Pro ou Enterprise)' },
         },
       },
     },

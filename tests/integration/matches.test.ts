@@ -104,5 +104,23 @@ describe('Matches API Integration Tests', () => {
     expect(res.body.success).toBe(false);
     expect(res.body.error.code).toBe('FORBIDDEN_TIER');
   });
+
+  it('GET /api/v1/matches?search=Palmeiras should filter matches by team name substring', async () => {
+    const res = await request(app).get('/api/v1/matches?search=Palmeiras');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    res.body.data.forEach((m: any) => {
+      const matchText = `${m.homeTeam.name} ${m.awayTeam.name} ${m.leagueName}`.toLowerCase();
+      expect(matchText).toContain('palmeiras');
+    });
+  });
+
+  it('GET /api/v1/matches?date=tomorrow should filter matches by tomorrow date without validation error', async () => {
+    const res = await request(app).get('/api/v1/matches?date=tomorrow');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(Array.isArray(res.body.data)).toBe(true);
+  });
 });
 

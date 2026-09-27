@@ -25,11 +25,19 @@ export const matchFilterQuerySchema = paginationQuerySchema.extend({
   status: z
     .enum(['SCHEDULED', 'UPCOMING', 'LIVE', 'HALFTIME', 'FINISHED', 'POSTPONED', 'CANCELLED'])
     .optional(),
-  date: z.string().regex(/^(\d{4}-\d{2}-\d{2}|today)$/, 'Formato de data inválido. Use AAAA-MM-DD ou "today".').optional(),
+  date: z
+    .string()
+    .regex(
+      /^(\d{4}-\d{2}-\d{2}|today|tomorrow|yesterday|hoje|amanha|amanhã|ontem)$/,
+      'Formato de data inválido. Use AAAA-MM-DD, "today", "tomorrow" ou "yesterday".'
+    )
+    .optional(),
   round: z.coerce.number().int().positive().optional(),
   gender: z.enum(['men', 'women', 'all']).optional(),
   ageCategory: z.enum(['senior', 'u20', 'u17', 'all']).optional(),
   format: z.enum(['json', 'csv']).optional(),
+  search: z.string().optional(),
+  q: z.string().optional(),
 });
 
 export const leagueFilterQuerySchema = paginationQuerySchema.extend({

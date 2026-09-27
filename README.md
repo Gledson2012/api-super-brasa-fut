@@ -3,7 +3,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-ES_Modules-green?logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.21-lightgrey?logo=express)](https://expressjs.com/)
-[![Vitest](https://img.shields.io/badge/Tests-160%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Tests-162%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
 [![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-orange?logo=prometheus)](http://localhost:3000/metrics)
 [![Swagger](https://img.shields.io/badge/OpenAPI-3.0_Swagger-brightgreen?logo=swagger)](http://localhost:3000/docs)
 
@@ -73,7 +73,7 @@ npm run seed
 # 3. Iniciar em modo de desenvolvimento (com hot-reload)
 npm run dev
 
-# 4. Rodar a suíte completa de testes (160 testes 100% aprovados)
+# 4. Rodar a suíte completa de testes (162 testes 100% aprovados)
 npm test
 
 # 5. Verificação de tipos (inclui os testes) e cobertura
