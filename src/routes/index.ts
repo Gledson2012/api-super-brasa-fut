@@ -29,6 +29,39 @@ if (config.env !== 'test') {
   apiRouter.use(tieredRateLimiter);
 }
 
+export function getApiMetadata() {
+  return {
+    name: config.appName,
+    version: config.appVersion,
+    status: 'active',
+    documentation: '/docs',
+    apiBase: config.apiPrefix,
+    endpoints: {
+      health: `${config.apiPrefix}/health`,
+      readiness: `${config.apiPrefix}/health/ready`,
+      metrics: '/metrics',
+      search: `${config.apiPrefix}/search?q=flamengo`,
+      leagues: `${config.apiPrefix}/leagues`,
+      matches: `${config.apiPrefix}/matches`,
+      live: `${config.apiPrefix}/matches/live`,
+      liveStream: `${config.apiPrefix}/matches/live/stream`,
+      standings: `${config.apiPrefix}/standings`,
+      teams: `${config.apiPrefix}/teams`,
+      players: `${config.apiPrefix}/players`,
+      playerCompare: `${config.apiPrefix}/players/compare?p1=estevao-willian&p2=pedro-flamengo`,
+      news: `${config.apiPrefix}/news`,
+      odds: `${config.apiPrefix}/odds`,
+      stats: `${config.apiPrefix}/stats/leaders`,
+      webhooks: `${config.apiPrefix}/webhooks`,
+    },
+  };
+}
+
+// Root info and API metadata for base prefix
+apiRouter.get('/', (_req, res) => {
+  res.json(getApiMetadata());
+});
+
 // Health check and root info
 apiRouter.get('/health', (_req, res) => {
   res.json({

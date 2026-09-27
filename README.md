@@ -253,6 +253,7 @@ Métricas incluídas:
 
 | Método | Endpoint | Descrição |
 | :---: | :--- | :--- |
+| `GET` | `/` ou `/api/v1` | Metadados da API, versão e índice de rotas disponíveis |
 | `GET` | `/metrics` ou `/api/v1/metrics` | Métricas Prometheus de telemetria e latência |
 | `GET` | `/api/v1/health` | Diagnóstico de integridade e versão |
 | `GET` | `/api/v1/health/ready` | Readiness probe (persistência): `200` pronto / `503` degradado |

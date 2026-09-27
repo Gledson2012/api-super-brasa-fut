@@ -23,6 +23,44 @@ describe('Additional Resources Integration Tests', () => {
       expect(res.status).toBe(200);
       expect(res.body.success).toBe(true);
       expect(Array.isArray(res.body.data)).toBe(true);
+      expect(res.body.data.length).toBeGreaterThanOrEqual(15);
+    });
+
+    it('GET /api/v1/teams/corinthians/squad should return full squad with Memphis Depay and Garro', async () => {
+      const res = await request(app).get('/api/v1/teams/corinthians/squad');
+      expect(res.status).toBe(200);
+      expect(res.body.success).toBe(true);
+      expect(res.body.data.length).toBeGreaterThanOrEqual(15);
+      const names = res.body.data.map((p: any) => p.name);
+      expect(names).toContain('Memphis Depay');
+      expect(names).toContain('Rodrigo Garro');
+    });
+
+    it('GET /api/v1/teams/sao-paulo/squad should return full squad with Lucas Moura and Calleri', async () => {
+      const res = await request(app).get('/api/v1/teams/sao-paulo/squad');
+      expect(res.status).toBe(200);
+      expect(res.body.success).toBe(true);
+      expect(res.body.data.length).toBeGreaterThanOrEqual(15);
+      const names = res.body.data.map((p: any) => p.name);
+      expect(names).toContain('Lucas Moura');
+      expect(names).toContain('Jonathan Calleri');
+    });
+
+    it('GET /api/v1/teams/santos/squad should return full Santos squad', async () => {
+      const res = await request(app).get('/api/v1/teams/santos/squad');
+      expect(res.status).toBe(200);
+      expect(res.body.success).toBe(true);
+      expect(res.body.data.length).toBeGreaterThanOrEqual(12);
+    });
+
+    it('GET /api/v1/teams/brazil-national/squad should return Brazilian national team squad', async () => {
+      const res = await request(app).get('/api/v1/teams/brazil-national/squad');
+      expect(res.status).toBe(200);
+      expect(res.body.success).toBe(true);
+      expect(res.body.data.length).toBeGreaterThanOrEqual(12);
+      const names = res.body.data.map((p: any) => p.name);
+      expect(names).toContain('Vinicius Júnior');
+      expect(names).toContain('Alisson Becker');
     });
   });
 
@@ -81,6 +119,24 @@ describe('Additional Resources Integration Tests', () => {
       expect(res.status).toBe(200);
       expect(res.body.success).toBe(true);
       expect(res.body.data.topScorers).toBeDefined();
+    });
+  });
+
+  describe('API Root Metadata', () => {
+    it('GET /api/v1 should return API metadata and endpoints list', async () => {
+      const res = await request(app).get('/api/v1');
+      expect(res.status).toBe(200);
+      expect(res.body.name).toBe('API Super Brasa Fut');
+      expect(res.body.status).toBe('active');
+      expect(res.body.endpoints).toBeDefined();
+      expect(res.body.endpoints.health).toBe('/api/v1/health');
+    });
+
+    it('GET /api/v1/ should return API metadata and endpoints list', async () => {
+      const res = await request(app).get('/api/v1/');
+      expect(res.status).toBe(200);
+      expect(res.body.name).toBe('API Super Brasa Fut');
+      expect(res.body.status).toBe('active');
     });
   });
 

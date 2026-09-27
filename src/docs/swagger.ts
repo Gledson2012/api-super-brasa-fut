@@ -31,6 +31,18 @@ export const swaggerDocument = {
     { name: 'Metrics', description: 'Métricas de desempenho e telemetria no formato Prometheus' },
   ],
   paths: {
+    '/': {
+      get: {
+        tags: ['Health'],
+        summary: 'Metadados da API e índice de endpoints disponíveis',
+        description: 'Retorna informações gerais da API, versão, documentação e atalhos para os principais endpoints.',
+        responses: {
+          200: {
+            description: 'Metadados da API retornados com sucesso',
+          },
+        },
+      },
+    },
     '/search': {
       get: {
         tags: ['Search'],

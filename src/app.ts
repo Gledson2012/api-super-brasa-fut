@@ -4,7 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import swaggerUi from 'swagger-ui-express';
 import { config } from './config/environment.js';
-import { apiRouter } from './routes/index.js';
+import { apiRouter, getApiMetadata } from './routes/index.js';
 import { errorHandler, notFoundHandler } from './middlewares/error.middleware.js';
 import { metricsMiddleware } from './middlewares/metrics.middleware.js';
 import { getPrometheusMetrics, getMetricsContentType } from './services/metrics.service.js';
@@ -45,29 +45,7 @@ export function createApp(): Express {
 
   // Root endpoint with API metadata
   app.get('/', (_req, res) => {
-    res.json({
-      name: config.appName,
-      version: config.appVersion,
-      status: 'active',
-      documentation: '/docs',
-      apiBase: config.apiPrefix,
-      endpoints: {
-        health: `${config.apiPrefix}/health`,
-        metrics: '/metrics',
-        search: `${config.apiPrefix}/search?q=flamengo`,
-        leagues: `${config.apiPrefix}/leagues`,
-        matches: `${config.apiPrefix}/matches`,
-        live: `${config.apiPrefix}/matches/live`,
-        liveStream: `${config.apiPrefix}/matches/live/stream`,
-        standings: `${config.apiPrefix}/standings`,
-        teams: `${config.apiPrefix}/teams`,
-        players: `${config.apiPrefix}/players`,
-        playerCompare: `${config.apiPrefix}/players/compare?p1=estevao-willian&p2=pedro-flamengo`,
-        news: `${config.apiPrefix}/news`,
-        odds: `${config.apiPrefix}/odds`,
-        stats: `${config.apiPrefix}/stats/leaders`,
-      },
-    });
+    res.json(getApiMetadata());
   });
 
   // Mount API routes
