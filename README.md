@@ -49,9 +49,10 @@ A API cobre 23 das maiores competições do planeta:
 ---
 
 ## 👥 Elencos, Estádios e Escudos Oficiais
-* **539 Atletas Reais**: Elencos completos (16 a 20 atletas) para todos os 20 clubes do Brasileirão Série A, Série B (Santos, Sport, Novorizontino, Operário), Seleções Principais (Brasil, Argentina, França, Alemanha) e gigantes internacionais (Real Madrid, Barcelona, Man City, Arsenal, Al-Hilal), com números de camisa, posições, idades, valores de mercado e estatísticas de temporada.
-* **62 Estádios Mapeados**: 100% das equipes e partidas possuem estádios oficiais cadastrados com nome oficial, cidade e capacidade exata de público (ex: Maracanã, MorumBIS, Neo Química Arena, Allianz Parque, Mineirão, Beira-Rio, Santiago Bernabéu, etc.).
+* **539 Atletas Reais**: Elencos completos (16 a 20 atletas) para todos os 20 clubes do Brasileirão Série A, Série B (Santos, Sport, Novorizontino, Operário, CRB, Avaí, Athletic Club), Seleções Principais (Brasil, Argentina, França, Alemanha) e gigantes internacionais (Real Madrid, Barcelona, Man City, Arsenal, Al-Hilal), com números de camisa, posições, idades, valores de mercado e estatísticas de temporada.
+* **65 Estádios Mapeados**: 100% das equipes e partidas possuem estádios oficiais cadastrados com nome oficial, cidade e capacidade exata de público (ex: Maracanã, MorumBIS, Neo Química Arena, Allianz Parque, Mineirão, Beira-Rio, Rei Pelé, Ressacada, Santiago Bernabéu, etc.).
 * **Escudos Oficiais (Logos)**: 100% dos clubes com `logoUrl` em alta resolução sincronizado em tabelas de classificação, chaves de mata-mata, partidas e no objeto do clube em cada jogador.
+* **Sincronização Flashscore**: Integração de partidas em tempo real alinhadas com o Flashscore oficial (`https://www.flashscore.com.br/`), incluindo links diretos das partidas, eventos, placares e status temporal preciso.
 
 ---
 
@@ -72,7 +73,7 @@ npm run seed
 # 3. Iniciar em modo de desenvolvimento (com hot-reload)
 npm run dev
 
-# 4. Rodar a suíte completa de testes (127 testes)
+# 4. Rodar a suíte completa de testes (153 testes 100% aprovados)
 npm test
 
 # 5. Verificação de tipos (inclui os testes) e cobertura
@@ -273,8 +274,8 @@ Métricas incluídas:
 | `GET` | `/api/v1/leagues/:id/matches` | Jogos daquela liga |
 | `GET` | `/api/v1/leagues/:id/teams` | Clubes participantes da liga |
 | `GET` | `/api/v1/leagues/:id/leaders` | Líderes estatísticos da liga |
-| `GET` | `/api/v1/matches` | Partidas paginadas com filtros (`?format=csv` suportado) |
-| `GET` | `/api/v1/matches/live` | Apenas partidas em andamento |
+| `GET` | `/api/v1/matches` | Partidas paginadas com filtros flexíveis (`?league=`, `?team=`, `?date=today`, `?status=`, `?format=csv`) |
+| `GET` | `/api/v1/matches/live` | Apenas partidas em andamento sincronizadas com Flashscore |
 | `GET` | `/api/v1/matches/live/stream` | Stream SSE em tempo real |
 | `GET` | `/api/v1/matches/h2h?team1Id=X&team2Id=Y` | Confronto direto com médias, BTTS, Over 2.5 e sequências |
 | `GET` | `/api/v1/matches/:id` | Detalhes de uma partida |
