@@ -101,7 +101,7 @@ export class FlashscoreSyncService {
       for (const line of matchLines) {
         if (!line.includes('/jogo/')) continue;
 
-        const linkMatch = line.match(/href="\/jogo\/([a-zA-Z0-9]+)\/?"(?:\s+class="([^"]+)")?/);
+        const linkMatch = line.match(/href="\/jogo\/([a-zA-Z0-9]+)\/?(?:\?[^"]*)?"(?:\s+class="([^"]+)")?/);
         if (!linkMatch) continue;
         const fsId = linkMatch[1];
         const linkClass = linkMatch[2] || '';
@@ -114,12 +114,16 @@ export class FlashscoreSyncService {
         const scoreText = scoreMatch ? scoreMatch[1].replace(/&nbsp;/g, '').trim() : '';
 
         let teamText = line
-          .replace(/<span[\s\S]*?<\/span>/, '')
+          .replace(/<span[\s\S]*?<\/span>/g, '')
           .replace(/<a[\s\S]*$/, '')
           .replace(/<img[^>]*>/g, '')
+          .replace(/<[^>]+>/g, '')
           .trim();
 
-        const teamParts = teamText.split(/\s*-\s*/);
+        let teamParts = teamText.split(/\s+-\s+/);
+        if (teamParts.length < 2) {
+          teamParts = teamText.split(/\s*-\s*/);
+        }
         if (teamParts.length < 2) continue;
         const homeTeamName = teamParts[0].trim();
         const awayTeamName = teamParts.slice(1).join(' - ').trim();
