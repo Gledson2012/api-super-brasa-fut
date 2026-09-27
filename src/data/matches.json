@@ -1313,6 +1313,102 @@
     ]
   },
   {
+    "id": "match-cui-cri-2026",
+    "slug": "cuiaba-vs-criciuma-2026",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 28,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-27T21:30:00Z",
+    "stadium": "Arena Pantanal",
+    "city": "Cuiabá",
+    "referee": "Bruno Arleu de Araújo",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "cuiaba",
+      "name": "Cuiabá",
+      "shortName": "Cuiabá",
+      "code": "CUI",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
+    },
+    "awayTeam": {
+      "id": "criciuma",
+      "name": "Criciúma",
+      "shortName": "Criciúma",
+      "code": "CRI",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.15,
+      "draw": 3.10,
+      "awayWin": 3.70,
+      "over25": 2.20,
+      "under25": 1.65,
+      "bttsYes": 2.00,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Premiere"
+    ],
+    "lineups": {
+      "home": {
+        "formation": "4-3-3",
+        "coach": "Bernardo Franco",
+        "starters": [
+          { "number": 1, "name": "Walter", "position": "GK", "isCaptain": true },
+          { "number": 2, "name": "Matheus Alexandre", "position": "DF" },
+          { "number": 4, "name": "Marllon", "position": "DF" },
+          { "number": 33, "name": "Alan Empereur", "position": "DF" },
+          { "number": 6, "name": "Ramon", "position": "DF" },
+          { "number": 5, "name": "Lucas Mineiro", "position": "MF" },
+          { "number": 8, "name": "Fernando Sobral", "position": "MF" },
+          { "number": 20, "name": "Lucas Fernandes", "position": "MF" },
+          { "number": 17, "name": "Derik Lacerda", "position": "FW" },
+          { "number": 29, "name": "Clayson", "position": "FW" },
+          { "number": 9, "name": "Isidro Pitta", "position": "FW" }
+        ],
+        "substitutes": [
+          { "number": 22, "name": "Mateus Pasinato", "position": "GK" },
+          { "number": 3, "name": "Bruno Alves", "position": "DF" },
+          { "number": 88, "name": "Denilson", "position": "MF" },
+          { "number": 10, "name": "Max", "position": "MF" },
+          { "number": 7, "name": "Jonathan Cafú", "position": "FW" }
+        ]
+      },
+      "away": {
+        "formation": "4-4-2",
+        "coach": "Cláudio Tencati",
+        "starters": [
+          { "number": 1, "name": "Gustavo", "position": "GK", "isCaptain": true },
+          { "number": 2, "name": "Claudinho", "position": "DF" },
+          { "number": 3, "name": "Rodrigo", "position": "DF" },
+          { "number": 4, "name": "Tobias Figueiredo", "position": "DF" },
+          { "number": 6, "name": "Marcelo Hermes", "position": "DF" },
+          { "number": 5, "name": "Barreto", "position": "MF" },
+          { "number": 8, "name": "Newton", "position": "MF" },
+          { "number": 10, "name": "Fellipe Mateus", "position": "MF" },
+          { "number": 11, "name": "Matheusinho", "position": "MF" },
+          { "number": 7, "name": "Arthur Caíke", "position": "FW" },
+          { "number": 9, "name": "Yannick Bolasie", "position": "FW" }
+        ],
+        "substitutes": [
+          { "number": 12, "name": "Alisson", "position": "GK" },
+          { "number": 13, "name": "Jonathan", "position": "DF" },
+          { "number": 15, "name": "Ronald", "position": "MF" },
+          { "number": 17, "name": "Allano", "position": "FW" },
+          { "number": 19, "name": "Felipe Vizeu", "position": "FW" }
+        ]
+      }
+    }
+  },
+  {
     "id": "match-san-spt-2026",
     "slug": "santos-vs-sport-2026",
     "leagueId": "bra-serie-b-2026",
