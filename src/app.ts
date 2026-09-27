@@ -6,6 +6,8 @@ import swaggerUi from 'swagger-ui-express';
 import { config } from './config/environment.js';
 import { apiRouter } from './routes/index.js';
 import { errorHandler, notFoundHandler } from './middlewares/error.middleware.js';
+import { metricsMiddleware } from './middlewares/metrics.middleware.js';
+import { getPrometheusMetrics, getMetricsContentType } from './services/metrics.service.js';
 import { swaggerDocument } from './docs/swagger.js';
 
 export function createApp(): Express {
@@ -15,6 +17,9 @@ export function createApp(): Express {
   app.use(cors({ origin: config.corsOrigin }));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
+
+  // Prometheus Metrics instrumentation
+  app.use(metricsMiddleware);
 
   // Logging middleware (skip in test mode)
   if (config.env !== 'test') {
@@ -32,6 +37,12 @@ export function createApp(): Express {
   // Demais rotas (inclui toda a API) com a CSP padrão do Helmet.
   app.use(helmetFn());
 
+  // Root Prometheus scrape endpoint
+  app.get('/metrics', async (_req, res) => {
+    res.setHeader('Content-Type', getMetricsContentType());
+    res.send(await getPrometheusMetrics());
+  });
+
   // Root endpoint with API metadata
   app.get('/', (_req, res) => {
     res.json({
@@ -42,6 +53,7 @@ export function createApp(): Express {
       apiBase: config.apiPrefix,
       endpoints: {
         health: `${config.apiPrefix}/health`,
+        metrics: '/metrics',
         search: `${config.apiPrefix}/search?q=flamengo`,
         leagues: `${config.apiPrefix}/leagues`,
         matches: `${config.apiPrefix}/matches`,

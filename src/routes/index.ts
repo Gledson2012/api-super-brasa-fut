@@ -17,6 +17,7 @@ import { asyncHandler } from '../utils/async-handler.js';
 import { checkPersistenceHealth } from '../services/health.service.js';
 import { alertService } from '../services/alert.service.js';
 import { config } from '../config/environment.js';
+import { getPrometheusMetrics, getMetricsContentType } from '../services/metrics.service.js';
 
 export const apiRouter = Router();
 
@@ -55,6 +56,15 @@ apiRouter.get(
       timestamp: new Date().toISOString(),
       checks: { persistence: health },
     });
+  })
+);
+
+// Prometheus metrics endpoint
+apiRouter.get(
+  '/metrics',
+  asyncHandler(async (_req, res) => {
+    res.setHeader('Content-Type', getMetricsContentType());
+    res.send(await getPrometheusMetrics());
   })
 );
 

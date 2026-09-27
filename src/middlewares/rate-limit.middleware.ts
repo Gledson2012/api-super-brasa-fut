@@ -15,8 +15,8 @@ export const tieredRateLimiter = rateLimit({
   max: (req) => resolveRateLimit(req as Request),
   standardHeaders: true,
   legacyHeaders: false,
-  // Health checks are always available
-  skip: (req) => req.path === '/health' || req.path === '/health/ready',
+  // Health checks e métricas de observabilidade são sempre liberados
+  skip: (req) => req.path === '/health' || req.path === '/health/ready' || req.path === '/metrics',
   // Authenticated requests are limited per API key; anonymous ones per IP.
   keyGenerator: (req) => {
     const info = (req as Request).apiKeyInfo;

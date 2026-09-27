@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { matchService } from '../services/match.service.js';
 import { successResponse, sendPaginatedResponse } from '../utils/response.js';
 import { asyncHandler } from '../utils/async-handler.js';
+import { activeSseConnections } from '../services/metrics.service.js';
 
 export class MatchController {
   public getAll = asyncHandler(async (req: Request, res: Response): Promise<void> => {
@@ -33,6 +34,7 @@ export class MatchController {
   });
 
   public streamLive = (req: Request, res: Response): void => {
+    activeSseConnections.inc();
     res.setHeader('Content-Type', 'text/event-stream');
     res.setHeader('Cache-Control', 'no-cache, no-transform');
     res.setHeader('Connection', 'keep-alive');
@@ -80,6 +82,7 @@ export class MatchController {
     const cleanup = () => {
       if (isClosed) return;
       isClosed = true;
+      activeSseConnections.dec();
       clearInterval(interval);
       if (!res.writableEnded) {
         res.end();

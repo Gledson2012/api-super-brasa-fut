@@ -16,3 +16,18 @@ export interface CreateWebhookDto {
   matchId?: string;
   secret?: string;
 }
+
+export interface WebhookDeliveryLog {
+  id: string;
+  webhookId: string;
+  url: string;
+  event: WebhookEventType;
+  payload: any;
+  timestamp: string;
+  attempts: number;
+  success: boolean;
+  statusCode?: number;
+  error?: string;
+  durationMs: number;
+}
+

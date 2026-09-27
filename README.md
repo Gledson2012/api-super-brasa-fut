@@ -3,7 +3,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-ES_Modules-green?logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.21-lightgrey?logo=express)](https://expressjs.com/)
-[![Vitest](https://img.shields.io/badge/Tests-127%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Tests-136%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
+[![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-orange?logo=prometheus)](http://localhost:3000/metrics)
 [![Swagger](https://img.shields.io/badge/OpenAPI-3.0_Swagger-brightgreen?logo=swagger)](http://localhost:3000/docs)
 
 **Super Brasa Fut** é uma API RESTful de alta performance para dados esportivos de futebol brasileiro, sul-americano e mundial. Fornece placares ao vivo, eventos de partidas, estatísticas detalhadas, tabelas de classificação, elencos, mercado, comparação de jogadores, cotações de apostas (odds), streaming em tempo real via Server-Sent Events (SSE), motor de simulação de partidas e sistema de Webhooks.
@@ -177,14 +178,19 @@ O recurso exige uma chave **Pro** ou **Enterprise** (`x-api-key`).
   ```
 * **Listar Assinaturas**: `GET /api/v1/webhooks`
 * **Remover Assinatura**: `DELETE /api/v1/webhooks/:id`
+* **Histórico de Entregas**: `GET /api/v1/webhooks/deliveries` (ou por webhook: `GET /api/v1/webhooks/:id/deliveries`)
+* **Reenvio Manual (Redeliver)**: `POST /api/v1/webhooks/deliveries/:id/redeliver`
 
 O corpo do `POST` é validado com Zod: `url` é obrigatória, `events` aceita apenas `GOAL`, `MATCH_EVENT`, `MATCH_STATUS_CHANGE` e `ALL`, e `secret` (quando enviado) precisa ter ao menos 8 caracteres. Requisições inválidas recebem `422 VALIDATION_ERROR` com o campo problemático em `error.details`.
 
 Eventos emitidos hoje: `GOAL` e `MATCH_EVENT` (via `POST /matches/:id/simulate-event`) e `MATCH_STATUS_CHANGE` (quando o avanço do relógio muda o status da partida, ex.: `LIVE → HALFTIME` / `FINISHED`).
 
+### 🔁 Resiliência e Retentativas (Exponential Backoff)
+Quando o endpoint receptor responde com erro de servidor (`5xx`, `429`) ou sofre timeout/queda de rede, a API realiza até **3 tentativas automáticas** (`WEBHOOK_MAX_RETRIES`) com **backoff exponencial** (`WEBHOOK_RETRY_DELAY_MS`), registrando status, latência e tentativas no histórico de auditoria.
+
 ### 🔐 Segurança
 * A URL é validada contra **SSRF**: apenas `http(s)` para hosts públicos (bloqueia `localhost`, IPs privados/reservados e metadata de nuvem); o DNS é revalidado antes de cada disparo. Para testar webhooks com um receptor local, defina `WEBHOOK_ALLOW_PRIVATE_HOSTS=true` **(apenas dev/teste; nunca em produção)**.
-* Cada entrega envia `X-SuperBrasa-Event`, `X-SuperBrasa-Timestamp` e, quando há `secret`, `X-SuperBrasa-Signature` com **HMAC-SHA256** de `timestamp.body` (compare com `verifyWebhookSignature`).
+* Cada entrega envia `X-SuperBrasa-Event`, `X-SuperBrasa-Timestamp`, `X-SuperBrasa-Delivery` e, quando há `secret`, `X-SuperBrasa-Signature` com **HMAC-SHA256** de `timestamp.body` (compare com `verifyWebhookSignature`).
 
 ---
 
@@ -230,12 +236,24 @@ ALERT_CHECK_INTERVAL_MS=0                                 # self-check periódic
 
 Fluxo: primeira falha → `degraded`; quando voltar a responder → `recovered`. O cooldown evita repetir o alerta a cada verificação enquanto o serviço segue fora. O payload é compatível com Slack (`text`) e Discord (`content`) e inclui `status`, `backend`, `latencyMs` e `error`.
 
+### 📊 Métricas Prometheus
+A API exporta telemetria em tempo real no formato padrão Prometheus em:
+* `GET /metrics` ou `GET /api/v1/metrics`
+
+Métricas incluídas:
+* **Node.js runtime**: consumo de heap, memória residente, CPU, garbage collection e event loop lag (`super_brasa_*`).
+* `super_brasa_http_requests_total`: volume de requisições por `method`, `route` e `status_code`.
+* `super_brasa_http_request_duration_seconds`: histograma de latência HTTP.
+* `super_brasa_active_sse_connections`: gauge de conexões SSE ativas no streaming de partidas ao vivo.
+* `super_brasa_webhook_deliveries_total`: contador de entregas de webhooks por evento e status (`success`, `failed`, `retrying`).
+
 ---
 
 ## 📚 Principais Endpoints da API
 
 | Método | Endpoint | Descrição |
 | :---: | :--- | :--- |
+| `GET` | `/metrics` ou `/api/v1/metrics` | Métricas Prometheus de telemetria e latência |
 | `GET` | `/api/v1/health` | Diagnóstico de integridade e versão |
 | `GET` | `/api/v1/health/ready` | Readiness probe (persistência): `200` pronto / `503` degradado |
 | `GET` | `/api/v1/auth/verify` | Valida a `X-API-Key` e devolve o plano, o limite e os recursos habilitados |
@@ -269,9 +287,13 @@ Fluxo: primeira falha → `degraded`; quando voltar a responder → `recovered`.
 | `GET` | `/api/v1/odds` | Linhas de apostas e cotações |
 | `POST` | `/api/v1/webhooks` | Cadastro de Webhooks (**Pro**) |
 | `GET` | `/api/v1/webhooks` | Lista de Webhooks cadastrados (**Pro**) |
+| `GET` | `/api/v1/webhooks/deliveries` | Histórico global de entregas e retentativas (**Pro**) |
+| `GET` | `/api/v1/webhooks/:id/deliveries` | Histórico de entregas de um webhook (**Pro**) |
+| `POST` | `/api/v1/webhooks/deliveries/:id/redeliver` | Reenvio manual de evento (**Pro**) |
 | `DELETE` | `/api/v1/webhooks/:id` | Remove um Webhook (**Pro**) |
 
 ---
 
 ## 🛡️ Licença
 Este projeto é distribuído sob a licença [MIT](LICENSE).
+

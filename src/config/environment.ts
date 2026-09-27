@@ -61,6 +61,15 @@ export const stateStoreConfig = {
   },
 };
 
+/** Configuração de retentativas e resiliência de webhooks. */
+export const webhookConfig = {
+  maxRetries: readInt(process.env.WEBHOOK_MAX_RETRIES, 3),
+  retryDelayMs:
+    config.env === 'test'
+      ? readInt(process.env.WEBHOOK_RETRY_DELAY_MS, 15)
+      : readInt(process.env.WEBHOOK_RETRY_DELAY_MS, 500),
+};
+
 /**
  * Em produção, chaves de API dos planos pagos que não vieram de variável de
  * ambiente deixam de ser aceitas (ver `buildApiKeys` em auth.middleware). Esta

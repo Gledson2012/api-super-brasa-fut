@@ -28,6 +28,7 @@ export const swaggerDocument = {
     { name: 'Auth', description: 'Autenticação e verificação de chave de API (X-API-Key)' },
     { name: 'Webhooks', description: 'Assinatura e gerenciamento de notificações instantâneas' },
     { name: 'Health', description: 'Diagnóstico e integridade da API' },
+    { name: 'Metrics', description: 'Métricas de desempenho e telemetria no formato Prometheus' },
   ],
   paths: {
     '/search': {
@@ -594,6 +595,90 @@ export const swaggerDocument = {
           200: { description: 'Webhook cancelado com sucesso' },
           403: { description: 'Plano insuficiente (requer Pro/Enterprise)' },
           404: { description: 'Webhook não encontrado' },
+        },
+      },
+    },
+    '/webhooks/deliveries': {
+      get: {
+        tags: ['Webhooks'],
+        summary: 'Lista o histórico recente de entregas e retentativas de webhooks',
+        description: 'Exige uma chave de API do plano Pro ou Enterprise (header `x-api-key`).',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+          { name: 'limit', in: 'query', schema: { type: 'integer', default: 50 }, description: 'Limite de registros retornados' },
+          { name: 'webhookId', in: 'query', schema: { type: 'string' }, description: 'Filtrar por ID do webhook' },
+        ],
+        responses: {
+          200: { description: 'Histórico recente de entregas' },
+          403: { description: 'Plano insuficiente (requer Pro/Enterprise)' },
+        },
+      },
+    },
+    '/webhooks/{id}/deliveries': {
+      get: {
+        tags: ['Webhooks'],
+        summary: 'Lista as tentativas e histórico de entregas de um webhook específico',
+        description: 'Exige uma chave de API do plano Pro ou Enterprise (header `x-api-key`).',
+        parameters: [
+          { name: 'id', in: 'path', required: true, schema: { type: 'string' } },
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+          { name: 'limit', in: 'query', schema: { type: 'integer', default: 50 }, description: 'Limite de registros retornados' },
+        ],
+        responses: {
+          200: { description: 'Histórico de entregas do webhook' },
+          403: { description: 'Plano insuficiente (requer Pro/Enterprise)' },
+          404: { description: 'Webhook não encontrado' },
+        },
+      },
+    },
+    '/webhooks/deliveries/{id}/redeliver': {
+      post: {
+        tags: ['Webhooks'],
+        summary: 'Dispara manualmente o reenvio de uma entrega de webhook anterior',
+        description: 'Exige uma chave de API do plano Pro ou Enterprise (header `x-api-key`).',
+        parameters: [
+          { name: 'id', in: 'path', required: true, schema: { type: 'string' } },
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        responses: {
+          200: { description: 'Reenvio processado com sucesso' },
+          403: { description: 'Plano insuficiente (requer Pro/Enterprise)' },
+          404: { description: 'Entrega ou webhook não encontrado' },
+        },
+      },
+    },
+    '/metrics': {
+      get: {
+        tags: ['Metrics'],
+        summary: 'Exporta telemetria e métricas de desempenho no formato Prometheus',
+        description: 'Retorna contadores de requisições, latências, conexões SSE ativas e estatísticas de webhooks.',
+        responses: {
+          200: {
+            description: 'Métricas em formato de texto Prometheus',
+            content: {
+              'text/plain': {
+                schema: { type: 'string' },
+              },
+            },
+          },
         },
       },
     },
