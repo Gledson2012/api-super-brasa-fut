@@ -1,5 +1,79 @@
 [
   {
+    "id": "match-cor-juv-2026",
+    "slug": "corinthians-vs-juventude-2026",
+    "leagueId": "bra-serie-a-2026",
+    "leagueName": "Brasileirão Série A 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 28,
+    "season": "2026",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
+    "kickoffTime": "2026-09-27T14:00:00Z",
+    "stadium": "Neo Química Arena",
+    "city": "São Paulo",
+    "referee": "Anderson Daronco",
+    "gender": "men",
+    "ageCategory": "senior",
+    "homeTeam": {
+      "id": "corinthians",
+      "name": "Corinthians",
+      "shortName": "Corinthians",
+      "code": "COR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
+    },
+    "awayTeam": {
+      "id": "juventude",
+      "name": "Juventude",
+      "shortName": "Juventude",
+      "code": "JUV",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
+    },
+    "score": {
+      "home": 2,
+      "away": 0,
+      "halftime": {
+        "home": 1,
+        "away": 0
+      },
+      "fulltime": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    "events": [
+      {
+        "id": "evt-cor-1",
+        "type": "GOAL",
+        "minute": 28,
+        "teamId": "corinthians",
+        "teamName": "Corinthians",
+        "primaryPlayer": "Memphis Depay",
+        "secondaryPlayer": "Rodrigo Garro",
+        "detail": "Golaço de falta na gaveta",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-cor-2",
+        "type": "GOAL",
+        "minute": 71,
+        "teamId": "corinthians",
+        "teamName": "Corinthians",
+        "primaryPlayer": "Yuri Alberto",
+        "secondaryPlayer": "Talles Magno",
+        "detail": "Finalização rasteira no contra-ataque",
+        "scoreAfter": {
+          "home": 2,
+          "away": 0
+        }
+      }
+    ]
+  },
+  {
     "id": "match-pal-bot-2026",
     "slug": "palmeiras-vs-botafogo-2026",
     "leagueId": "bra-serie-a-2026",
@@ -8,9 +82,9 @@
     "leagueRound": 28,
     "season": "2026",
     "status": "LIVE",
-    "minute": 72,
+    "minute": 68,
     "period": "2H",
-    "kickoffTime": "2026-09-27T16:00:00Z",
+    "kickoffTime": "2026-09-27T18:30:00Z",
     "stadium": "Allianz Parque",
     "city": "São Paulo",
     "referee": "Wilton Pereira Sampaio",
@@ -364,10 +438,10 @@
     "leagueCountry": "Chile",
     "leagueRound": "Quartas de Final",
     "season": "2026",
-    "status": "LIVE",
-    "minute": 47,
-    "period": "2H",
-    "kickoffTime": "2026-09-27T17:00:00Z",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
+    "kickoffTime": "2026-09-27T15:00:00Z",
     "stadium": "Estadio Bicentenario de La Florida",
     "city": "Santiago",
     "gender": "men",
@@ -387,11 +461,15 @@
       "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "score": {
-      "home": 0,
-      "away": 1,
+      "home": 1,
+      "away": 2,
       "halftime": {
         "home": 0,
         "away": 1
+      },
+      "fulltime": {
+        "home": 1,
+        "away": 2
       }
     },
     "events": [
@@ -462,10 +540,10 @@
     "leagueCountry": "Colômbia",
     "leagueRound": 11,
     "season": "2026-II",
-    "status": "LIVE",
-    "minute": 18,
-    "period": "1H",
-    "kickoffTime": "2026-09-27T17:30:00Z",
+    "status": "FINISHED",
+    "minute": 90,
+    "period": "FT",
+    "kickoffTime": "2026-09-27T15:30:00Z",
     "stadium": "Estadio Atanasio Girardot",
     "city": "Medellín",
     "gender": "men",
@@ -485,8 +563,16 @@
       "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png"
     },
     "score": {
-      "home": 1,
-      "away": 0
+      "home": 2,
+      "away": 0,
+      "halftime": {
+        "home": 1,
+        "away": 0
+      },
+      "fulltime": {
+        "home": 2,
+        "away": 0
+      }
     },
     "events": [
       {
@@ -1049,7 +1135,7 @@
     "leagueCountry": "Brasil",
     "leagueRound": 28,
     "season": "2026",
-    "status": "UPCOMING",
+    "status": "LIVE",
     "kickoffTime": "2026-09-27T19:00:00Z",
     "stadium": "Maracanã",
     "city": "Rio de Janeiro",
@@ -1071,8 +1157,12 @@
       "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "score": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1,
+      "halftime": {
+        "home": 1,
+        "away": 1
+      }
     },
     "odds": {
       "homeWin": 1.85,
@@ -1087,6 +1177,92 @@
     "broadcast": [
       "Globo",
       "Premiere"
+    ],
+    "minute": 45,
+    "period": "1H",
+    "stats": {
+      "home": {
+        "possessionPercent": 53,
+        "expectedGoals": 1.25,
+        "totalShots": 8,
+        "shotsOnTarget": 4,
+        "shotsOffTarget": 3,
+        "blockedShots": 1,
+        "cornerKicks": 4,
+        "offsides": 1,
+        "fouls": 6,
+        "yellowCards": 1,
+        "redCards": 0,
+        "goalkeeperSaves": 2,
+        "totalPasses": 245,
+        "accuratePasses": 210,
+        "passAccuracyPercent": 86
+      },
+      "away": {
+        "possessionPercent": 47,
+        "expectedGoals": 0.98,
+        "totalShots": 6,
+        "shotsOnTarget": 3,
+        "shotsOffTarget": 2,
+        "blockedShots": 1,
+        "cornerKicks": 2,
+        "offsides": 2,
+        "fouls": 8,
+        "yellowCards": 1,
+        "redCards": 0,
+        "goalkeeperSaves": 3,
+        "totalPasses": 218,
+        "accuratePasses": 182,
+        "passAccuracyPercent": 83
+      }
+    },
+    "events": [
+      {
+        "id": "evt-fla-1",
+        "type": "GOAL",
+        "minute": 18,
+        "teamId": "flamengo",
+        "teamName": "Flamengo",
+        "primaryPlayer": "Pedro",
+        "secondaryPlayer": "Gerson",
+        "detail": "Finalização precisa no canto esquerdo",
+        "scoreAfter": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      {
+        "id": "evt-sao-1",
+        "type": "YELLOW_CARD",
+        "minute": 28,
+        "teamId": "sao-paulo",
+        "teamName": "São Paulo",
+        "primaryPlayer": "Robert Arboleda",
+        "detail": "Falta tática em contra-ataque"
+      },
+      {
+        "id": "evt-sao-2",
+        "type": "GOAL",
+        "minute": 35,
+        "teamId": "sao-paulo",
+        "teamName": "São Paulo",
+        "primaryPlayer": "Lucas Moura",
+        "secondaryPlayer": "Jonathan Calleri",
+        "detail": "Chute colocado após bela triangulação",
+        "scoreAfter": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      {
+        "id": "evt-fla-2",
+        "type": "YELLOW_CARD",
+        "minute": 42,
+        "teamId": "flamengo",
+        "teamName": "Flamengo",
+        "primaryPlayer": "Erick Pulgar",
+        "detail": "Entrada dura no meio de campo"
+      }
     ]
   },
   {
