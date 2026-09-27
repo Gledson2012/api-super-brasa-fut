@@ -1,4 +1,4 @@
-export type LeagueTier = 'top' | 'second' | 'cup' | 'international' | 'continental' | 'youth' | 'amateur';
+export type LeagueTier = 'top' | 'second' | 'cup' | 'international' | 'continental' | 'youth' | 'amateur' | 'other';
 export type GenderCategory = 'men' | 'women' | 'mixed';
 export type AgeCategory = 'senior' | 'u23' | 'u20' | 'u17';
 

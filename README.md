@@ -3,11 +3,11 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-ES_Modules-green?logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.21-lightgrey?logo=express)](https://expressjs.com/)
-[![Vitest](https://img.shields.io/badge/Tests-153%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Tests-160%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
 [![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-orange?logo=prometheus)](http://localhost:3000/metrics)
 [![Swagger](https://img.shields.io/badge/OpenAPI-3.0_Swagger-brightgreen?logo=swagger)](http://localhost:3000/docs)
 
-**Super Brasa Fut** é uma API RESTful de alta performance para dados esportivos de futebol brasileiro, sul-americano e mundial. Fornece placares ao vivo, eventos de partidas, estatísticas detalhadas, tabelas de classificação, elencos reais completos (539 atletas cadastrados), estádios oficiais mapeados com capacidade de público, escudos de alta resolução, mercado, comparação de jogadores, cotações de apostas (odds), chaveamento de copas com playoffs, streaming em tempo real via Server-Sent Events (SSE), motor de simulação de partidas e sistema de Webhooks.
+**Super Brasa Fut** é uma API RESTful de alta performance para dados esportivos de futebol brasileiro, sul-americano e mundial. Fornece placares ao vivo, eventos de partidas, estatísticas detalhadas, tabelas de classificação, elencos reais completos (539 atletas cadastrados), estádios oficiais mapeados com capacidade de público, escudos de alta resolução, mercado, comparação de jogadores, cotações de apostas (odds), chaveamento de copas com playoffs, streaming em tempo real via Server-Sent Events (SSE), motor de simulação de partidas, sistema de Webhooks e **motor de ingestão contínua e sincronização em segundo plano com o Flashscore oficial** (centenas de ligas e partidas globais).
 
 ---
 
@@ -73,7 +73,7 @@ npm run seed
 # 3. Iniciar em modo de desenvolvimento (com hot-reload)
 npm run dev
 
-# 4. Rodar a suíte completa de testes (153 testes 100% aprovados)
+# 4. Rodar a suíte completa de testes (160 testes 100% aprovados)
 npm test
 
 # 5. Verificação de tipos (inclui os testes) e cobertura
@@ -202,6 +202,23 @@ Quando o endpoint receptor responde com erro de servidor (`5xx`, `429`) ou sofre
 
 ---
 
+## 🔄 Motor de Sincronização Flashscore (Scraper & Background Worker)
+
+A API integra um **motor nativo autônomo de raspagem e sincronização contínua com o Flashscore oficial** (`https://www.flashscore.com.br/`), capaz de processar centenas de partidas e ligas mundiais sem depender de APIs terceiras pagas:
+
+- **Ingestão Completa de Jogos**: Varre e faz o parse de centenas de partidas ao vivo (`LIVE`), agendadas (`UPCOMING` para hoje, amanhã ou qualquer data) e finalizadas (`FINISHED`).
+- **Resolução & Registro Dinâmico**: Identifica automaticamente clubes e ligas já existentes no catálogo ou cadastra instantaneamente novos times e campeonatos internacionais em tempo real.
+- **Placares, Períodos e Minutos**: Atualiza placares (`score.home`, `score.away`), períodos (`1H`, `HT`, `2H`, `FT`) e minutos de jogo em andamento.
+- **Disparo de Webhooks em Tempo Real**: Quando um gol ou mudança de status é detectada durante a sincronização, eventos `GOAL` e `MATCH_STATUS_CHANGE` são emitidos automaticamente para os endpoints webhook registrados.
+- **Worker em Segundo Plano**: Inicia automaticamente com o servidor e executa ciclos periódicos de sincronização configuráveis:
+  ```env
+  FLASHSCORE_SYNC_ENABLED=true               # Ativa/desativa o worker em background (padrão: true)
+  FLASHSCORE_SYNC_INTERVAL_MINUTES=5        # Intervalo em minutos entre ciclos (padrão: 5)
+  ```
+- **Controle Total via REST**: É possível disparar sincronizações manuais imediatas ou pausar/iniciar o worker a qualquer momento através dos endpoints `/api/v1/sync/*`.
+
+---
+
 ## 💾 Persistência de Estado
 Por padrão a API roda 100% em memória a partir dos seeds JSON. Para manter webhooks e partidas simuladas entre reinícios (e cold starts em serverless), configure um **Redis serverless (Upstash)** — a hidratação ocorre no boot:
 
@@ -306,6 +323,10 @@ Métricas incluídas:
 | `GET` | `/api/v1/webhooks/:id/deliveries` | Histórico de entregas de um webhook (**Pro**) |
 | `POST` | `/api/v1/webhooks/deliveries/:id/redeliver` | Reenvio manual de evento (**Pro**) |
 | `DELETE` | `/api/v1/webhooks/:id` | Remove um Webhook (**Pro**) |
+| `GET` | `/api/v1/sync/status` | Status do worker de sincronização Flashscore e métricas |
+| `POST` | `/api/v1/sync/flashscore` | Dispara sincronização imediata (`?date=today`, `?date=tomorrow`, `?date=yesterday`, `?mode=live`, `?mode=all`) (**Pro**) |
+| `POST` | `/api/v1/sync/start` | Inicia o worker em segundo plano (`{ "intervalMinutes": 5 }`) (**Pro**) |
+| `POST` | `/api/v1/sync/stop` | Pausa o worker em segundo plano (**Pro**) |
 
 ---
 

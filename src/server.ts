@@ -4,6 +4,7 @@ import { db } from './repositories/db.js';
 import { webhookService } from './services/webhook.service.js';
 import { checkPersistenceHealth } from './services/health.service.js';
 import { alertService } from './services/alert.service.js';
+import { flashscoreSyncService } from './services/flashscore-sync.service.js';
 
 /** Self-check periódico de prontidão (opcional; desativado por padrão). */
 function startReadinessSelfCheck(): void {
@@ -27,6 +28,12 @@ async function bootstrap(): Promise<void> {
 
   startReadinessSelfCheck();
 
+  // Inicia worker em segundo plano de ingestão e sincronização Flashscore
+  const syncIntervalMinutes = parseInt(process.env.FLASHSCORE_SYNC_INTERVAL_MINUTES || '5', 10);
+  if (process.env.FLASHSCORE_SYNC_ENABLED !== 'false' && config.env !== 'test') {
+    flashscoreSyncService.startBackgroundSync(syncIntervalMinutes);
+  }
+
   const server = app.listen(config.port, config.host, () => {
     console.log(`\n======================================================`);
     console.log(`⚽ ${config.appName} v${config.appVersion}`);
@@ -38,6 +45,7 @@ async function bootstrap(): Promise<void> {
 
   process.on('SIGTERM', () => {
     console.log('SIGTERM recebido. Encerrando servidor graciosamente...');
+    flashscoreSyncService.stopBackgroundSync();
     server.close(() => {
       console.log('Servidor finalizado.');
       process.exit(0);
@@ -46,6 +54,7 @@ async function bootstrap(): Promise<void> {
 
   process.on('SIGINT', () => {
     console.log('SIGINT recebido. Encerrando servidor...');
+    flashscoreSyncService.stopBackgroundSync();
     server.close(() => {
       console.log('Servidor finalizado.');
       process.exit(0);

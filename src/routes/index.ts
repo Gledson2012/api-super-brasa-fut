@@ -10,6 +10,7 @@ import { statsRoutes } from './stats.routes.js';
 import { searchRoutes } from './search.routes.js';
 import { authRoutes } from './auth.routes.js';
 import { webhookRoutes } from './webhook.routes.js';
+import { syncRoutes } from './sync.routes.js';
 import { apiKeyMiddleware } from '../middlewares/auth.middleware.js';
 import { tieredRateLimiter } from '../middlewares/rate-limit.middleware.js';
 import { stateStore } from '../repositories/state-store.js';
@@ -53,6 +54,8 @@ export function getApiMetadata() {
       odds: `${config.apiPrefix}/odds`,
       stats: `${config.apiPrefix}/stats/leaders`,
       webhooks: `${config.apiPrefix}/webhooks`,
+      syncStatus: `${config.apiPrefix}/sync/status`,
+      syncFlashscore: `${config.apiPrefix}/sync/flashscore`,
     },
   };
 }
@@ -104,6 +107,7 @@ apiRouter.get(
 // Resource routes
 apiRouter.use('/auth', authRoutes);
 apiRouter.use('/webhooks', webhookRoutes);
+apiRouter.use('/sync', syncRoutes);
 apiRouter.use('/search', searchRoutes);
 apiRouter.use('/leagues', leagueRoutes);
 apiRouter.use('/teams', teamRoutes);
@@ -113,3 +117,4 @@ apiRouter.use('/players', playerRoutes);
 apiRouter.use('/news', newsRoutes);
 apiRouter.use('/odds', oddsRoutes);
 apiRouter.use('/stats', statsRoutes);
+

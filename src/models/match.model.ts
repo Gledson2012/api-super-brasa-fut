@@ -127,6 +127,7 @@ export interface Match {
   lineups?: MatchLineups;
   odds?: MatchOdds;
   broadcast?: string[];
+  flashscoreUrl?: string;
 }
 
 export interface MatchFilterQuery {
