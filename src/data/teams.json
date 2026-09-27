@@ -640,6 +640,11 @@
       "goalsScored": 8,
       "goalsConceded": 5,
       "cleanSheets": 6
+    },
+    "stadium": {
+      "name": "Estádio Nilton Santos (Anexo)",
+      "city": "Rio de Janeiro",
+      "capacity": 1500
     }
   },
   {
@@ -663,6 +668,11 @@
       "goalsScored": 19,
       "goalsConceded": 5,
       "cleanSheets": 5
+    },
+    "stadium": {
+      "name": "Academia de Futebol 2",
+      "city": "Guarulhos",
+      "capacity": 2000
     }
   },
   {
@@ -686,6 +696,11 @@
       "goalsScored": 12,
       "goalsConceded": 15,
       "cleanSheets": 1
+    },
+    "stadium": {
+      "name": "CT Ribamar Bezerra",
+      "city": "Maracanaú",
+      "capacity": 2000
     }
   },
   {
@@ -709,6 +724,11 @@
       "goalsScored": 16,
       "goalsConceded": 14,
       "cleanSheets": 2
+    },
+    "stadium": {
+      "name": "Estádio da Gávea",
+      "city": "Rio de Janeiro",
+      "capacity": 8000
     }
   },
   {
@@ -732,6 +752,11 @@
       "goalsScored": 10,
       "goalsConceded": 13,
       "cleanSheets": 1
+    },
+    "stadium": {
+      "name": "CFA Laudo Natel",
+      "city": "Cotia",
+      "capacity": 1500
     }
   },
   {
@@ -755,6 +780,11 @@
       "goalsScored": 10,
       "goalsConceded": 8,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "Estádio Morada dos Quero-Queros",
+      "city": "Alvorada",
+      "capacity": 2500
     }
   },
   {
@@ -778,6 +808,11 @@
       "goalsScored": 11,
       "goalsConceded": 8,
       "cleanSheets": 4
+    },
+    "stadium": {
+      "name": "CT Evaristo de Macedo",
+      "city": "Dias d Ávila",
+      "capacity": 1000
     }
   },
   {
@@ -801,6 +836,11 @@
       "goalsScored": 7,
       "goalsConceded": 11,
       "cleanSheets": 1
+    },
+    "stadium": {
+      "name": "Toca da Raposa I",
+      "city": "Belo Horizonte",
+      "capacity": 1500
     }
   },
   {
@@ -824,6 +864,11 @@
       "goalsScored": 15,
       "goalsConceded": 10,
       "cleanSheets": 4
+    },
+    "stadium": {
+      "name": "Cidade do Galo",
+      "city": "Vespasiano",
+      "capacity": 2000
     }
   },
   {
@@ -847,6 +892,11 @@
       "goalsScored": 11,
       "goalsConceded": 6,
       "cleanSheets": 4
+    },
+    "stadium": {
+      "name": "Estádio Nivaldo Pereira",
+      "city": "Nova Iguaçu",
+      "capacity": 2184
     }
   },
   {
@@ -870,6 +920,11 @@
       "goalsScored": 7,
       "goalsConceded": 14,
       "cleanSheets": 1
+    },
+    "stadium": {
+      "name": "CT Red Bull Brasil",
+      "city": "Jarinu",
+      "capacity": 1000
     }
   },
   {
@@ -893,6 +948,11 @@
       "goalsScored": 9,
       "goalsConceded": 7,
       "cleanSheets": 2
+    },
+    "stadium": {
+      "name": "CFT Hélio Dourado",
+      "city": "Eldorado do Sul",
+      "capacity": 1500
     }
   },
   {
@@ -916,6 +976,11 @@
       "goalsScored": 6,
       "goalsConceded": 5,
       "cleanSheets": 6
+    },
+    "stadium": {
+      "name": "CT Antenor Angeloni",
+      "city": "Criciúma",
+      "capacity": 1200
     }
   },
   {
@@ -939,6 +1004,11 @@
       "goalsScored": 9,
       "goalsConceded": 11,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "Campo da Fras-le",
+      "city": "Caxias do Sul",
+      "capacity": 1000
     }
   },
   {
@@ -962,6 +1032,11 @@
       "goalsScored": 3,
       "goalsConceded": 13,
       "cleanSheets": 2
+    },
+    "stadium": {
+      "name": "Estádio Vale das Laranjeiras",
+      "city": "Duque de Caxias",
+      "capacity": 2000
     }
   },
   {
@@ -985,6 +1060,11 @@
       "goalsScored": 9,
       "goalsConceded": 9,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "CT Manoel Pontes Tanajura",
+      "city": "Salvador",
+      "capacity": 1500
     }
   },
   {
@@ -1008,6 +1088,11 @@
       "goalsScored": 6,
       "goalsConceded": 7,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "Estádio Alfredo Schürig (Fazendinha)",
+      "city": "São Paulo",
+      "capacity": 13981
     }
   },
   {
@@ -1031,6 +1116,11 @@
       "goalsScored": 10,
       "goalsConceded": 11,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "Miniestádio do CAT do Caju",
+      "city": "Curitiba",
+      "capacity": 1500
     }
   },
   {
@@ -1054,6 +1144,11 @@
       "goalsScored": 7,
       "goalsConceded": 9,
       "cleanSheets": 5
+    },
+    "stadium": {
+      "name": "CT Manoel Dresch",
+      "city": "Cuiabá",
+      "capacity": 1000
     }
   },
   {
@@ -1077,6 +1172,11 @@
       "goalsScored": 6,
       "goalsConceded": 10,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "Estádio Abrão Manoel da Costa",
+      "city": "Trindade",
+      "capacity": 3000
     }
   },
   {
@@ -1350,6 +1450,11 @@
       "goalsScored": 18,
       "goalsConceded": 4,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "Estádio Nacional Mané Garrincha",
+      "city": "Brasília",
+      "capacity": 72788
     }
   },
   {
@@ -1375,6 +1480,11 @@
       "goalsScored": 13,
       "goalsConceded": 8,
       "cleanSheets": 2
+    },
+    "stadium": {
+      "name": "Dignity Health Sports Park",
+      "city": "Carson",
+      "capacity": 27000
     }
   },
   {
@@ -1398,6 +1508,11 @@
       "goalsScored": 9,
       "goalsConceded": 5,
       "cleanSheets": 2
+    },
+    "stadium": {
+      "name": "Juventus Training Center",
+      "city": "Vinovo",
+      "capacity": 1500
     }
   },
   {
@@ -1421,6 +1536,11 @@
       "goalsScored": 13,
       "goalsConceded": 6,
       "cleanSheets": 3
+    },
+    "stadium": {
+      "name": "Joie Stadium",
+      "city": "Manchester",
+      "capacity": 7000
     }
   },
   {
