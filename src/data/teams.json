@@ -1945,5 +1945,36 @@
       "goalsConceded": 31,
       "cleanSheets": 8
     }
+  },
+  {
+    "id": "america-mg",
+    "slug": "america-mg",
+    "name": "América Futebol Clube",
+    "shortName": "América-MG",
+    "code": "AME",
+    "gender": "men",
+    "ageCategory": "senior",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "logoUrl": "https://static.flashscore.com/res/image/data/america-mg.png",
+    "stadium": {
+      "name": "Estádio Independência",
+      "city": "Belo Horizonte",
+      "capacity": 23018
+    },
+    "founded": 1912,
+    "coach": "Lisca",
+    "marketValueEur": 18000000,
+    "stats": {
+      "matchesPlayed": 29,
+      "wins": 12,
+      "draws": 9,
+      "losses": 8,
+      "goalsScored": 38,
+      "goalsConceded": 27,
+      "cleanSheets": 9
+    }
   }
 ]

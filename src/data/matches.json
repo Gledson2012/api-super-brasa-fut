@@ -1391,6 +1391,54 @@
     ]
   },
   {
+    "id": "match-ame-juv-2026",
+    "slug": "america-mg-vs-juventude-2026",
+    "leagueId": "bra-serie-b-2026",
+    "leagueName": "Brasileirão Série B 2026",
+    "leagueCountry": "Brasil",
+    "leagueRound": 30,
+    "season": "2026",
+    "status": "UPCOMING",
+    "kickoffTime": "2026-09-28T22:30:00Z",
+    "stadium": "Estádio Independência",
+    "city": "Belo Horizonte",
+    "referee": "Paulo Cesar Zanovelli",
+    "gender": "men",
+    "ageCategory": "senior",
+    "flashscoreUrl": "https://www.flashscore.com.br/jogo/6yXAIpfn/",
+    "homeTeam": {
+      "id": "america-mg",
+      "name": "América-MG",
+      "shortName": "América-MG",
+      "code": "AME",
+      "logoUrl": "https://static.flashscore.com/res/image/data/america-mg.png"
+    },
+    "awayTeam": {
+      "id": "juventude",
+      "name": "Juventude",
+      "shortName": "Juventude",
+      "code": "JUV",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
+    },
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "odds": {
+      "homeWin": 2.10,
+      "draw": 3.10,
+      "awayWin": 3.60,
+      "over25": 2.05,
+      "under25": 1.75,
+      "bttsYes": 1.90,
+      "provider": "Betano"
+    },
+    "broadcast": [
+      "Premiere",
+      "SporTV"
+    ]
+  },
+  {
     "id": "match-fla-sao-2026",
     "slug": "flamengo-vs-sao-paulo-2026",
     "leagueId": "bra-serie-a-2026",
