@@ -5,8 +5,8 @@ import { asyncHandler } from '../utils/async-handler.js';
 
 export class WebhookController {
   public subscribe = asyncHandler(async (req: Request, res: Response): Promise<void> => {
-    const { url, events, matchId, secret } = req.body || {};
-    const subscription = webhookService.subscribe({ url, events, matchId, secret });
+    const { url, events, matchId, leagueId, secret } = req.body || {};
+    const subscription = webhookService.subscribe({ url, events, matchId, leagueId, secret });
     res.status(201).json(successResponse(subscription, 'Webhook cadastrado com sucesso.'));
   });
 

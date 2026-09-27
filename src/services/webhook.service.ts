@@ -59,6 +59,7 @@ export class WebhookService {
       url: dto.url,
       events: dto.events && dto.events.length > 0 ? dto.events : ['ALL'],
       matchId: dto.matchId,
+      leagueId: dto.leagueId,
       secret: dto.secret,
       createdAt: new Date().toISOString(),
       active: true,
@@ -113,6 +114,7 @@ export class WebhookService {
       'X-SuperBrasa-Event': eventType,
       'X-SuperBrasa-Timestamp': timestamp,
       'X-SuperBrasa-Delivery': deliveryId,
+      'Idempotency-Key': deliveryId,
     };
 
     if (target.secret) {
@@ -198,6 +200,11 @@ export class WebhookService {
     const deliveryPromises: Promise<WebhookDeliveryLog | null>[] = targets.map(async (target) => {
       // Filtrar por matchId se o webhook foi configurado para uma partida específica
       if (target.matchId && payload.matchId && target.matchId !== payload.matchId) {
+        return null;
+      }
+
+      // Filtrar por leagueId se o webhook foi configurado para uma liga específica
+      if (target.leagueId && payload.leagueId && target.leagueId !== payload.leagueId) {
         return null;
       }
 

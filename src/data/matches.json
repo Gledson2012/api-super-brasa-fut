@@ -312,6 +312,17 @@
       "bttsNo": 1.95,
       "provider": "Betano"
     },
+    "momentum": [
+      { "minute": 5, "value": 15 },
+      { "minute": 15, "value": 35 },
+      { "minute": 30, "value": 65 },
+      { "minute": 34, "value": 90 },
+      { "minute": 45, "value": 20 },
+      { "minute": 55, "value": -75 },
+      { "minute": 65, "value": 40 },
+      { "minute": 68, "value": 85 },
+      { "minute": 72, "value": 30 }
+    ],
     "broadcast": [
       "Globo",
       "Premiere",

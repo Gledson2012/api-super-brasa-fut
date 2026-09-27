@@ -28,5 +28,10 @@ export interface MatchOddsDetail {
     bttsYes?: number;
     bttsNo?: number;
   };
+  impliedProbabilities?: {
+    homeWinPercent: number;
+    drawPercent: number;
+    awayWinPercent: number;
+  };
   bookmakers: BookmakerOdds[];
 }

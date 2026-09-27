@@ -8,6 +8,8 @@ import { LeagueStanding } from '../models/standing.model.js';
 import { Player, StatsLeaders } from '../models/player.model.js';
 import { NewsArticle } from '../models/news.model.js';
 import { MatchOddsDetail } from '../models/odds.model.js';
+import { LeagueBracket } from '../models/bracket.model.js';
+import { MatchLineups } from '../models/lineup.model.js';
 import { stateStore, STATE_PREFIX } from './state-store.js';
 import type { StateStore } from './state-store.js';
 import { withTimeout } from '../utils/with-timeout.js';
@@ -59,6 +61,8 @@ export class InMemoryDatabase {
   public news: NewsArticle[] = [];
   public odds: MatchOddsDetail[] = [];
   public statsLeaders: StatsLeaders[] = [];
+  public brackets: LeagueBracket[] = [];
+  public lineups: MatchLineups[] = [];
 
   private constructor() {
     this.reload();
@@ -81,6 +85,8 @@ export class InMemoryDatabase {
     this.news = loadJson<NewsArticle[]>('news.json');
     this.odds = loadJson<MatchOddsDetail[]>('odds.json');
     this.statsLeaders = loadJson<StatsLeaders[]>('stats-leaders.json');
+    this.brackets = loadJson<LeagueBracket[]>('brackets.json');
+    this.lineups = loadJson<MatchLineups[]>('lineups.json');
   }
 
   /**

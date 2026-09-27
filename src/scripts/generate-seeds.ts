@@ -89,6 +89,8 @@ export function runSeedCheck(): boolean {
     'news.json',
     'odds.json',
     'stats-leaders.json',
+    'brackets.json',
+    'lineups.json',
   ];
 
   const reports: SeedFileReport[] = [];

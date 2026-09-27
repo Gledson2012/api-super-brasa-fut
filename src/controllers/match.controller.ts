@@ -1,12 +1,14 @@
 import { Request, Response } from 'express';
 import { matchService } from '../services/match.service.js';
+import { lineupService } from '../services/lineup.service.js';
 import { successResponse, sendPaginatedResponse } from '../utils/response.js';
 import { asyncHandler } from '../utils/async-handler.js';
 import { activeSseConnections } from '../services/metrics.service.js';
+import { matchesToCsv } from '../utils/csv.js';
 
 export class MatchController {
   public getAll = asyncHandler(async (req: Request, res: Response): Promise<void> => {
-    const { page, limit, leagueId, status, date, teamId, round, gender, ageCategory } = req.query;
+    const { page, limit, leagueId, status, date, teamId, round, gender, ageCategory, format } = req.query;
     const result = await matchService.getMatches(
       {
         leagueId: leagueId as string,
@@ -19,6 +21,14 @@ export class MatchController {
       },
       { page: page as any, limit: limit as any }
     );
+
+    if (format === 'csv') {
+      res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+      res.setHeader('Content-Disposition', 'attachment; filename="partidas.csv"');
+      res.send(matchesToCsv(result.data));
+      return;
+    }
+
     sendPaginatedResponse(res, result);
   });
 
@@ -103,6 +113,28 @@ export class MatchController {
     res.json(successResponse(h2h));
   });
 
+  public getLineups = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const lineups = await lineupService.getLineupsByMatchId(id);
+    res.json(successResponse(lineups));
+  });
+
+  public getStats = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const match = await matchService.getMatchById(id);
+    res.json(
+      successResponse({
+        matchId: match.id,
+        matchSlug: match.slug,
+        status: match.status,
+        minute: match.minute,
+        score: match.score,
+        stats: match.stats,
+        momentum: match.momentum,
+      })
+    );
+  });
+
   public simulateTick = asyncHandler(async (req: Request, res: Response): Promise<void> => {
     const { id } = req.params;
     const updatedMatch = await matchService.simulateLiveTick(id);
@@ -114,6 +146,24 @@ export class MatchController {
     const { type, team, player, minute } = req.body || {};
     const updatedMatch = await matchService.simulateLiveEvent(id, { type, team, player, minute });
     res.json(successResponse(updatedMatch, 'Evento de partida simulado com sucesso.'));
+  });
+
+  public simulateAuto = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const result = await matchService.startAutoSimulation(id, req.body);
+    res.json(successResponse(result, result.message));
+  });
+
+  public simulateStop = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const result = matchService.stopAutoSimulation(id);
+    res.json(successResponse(result, result.message));
+  });
+
+  public simulateStatus = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const status = matchService.getAutoSimulationStatus(id);
+    res.json(successResponse(status));
   });
 
   public resetMatches = asyncHandler(async (_req: Request, res: Response): Promise<void> => {

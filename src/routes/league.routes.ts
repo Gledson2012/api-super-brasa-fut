@@ -12,3 +12,4 @@ leagueRoutes.get('/:id/standings', cacheControl(30, 60), validateParams(idParamS
 leagueRoutes.get('/:id/matches', cacheControl(30, 60), validateParams(idParamSchema), leagueController.getMatches);
 leagueRoutes.get('/:id/teams', cacheControl(60, 120), validateParams(idParamSchema), leagueController.getTeams);
 leagueRoutes.get('/:id/leaders', cacheControl(30, 60), validateParams(idParamSchema), leagueController.getLeaders);
+leagueRoutes.get('/:id/bracket', cacheControl(60, 120), validateParams(idParamSchema), leagueController.getBracket);

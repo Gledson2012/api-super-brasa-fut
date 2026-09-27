@@ -29,6 +29,7 @@ export const matchFilterQuerySchema = paginationQuerySchema.extend({
   round: z.coerce.number().int().positive().optional(),
   gender: z.enum(['men', 'women', 'all']).optional(),
   ageCategory: z.enum(['senior', 'u20', 'u17', 'all']).optional(),
+  format: z.enum(['json', 'csv']).optional(),
 });
 
 export const leagueFilterQuerySchema = paginationQuerySchema.extend({
@@ -90,6 +91,12 @@ export const simulateEventBodySchema = z.object({
     .optional(),
 });
 
+export const simulateAutoBodySchema = z.object({
+  intervalMs: z.coerce.number().int().min(500, 'O intervalo mínimo é de 500ms.').max(30000).default(2500).optional(),
+  speedMinutes: z.coerce.number().int().min(1).max(15).default(5).optional(),
+  autoEvents: z.boolean().default(true).optional(),
+});
+
 export const webhookEventTypes = ['GOAL', 'MATCH_EVENT', 'MATCH_STATUS_CHANGE', 'ALL'] as const;
 
 export const createWebhookBodySchema = z.object({
@@ -100,6 +107,7 @@ export const createWebhookBodySchema = z.object({
     .max(webhookEventTypes.length)
     .optional(),
   matchId: z.string().trim().min(1, 'O matchId não pode ser vazio.').max(120, 'O matchId é muito longo.').optional(),
+  leagueId: z.string().trim().min(1, 'O leagueId não pode ser vazio.').max(120, 'O leagueId é muito longo.').optional(),
   secret: z
     .string()
     .min(8, 'O segredo do webhook deve ter ao menos 8 caracteres.')

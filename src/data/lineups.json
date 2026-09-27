@@ -1,0 +1,112 @@
+[
+  {
+    "matchId": "match-pal-bot-2026",
+    "home": {
+      "teamId": "palmeiras",
+      "teamName": "Palmeiras",
+      "formation": "4-2-3-1",
+      "coach": "Abel Ferreira",
+      "startingXI": [
+        { "id": "p-weverton", "name": "Weverton", "number": 21, "position": "GK", "gridPosition": { "x": 50, "y": 8 } },
+        { "id": "p-marcos-rocha", "name": "Marcos Rocha", "number": 2, "position": "DEF", "gridPosition": { "x": 15, "y": 25 } },
+        { "id": "p-gustavo-gomez", "name": "Gustavo Gómez", "number": 15, "position": "DEF", "isCaptain": true, "gridPosition": { "x": 38, "y": 25 } },
+        { "id": "p-murilo", "name": "Murilo", "number": 26, "position": "DEF", "gridPosition": { "x": 62, "y": 25 } },
+        { "id": "p-piquerez", "name": "Joaquín Piquerez", "number": 22, "position": "DEF", "gridPosition": { "x": 85, "y": 25 } },
+        { "id": "p-anibal-moreno", "name": "Aníbal Moreno", "number": 5, "position": "MID", "gridPosition": { "x": 35, "y": 45 } },
+        { "id": "p-ze-rafael", "name": "Zé Rafael", "number": 8, "position": "MID", "gridPosition": { "x": 65, "y": 45 } },
+        { "id": "p-estevao", "name": "Estêvão", "number": 41, "position": "MID", "gridPosition": { "x": 20, "y": 68 } },
+        { "id": "p-raphael-veiga", "name": "Raphael Veiga", "number": 23, "position": "MID", "gridPosition": { "x": 50, "y": 68 } },
+        { "id": "p-felipe-anderson", "name": "Felipe Anderson", "number": 9, "position": "MID", "gridPosition": { "x": 80, "y": 68 } },
+        { "id": "p-flaco-lopez", "name": "Flaco López", "number": 42, "position": "FWD", "gridPosition": { "x": 50, "y": 88 } }
+      ],
+      "substitutes": [
+        { "id": "p-marcelo-lomba", "name": "Marcelo Lomba", "number": 14, "position": "GK", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-mayke", "name": "Mayke", "number": 12, "position": "DEF", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-richard-rios", "name": "Richard Ríos", "number": 27, "position": "MID", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-mauricio", "name": "Maurício", "number": 18, "position": "MID", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-rony", "name": "Rony", "number": 10, "position": "FWD", "gridPosition": { "x": 0, "y": 0 } }
+      ]
+    },
+    "away": {
+      "teamId": "botafogo",
+      "teamName": "Botafogo",
+      "formation": "4-3-3",
+      "coach": "Artur Jorge",
+      "startingXI": [
+        { "id": "p-john", "name": "John", "number": 12, "position": "GK", "gridPosition": { "x": 50, "y": 8 } },
+        { "id": "p-vitinho", "name": "Vitinho", "number": 22, "position": "DEF", "gridPosition": { "x": 15, "y": 25 } },
+        { "id": "p-bastos", "name": "Bastos", "number": 15, "position": "DEF", "gridPosition": { "x": 38, "y": 25 } },
+        { "id": "p-barboza", "name": "Alexander Barboza", "number": 20, "position": "DEF", "gridPosition": { "x": 62, "y": 25 } },
+        { "id": "p-alex-telles", "name": "Alex Telles", "number": 13, "position": "DEF", "gridPosition": { "x": 85, "y": 25 } },
+        { "id": "p-gregore", "name": "Gregore", "number": 26, "position": "MID", "gridPosition": { "x": 50, "y": 42 } },
+        { "id": "p-marlon-freitas", "name": "Marlon Freitas", "number": 17, "position": "MID", "isCaptain": true, "gridPosition": { "x": 30, "y": 55 } },
+        { "id": "p-almada", "name": "Thiago Almada", "number": 23, "position": "MID", "gridPosition": { "x": 70, "y": 55 } },
+        { "id": "p-luiz-henrique", "name": "Luiz Henrique", "number": 7, "position": "FWD", "gridPosition": { "x": 20, "y": 82 } },
+        { "id": "p-igor-jesus", "name": "Igor Jesus", "number": 99, "position": "FWD", "gridPosition": { "x": 50, "y": 88 } },
+        { "id": "p-savarino", "name": "Jefferson Savarino", "number": 10, "position": "FWD", "gridPosition": { "x": 80, "y": 82 } }
+      ],
+      "substitutes": [
+        { "id": "p-gatito", "name": "Gatito Fernández", "number": 1, "position": "GK", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-mateo-ponte", "name": "Mateo Ponte", "number": 4, "position": "DEF", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-danilo-barbosa", "name": "Danilo Barbosa", "number": 5, "position": "MID", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-eduardo", "name": "Carlos Eduardo", "number": 33, "position": "MID", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-tiquinho", "name": "Tiquinho Soares", "number": 9, "position": "FWD", "gridPosition": { "x": 0, "y": 0 } }
+      ]
+    }
+  },
+  {
+    "matchId": "match-fla-sao-2026",
+    "home": {
+      "teamId": "flamengo",
+      "teamName": "Flamengo",
+      "formation": "4-2-3-1",
+      "coach": "Filipe Luís",
+      "startingXI": [
+        { "id": "p-rossi", "name": "Agustín Rossi", "number": 1, "position": "GK", "gridPosition": { "x": 50, "y": 8 } },
+        { "id": "p-wesley", "name": "Wesley", "number": 43, "position": "DEF", "gridPosition": { "x": 15, "y": 25 } },
+        { "id": "p-leo-ortiz", "name": "Léo Ortiz", "number": 3, "position": "DEF", "gridPosition": { "x": 38, "y": 25 } },
+        { "id": "p-leo-pereira", "name": "Léo Pereira", "number": 4, "position": "DEF", "gridPosition": { "x": 62, "y": 25 } },
+        { "id": "p-ayrton-lucas", "name": "Ayrton Lucas", "number": 6, "position": "DEF", "gridPosition": { "x": 85, "y": 25 } },
+        { "id": "p-pulgar", "name": "Erick Pulgar", "number": 5, "position": "MID", "gridPosition": { "x": 35, "y": 45 } },
+        { "id": "p-de-la-cruz", "name": "Nicolás De La Cruz", "number": 18, "position": "MID", "gridPosition": { "x": 65, "y": 45 } },
+        { "id": "p-gerson", "name": "Gerson", "number": 8, "position": "MID", "isCaptain": true, "gridPosition": { "x": 20, "y": 68 } },
+        { "id": "p-arrascaeta", "name": "Giorgian De Arrascaeta", "number": 14, "position": "MID", "gridPosition": { "x": 50, "y": 68 } },
+        { "id": "p-bruno-henrique", "name": "Bruno Henrique", "number": 27, "position": "FWD", "gridPosition": { "x": 80, "y": 68 } },
+        { "id": "p-gabigol", "name": "Gabriel Barbosa", "number": 99, "position": "FWD", "gridPosition": { "x": 50, "y": 88 } }
+      ],
+      "substitutes": [
+        { "id": "p-matheus-cunha", "name": "Matheus Cunha", "number": 25, "position": "GK", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-varela", "name": "Guillermo Varela", "number": 2, "position": "DEF", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-alcaraz", "name": "Carlos Alcaraz", "number": 37, "position": "MID", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-plata", "name": "Gonzalo Plata", "number": 45, "position": "FWD", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-michael", "name": "Michael", "number": 30, "position": "FWD", "gridPosition": { "x": 0, "y": 0 } }
+      ]
+    },
+    "away": {
+      "teamId": "sao-paulo",
+      "teamName": "São Paulo",
+      "formation": "4-2-3-1",
+      "coach": "Luis Zubeldía",
+      "startingXI": [
+        { "id": "p-rafael", "name": "Rafael", "number": 23, "position": "GK", "gridPosition": { "x": 50, "y": 8 } },
+        { "id": "p-igor-vinicius", "name": "Igor Vinícius", "number": 2, "position": "DEF", "gridPosition": { "x": 15, "y": 25 } },
+        { "id": "p-arboleda", "name": "Robert Arboleda", "number": 5, "position": "DEF", "gridPosition": { "x": 38, "y": 25 } },
+        { "id": "p-alan-franco", "name": "Alan Franco", "number": 28, "position": "DEF", "gridPosition": { "x": 62, "y": 25 } },
+        { "id": "p-welington", "name": "Welington", "number": 6, "position": "DEF", "gridPosition": { "x": 85, "y": 25 } },
+        { "id": "p-luiz-gustavo", "name": "Luiz Gustavo", "number": 16, "position": "MID", "gridPosition": { "x": 35, "y": 45 } },
+        { "id": "p-bobadilla", "name": "Damián Bobadilla", "number": 21, "position": "MID", "gridPosition": { "x": 65, "y": 45 } },
+        { "id": "p-lucas-moura", "name": "Lucas Moura", "number": 7, "position": "MID", "isCaptain": true, "gridPosition": { "x": 20, "y": 68 } },
+        { "id": "p-luciano", "name": "Luciano", "number": 10, "position": "MID", "gridPosition": { "x": 50, "y": 68 } },
+        { "id": "p-ferreirinha", "name": "Ferreirinha", "number": 47, "position": "FWD", "gridPosition": { "x": 80, "y": 68 } },
+        { "id": "p-calleri", "name": "Jonathan Calleri", "number": 9, "position": "FWD", "gridPosition": { "x": 50, "y": 88 } }
+      ],
+      "substitutes": [
+        { "id": "p-jandrei", "name": "Jandrei", "number": 93, "position": "GK", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-ferraresi", "name": "Nahuel Ferraresi", "number": 32, "position": "DEF", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-marcos-antonio", "name": "Marcos Antônio", "number": 20, "position": "MID", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-nestor", "name": "Rodrigo Nestor", "number": 11, "position": "MID", "gridPosition": { "x": 0, "y": 0 } },
+        { "id": "p-andre-silva", "name": "André Silva", "number": 17, "position": "FWD", "gridPosition": { "x": 0, "y": 0 } }
+      ]
+    }
+  }
+]

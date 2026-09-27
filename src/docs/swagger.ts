@@ -135,6 +135,17 @@ export const swaggerDocument = {
         },
       },
     },
+    '/leagues/{id}/bracket': {
+      get: {
+        tags: ['Leagues'],
+        summary: 'Obtém a árvore de chaveamento e mata-mata da competição (Copas e playoffs)',
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        responses: {
+          200: { description: 'Chaveamento da competição com rodadas e confrontos agregados' },
+          404: { description: 'Chaveamento não encontrado para a liga' },
+        },
+      },
+    },
     '/matches': {
       get: {
         tags: ['Matches'],
@@ -207,6 +218,28 @@ export const swaggerDocument = {
         },
       },
     },
+    '/matches/{id}/lineups': {
+      get: {
+        tags: ['Matches'],
+        summary: 'Obtém escalações táticas completas, esquema e coordenadas no campo',
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        responses: {
+          200: { description: 'Escalações titulares e reservas das duas equipes' },
+          404: { description: 'Escalações não encontradas' },
+        },
+      },
+    },
+    '/matches/{id}/stats': {
+      get: {
+        tags: ['Matches'],
+        summary: 'Obtém estatísticas aprofundadas da partida (xG, posse, momentum minuto a minuto)',
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        responses: {
+          200: { description: 'Estatísticas detalhadas da partida' },
+          404: { description: 'Partida não encontrada' },
+        },
+      },
+    },
     '/matches/{id}/simulate-tick': {
       post: {
         tags: ['Matches'],
@@ -239,6 +272,52 @@ export const swaggerDocument = {
         },
         responses: {
           200: { description: 'Evento registrado e placar atualizado com sucesso' },
+        },
+      },
+    },
+    '/matches/{id}/simulate-auto': {
+      post: {
+        tags: ['Matches'],
+        summary: 'Inicia simulação automática contínua da partida (Live Clock / Demo Mode)',
+        security: [{ ApiKeyAuth: [] }],
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        requestBody: {
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                properties: {
+                  intervalMs: { type: 'integer', default: 2500, description: 'Intervalo de tempo real entre cada tick (ms)' },
+                  speedMinutes: { type: 'integer', default: 5, description: 'Minutos de jogo avançados por tick' },
+                  autoEvents: { type: 'boolean', default: true, description: 'Gerar eventos dinâmicos (gols, cartões) aleatórios' },
+                },
+              },
+            },
+          },
+        },
+        responses: {
+          200: { description: 'Simulação contínua iniciada com sucesso' },
+        },
+      },
+    },
+    '/matches/{id}/simulate-stop': {
+      post: {
+        tags: ['Matches'],
+        summary: 'Interrompe a simulação automática da partida',
+        security: [{ ApiKeyAuth: [] }],
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        responses: {
+          200: { description: 'Simulação interrompida com sucesso' },
+        },
+      },
+    },
+    '/matches/{id}/simulate-status': {
+      get: {
+        tags: ['Matches'],
+        summary: 'Verifica o status atual da simulação automática da partida',
+        parameters: [{ name: 'id', in: 'path', required: true, schema: { type: 'string' } }],
+        responses: {
+          200: { description: 'Status da simulação (running, intervalMs, startedAt)' },
         },
       },
     },

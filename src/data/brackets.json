@@ -1,0 +1,209 @@
+[
+  {
+    "id": "bracket-copa-do-brasil-2026",
+    "leagueId": "bra-copa-do-brasil-2026",
+    "leagueName": "Copa do Brasil 2026",
+    "season": "2026",
+    "updatedAt": "2026-09-27T12:00:00Z",
+    "rounds": [
+      {
+        "id": "round-qf",
+        "name": "Quartas de Final",
+        "stage": "quarter_finals",
+        "matches": [
+          {
+            "id": "cdb-qf-1",
+            "homeTeam": { "id": "flamengo", "name": "Clube de Regatas do Flamengo", "shortName": "Flamengo" },
+            "awayTeam": { "id": "bahia", "name": "Esporte Clube Bahia", "shortName": "Bahia" },
+            "leg1Score": { "home": 1, "away": 0 },
+            "leg2Score": { "home": 1, "away": 0 },
+            "aggregateScore": { "home": 2, "away": 0 },
+            "winnerTeamId": "flamengo",
+            "status": "FINISHED",
+            "nextMatchId": "cdb-sf-1"
+          },
+          {
+            "id": "cdb-qf-2",
+            "homeTeam": { "id": "corinthians", "name": "Sport Club Corinthians Paulista", "shortName": "Corinthians" },
+            "awayTeam": { "id": "juventude", "name": "Esporte Clube Juventude", "shortName": "Juventude" },
+            "leg1Score": { "home": 1, "away": 2 },
+            "leg2Score": { "home": 3, "away": 1 },
+            "aggregateScore": { "home": 4, "away": 3 },
+            "winnerTeamId": "corinthians",
+            "status": "FINISHED",
+            "nextMatchId": "cdb-sf-1"
+          },
+          {
+            "id": "cdb-qf-3",
+            "homeTeam": { "id": "sao-paulo", "name": "São Paulo Futebol Clube", "shortName": "São Paulo" },
+            "awayTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
+            "leg1Score": { "home": 0, "away": 1 },
+            "leg2Score": { "home": 0, "away": 0 },
+            "aggregateScore": { "home": 0, "away": 1 },
+            "winnerTeamId": "atletico-mg",
+            "status": "FINISHED",
+            "nextMatchId": "cdb-sf-2"
+          },
+          {
+            "id": "cdb-qf-4",
+            "homeTeam": { "id": "vasco", "name": "Club de Regatas Vasco da Gama", "shortName": "Vasco" },
+            "awayTeam": { "id": "athletico-pr", "name": "Club Athletico Paranaense", "shortName": "Athletico-PR" },
+            "leg1Score": { "home": 2, "away": 1 },
+            "leg2Score": { "home": 1, "away": 2 },
+            "aggregateScore": { "home": 3, "away": 3 },
+            "penaltiesScore": { "home": 5, "away": 4 },
+            "winnerTeamId": "vasco",
+            "status": "FINISHED",
+            "nextMatchId": "cdb-sf-2"
+          }
+        ]
+      },
+      {
+        "id": "round-sf",
+        "name": "Semifinais",
+        "stage": "semi_finals",
+        "matches": [
+          {
+            "id": "cdb-sf-1",
+            "homeTeam": { "id": "flamengo", "name": "Clube de Regatas do Flamengo", "shortName": "Flamengo" },
+            "awayTeam": { "id": "corinthians", "name": "Sport Club Corinthians Paulista", "shortName": "Corinthians" },
+            "leg1Score": { "home": 1, "away": 0 },
+            "leg2Score": { "home": 0, "away": 0 },
+            "aggregateScore": { "home": 1, "away": 0 },
+            "winnerTeamId": "flamengo",
+            "status": "FINISHED",
+            "nextMatchId": "cdb-final"
+          },
+          {
+            "id": "cdb-sf-2",
+            "homeTeam": { "id": "vasco", "name": "Club de Regatas Vasco da Gama", "shortName": "Vasco" },
+            "awayTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
+            "leg1Score": { "home": 1, "away": 2 },
+            "leg2Score": { "home": 1, "away": 1 },
+            "aggregateScore": { "home": 2, "away": 3 },
+            "winnerTeamId": "atletico-mg",
+            "status": "FINISHED",
+            "nextMatchId": "cdb-final"
+          }
+        ]
+      },
+      {
+        "id": "round-final",
+        "name": "Grande Final",
+        "stage": "final",
+        "matches": [
+          {
+            "id": "cdb-final",
+            "homeTeam": { "id": "flamengo", "name": "Clube de Regatas do Flamengo", "shortName": "Flamengo" },
+            "awayTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
+            "leg1Score": { "home": 3, "away": 1 },
+            "leg2Score": { "home": 1, "away": 0 },
+            "aggregateScore": { "home": 4, "away": 1 },
+            "winnerTeamId": "flamengo",
+            "status": "FINISHED"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bracket-libertadores-2026",
+    "leagueId": "conmebol-libertadores-2026",
+    "leagueName": "Copa Libertadores 2026",
+    "season": "2026",
+    "updatedAt": "2026-09-27T12:00:00Z",
+    "rounds": [
+      {
+        "id": "lib-round-sf",
+        "name": "Semifinais",
+        "stage": "semi_finals",
+        "matches": [
+          {
+            "id": "lib-sf-1",
+            "homeTeam": { "id": "botafogo", "name": "Botafogo de Futebol e Regatas", "shortName": "Botafogo" },
+            "awayTeam": { "id": "penarol", "name": "Club Atlético Peñarol", "shortName": "Peñarol" },
+            "leg1Score": { "home": 5, "away": 0 },
+            "leg2Score": { "home": 1, "away": 3 },
+            "aggregateScore": { "home": 6, "away": 3 },
+            "winnerTeamId": "botafogo",
+            "status": "FINISHED",
+            "nextMatchId": "lib-final"
+          },
+          {
+            "id": "lib-sf-2",
+            "homeTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
+            "awayTeam": { "id": "river-plate", "name": "Club Atlético River Plate", "shortName": "River Plate" },
+            "leg1Score": { "home": 3, "away": 0 },
+            "leg2Score": { "home": 0, "away": 0 },
+            "aggregateScore": { "home": 3, "away": 0 },
+            "winnerTeamId": "atletico-mg",
+            "status": "FINISHED",
+            "nextMatchId": "lib-final"
+          }
+        ]
+      },
+      {
+        "id": "lib-round-final",
+        "name": "Final Única (Buenos Aires)",
+        "stage": "final",
+        "matches": [
+          {
+            "id": "lib-final",
+            "homeTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
+            "awayTeam": { "id": "botafogo", "name": "Botafogo de Futebol e Regatas", "shortName": "Botafogo" },
+            "aggregateScore": { "home": 1, "away": 3 },
+            "winnerTeamId": "botafogo",
+            "status": "FINISHED"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bracket-fifa-world-cup-2026",
+    "leagueId": "fifa-world-cup-2026",
+    "leagueName": "Copa do Mundo FIFA 2026",
+    "season": "2026",
+    "updatedAt": "2026-09-27T12:00:00Z",
+    "rounds": [
+      {
+        "id": "fwc-round-sf",
+        "name": "Semifinais",
+        "stage": "semi_finals",
+        "matches": [
+          {
+            "id": "fwc-sf-1",
+            "homeTeam": { "id": "brasil", "name": "Seleção Brasileira", "shortName": "Brasil" },
+            "awayTeam": { "id": "franca", "name": "Seleção Francesa", "shortName": "França" },
+            "aggregateScore": { "home": 2, "away": 1 },
+            "winnerTeamId": "brasil",
+            "status": "FINISHED",
+            "nextMatchId": "fwc-final"
+          },
+          {
+            "id": "fwc-sf-2",
+            "homeTeam": { "id": "argentina", "name": "Seleção Argentina", "shortName": "Argentina" },
+            "awayTeam": { "id": "espanha", "name": "Seleção Espanhola", "shortName": "Espanha" },
+            "aggregateScore": { "home": 1, "away": 2 },
+            "winnerTeamId": "espanha",
+            "status": "FINISHED",
+            "nextMatchId": "fwc-final"
+          }
+        ]
+      },
+      {
+        "id": "fwc-round-final",
+        "name": "Grande Final da Copa do Mundo (MetLife Stadium, NJ)",
+        "stage": "final",
+        "matches": [
+          {
+            "id": "fwc-final",
+            "homeTeam": { "id": "brasil", "name": "Seleção Brasileira", "shortName": "Brasil" },
+            "awayTeam": { "id": "espanha", "name": "Seleção Espanhola", "shortName": "Espanha" },
+            "status": "UPCOMING"
+          }
+        ]
+      }
+    ]
+  }
+]

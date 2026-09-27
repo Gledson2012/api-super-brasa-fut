@@ -39,13 +39,18 @@ export class MatchService {
     let draws = 0;
     let team1Goals = 0;
     let team2Goals = 0;
+    let team1CleanSheets = 0;
+    let team2CleanSheets = 0;
+    let bttsCount = 0;
+    let over25Count = 0;
+    let totalCards = 0;
 
-    matches.forEach((m) => {
-      if (m.score.home === null || m.score.away === null) return;
+    const playedMatches = matches.filter((m) => m.score.home !== null && m.score.away !== null);
 
+    playedMatches.forEach((m) => {
       const isTeam1Home = m.homeTeam.id === team1Id;
-      const t1Score = isTeam1Home ? m.score.home : m.score.away;
-      const t2Score = isTeam1Home ? m.score.away : m.score.home;
+      const t1Score = isTeam1Home ? m.score.home! : m.score.away!;
+      const t2Score = isTeam1Home ? m.score.away! : m.score.home!;
 
       team1Goals += t1Score;
       team2Goals += t2Score;
@@ -53,7 +58,60 @@ export class MatchService {
       if (t1Score > t2Score) team1Wins++;
       else if (t2Score > t1Score) team2Wins++;
       else draws++;
+
+      if (t2Score === 0) team1CleanSheets++;
+      if (t1Score === 0) team2CleanSheets++;
+
+      if (t1Score > 0 && t2Score > 0) bttsCount++;
+      if (t1Score + t2Score > 2) over25Count++;
+
+      if (m.events) {
+        m.events.forEach((e) => {
+          if (e.type === 'YELLOW_CARD' || e.type === 'RED_CARD') totalCards++;
+        });
+      }
     });
+
+    const playedCount = playedMatches.length;
+    const goalsPerMatch = playedCount > 0 ? Number(((team1Goals + team2Goals) / playedCount).toFixed(2)) : 0;
+    const cardsPerMatch = playedCount > 0 ? Number((totalCards / playedCount).toFixed(2)) : 0;
+    const bttsPercentage = playedCount > 0 ? Math.round((bttsCount / playedCount) * 100) : 0;
+    const over25Percentage = playedCount > 0 ? Math.round((over25Count / playedCount) * 100) : 0;
+
+    // Sequência invicta mais recente (ordem cronológica decrescente)
+    const sortedPlayed = [...playedMatches].sort(
+      (a, b) => new Date(b.kickoffTime).getTime() - new Date(a.kickoffTime).getTime()
+    );
+
+    let streakTeamId: string | null = null;
+    let streakGames = 0;
+
+    for (const m of sortedPlayed) {
+      const isTeam1Home = m.homeTeam.id === team1Id;
+      const t1Score = isTeam1Home ? m.score.home! : m.score.away!;
+      const t2Score = isTeam1Home ? m.score.away! : m.score.home!;
+
+      if (t1Score > t2Score) {
+        if (streakTeamId === null) streakTeamId = team1Id;
+        if (streakTeamId === team1Id) streakGames++;
+        else break;
+      } else if (t2Score > t1Score) {
+        if (streakTeamId === null) streakTeamId = team2Id;
+        if (streakTeamId === team2Id) streakGames++;
+        else break;
+      } else {
+        if (streakTeamId !== null) streakGames++;
+        else break;
+      }
+    }
+
+    const streak = streakTeamId
+      ? {
+          teamId: streakTeamId,
+          games: streakGames,
+          description: `Time '${streakTeamId}' está invicto há ${streakGames} confronto(s) direto(s).`,
+        }
+      : undefined;
 
     return {
       team1Id,
@@ -64,6 +122,23 @@ export class MatchService {
       draws,
       team1Goals,
       team2Goals,
+      averages: {
+        goalsPerMatch,
+        cardsPerMatch,
+      },
+      bothTeamsScored: {
+        count: bttsCount,
+        percentage: bttsPercentage,
+      },
+      over25: {
+        count: over25Count,
+        percentage: over25Percentage,
+      },
+      cleanSheets: {
+        team1: team1CleanSheets,
+        team2: team2CleanSheets,
+      },
+      streak,
       matches,
     };
   }
@@ -122,6 +197,7 @@ export class MatchService {
         .notify('MATCH_STATUS_CHANGE', {
           matchId: updated.id,
           matchSlug: updated.slug,
+          leagueId: match.leagueId,
           status: updated.status,
           previousStatus: match.status,
           minute: updated.minute,
@@ -192,6 +268,7 @@ export class MatchService {
     webhookService.notify(eventType === 'GOAL' ? 'GOAL' : 'MATCH_EVENT', {
       matchId: match.id,
       matchSlug: match.slug,
+      leagueId: match.leagueId,
       event: newEvent,
       score,
       minute: currentMinute,
@@ -200,7 +277,108 @@ export class MatchService {
     return updated || match;
   }
 
+  private autoSimulations: Map<string, { timer: NodeJS.Timeout | null; running: boolean; intervalMs: number; startedAt: string }> = new Map();
+
+  public async startAutoSimulation(
+    id: string,
+    options?: { intervalMs?: number; speedMinutes?: number; autoEvents?: boolean }
+  ) {
+    const match = await this.getMatchById(id);
+    if (match.status === 'FINISHED') {
+      throw new BadRequestError('Esta partida já está finalizada. Use POST /matches/reset para reiniciar o estado.');
+    }
+
+    this.stopAutoSimulation(id);
+
+    const intervalMs = Math.max(500, Math.min(options?.intervalMs || 2500, 30000));
+    const autoEvents = options?.autoEvents ?? true;
+
+    const session = {
+      timer: null as NodeJS.Timeout | null,
+      running: true,
+      intervalMs,
+      startedAt: new Date().toISOString(),
+    };
+
+    session.timer = setInterval(async () => {
+      try {
+        const current = await this.getMatchById(id);
+        if (current.status === 'FINISHED' || !session.running) {
+          this.stopAutoSimulation(id);
+          return;
+        }
+
+        const updated = await this.simulateLiveTick(id);
+
+        if (autoEvents && updated.status === 'LIVE' && Math.random() < 0.35) {
+          const rand = Math.random();
+          const team = rand < 0.5 ? 'home' : 'away';
+          let eventType: 'GOAL' | 'YELLOW_CARD' | 'SUBSTITUTION' = 'YELLOW_CARD';
+          if (rand < 0.12) {
+            eventType = 'GOAL';
+          } else if (rand < 0.25) {
+            eventType = 'SUBSTITUTION';
+          }
+          await this.simulateLiveEvent(id, { type: eventType, team, minute: updated.minute });
+        }
+
+        if (updated.status === 'FINISHED') {
+          this.stopAutoSimulation(id);
+        }
+      } catch (err) {
+        console.error(`Erro na simulação contínua da partida ${id}:`, err);
+        this.stopAutoSimulation(id);
+      }
+    }, intervalMs);
+
+    session.timer.unref?.();
+    this.autoSimulations.set(id, session);
+
+    return {
+      message: `Simulação automática iniciada para a partida '${id}'.`,
+      matchId: id,
+      intervalMs,
+      autoEvents,
+      running: true,
+    };
+  }
+
+  public stopAutoSimulation(id: string) {
+    const session = this.autoSimulations.get(id);
+    if (session) {
+      session.running = false;
+      if (session.timer) {
+        clearInterval(session.timer);
+        session.timer = null;
+      }
+      this.autoSimulations.delete(id);
+      return { message: `Simulação automática da partida '${id}' finalizada.`, matchId: id, running: false };
+    }
+    return { message: `Nenhuma simulação automática ativa para a partida '${id}'.`, matchId: id, running: false };
+  }
+
+  public getAutoSimulationStatus(id: string) {
+    const session = this.autoSimulations.get(id);
+    return {
+      matchId: id,
+      running: session ? session.running : false,
+      intervalMs: session?.intervalMs,
+      startedAt: session?.startedAt,
+    };
+  }
+
+  public stopAllAutoSimulations(): void {
+    for (const [, session] of this.autoSimulations.entries()) {
+      session.running = false;
+      if (session.timer) {
+        clearInterval(session.timer);
+      }
+    }
+    this.autoSimulations.clear();
+  }
+
   public async resetAllMatches(): Promise<{ message: string; count: number }> {
+    this.stopAllAutoSimulations();
     await db.resetAll();
     return {
       message: 'Todas as partidas foram restauradas para o estado inicial com sucesso.',

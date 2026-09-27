@@ -5,6 +5,7 @@ export interface WebhookSubscription {
   url: string;
   events: WebhookEventType[];
   matchId?: string;
+  leagueId?: string;
   secret?: string;
   createdAt: string;
   active: boolean;
@@ -14,6 +15,7 @@ export interface CreateWebhookDto {
   url: string;
   events?: WebhookEventType[];
   matchId?: string;
+  leagueId?: string;
   secret?: string;
 }
 

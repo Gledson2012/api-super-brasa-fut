@@ -3,6 +3,7 @@ import { standingRepository } from '../repositories/standing.repository.js';
 import { matchRepository } from '../repositories/match.repository.js';
 import { teamRepository } from '../repositories/team.repository.js';
 import { statsRepository } from '../repositories/stats.repository.js';
+import { bracketService } from './bracket.service.js';
 import { League, LeagueFilterQuery } from '../models/league.model.js';
 import { PaginatedResult, PaginationQuery } from '../models/common.js';
 import { paginate } from '../utils/pagination.js';
@@ -56,6 +57,11 @@ export class LeagueService {
       throw new NotFoundError(`Estatísticas de líderes não disponíveis para a liga '${leagueId}'.`);
     }
     return leaders;
+  }
+
+  public async getLeagueBracket(leagueId: string) {
+    await this.getLeagueById(leagueId); // ensure league exists
+    return bracketService.getBracketByLeagueId(leagueId);
   }
 }
 

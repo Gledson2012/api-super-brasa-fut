@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { leagueService } from '../services/league.service.js';
 import { successResponse, sendPaginatedResponse } from '../utils/response.js';
 import { asyncHandler } from '../utils/async-handler.js';
+import { standingToCsv } from '../utils/csv.js';
 
 export class LeagueController {
   public getAll = asyncHandler(async (req: Request, res: Response): Promise<void> => {
@@ -30,6 +31,14 @@ export class LeagueController {
   public getStandings = asyncHandler(async (req: Request, res: Response): Promise<void> => {
     const { id } = req.params;
     const standings = await leagueService.getLeagueStandings(id);
+
+    if (req.query.format === 'csv') {
+      res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+      res.setHeader('Content-Disposition', `attachment; filename="classificacao-${id}.csv"`);
+      res.send(standingToCsv(standings));
+      return;
+    }
+
     res.json(successResponse(standings));
   });
 
@@ -58,6 +67,12 @@ export class LeagueController {
     const { id } = req.params;
     const leaders = await leagueService.getLeagueLeaders(id);
     res.json(successResponse(leaders));
+  });
+
+  public getBracket = asyncHandler(async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const bracket = await leagueService.getLeagueBracket(id);
+    res.json(successResponse(bracket));
   });
 }
 

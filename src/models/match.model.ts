@@ -123,6 +123,7 @@ export interface Match {
     home: MatchTeamStats;
     away: MatchTeamStats;
   };
+  momentum?: { minute: number; value: number }[];
   lineups?: MatchLineups;
   odds?: MatchOdds;
   broadcast?: string[];

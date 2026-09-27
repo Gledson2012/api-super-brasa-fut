@@ -3,7 +3,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-ES_Modules-green?logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.21-lightgrey?logo=express)](https://expressjs.com/)
-[![Vitest](https://img.shields.io/badge/Tests-136%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Tests-147%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
 [![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-orange?logo=prometheus)](http://localhost:3000/metrics)
 [![Swagger](https://img.shields.io/badge/OpenAPI-3.0_Swagger-brightgreen?logo=swagger)](http://localhost:3000/docs)
 
@@ -260,22 +260,28 @@ Métricas incluídas:
 | `GET` | `/api/v1/search?q=flamengo` | Busca global (clubes, ligas, atletas, jogos) |
 | `GET` | `/api/v1/leagues` | Lista de campeonatos com filtros |
 | `GET` | `/api/v1/leagues/:id` | Detalhes de um campeonato |
-| `GET` | `/api/v1/leagues/:id/standings` | Tabela de classificação completa |
+| `GET` | `/api/v1/leagues/:id/standings` | Tabela de classificação completa (`?format=csv` suportado) |
+| `GET` | `/api/v1/leagues/:id/bracket` | Árvore de chaveamento e mata-mata (Copas, playoffs) |
 | `GET` | `/api/v1/leagues/:id/matches` | Jogos daquela liga |
 | `GET` | `/api/v1/leagues/:id/teams` | Clubes participantes da liga |
 | `GET` | `/api/v1/leagues/:id/leaders` | Líderes estatísticos da liga |
-| `GET` | `/api/v1/matches` | Partidas paginadas com filtros |
+| `GET` | `/api/v1/matches` | Partidas paginadas com filtros (`?format=csv` suportado) |
 | `GET` | `/api/v1/matches/live` | Apenas partidas em andamento |
 | `GET` | `/api/v1/matches/live/stream` | Stream SSE em tempo real |
-| `GET` | `/api/v1/matches/h2h?team1Id=X&team2Id=Y` | Confronto direto histórico |
+| `GET` | `/api/v1/matches/h2h?team1Id=X&team2Id=Y` | Confronto direto com médias, BTTS, Over 2.5 e sequências |
 | `GET` | `/api/v1/matches/:id` | Detalhes de uma partida |
-| `GET` | `/api/v1/matches/:id/odds` | Odds de uma partida específica |
+| `GET` | `/api/v1/matches/:id/lineups` | Escalações táticas, esquemas e campinho |
+| `GET` | `/api/v1/matches/:id/stats` | Estatísticas detalhadas, xG e momentum minuto a minuto |
+| `GET` | `/api/v1/matches/:id/odds` | Odds da partida com probabilidades implícitas |
 | `POST` | `/api/v1/matches/:id/simulate-tick` | Avança 5 minutos do jogo (**Pro**) |
 | `POST` | `/api/v1/matches/:id/simulate-event` | Dispara evento na partida (**Pro**) |
+| `POST` | `/api/v1/matches/:id/simulate-auto` | Inicia simulação contínua automática (Live Clock / Demo) (**Pro**) |
+| `POST` | `/api/v1/matches/:id/simulate-stop` | Interrompe a simulação contínua (**Pro**) |
+| `GET` | `/api/v1/matches/:id/simulate-status` | Status da simulação contínua |
 | `POST` | `/api/v1/matches/reset` | Restaura os seeds e limpa o estado persistido (**Pro**) |
 | `GET` | `/api/v1/standings` | Classificações publicadas |
 | `GET` | `/api/v1/standings/validate` | Auditoria das invariantes das tabelas (jogos, pontos, saldo, ordenação) |
-| `GET` | `/api/v1/standings/:leagueId` | Classificação de uma liga |
+| `GET` | `/api/v1/standings/:leagueId` | Classificação de uma liga (`?format=csv` suportado) |
 | `GET` | `/api/v1/teams` | Lista de clubes e seleções |
 | `GET` | `/api/v1/teams/:id/calendar` | Calendário e retrospecto do time |
 | `GET` | `/api/v1/teams/:id/squad` | Elenco do time (`/players` é alias) |
