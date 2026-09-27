@@ -13,45 +13,124 @@
         "matches": [
           {
             "id": "cdb-qf-1",
-            "homeTeam": { "id": "flamengo", "name": "Clube de Regatas do Flamengo", "shortName": "Flamengo" },
-            "awayTeam": { "id": "bahia", "name": "Esporte Clube Bahia", "shortName": "Bahia" },
-            "leg1Score": { "home": 1, "away": 0 },
-            "leg2Score": { "home": 1, "away": 0 },
-            "aggregateScore": { "home": 2, "away": 0 },
+            "homeTeam": {
+              "id": "flamengo",
+              "name": "Clube de Regatas do Flamengo",
+              "shortName": "Flamengo",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
+            },
+            "awayTeam": {
+              "id": "bahia",
+              "name": "Esporte Clube Bahia",
+              "shortName": "Bahia",
+              "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
+            },
+            "leg1Score": {
+              "home": 1,
+              "away": 0
+            },
+            "leg2Score": {
+              "home": 1,
+              "away": 0
+            },
+            "aggregateScore": {
+              "home": 2,
+              "away": 0
+            },
             "winnerTeamId": "flamengo",
             "status": "FINISHED",
             "nextMatchId": "cdb-sf-1"
           },
           {
             "id": "cdb-qf-2",
-            "homeTeam": { "id": "corinthians", "name": "Sport Club Corinthians Paulista", "shortName": "Corinthians" },
-            "awayTeam": { "id": "juventude", "name": "Esporte Clube Juventude", "shortName": "Juventude" },
-            "leg1Score": { "home": 1, "away": 2 },
-            "leg2Score": { "home": 3, "away": 1 },
-            "aggregateScore": { "home": 4, "away": 3 },
+            "homeTeam": {
+              "id": "corinthians",
+              "name": "Sport Club Corinthians Paulista",
+              "shortName": "Corinthians",
+              "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
+            },
+            "awayTeam": {
+              "id": "juventude",
+              "name": "Esporte Clube Juventude",
+              "shortName": "Juventude",
+              "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
+            },
+            "leg1Score": {
+              "home": 1,
+              "away": 2
+            },
+            "leg2Score": {
+              "home": 3,
+              "away": 1
+            },
+            "aggregateScore": {
+              "home": 4,
+              "away": 3
+            },
             "winnerTeamId": "corinthians",
             "status": "FINISHED",
             "nextMatchId": "cdb-sf-1"
           },
           {
             "id": "cdb-qf-3",
-            "homeTeam": { "id": "sao-paulo", "name": "São Paulo Futebol Clube", "shortName": "São Paulo" },
-            "awayTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
-            "leg1Score": { "home": 0, "away": 1 },
-            "leg2Score": { "home": 0, "away": 0 },
-            "aggregateScore": { "home": 0, "away": 1 },
+            "homeTeam": {
+              "id": "sao-paulo",
+              "name": "São Paulo Futebol Clube",
+              "shortName": "São Paulo",
+              "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
+            },
+            "awayTeam": {
+              "id": "atletico-mg",
+              "name": "Clube Atlético Mineiro",
+              "shortName": "Atlético-MG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
+            },
+            "leg1Score": {
+              "home": 0,
+              "away": 1
+            },
+            "leg2Score": {
+              "home": 0,
+              "away": 0
+            },
+            "aggregateScore": {
+              "home": 0,
+              "away": 1
+            },
             "winnerTeamId": "atletico-mg",
             "status": "FINISHED",
             "nextMatchId": "cdb-sf-2"
           },
           {
             "id": "cdb-qf-4",
-            "homeTeam": { "id": "vasco", "name": "Club de Regatas Vasco da Gama", "shortName": "Vasco" },
-            "awayTeam": { "id": "athletico-pr", "name": "Club Athletico Paranaense", "shortName": "Athletico-PR" },
-            "leg1Score": { "home": 2, "away": 1 },
-            "leg2Score": { "home": 1, "away": 2 },
-            "aggregateScore": { "home": 3, "away": 3 },
-            "penaltiesScore": { "home": 5, "away": 4 },
+            "homeTeam": {
+              "id": "vasco",
+              "name": "Club de Regatas Vasco da Gama",
+              "shortName": "Vasco",
+              "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
+            },
+            "awayTeam": {
+              "id": "athletico-pr",
+              "name": "Club Athletico Paranaense",
+              "shortName": "Athletico-PR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
+            },
+            "leg1Score": {
+              "home": 2,
+              "away": 1
+            },
+            "leg2Score": {
+              "home": 1,
+              "away": 2
+            },
+            "aggregateScore": {
+              "home": 3,
+              "away": 3
+            },
+            "penaltiesScore": {
+              "home": 5,
+              "away": 4
+            },
             "winnerTeamId": "vasco",
             "status": "FINISHED",
             "nextMatchId": "cdb-sf-2"
@@ -65,22 +144,60 @@
         "matches": [
           {
             "id": "cdb-sf-1",
-            "homeTeam": { "id": "flamengo", "name": "Clube de Regatas do Flamengo", "shortName": "Flamengo" },
-            "awayTeam": { "id": "corinthians", "name": "Sport Club Corinthians Paulista", "shortName": "Corinthians" },
-            "leg1Score": { "home": 1, "away": 0 },
-            "leg2Score": { "home": 0, "away": 0 },
-            "aggregateScore": { "home": 1, "away": 0 },
+            "homeTeam": {
+              "id": "flamengo",
+              "name": "Clube de Regatas do Flamengo",
+              "shortName": "Flamengo",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
+            },
+            "awayTeam": {
+              "id": "corinthians",
+              "name": "Sport Club Corinthians Paulista",
+              "shortName": "Corinthians",
+              "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
+            },
+            "leg1Score": {
+              "home": 1,
+              "away": 0
+            },
+            "leg2Score": {
+              "home": 0,
+              "away": 0
+            },
+            "aggregateScore": {
+              "home": 1,
+              "away": 0
+            },
             "winnerTeamId": "flamengo",
             "status": "FINISHED",
             "nextMatchId": "cdb-final"
           },
           {
             "id": "cdb-sf-2",
-            "homeTeam": { "id": "vasco", "name": "Club de Regatas Vasco da Gama", "shortName": "Vasco" },
-            "awayTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
-            "leg1Score": { "home": 1, "away": 2 },
-            "leg2Score": { "home": 1, "away": 1 },
-            "aggregateScore": { "home": 2, "away": 3 },
+            "homeTeam": {
+              "id": "vasco",
+              "name": "Club de Regatas Vasco da Gama",
+              "shortName": "Vasco",
+              "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
+            },
+            "awayTeam": {
+              "id": "atletico-mg",
+              "name": "Clube Atlético Mineiro",
+              "shortName": "Atlético-MG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
+            },
+            "leg1Score": {
+              "home": 1,
+              "away": 2
+            },
+            "leg2Score": {
+              "home": 1,
+              "away": 1
+            },
+            "aggregateScore": {
+              "home": 2,
+              "away": 3
+            },
             "winnerTeamId": "atletico-mg",
             "status": "FINISHED",
             "nextMatchId": "cdb-final"
@@ -94,11 +211,30 @@
         "matches": [
           {
             "id": "cdb-final",
-            "homeTeam": { "id": "flamengo", "name": "Clube de Regatas do Flamengo", "shortName": "Flamengo" },
-            "awayTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
-            "leg1Score": { "home": 3, "away": 1 },
-            "leg2Score": { "home": 1, "away": 0 },
-            "aggregateScore": { "home": 4, "away": 1 },
+            "homeTeam": {
+              "id": "flamengo",
+              "name": "Clube de Regatas do Flamengo",
+              "shortName": "Flamengo",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
+            },
+            "awayTeam": {
+              "id": "atletico-mg",
+              "name": "Clube Atlético Mineiro",
+              "shortName": "Atlético-MG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
+            },
+            "leg1Score": {
+              "home": 3,
+              "away": 1
+            },
+            "leg2Score": {
+              "home": 1,
+              "away": 0
+            },
+            "aggregateScore": {
+              "home": 4,
+              "away": 1
+            },
             "winnerTeamId": "flamengo",
             "status": "FINISHED"
           }
@@ -120,22 +256,58 @@
         "matches": [
           {
             "id": "lib-sf-1",
-            "homeTeam": { "id": "botafogo", "name": "Botafogo de Futebol e Regatas", "shortName": "Botafogo" },
-            "awayTeam": { "id": "penarol", "name": "Club Atlético Peñarol", "shortName": "Peñarol" },
-            "leg1Score": { "home": 5, "away": 0 },
-            "leg2Score": { "home": 1, "away": 3 },
-            "aggregateScore": { "home": 6, "away": 3 },
+            "homeTeam": {
+              "id": "botafogo",
+              "name": "Botafogo de Futebol e Regatas",
+              "shortName": "Botafogo",
+              "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
+            },
+            "awayTeam": {
+              "id": "penarol",
+              "name": "Club Atlético Peñarol",
+              "shortName": "Peñarol"
+            },
+            "leg1Score": {
+              "home": 5,
+              "away": 0
+            },
+            "leg2Score": {
+              "home": 1,
+              "away": 3
+            },
+            "aggregateScore": {
+              "home": 6,
+              "away": 3
+            },
             "winnerTeamId": "botafogo",
             "status": "FINISHED",
             "nextMatchId": "lib-final"
           },
           {
             "id": "lib-sf-2",
-            "homeTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
-            "awayTeam": { "id": "river-plate", "name": "Club Atlético River Plate", "shortName": "River Plate" },
-            "leg1Score": { "home": 3, "away": 0 },
-            "leg2Score": { "home": 0, "away": 0 },
-            "aggregateScore": { "home": 3, "away": 0 },
+            "homeTeam": {
+              "id": "atletico-mg",
+              "name": "Clube Atlético Mineiro",
+              "shortName": "Atlético-MG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
+            },
+            "awayTeam": {
+              "id": "river-plate",
+              "name": "Club Atlético River Plate",
+              "shortName": "River Plate"
+            },
+            "leg1Score": {
+              "home": 3,
+              "away": 0
+            },
+            "leg2Score": {
+              "home": 0,
+              "away": 0
+            },
+            "aggregateScore": {
+              "home": 3,
+              "away": 0
+            },
             "winnerTeamId": "atletico-mg",
             "status": "FINISHED",
             "nextMatchId": "lib-final"
@@ -149,9 +321,22 @@
         "matches": [
           {
             "id": "lib-final",
-            "homeTeam": { "id": "atletico-mg", "name": "Clube Atlético Mineiro", "shortName": "Atlético-MG" },
-            "awayTeam": { "id": "botafogo", "name": "Botafogo de Futebol e Regatas", "shortName": "Botafogo" },
-            "aggregateScore": { "home": 1, "away": 3 },
+            "homeTeam": {
+              "id": "atletico-mg",
+              "name": "Clube Atlético Mineiro",
+              "shortName": "Atlético-MG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
+            },
+            "awayTeam": {
+              "id": "botafogo",
+              "name": "Botafogo de Futebol e Regatas",
+              "shortName": "Botafogo",
+              "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
+            },
+            "aggregateScore": {
+              "home": 1,
+              "away": 3
+            },
             "winnerTeamId": "botafogo",
             "status": "FINISHED"
           }
@@ -173,18 +358,40 @@
         "matches": [
           {
             "id": "fwc-sf-1",
-            "homeTeam": { "id": "brasil", "name": "Seleção Brasileira", "shortName": "Brasil" },
-            "awayTeam": { "id": "franca", "name": "Seleção Francesa", "shortName": "França" },
-            "aggregateScore": { "home": 2, "away": 1 },
+            "homeTeam": {
+              "id": "brasil",
+              "name": "Seleção Brasileira",
+              "shortName": "Brasil"
+            },
+            "awayTeam": {
+              "id": "franca",
+              "name": "Seleção Francesa",
+              "shortName": "França"
+            },
+            "aggregateScore": {
+              "home": 2,
+              "away": 1
+            },
             "winnerTeamId": "brasil",
             "status": "FINISHED",
             "nextMatchId": "fwc-final"
           },
           {
             "id": "fwc-sf-2",
-            "homeTeam": { "id": "argentina", "name": "Seleção Argentina", "shortName": "Argentina" },
-            "awayTeam": { "id": "espanha", "name": "Seleção Espanhola", "shortName": "Espanha" },
-            "aggregateScore": { "home": 1, "away": 2 },
+            "homeTeam": {
+              "id": "argentina",
+              "name": "Seleção Argentina",
+              "shortName": "Argentina"
+            },
+            "awayTeam": {
+              "id": "espanha",
+              "name": "Seleção Espanhola",
+              "shortName": "Espanha"
+            },
+            "aggregateScore": {
+              "home": 1,
+              "away": 2
+            },
             "winnerTeamId": "espanha",
             "status": "FINISHED",
             "nextMatchId": "fwc-final"
@@ -198,8 +405,16 @@
         "matches": [
           {
             "id": "fwc-final",
-            "homeTeam": { "id": "brasil", "name": "Seleção Brasileira", "shortName": "Brasil" },
-            "awayTeam": { "id": "espanha", "name": "Seleção Espanhola", "shortName": "Espanha" },
+            "homeTeam": {
+              "id": "brasil",
+              "name": "Seleção Brasileira",
+              "shortName": "Brasil"
+            },
+            "awayTeam": {
+              "id": "espanha",
+              "name": "Seleção Espanhola",
+              "shortName": "Espanha"
+            },
             "status": "UPCOMING"
           }
         ]

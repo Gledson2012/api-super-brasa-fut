@@ -275,7 +275,7 @@
             "goalsAgainst": 40,
             "goalDifference": -4,
             "points": 39,
-            "pointsPercentage": 50.0,
+            "pointsPercentage": 50,
             "form": [
               "W",
               "L",
@@ -430,7 +430,7 @@
             "goalsAgainst": 30,
             "goalDifference": -3,
             "points": 30,
-            "pointsPercentage": 40.0,
+            "pointsPercentage": 40,
             "form": [
               "D",
               "L",
@@ -652,7 +652,8 @@
               "id": "novorizontino",
               "name": "Novorizontino",
               "shortName": "Novorizontino",
-              "code": "NOV"
+              "code": "NOV",
+              "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
             },
             "played": 28,
             "won": 14,
@@ -713,7 +714,8 @@
               "id": "sport-recife",
               "name": "Sport Recife",
               "shortName": "Sport",
-              "code": "SPT"
+              "code": "SPT",
+              "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
             },
             "played": 27,
             "won": 13,
@@ -743,7 +745,8 @@
               "id": "operario-pr",
               "name": "Operário-PR",
               "shortName": "Operário",
-              "code": "OPE"
+              "code": "OPE",
+              "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
             },
             "played": 28,
             "won": 12,
@@ -753,7 +756,7 @@
             "goalsAgainst": 22,
             "goalDifference": 3,
             "points": 42,
-            "pointsPercentage": 50.0,
+            "pointsPercentage": 50,
             "form": [
               "W",
               "L",
@@ -789,7 +792,8 @@
               "id": "brazil-women-u20",
               "name": "Brasil Sub-20 Fem",
               "shortName": "Brasil",
-              "code": "BRA"
+              "code": "BRA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/cbf_fem.png"
             },
             "played": 4,
             "won": 4,
@@ -799,7 +803,7 @@
             "goalsAgainst": 1,
             "goalDifference": 16,
             "points": 12,
-            "pointsPercentage": 100.0,
+            "pointsPercentage": 100,
             "form": [
               "W",
               "W",
@@ -818,7 +822,8 @@
               "id": "usa-women-u20",
               "name": "EUA Sub-20 Fem",
               "shortName": "EUA",
-              "code": "USA"
+              "code": "USA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/ussoccer.png"
             },
             "played": 4,
             "won": 2,
@@ -828,7 +833,7 @@
             "goalsAgainst": 6,
             "goalDifference": 4,
             "points": 6,
-            "pointsPercentage": 50.0,
+            "pointsPercentage": 50,
             "form": [
               "W",
               "L",
@@ -862,7 +867,8 @@
               "id": "palmeiras-u17",
               "name": "Palmeiras Sub-17",
               "shortName": "Palmeiras U17",
-              "code": "PAL17"
+              "code": "PAL17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
             },
             "played": 9,
             "won": 7,
@@ -892,7 +898,8 @@
               "id": "internacional-u17",
               "name": "Internacional Sub-17",
               "shortName": "Internacional U17",
-              "code": "INT17"
+              "code": "INT17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
             },
             "played": 9,
             "won": 6,
@@ -922,7 +929,8 @@
               "id": "atletico-mg-u17",
               "name": "Atlético-MG Sub-17",
               "shortName": "Atlético-MG U17",
-              "code": "CAM17"
+              "code": "CAM17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
             },
             "played": 9,
             "won": 5,
@@ -932,7 +940,7 @@
             "goalsAgainst": 10,
             "goalDifference": 5,
             "points": 17,
-            "pointsPercentage": 63.0,
+            "pointsPercentage": 63,
             "form": [
               "W",
               "D",
@@ -952,7 +960,8 @@
               "id": "vasco-u17",
               "name": "Vasco Sub-17",
               "shortName": "Vasco U17",
-              "code": "VAS17"
+              "code": "VAS17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
             },
             "played": 9,
             "won": 5,
@@ -962,7 +971,7 @@
             "goalsAgainst": 6,
             "goalDifference": 5,
             "points": 17,
-            "pointsPercentage": 63.0,
+            "pointsPercentage": 63,
             "form": [
               "W",
               "L",
@@ -982,7 +991,8 @@
               "id": "bahia-u17",
               "name": "Bahia Sub-17",
               "shortName": "Bahia U17",
-              "code": "BAH17"
+              "code": "BAH17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
             },
             "played": 9,
             "won": 4,
@@ -1012,7 +1022,8 @@
               "id": "botafogo-u17",
               "name": "Botafogo Sub-17",
               "shortName": "Botafogo U17",
-              "code": "BOT17"
+              "code": "BOT17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
             },
             "played": 9,
             "won": 4,
@@ -1042,7 +1053,8 @@
               "id": "gremio-u17",
               "name": "Grêmio Sub-17",
               "shortName": "Grêmio U17",
-              "code": "GRE17"
+              "code": "GRE17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
             },
             "played": 9,
             "won": 4,
@@ -1072,7 +1084,8 @@
               "id": "vitoria-u17",
               "name": "Vitória Sub-17",
               "shortName": "Vitória U17",
-              "code": "VIT17"
+              "code": "VIT17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
             },
             "played": 9,
             "won": 4,
@@ -1102,7 +1115,8 @@
               "id": "corinthians-u17",
               "name": "Corinthians Sub-17",
               "shortName": "Corinthians U17",
-              "code": "COR17"
+              "code": "COR17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
             },
             "played": 9,
             "won": 4,
@@ -1132,7 +1146,8 @@
               "id": "juventude-u17",
               "name": "Juventude Sub-17",
               "shortName": "Juventude U17",
-              "code": "JUV17"
+              "code": "JUV17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
             },
             "played": 9,
             "won": 3,
@@ -1162,7 +1177,8 @@
               "id": "flamengo-u17",
               "name": "Flamengo Sub-17",
               "shortName": "Flamengo U17",
-              "code": "FLA17"
+              "code": "FLA17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
             },
             "played": 9,
             "won": 2,
@@ -1192,7 +1208,8 @@
               "id": "criciuma-u17",
               "name": "Criciúma Sub-17",
               "shortName": "Criciúma U17",
-              "code": "CRI17"
+              "code": "CRI17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
             },
             "played": 9,
             "won": 2,
@@ -1222,7 +1239,8 @@
               "id": "athletico-pr-u17",
               "name": "Athletico-PR Sub-17",
               "shortName": "Athletico-PR U17",
-              "code": "CAP17"
+              "code": "CAP17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
             },
             "played": 9,
             "won": 3,
@@ -1252,7 +1270,8 @@
               "id": "cuiaba-u17",
               "name": "Cuiabá Sub-17",
               "shortName": "Cuiabá U17",
-              "code": "CUI17"
+              "code": "CUI17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
             },
             "played": 9,
             "won": 3,
@@ -1282,7 +1301,8 @@
               "id": "fortaleza-u17",
               "name": "Fortaleza Sub-17",
               "shortName": "Fortaleza U17",
-              "code": "FOR17"
+              "code": "FOR17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
             },
             "played": 9,
             "won": 2,
@@ -1292,7 +1312,7 @@
             "goalsAgainst": 15,
             "goalDifference": -3,
             "points": 10,
-            "pointsPercentage": 37.0,
+            "pointsPercentage": 37,
             "form": [
               "L",
               "D",
@@ -1312,7 +1332,8 @@
               "id": "cruzeiro-u17",
               "name": "Cruzeiro Sub-17",
               "shortName": "Cruzeiro U17",
-              "code": "CRU17"
+              "code": "CRU17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
             },
             "played": 9,
             "won": 2,
@@ -1342,7 +1363,8 @@
               "id": "sao-paulo-u17",
               "name": "São Paulo Sub-17",
               "shortName": "São Paulo U17",
-              "code": "SAO17"
+              "code": "SAO17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
             },
             "played": 9,
             "won": 2,
@@ -1372,7 +1394,8 @@
               "id": "atletico-go-u17",
               "name": "Atlético-GO Sub-17",
               "shortName": "Atlético-GO U17",
-              "code": "ACG17"
+              "code": "ACG17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
             },
             "played": 9,
             "won": 2,
@@ -1402,7 +1425,8 @@
               "id": "fluminense-u17",
               "name": "Fluminense Sub-17",
               "shortName": "Fluminense U17",
-              "code": "FLU17"
+              "code": "FLU17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
             },
             "played": 9,
             "won": 1,
@@ -1432,7 +1456,8 @@
               "id": "bragantino-u17",
               "name": "Red Bull Bragantino Sub-17",
               "shortName": "Bragantino U17",
-              "code": "RBB17"
+              "code": "RBB17",
+              "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
             },
             "played": 9,
             "won": 0,

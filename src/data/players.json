@@ -17,7 +17,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 41,
     "marketValueEur": 45000000,
@@ -61,7 +62,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 60000000,
@@ -104,7 +106,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 23000000,
@@ -147,7 +150,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 20000000,
@@ -188,7 +192,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 60000000,
@@ -228,7 +233,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 18000000,
@@ -265,7 +271,8 @@
     "currentTeam": {
       "id": "manchester-city-women",
       "name": "Manchester City Women",
-      "shortName": "Man City Fem"
+      "shortName": "Man City Fem",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity_women.png"
     },
     "shirtNumber": 9,
     "fbrefId": "9ff67bf9",
@@ -301,7 +308,8 @@
     "currentTeam": {
       "id": "juventus-women",
       "name": "Juventus Women",
-      "shortName": "Juventus Fem"
+      "shortName": "Juventus Fem",
+      "logoUrl": "https://static.flashscore.com/res/image/data/juventus_women.png"
     },
     "shirtNumber": 7,
     "fbrefId": "f32bb122",
@@ -337,7 +345,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 14,
     "fbrefId": "980522ec",
@@ -373,7 +382,8 @@
     "currentTeam": {
       "id": "usa-women-u20",
       "name": "USWNT / Chicago Red Stars",
-      "shortName": "USA"
+      "shortName": "USA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/ussoccer.png"
     },
     "shirtNumber": 9,
     "fbrefId": "70b0fd86",
@@ -409,7 +419,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário-PR",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 2200000,
@@ -450,7 +461,8 @@
     "currentTeam": {
       "id": "brazil-women-u20",
       "name": "Brasil Sub-20 Fem",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cbf_fem.png"
     },
     "shirtNumber": 10,
     "stats": [
@@ -489,7 +501,8 @@
     "currentTeam": {
       "id": "brazil-women-u20",
       "name": "Brasil Sub-20 Fem",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cbf_fem.png"
     },
     "shirtNumber": 9,
     "stats": [
@@ -528,7 +541,8 @@
     "currentTeam": {
       "id": "brazil-women-u20",
       "name": "Brasil Sub-20 Fem",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cbf_fem.png"
     },
     "shirtNumber": 11,
     "stats": [
@@ -567,7 +581,8 @@
     "currentTeam": {
       "id": "usa-women-u20",
       "name": "EUA Sub-20 Fem",
-      "shortName": "EUA"
+      "shortName": "EUA",
+      "logoUrl": "https://static.flashscore.com/res/image/data/ussoccer.png"
     },
     "shirtNumber": 7,
     "stats": [
@@ -606,7 +621,8 @@
     "currentTeam": {
       "id": "corinthians-u17",
       "name": "Corinthians Sub-17",
-      "shortName": "Corinthians U17"
+      "shortName": "Corinthians U17",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 9,
     "stats": [
@@ -645,7 +661,8 @@
     "currentTeam": {
       "id": "corinthians-u17",
       "name": "Corinthians Sub-17",
-      "shortName": "Corinthians U17"
+      "shortName": "Corinthians U17",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 8,
     "stats": [
@@ -682,7 +699,8 @@
     "currentTeam": {
       "id": "juventude-u17",
       "name": "Juventude Sub-17",
-      "shortName": "Juventude U17"
+      "shortName": "Juventude U17",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 11,
     "stats": [
@@ -721,7 +739,8 @@
     "currentTeam": {
       "id": "flamengo-u17",
       "name": "Flamengo Sub-17",
-      "shortName": "Flamengo U17"
+      "shortName": "Flamengo U17",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 10,
     "stats": [
@@ -760,7 +779,8 @@
     "currentTeam": {
       "id": "flamengo-u17",
       "name": "Flamengo Sub-17",
-      "shortName": "Flamengo U17"
+      "shortName": "Flamengo U17",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 8,
     "stats": [
@@ -799,7 +819,8 @@
     "currentTeam": {
       "id": "bragantino-u17",
       "name": "Red Bull Bragantino Sub-17",
-      "shortName": "Bragantino U17"
+      "shortName": "Bragantino U17",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 7,
     "stats": [
@@ -838,7 +859,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 1794941,
@@ -877,7 +899,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 32,
     "marketValueEur": 6475460,
@@ -916,7 +939,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 7433600,
@@ -955,7 +979,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 6769197,
@@ -994,7 +1019,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 3571216,
@@ -1033,7 +1059,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 8248067,
@@ -1072,7 +1099,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 4482966,
@@ -1111,7 +1139,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 5109170,
@@ -1150,7 +1179,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 1034441,
@@ -1189,7 +1219,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 7126122,
@@ -1231,7 +1262,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 70,
     "marketValueEur": 2249380,
@@ -1273,7 +1305,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 27,
     "marketValueEur": 4140548,
@@ -1315,7 +1348,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 4223081,
@@ -1357,7 +1391,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 9607242,
@@ -1399,7 +1434,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 77,
     "marketValueEur": 4678692,
@@ -1441,7 +1477,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 10537743,
@@ -1483,7 +1520,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 4615213,
@@ -1525,7 +1563,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 5956916,
@@ -1567,7 +1606,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 94,
     "marketValueEur": 7543388,
@@ -1609,7 +1649,8 @@
     "currentTeam": {
       "id": "corinthians",
       "name": "Sport Club Corinthians Paulista",
-      "shortName": "Corinthians"
+      "shortName": "Corinthians",
+      "logoUrl": "https://static.flashscore.com/res/image/data/Ye5nRt96-vwZxbhWf.png"
     },
     "shirtNumber": 43,
     "marketValueEur": 2323424,
@@ -1651,7 +1692,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 3884476,
@@ -1690,7 +1732,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 6853370,
@@ -1729,7 +1772,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 2958639,
@@ -1768,7 +1812,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 2554101,
@@ -1807,7 +1852,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 2717392,
@@ -1846,7 +1892,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 28,
     "marketValueEur": 4071560,
@@ -1885,7 +1932,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 35,
     "marketValueEur": 1311755,
@@ -1924,7 +1972,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 7758130,
@@ -1963,7 +2012,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 9814712,
@@ -2005,7 +2055,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 9222242,
@@ -2047,7 +2098,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 3996443,
@@ -2089,7 +2141,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 9910031,
@@ -2131,7 +2184,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 7347180,
@@ -2173,7 +2227,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 5367548,
@@ -2215,7 +2270,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 3839452,
@@ -2257,7 +2313,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 47,
     "marketValueEur": 2258920,
@@ -2299,7 +2356,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 8636637,
@@ -2341,7 +2399,8 @@
     "currentTeam": {
       "id": "sao-paulo",
       "name": "São Paulo Futebol Clube",
-      "shortName": "São Paulo"
+      "shortName": "São Paulo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/AqT1035k-SnNquAxn.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 1894615,
@@ -2383,7 +2442,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 4893338,
@@ -2422,7 +2482,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 7112134,
@@ -2461,7 +2522,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 5881991,
@@ -2500,7 +2562,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 12,
     "marketValueEur": 2000966,
@@ -2539,7 +2602,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 6483661,
@@ -2578,7 +2642,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 4259780,
@@ -2617,7 +2682,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 44,
     "marketValueEur": 4201057,
@@ -2656,7 +2722,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 7666852,
@@ -2695,7 +2762,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 10623411,
@@ -2734,7 +2802,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 1514534,
@@ -2776,7 +2845,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 3719323,
@@ -2818,7 +2888,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 27,
     "marketValueEur": 3927225,
@@ -2860,7 +2931,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 8063007,
@@ -2902,7 +2974,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 9282614,
@@ -2944,7 +3017,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 3276539,
@@ -2986,7 +3060,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 42,
     "marketValueEur": 7415352,
@@ -3028,7 +3103,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 7226037,
@@ -3070,7 +3146,8 @@
     "currentTeam": {
       "id": "palmeiras",
       "name": "Sociedade Esportiva Palmeiras",
-      "shortName": "Palmeiras"
+      "shortName": "Palmeiras",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vcnMPVmC-0AQGrvkC.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 5809868,
@@ -3112,7 +3189,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 1456805,
@@ -3151,7 +3229,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 8733191,
@@ -3190,7 +3269,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 7903982,
@@ -3229,7 +3309,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 43,
     "marketValueEur": 9131099,
@@ -3268,7 +3349,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 7999455,
@@ -3307,7 +3389,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 2662076,
@@ -3346,7 +3429,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 4040077,
@@ -3385,7 +3469,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 6621848,
@@ -3424,7 +3509,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 2252769,
@@ -3463,7 +3549,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 8479995,
@@ -3505,7 +3592,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 6663529,
@@ -3547,7 +3635,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 1848171,
@@ -3589,7 +3678,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 9518348,
@@ -3631,7 +3721,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 37,
     "marketValueEur": 3585349,
@@ -3673,7 +3764,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 99,
     "marketValueEur": 4167143,
@@ -3715,7 +3807,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 27,
     "marketValueEur": 5009499,
@@ -3757,7 +3850,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 30,
     "marketValueEur": 9187023,
@@ -3799,7 +3893,8 @@
     "currentTeam": {
       "id": "flamengo",
       "name": "Clube de Regatas do Flamengo",
-      "shortName": "Flamengo"
+      "shortName": "Flamengo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jDmbIEWH-MXtqCKhj.png"
     },
     "shirtNumber": 45,
     "marketValueEur": 10667357,
@@ -3841,7 +3936,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 12,
     "marketValueEur": 6701774,
@@ -3880,7 +3976,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 4357229,
@@ -3919,7 +4016,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 9034262,
@@ -3958,7 +4056,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 3197652,
@@ -3997,7 +4096,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 7838981,
@@ -4036,7 +4136,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 10390696,
@@ -4075,7 +4176,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 34,
     "marketValueEur": 4599790,
@@ -4114,7 +4216,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 9353971,
@@ -4153,7 +4256,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 66,
     "marketValueEur": 10673089,
@@ -4192,7 +4296,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 1144997,
@@ -4234,7 +4339,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 2991768,
@@ -4276,7 +4382,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 2033179,
@@ -4318,7 +4425,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 5342998,
@@ -4360,7 +4468,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 33,
     "marketValueEur": 2948707,
@@ -4402,7 +4511,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 2499353,
@@ -4444,7 +4554,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 99,
     "marketValueEur": 2342873,
@@ -4486,7 +4597,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 1450246,
@@ -4528,7 +4640,8 @@
     "currentTeam": {
       "id": "botafogo",
       "name": "Botafogo de Futebol e Regatas",
-      "shortName": "Botafogo"
+      "shortName": "Botafogo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/nc6BqPBN-n98G3tq2.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 9643218,
@@ -4570,7 +4683,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 2023009,
@@ -4609,7 +4723,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 3245777,
@@ -4648,7 +4763,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 96,
     "marketValueEur": 5257268,
@@ -4687,7 +4803,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 10518053,
@@ -4726,7 +4843,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 38,
     "marketValueEur": 2515075,
@@ -4765,7 +4883,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 9319499,
@@ -4804,7 +4923,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 3115057,
@@ -4843,7 +4963,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 3670008,
@@ -4882,7 +5003,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 6463839,
@@ -4924,7 +5046,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 85,
     "marketValueEur": 3379498,
@@ -4966,7 +5089,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 6517403,
@@ -5008,7 +5132,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 10254949,
@@ -5050,7 +5175,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 5798747,
@@ -5092,7 +5218,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 1268185,
@@ -5134,7 +5261,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 5099950,
@@ -5176,7 +5304,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 3788748,
@@ -5218,7 +5347,8 @@
     "currentTeam": {
       "id": "vasco",
       "name": "Club de Regatas Vasco da Gama",
-      "shortName": "Vasco"
+      "shortName": "Vasco",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hKsaEA6k-voBQ8Nl7.png"
     },
     "shirtNumber": 77,
     "marketValueEur": 4597505,
@@ -5260,7 +5390,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 5039361,
@@ -5299,7 +5430,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 4638725,
@@ -5338,7 +5470,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 1337694,
@@ -5377,7 +5510,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 2014444,
@@ -5416,7 +5550,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 3421698,
@@ -5455,7 +5590,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 5886913,
@@ -5494,7 +5630,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 5679250,
@@ -5533,7 +5670,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 12,
     "marketValueEur": 6126399,
@@ -5572,7 +5710,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 4024920,
@@ -5614,7 +5753,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 4616206,
@@ -5656,7 +5796,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 1313551,
@@ -5698,7 +5839,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 6431581,
@@ -5740,7 +5882,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 9782367,
@@ -5782,7 +5925,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 9512103,
@@ -5824,7 +5968,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 8687471,
@@ -5866,7 +6011,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 10984720,
@@ -5908,7 +6054,8 @@
     "currentTeam": {
       "id": "fluminense",
       "name": "Fluminense Football Club",
-      "shortName": "Fluminense"
+      "shortName": "Fluminense",
+      "logoUrl": "https://static.flashscore.com/res/image/data/fluminense.png"
     },
     "shirtNumber": 90,
     "marketValueEur": 2190876,
@@ -5950,7 +6097,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 10150067,
@@ -5989,7 +6137,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 31,
     "marketValueEur": 10474742,
@@ -6028,7 +6177,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 4244882,
@@ -6067,7 +6217,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 8279989,
@@ -6106,7 +6257,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 1811143,
@@ -6145,7 +6297,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 9297483,
@@ -6184,7 +6337,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 9626489,
@@ -6223,7 +6377,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 10319748,
@@ -6262,7 +6417,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 44,
     "marketValueEur": 4318494,
@@ -6301,7 +6457,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 3073615,
@@ -6343,7 +6500,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 7239834,
@@ -6385,7 +6543,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 3461913,
@@ -6427,7 +6586,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 10708523,
@@ -6469,7 +6629,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 4789604,
@@ -6511,7 +6672,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 9772185,
@@ -6553,7 +6715,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 9495886,
@@ -6595,7 +6758,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 8531369,
@@ -6637,7 +6801,8 @@
     "currentTeam": {
       "id": "atletico-mg",
       "name": "Clube Atlético Mineiro",
-      "shortName": "Atlético-MG"
+      "shortName": "Atlético-MG",
+      "logoUrl": "https://static.flashscore.com/res/image/data/h8ZzOL5k-UHhQ6Y1N.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 6229720,
@@ -6679,7 +6844,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 1997381,
@@ -6718,7 +6884,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 98,
     "marketValueEur": 6356172,
@@ -6757,7 +6924,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 12,
     "marketValueEur": 7864150,
@@ -6796,7 +6964,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 10106984,
@@ -6835,7 +7004,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 43,
     "marketValueEur": 1435301,
@@ -6874,7 +7044,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 5923085,
@@ -6913,7 +7084,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 5637682,
@@ -6952,7 +7124,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 4952634,
@@ -6994,7 +7167,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 2679836,
@@ -7036,7 +7210,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 97,
     "marketValueEur": 8908445,
@@ -7078,7 +7253,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 10281528,
@@ -7120,7 +7296,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 7659399,
@@ -7162,7 +7339,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 1440176,
@@ -7204,7 +7382,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 3405138,
@@ -7246,7 +7425,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 5568350,
@@ -7288,7 +7468,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 2713864,
@@ -7330,7 +7511,8 @@
     "currentTeam": {
       "id": "cruzeiro",
       "name": "Cruzeiro Esporte Clube",
-      "shortName": "Cruzeiro"
+      "shortName": "Cruzeiro",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cruzeiro.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 5466697,
@@ -7372,7 +7554,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 5132879,
@@ -7411,7 +7594,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 33,
     "marketValueEur": 7402339,
@@ -7450,7 +7634,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 1076271,
@@ -7489,7 +7674,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 9883494,
@@ -7528,7 +7714,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 3117351,
@@ -7567,7 +7754,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 8711603,
@@ -7606,7 +7794,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 28,
     "marketValueEur": 4473414,
@@ -7645,7 +7834,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 6318328,
@@ -7684,7 +7874,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 8246497,
@@ -7726,7 +7917,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 5438038,
@@ -7768,7 +7960,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 9632656,
@@ -7810,7 +8003,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 4390410,
@@ -7852,7 +8046,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 2837311,
@@ -7894,7 +8089,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 3544112,
@@ -7936,7 +8132,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 3992684,
@@ -7978,7 +8175,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 10711214,
@@ -8020,7 +8218,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 3448463,
@@ -8062,7 +8261,8 @@
     "currentTeam": {
       "id": "gremio",
       "name": "Grêmio Foot-Ball Porto Alegrense",
-      "shortName": "Grêmio"
+      "shortName": "Grêmio",
+      "logoUrl": "https://static.flashscore.com/res/image/data/gremio.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 8687514,
@@ -8104,7 +8304,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 33,
     "marketValueEur": 3123000,
@@ -8143,7 +8344,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 24,
     "marketValueEur": 1526134,
@@ -8182,7 +8384,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 7185261,
@@ -8221,7 +8424,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 5937536,
@@ -8260,7 +8464,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 6774520,
@@ -8299,7 +8504,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 44,
     "marketValueEur": 3215846,
@@ -8338,7 +8544,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 1329150,
@@ -8377,7 +8584,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 1102421,
@@ -8416,7 +8624,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 10995156,
@@ -8458,7 +8667,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 1806028,
@@ -8500,7 +8710,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 2906786,
@@ -8542,7 +8753,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 9273290,
@@ -8584,7 +8796,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 34,
     "marketValueEur": 7436258,
@@ -8626,7 +8839,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 6316388,
@@ -8668,7 +8882,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 8471761,
@@ -8710,7 +8925,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 3599029,
@@ -8752,7 +8968,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 2153583,
@@ -8794,7 +9011,8 @@
     "currentTeam": {
       "id": "internacional",
       "name": "Sport Club Internacional",
-      "shortName": "Internacional"
+      "shortName": "Internacional",
+      "logoUrl": "https://static.flashscore.com/res/image/data/jkqGczU0-dQecUsVf.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 5961597,
@@ -8836,7 +9054,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 4933398,
@@ -8875,7 +9094,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 6415402,
@@ -8914,7 +9134,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 7511868,
@@ -8953,7 +9174,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 5920360,
@@ -8992,7 +9214,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 9806677,
@@ -9031,7 +9254,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 6967356,
@@ -9070,7 +9294,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 10933953,
@@ -9109,7 +9334,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 46,
     "marketValueEur": 3951004,
@@ -9148,7 +9374,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 4733583,
@@ -9187,7 +9414,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 5056987,
@@ -9229,7 +9457,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 2673727,
@@ -9271,7 +9500,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 7755780,
@@ -9313,7 +9543,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 6858396,
@@ -9355,7 +9586,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 3378705,
@@ -9397,7 +9629,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 10212781,
@@ -9439,7 +9672,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 9112895,
@@ -9481,7 +9715,8 @@
     "currentTeam": {
       "id": "bahia",
       "name": "Esporte Clube Bahia",
-      "shortName": "Bahia"
+      "shortName": "Bahia",
+      "logoUrl": "https://static.flashscore.com/res/image/data/bahia.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 9414956,
@@ -9523,7 +9758,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 2877738,
@@ -9562,7 +9798,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 7295240,
@@ -9601,7 +9838,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 6021187,
@@ -9640,7 +9878,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 33,
     "marketValueEur": 2953099,
@@ -9679,7 +9918,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 3652848,
@@ -9718,7 +9958,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 8283452,
@@ -9757,7 +9998,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 9222267,
@@ -9796,7 +10038,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 10017877,
@@ -9835,7 +10078,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 35,
     "marketValueEur": 5198353,
@@ -9877,7 +10121,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 88,
     "marketValueEur": 7165664,
@@ -9919,7 +10164,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 28,
     "marketValueEur": 8717157,
@@ -9961,7 +10207,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 4704711,
@@ -10003,7 +10250,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 8068600,
@@ -10045,7 +10293,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 5655930,
@@ -10087,7 +10336,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 9012543,
@@ -10129,7 +10379,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 10938069,
@@ -10171,7 +10422,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 4806218,
@@ -10213,7 +10465,8 @@
     "currentTeam": {
       "id": "fortaleza",
       "name": "Fortaleza Esporte Clube",
-      "shortName": "Fortaleza"
+      "shortName": "Fortaleza",
+      "logoUrl": "https://static.flashscore.com/res/image/data/prtL5QU0-ED0BdMAl.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 8647964,
@@ -10255,7 +10508,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 24,
     "marketValueEur": 1510833,
@@ -10294,7 +10548,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 1423457,
@@ -10333,7 +10588,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 2906873,
@@ -10372,7 +10628,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 3160926,
@@ -10411,7 +10668,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 44,
     "marketValueEur": 8947742,
@@ -10450,7 +10708,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 9908187,
@@ -10489,7 +10748,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 37,
     "marketValueEur": 10853027,
@@ -10528,7 +10788,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 26,
     "marketValueEur": 7149592,
@@ -10570,7 +10831,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 5866058,
@@ -10612,7 +10874,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 5447261,
@@ -10654,7 +10917,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 88,
     "marketValueEur": 4940961,
@@ -10696,7 +10960,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 1353716,
@@ -10738,7 +11003,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 7657370,
@@ -10780,7 +11046,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 28,
     "marketValueEur": 1198910,
@@ -10822,7 +11089,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 4126484,
@@ -10864,7 +11132,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 92,
     "marketValueEur": 7186130,
@@ -10906,7 +11175,8 @@
     "currentTeam": {
       "id": "athletico-pr",
       "name": "Club Athletico Paranaense",
-      "shortName": "Athletico-PR"
+      "shortName": "Athletico-PR",
+      "logoUrl": "https://static.flashscore.com/res/image/data/athletico.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 4930489,
@@ -10948,7 +11218,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 10953168,
@@ -10987,7 +11258,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 37,
     "marketValueEur": 2391141,
@@ -11026,7 +11298,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 45,
     "marketValueEur": 4469127,
@@ -11065,7 +11338,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 34,
     "marketValueEur": 1675787,
@@ -11104,7 +11378,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 6185131,
@@ -11143,7 +11418,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 7907613,
@@ -11182,7 +11458,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 36,
     "marketValueEur": 5547229,
@@ -11221,7 +11498,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 5219566,
@@ -11260,7 +11538,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 2279039,
@@ -11302,7 +11581,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 3130160,
@@ -11344,7 +11624,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 2966342,
@@ -11386,7 +11667,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 1713502,
@@ -11428,7 +11710,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 2577089,
@@ -11470,7 +11753,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 28,
     "marketValueEur": 2875763,
@@ -11512,7 +11796,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 1213256,
@@ -11554,7 +11839,8 @@
     "currentTeam": {
       "id": "bragantino",
       "name": "Red Bull Bragantino",
-      "shortName": "Bragantino"
+      "shortName": "Bragantino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/vXo6JbUH-K44xzw5E.png"
     },
     "shirtNumber": 18,
     "marketValueEur": 3845146,
@@ -11596,7 +11882,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 4990978,
@@ -11635,7 +11922,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 5662477,
@@ -11674,7 +11962,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 3568921,
@@ -11713,7 +12002,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 6712986,
@@ -11752,7 +12042,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 9707807,
@@ -11791,7 +12082,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 3595597,
@@ -11830,7 +12122,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 1539384,
@@ -11869,7 +12162,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 8573044,
@@ -11908,7 +12202,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 1467647,
@@ -11950,7 +12245,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 9886713,
@@ -11992,7 +12288,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 9326685,
@@ -12034,7 +12331,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 8800035,
@@ -12076,7 +12374,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 9039473,
@@ -12118,7 +12417,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 45,
     "marketValueEur": 9522370,
@@ -12160,7 +12460,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 8840593,
@@ -12202,7 +12503,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 3760701,
@@ -12244,7 +12546,8 @@
     "currentTeam": {
       "id": "criciuma",
       "name": "Criciúma Esporte Clube",
-      "shortName": "Criciúma"
+      "shortName": "Criciúma",
+      "logoUrl": "https://static.flashscore.com/res/image/data/criciuma.png"
     },
     "shirtNumber": 77,
     "marketValueEur": 6216806,
@@ -12286,7 +12589,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 7066309,
@@ -12325,7 +12629,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 12,
     "marketValueEur": 2969301,
@@ -12364,7 +12669,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 9730463,
@@ -12403,7 +12709,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 1513279,
@@ -12442,7 +12749,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 7948629,
@@ -12481,7 +12789,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 33,
     "marketValueEur": 3377751,
@@ -12520,7 +12829,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 28,
     "marketValueEur": 3322235,
@@ -12559,7 +12869,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 1522538,
@@ -12601,7 +12912,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 2092420,
@@ -12643,7 +12955,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 10617271,
@@ -12685,7 +12998,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 3649697,
@@ -12727,7 +13041,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 4537575,
@@ -12769,7 +13084,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 10499660,
@@ -12811,7 +13127,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 3038069,
@@ -12853,7 +13170,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 3731836,
@@ -12895,7 +13213,8 @@
     "currentTeam": {
       "id": "juventude",
       "name": "Esporte Clube Juventude",
-      "shortName": "Juventude"
+      "shortName": "Juventude",
+      "logoUrl": "https://static.flashscore.com/res/image/data/xteGPBCN-db95gMtJ.png"
     },
     "shirtNumber": 99,
     "marketValueEur": 1947001,
@@ -12937,7 +13256,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 9288460,
@@ -12976,7 +13296,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 2558063,
@@ -13015,7 +13336,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 2014071,
@@ -13054,7 +13376,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 98,
     "marketValueEur": 4550610,
@@ -13093,7 +13416,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 40,
     "marketValueEur": 8819271,
@@ -13132,7 +13456,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 2637434,
@@ -13171,7 +13496,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 83,
     "marketValueEur": 2107810,
@@ -13210,7 +13536,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 3827799,
@@ -13252,7 +13579,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 6190463,
@@ -13294,7 +13622,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 8873849,
@@ -13336,7 +13665,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 9859448,
@@ -13378,7 +13708,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 30,
     "marketValueEur": 7982901,
@@ -13420,7 +13751,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 3850656,
@@ -13462,7 +13794,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 4857626,
@@ -13504,7 +13837,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 5874350,
@@ -13546,7 +13880,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 9930331,
@@ -13588,7 +13923,8 @@
     "currentTeam": {
       "id": "vitoria",
       "name": "Esporte Clube Vitória",
-      "shortName": "Vitória"
+      "shortName": "Vitória",
+      "logoUrl": "https://static.flashscore.com/res/image/data/EkiR56AN-61GCKhF0.png"
     },
     "shirtNumber": 39,
     "marketValueEur": 5929992,
@@ -13630,7 +13966,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 5942669,
@@ -13669,7 +14006,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 9124233,
@@ -13708,7 +14046,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 1121797,
@@ -13747,7 +14086,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 1128814,
@@ -13786,7 +14126,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 33,
     "marketValueEur": 9166522,
@@ -13825,7 +14166,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 9034788,
@@ -13864,7 +14206,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 8563971,
@@ -13903,7 +14246,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 4929860,
@@ -13945,7 +14289,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 88,
     "marketValueEur": 5418986,
@@ -13987,7 +14332,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 1015362,
@@ -14029,7 +14375,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 6695775,
@@ -14071,7 +14418,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 10344786,
@@ -14113,7 +14461,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 10814827,
@@ -14155,7 +14504,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 3562930,
@@ -14197,7 +14547,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 1114065,
@@ -14239,7 +14590,8 @@
     "currentTeam": {
       "id": "cuiaba",
       "name": "Cuiabá Esporte Clube",
-      "shortName": "Cuiabá"
+      "shortName": "Cuiabá",
+      "logoUrl": "https://static.flashscore.com/res/image/data/cuiaba.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 9419205,
@@ -14281,7 +14633,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 6749164,
@@ -14320,7 +14673,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 99,
     "marketValueEur": 6961691,
@@ -14359,7 +14713,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 4871394,
@@ -14398,7 +14753,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 1152481,
@@ -14437,7 +14793,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 6671508,
@@ -14476,7 +14833,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 5172034,
@@ -14515,7 +14873,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 28,
     "marketValueEur": 6874664,
@@ -14554,7 +14913,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 7348666,
@@ -14593,7 +14953,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 10485190,
@@ -14635,7 +14996,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 4545089,
@@ -14677,7 +15039,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 88,
     "marketValueEur": 4581951,
@@ -14719,7 +15082,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 1858890,
@@ -14761,7 +15125,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 27,
     "marketValueEur": 4028625,
@@ -14803,7 +15168,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 9905319,
@@ -14845,7 +15211,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 8070259,
@@ -14887,7 +15254,8 @@
     "currentTeam": {
       "id": "atletico-go",
       "name": "Atlético Clube Goianiense",
-      "shortName": "Atlético-GO"
+      "shortName": "Atlético-GO",
+      "logoUrl": "https://static.flashscore.com/res/image/data/atletico_go.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 1505620,
@@ -14929,7 +15297,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 77,
     "marketValueEur": 1076532,
@@ -14968,7 +15337,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 12,
     "marketValueEur": 5365005,
@@ -15007,7 +15377,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 10707560,
@@ -15046,7 +15417,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 3204116,
@@ -15085,7 +15457,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 32,
     "marketValueEur": 8710900,
@@ -15124,7 +15497,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 4247850,
@@ -15163,7 +15537,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 31,
     "marketValueEur": 1245548,
@@ -15202,7 +15577,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 9639332,
@@ -15244,7 +15620,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 2430438,
@@ -15286,7 +15663,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 8280157,
@@ -15328,7 +15706,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 7970619,
@@ -15370,7 +15749,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 37,
     "marketValueEur": 4004562,
@@ -15412,7 +15792,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 9683360,
@@ -15454,7 +15835,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 4300153,
@@ -15496,7 +15878,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 9650993,
@@ -15538,7 +15921,8 @@
     "currentTeam": {
       "id": "santos",
       "name": "Santos Futebol Clube",
-      "shortName": "Santos"
+      "shortName": "Santos",
+      "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
     },
     "shirtNumber": 27,
     "marketValueEur": 6018027,
@@ -15580,7 +15964,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 7223426,
@@ -15619,7 +16004,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 10829285,
@@ -15658,7 +16044,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 1004142,
@@ -15697,7 +16084,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 5657862,
@@ -15736,7 +16124,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 40,
     "marketValueEur": 3930774,
@@ -15775,7 +16164,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 5333292,
@@ -15814,7 +16204,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 10201434,
@@ -15856,7 +16247,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 3510207,
@@ -15898,7 +16290,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 9877972,
@@ -15940,7 +16333,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 30,
     "marketValueEur": 6797141,
@@ -15982,7 +16376,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 6304446,
@@ -16024,7 +16419,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 1908211,
@@ -16066,7 +16462,8 @@
     "currentTeam": {
       "id": "sport-recife",
       "name": "Sport Club do Recife",
-      "shortName": "Sport"
+      "shortName": "Sport",
+      "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
     },
     "shirtNumber": 99,
     "marketValueEur": 8791063,
@@ -16108,7 +16505,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 9478031,
@@ -16147,7 +16545,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 1475910,
@@ -16186,7 +16585,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 7515088,
@@ -16225,7 +16625,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 10065059,
@@ -16264,7 +16665,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 5036862,
@@ -16303,7 +16705,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 7197328,
@@ -16345,7 +16748,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 3563140,
@@ -16387,7 +16791,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 8370769,
@@ -16429,7 +16834,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 8881690,
@@ -16471,7 +16877,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 2884678,
@@ -16513,7 +16920,8 @@
     "currentTeam": {
       "id": "novorizontino",
       "name": "Grêmio Novorizontino",
-      "shortName": "Novorizontino"
+      "shortName": "Novorizontino",
+      "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 5360517,
@@ -16555,7 +16963,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 7129972,
@@ -16594,7 +17003,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 1705797,
@@ -16633,7 +17043,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 4722272,
@@ -16672,7 +17083,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 3329129,
@@ -16711,7 +17123,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 2428414,
@@ -16750,7 +17163,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 5942940,
@@ -16792,7 +17206,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 6574674,
@@ -16834,7 +17249,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 3453546,
@@ -16876,7 +17292,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 4311226,
@@ -16918,7 +17335,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 7134348,
@@ -16960,7 +17378,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 7551932,
@@ -17002,7 +17421,8 @@
     "currentTeam": {
       "id": "operario-pr",
       "name": "Operário Ferroviário Esporte Clube",
-      "shortName": "Operário"
+      "shortName": "Operário",
+      "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
     },
     "shirtNumber": 99,
     "marketValueEur": 10373527,
@@ -17044,7 +17464,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 8062186,
@@ -17083,7 +17504,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 3525043,
@@ -17122,7 +17544,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 5321224,
@@ -17161,7 +17584,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 6420554,
@@ -17200,7 +17624,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 4256922,
@@ -17239,7 +17664,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 9640084,
@@ -17278,7 +17704,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 7583497,
@@ -17317,7 +17744,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 9849404,
@@ -17359,7 +17787,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 4360156,
@@ -17401,7 +17830,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 1702993,
@@ -17443,7 +17873,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 10786907,
@@ -17485,7 +17916,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 7970513,
@@ -17527,7 +17959,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 9624145,
@@ -17569,7 +18002,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 6208007,
@@ -17611,7 +18045,8 @@
     "currentTeam": {
       "id": "brazil-national",
       "name": "Seleção Brasileira de Futebol",
-      "shortName": "Brasil"
+      "shortName": "Brasil",
+      "logoUrl": "https://static.flashscore.com/res/image/data/S4xR4vT0-UqD1J8yF.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 9599812,
@@ -17653,7 +18088,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 10569654,
@@ -17692,7 +18128,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 10094199,
@@ -17731,7 +18168,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 6580610,
@@ -17770,7 +18208,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 7122675,
@@ -17809,7 +18248,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 8459721,
@@ -17848,7 +18288,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 4610599,
@@ -17890,7 +18331,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 3379811,
@@ -17932,7 +18374,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 2747817,
@@ -17974,7 +18417,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 10295176,
@@ -18016,7 +18460,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 9614365,
@@ -18058,7 +18503,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 7274112,
@@ -18100,7 +18546,8 @@
     "currentTeam": {
       "id": "barcelona",
       "name": "Futbol Club Barcelona",
-      "shortName": "Barcelona"
+      "shortName": "Barcelona",
+      "logoUrl": "https://static.flashscore.com/res/image/data/barcelona.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 10731166,
@@ -18142,7 +18589,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 5004763,
@@ -18181,7 +18629,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 10513824,
@@ -18220,7 +18669,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 7470933,
@@ -18259,7 +18709,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 3201389,
@@ -18301,7 +18752,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 7934001,
@@ -18343,7 +18795,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 6530059,
@@ -18385,7 +18838,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 1480641,
@@ -18427,7 +18881,8 @@
     "currentTeam": {
       "id": "real-madrid",
       "name": "Real Madrid Club de Fútbol",
-      "shortName": "Real Madrid"
+      "shortName": "Real Madrid",
+      "logoUrl": "https://static.flashscore.com/res/image/data/realmadrid.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 6879017,
@@ -18469,7 +18924,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 31,
     "marketValueEur": 3854012,
@@ -18508,7 +18964,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 1014080,
@@ -18547,7 +19004,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 24,
     "marketValueEur": 8557463,
@@ -18586,7 +19044,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 2763283,
@@ -18628,7 +19087,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 2501751,
@@ -18670,7 +19130,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 47,
     "marketValueEur": 10709403,
@@ -18712,7 +19173,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 7278082,
@@ -18754,7 +19216,8 @@
     "currentTeam": {
       "id": "manchester-city",
       "name": "Manchester City Football Club",
-      "shortName": "Man City"
+      "shortName": "Man City",
+      "logoUrl": "https://static.flashscore.com/res/image/data/mancity.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 9671051,
@@ -18796,7 +19259,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 3212718,
@@ -18835,7 +19299,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 4339003,
@@ -18874,7 +19339,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 7663440,
@@ -18913,7 +19379,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 41,
     "marketValueEur": 8173640,
@@ -18955,7 +19422,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 4411060,
@@ -18997,7 +19465,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 3698293,
@@ -19039,7 +19508,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 6500134,
@@ -19081,7 +19551,8 @@
     "currentTeam": {
       "id": "arsenal",
       "name": "Arsenal Football Club",
-      "shortName": "Arsenal"
+      "shortName": "Arsenal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/arsenal.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 2550162,
@@ -19123,7 +19594,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 37,
     "marketValueEur": 2953237,
@@ -19162,7 +19634,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 9598350,
@@ -19201,7 +19674,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 1224841,
@@ -19240,7 +19714,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 5611235,
@@ -19279,7 +19754,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 10559076,
@@ -19321,7 +19797,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 6514156,
@@ -19363,7 +19840,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 29,
     "marketValueEur": 1703368,
@@ -19405,7 +19883,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 77,
     "marketValueEur": 4708733,
@@ -19447,7 +19926,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 7694217,
@@ -19489,7 +19969,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 10246487,
@@ -19531,7 +20012,8 @@
     "currentTeam": {
       "id": "al-hilal",
       "name": "Al-Hilal Saudi Football Club",
-      "shortName": "Al-Hilal"
+      "shortName": "Al-Hilal",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alhilal.png"
     },
     "shirtNumber": 11,
     "marketValueEur": 5273759,
@@ -19573,7 +20055,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 7384589,
@@ -19612,7 +20095,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 30,
     "marketValueEur": 1135533,
@@ -19651,7 +20135,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 3028803,
@@ -19690,7 +20175,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 2863105,
@@ -19732,7 +20218,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 6562379,
@@ -19774,7 +20261,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 1827078,
@@ -19816,7 +20304,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 5192752,
@@ -19858,7 +20347,8 @@
     "currentTeam": {
       "id": "al-ahly",
       "name": "Al Ahly Sporting Club",
-      "shortName": "Al-Ahly"
+      "shortName": "Al-Ahly",
+      "logoUrl": "https://static.flashscore.com/res/image/data/alahly.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 4206946,
@@ -19900,7 +20390,8 @@
     "currentTeam": {
       "id": "colo-colo",
       "name": "Club Social y Deportivo Colo-Colo",
-      "shortName": "Colo Colo"
+      "shortName": "Colo Colo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 8394784,
@@ -19939,7 +20430,8 @@
     "currentTeam": {
       "id": "colo-colo",
       "name": "Club Social y Deportivo Colo-Colo",
-      "shortName": "Colo Colo"
+      "shortName": "Colo Colo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "shirtNumber": 37,
     "marketValueEur": 5568918,
@@ -19978,7 +20470,8 @@
     "currentTeam": {
       "id": "colo-colo",
       "name": "Club Social y Deportivo Colo-Colo",
-      "shortName": "Colo Colo"
+      "shortName": "Colo Colo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "shirtNumber": 21,
     "marketValueEur": 9033939,
@@ -20017,7 +20510,8 @@
     "currentTeam": {
       "id": "colo-colo",
       "name": "Club Social y Deportivo Colo-Colo",
-      "shortName": "Colo Colo"
+      "shortName": "Colo Colo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 4896029,
@@ -20059,7 +20553,8 @@
     "currentTeam": {
       "id": "colo-colo",
       "name": "Club Social y Deportivo Colo-Colo",
-      "shortName": "Colo Colo"
+      "shortName": "Colo Colo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 7825415,
@@ -20101,7 +20596,8 @@
     "currentTeam": {
       "id": "colo-colo",
       "name": "Club Social y Deportivo Colo-Colo",
-      "shortName": "Colo Colo"
+      "shortName": "Colo Colo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 4078628,
@@ -20143,7 +20639,8 @@
     "currentTeam": {
       "id": "colo-colo",
       "name": "Club Social y Deportivo Colo-Colo",
-      "shortName": "Colo Colo"
+      "shortName": "Colo Colo",
+      "logoUrl": "https://static.flashscore.com/res/image/data/j53f7UkC-tnwDCzLD.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 2916293,
@@ -20185,7 +20682,8 @@
     "currentTeam": {
       "id": "audax-italiano",
       "name": "Audax Italiano La Florida",
-      "shortName": "Audax Italiano"
+      "shortName": "Audax Italiano",
+      "logoUrl": "https://static.flashscore.com/res/image/data/I9BmV0jC-6kEqxN0C.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 7497584,
@@ -20224,7 +20722,8 @@
     "currentTeam": {
       "id": "audax-italiano",
       "name": "Audax Italiano La Florida",
-      "shortName": "Audax Italiano"
+      "shortName": "Audax Italiano",
+      "logoUrl": "https://static.flashscore.com/res/image/data/I9BmV0jC-6kEqxN0C.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 3308939,
@@ -20263,7 +20762,8 @@
     "currentTeam": {
       "id": "audax-italiano",
       "name": "Audax Italiano La Florida",
-      "shortName": "Audax Italiano"
+      "shortName": "Audax Italiano",
+      "logoUrl": "https://static.flashscore.com/res/image/data/I9BmV0jC-6kEqxN0C.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 1082202,
@@ -20305,7 +20805,8 @@
     "currentTeam": {
       "id": "audax-italiano",
       "name": "Audax Italiano La Florida",
-      "shortName": "Audax Italiano"
+      "shortName": "Audax Italiano",
+      "logoUrl": "https://static.flashscore.com/res/image/data/I9BmV0jC-6kEqxN0C.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 2596688,
@@ -20347,7 +20848,8 @@
     "currentTeam": {
       "id": "audax-italiano",
       "name": "Audax Italiano La Florida",
-      "shortName": "Audax Italiano"
+      "shortName": "Audax Italiano",
+      "logoUrl": "https://static.flashscore.com/res/image/data/I9BmV0jC-6kEqxN0C.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 9012979,
@@ -20389,7 +20891,8 @@
     "currentTeam": {
       "id": "ind-medellin",
       "name": "Corporación Deportiva Independiente Medellín",
-      "shortName": "Ind. Medellín"
+      "shortName": "Ind. Medellín",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 2031682,
@@ -20428,7 +20931,8 @@
     "currentTeam": {
       "id": "ind-medellin",
       "name": "Corporación Deportiva Independiente Medellín",
-      "shortName": "Ind. Medellín"
+      "shortName": "Ind. Medellín",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png"
     },
     "shirtNumber": 24,
     "marketValueEur": 3937130,
@@ -20467,7 +20971,8 @@
     "currentTeam": {
       "id": "ind-medellin",
       "name": "Corporación Deportiva Independiente Medellín",
-      "shortName": "Ind. Medellín"
+      "shortName": "Ind. Medellín",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 8885036,
@@ -20509,7 +21014,8 @@
     "currentTeam": {
       "id": "ind-medellin",
       "name": "Corporación Deportiva Independiente Medellín",
-      "shortName": "Ind. Medellín"
+      "shortName": "Ind. Medellín",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 4082614,
@@ -20551,7 +21057,8 @@
     "currentTeam": {
       "id": "ind-medellin",
       "name": "Corporación Deportiva Independiente Medellín",
-      "shortName": "Ind. Medellín"
+      "shortName": "Ind. Medellín",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 9090432,
@@ -20593,7 +21100,8 @@
     "currentTeam": {
       "id": "ind-medellin",
       "name": "Corporación Deportiva Independiente Medellín",
-      "shortName": "Ind. Medellín"
+      "shortName": "Ind. Medellín",
+      "logoUrl": "https://static.flashscore.com/res/image/data/CxEu5jjC-WvCEcmg7.png"
     },
     "shirtNumber": 27,
     "marketValueEur": 1581582,
@@ -20635,7 +21143,8 @@
     "currentTeam": {
       "id": "jaguares-cordoba",
       "name": "Jaguares de Córdoba",
-      "shortName": "Jaguares"
+      "shortName": "Jaguares",
+      "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 4046834,
@@ -20674,7 +21183,8 @@
     "currentTeam": {
       "id": "jaguares-cordoba",
       "name": "Jaguares de Córdoba",
-      "shortName": "Jaguares"
+      "shortName": "Jaguares",
+      "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png"
     },
     "shirtNumber": 3,
     "marketValueEur": 6839502,
@@ -20713,7 +21223,8 @@
     "currentTeam": {
       "id": "jaguares-cordoba",
       "name": "Jaguares de Córdoba",
-      "shortName": "Jaguares"
+      "shortName": "Jaguares",
+      "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png"
     },
     "shirtNumber": 5,
     "marketValueEur": 9098271,
@@ -20755,7 +21266,8 @@
     "currentTeam": {
       "id": "jaguares-cordoba",
       "name": "Jaguares de Córdoba",
-      "shortName": "Jaguares"
+      "shortName": "Jaguares",
+      "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 5209157,
@@ -20797,7 +21309,8 @@
     "currentTeam": {
       "id": "jaguares-cordoba",
       "name": "Jaguares de Córdoba",
-      "shortName": "Jaguares"
+      "shortName": "Jaguares",
+      "logoUrl": "https://static.flashscore.com/res/image/data/l4lKktDN-K401txJG.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 8457385,
@@ -20839,7 +21352,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 23,
     "marketValueEur": 9964839,
@@ -20878,7 +21392,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 13,
     "marketValueEur": 9929150,
@@ -20917,7 +21432,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 19,
     "marketValueEur": 7626011,
@@ -20956,7 +21472,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 25,
     "marketValueEur": 3051135,
@@ -20995,7 +21512,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 3182633,
@@ -21037,7 +21555,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 24,
     "marketValueEur": 6406655,
@@ -21079,7 +21598,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 20,
     "marketValueEur": 9759308,
@@ -21121,7 +21641,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 6949471,
@@ -21163,7 +21684,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 3287334,
@@ -21205,7 +21727,8 @@
     "currentTeam": {
       "id": "argentina-national",
       "name": "Seleção Argentina de Futebol",
-      "shortName": "Argentina"
+      "shortName": "Argentina",
+      "logoUrl": "https://static.flashscore.com/res/image/data/argentina.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 1732963,
@@ -21247,7 +21770,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 16,
     "marketValueEur": 4417187,
@@ -21286,7 +21810,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 7332635,
@@ -21325,7 +21850,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 22,
     "marketValueEur": 8656645,
@@ -21364,7 +21890,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 8,
     "marketValueEur": 6307875,
@@ -21406,7 +21933,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 8490846,
@@ -21448,7 +21976,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 1488977,
@@ -21490,7 +22019,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 7,
     "marketValueEur": 5259350,
@@ -21532,7 +22062,8 @@
     "currentTeam": {
       "id": "france-national",
       "name": "Seleção Francesa de Futebol",
-      "shortName": "França"
+      "shortName": "França",
+      "logoUrl": "https://static.flashscore.com/res/image/data/france.png"
     },
     "shirtNumber": 15,
     "marketValueEur": 6754772,
@@ -21574,7 +22105,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 1,
     "marketValueEur": 9240340,
@@ -21613,7 +22145,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 6,
     "marketValueEur": 9792995,
@@ -21652,7 +22185,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 2,
     "marketValueEur": 4514155,
@@ -21691,7 +22225,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 4,
     "marketValueEur": 5224483,
@@ -21730,7 +22265,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 17,
     "marketValueEur": 8123602,
@@ -21772,7 +22308,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 10,
     "marketValueEur": 7546721,
@@ -21814,7 +22351,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 9,
     "marketValueEur": 9888361,
@@ -21856,7 +22394,8 @@
     "currentTeam": {
       "id": "germany-national",
       "name": "Seleção Alemã de Futebol",
-      "shortName": "Alemanha"
+      "shortName": "Alemanha",
+      "logoUrl": "https://static.flashscore.com/res/image/data/germany.png"
     },
     "shirtNumber": 14,
     "marketValueEur": 9320500,
