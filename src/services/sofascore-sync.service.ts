@@ -204,7 +204,7 @@ export class SofascoreSyncService {
         // Extrai posição
         const posMatch = block.match(/(Meio-campista|Atacante|Defensor|Goleiro|Lateral|Zagueiro|Volante)/i);
 
-        // Extrai nota (ex: 10, 9.5, 8.4) no final do card do jogador
+        // Extrai nota (ex: 10, 9.5, 8.4) no card do jogador
         const blockLines = block
           .split('\n')
           .map((l) => l.trim())
@@ -213,7 +213,7 @@ export class SofascoreSyncService {
 
         for (let j = blockLines.length - 1; j >= 0; j--) {
           const line = blockLines[j];
-          const rMatch = line.match(/^(10(?:\.0)?|[5-9](?:\.[0-9]+)?)$/);
+          const rMatch = line.match(/^(10(?:\.0)?|[5-9]\.[0-9]+)$/);
           if (rMatch) {
             ratingVal = parseFloat(rMatch[1]);
             break;
