@@ -50,6 +50,7 @@ export class FlashscoreSyncService {
   public getStatus(): FlashscoreSyncStatus {
     return {
       ...this.status,
+      isRunning: this.syncTimer !== null || this.isSyncing,
       totalSyncedMatches: db.matches.filter((m) => m.flashscoreUrl || m.id.startsWith('match-fs-')).length,
     };
   }

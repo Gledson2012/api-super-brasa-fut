@@ -68,6 +68,7 @@ export class SofascoreSyncService {
   public getStatus(): SofascoreSyncStatus {
     return {
       ...this.status,
+      isRunning: this.syncTimer !== null || this.isSyncing,
       totalSyncedMatches: db.matches.filter((m) => m.sofascoreUrl || m.id.startsWith('match-sofa-')).length,
       totalTransfers: this.transfers.length,
       totalTopRatings: this.topRatings.length,
