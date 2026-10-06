@@ -5,6 +5,7 @@ import { webhookService } from './services/webhook.service.js';
 import { checkPersistenceHealth } from './services/health.service.js';
 import { alertService } from './services/alert.service.js';
 import { flashscoreSyncService } from './services/flashscore-sync.service.js';
+import { sofascoreSyncService } from './services/sofascore-sync.service.js';
 
 /** Self-check periódico de prontidão (opcional; desativado por padrão). */
 function startReadinessSelfCheck(): void {
@@ -46,6 +47,7 @@ async function bootstrap(): Promise<void> {
   process.on('SIGTERM', () => {
     console.log('SIGTERM recebido. Encerrando servidor graciosamente...');
     flashscoreSyncService.stopBackgroundSync();
+    sofascoreSyncService.stopBackgroundSync();
     server.close(() => {
       console.log('Servidor finalizado.');
       process.exit(0);
@@ -55,6 +57,7 @@ async function bootstrap(): Promise<void> {
   process.on('SIGINT', () => {
     console.log('SIGINT recebido. Encerrando servidor...');
     flashscoreSyncService.stopBackgroundSync();
+    sofascoreSyncService.stopBackgroundSync();
     server.close(() => {
       console.log('Servidor finalizado.');
       process.exit(0);

@@ -128,6 +128,8 @@ export interface Match {
   odds?: MatchOdds;
   broadcast?: string[];
   flashscoreUrl?: string;
+  sofascoreUrl?: string;
+  sofascoreId?: string;
 }
 
 export interface MatchFilterQuery {

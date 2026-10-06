@@ -29,7 +29,7 @@ export const swaggerDocument = {
     { name: 'Webhooks', description: 'Assinatura e gerenciamento de notificações instantâneas' },
     { name: 'Health', description: 'Diagnóstico e integridade da API' },
     { name: 'Metrics', description: 'Métricas de desempenho e telemetria no formato Prometheus' },
-    { name: 'Sync', description: 'Ingestão e sincronização contínua com o Flashscore oficial' },
+    { name: 'Sync', description: 'Ingestão e sincronização contínua com Flashscore e Sofascore oficial' },
   ],
   paths: {
     '/': {
@@ -865,6 +865,104 @@ export const swaggerDocument = {
         ],
         responses: {
           200: { description: 'Worker pausado com sucesso' },
+          403: { description: 'Acesso negado (requer plano Pro ou Enterprise)' },
+        },
+      },
+    },
+    '/sync/sofascore/status': {
+      get: {
+        tags: ['Sync'],
+        summary: 'Status da sincronização e scraping do Sofascore',
+        description: 'Retorna estatísticas de partidas sincronizadas, transferências, ratings e status do worker Sofascore.',
+        responses: {
+          200: { description: 'Status do Sofascore retornado com sucesso' },
+        },
+      },
+    },
+    '/sync/sofascore/transfers': {
+      get: {
+        tags: ['Sync'],
+        summary: 'Lista transferências destacadas obtidas do Sofascore',
+        description: 'Retorna jogadores, clubes de origem/destino e valores de mercado extraídos do Sofascore.',
+        responses: {
+          200: { description: 'Transferências retornadas com sucesso' },
+        },
+      },
+    },
+    '/sync/sofascore/ratings': {
+      get: {
+        tags: ['Sync'],
+        summary: 'Lista as melhores notas e atuações de jogadores do Sofascore',
+        description: 'Retorna os jogadores com maiores notas e avaliações individuais por partida.',
+        responses: {
+          200: { description: 'Notas e desempenhos retornados com sucesso' },
+        },
+      },
+    },
+    '/sync/sofascore': {
+      post: {
+        tags: ['Sync'],
+        summary: 'Executa a sincronização do Sofascore',
+        description: 'Processa partidas ao vivo ou texto/conteúdo colado do Sofascore. Exige plano Pro/Enterprise.',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        requestBody: {
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                properties: {
+                  text: { type: 'string', description: 'Texto/markdown colado do Sofascore' },
+                  date: { type: 'string', description: 'Data alvo (YYYY-MM-DD)' },
+                },
+              },
+            },
+          },
+        },
+        responses: {
+          200: { description: 'Sincronização Sofascore concluída com sucesso' },
+          403: { description: 'Acesso negado (requer plano Pro ou Enterprise)' },
+        },
+      },
+    },
+    '/sync/sofascore/paste': {
+      post: {
+        tags: ['Sync'],
+        summary: 'Ingestão direta de texto/markdown colado da interface do Sofascore',
+        description: 'Analisa o bloco de texto do Sofascore, extrai ligas, confrontos, placares, transferências e ratings, e persiste no banco.',
+        parameters: [
+          {
+            name: 'x-api-key',
+            in: 'header',
+            required: true,
+            schema: { type: 'string', example: 'brasa-pro-2026' },
+            description: 'Chave de API do plano Pro ou Enterprise',
+          },
+        ],
+        requestBody: {
+          required: true,
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                required: ['text'],
+                properties: {
+                  text: { type: 'string', description: 'Texto ou Markdown bruto colado da página do Sofascore' },
+                  date: { type: 'string', description: 'Data de referência (YYYY-MM-DD)' },
+                },
+              },
+            },
+          },
+        },
+        responses: {
+          200: { description: 'Texto Sofascore processado e sincronizado com sucesso' },
           403: { description: 'Acesso negado (requer plano Pro ou Enterprise)' },
         },
       },
