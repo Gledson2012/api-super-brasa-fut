@@ -125,21 +125,52 @@ export class SofascoreSyncService {
     const transferSectionMatch = normalized.match(transferSectionRegex);
     if (transferSectionMatch) {
       const transferBody = transferSectionMatch[1];
-      const transferBlockRegex =
-        /\[!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/player\/(\d+)\/image)\)\]\([^\)]*\)\s*\[\1\]\([^\)]*\)\s*\[(?:[A-Z]{2,4})?!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/team\/(\d+)\/image)\)\]\([^\)]*\)\s*\[!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/team\/(\d+)\/image)\)(?:[A-Z]{2,4})?\]\([^\)]*\)\s*([0-9]+M\s*€|[0-9]+K\s*€|[0-9]+[.,]?[0-9]*\s*mi\s*€)/gi;
+      // Localiza cada bloco de jogador por imagem de player do Sofascore
+      const playerImgMatches = Array.from(
+        transferBody.matchAll(
+          /!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/player\/(\d+)\/image)\)/gi
+        )
+      );
 
-      let tMatch: RegExpExecArray | null;
-      while ((tMatch = transferBlockRegex.exec(transferBody)) !== null) {
-        transfers.push({
-          playerName: tMatch[1].trim(),
-          playerId: tMatch[3],
-          playerImageUrl: tMatch[2],
-          fromTeam: tMatch[4].trim(),
-          fromTeamLogo: tMatch[5],
-          toTeam: tMatch[7].trim(),
-          toTeamLogo: tMatch[8],
-          transferFee: tMatch[10].trim(),
-        });
+      for (let i = 0; i < playerImgMatches.length; i++) {
+        const pMatch = playerImgMatches[i];
+        const startIndex = pMatch.index!;
+        const nextIndex =
+          i + 1 < playerImgMatches.length ? playerImgMatches[i + 1].index! : transferBody.length;
+        const block = transferBody.slice(startIndex, nextIndex);
+
+        const playerName = pMatch[1].trim();
+        const playerImageUrl = pMatch[2];
+        const playerId = pMatch[3];
+
+        // Extrai imagens de times no bloco
+        const teamMatches = Array.from(
+          block.matchAll(
+            /!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/team\/(\d+)\/image[^\)]*)\)/gi
+          )
+        );
+
+        if (teamMatches.length >= 2) {
+          const fromTeamName = teamMatches[0][1].trim();
+          const fromTeamLogo = teamMatches[0][2];
+          const toTeamName = teamMatches[1][1].trim();
+          const toTeamLogo = teamMatches[1][2];
+
+          // Extrai valor da transferência
+          const feeMatch = block.match(/(\d+(?:\.\d+)?\s*[MKmk]?\s*€|\d+(?:[.,]\d+)?\s*(?:mi|mil|M|K)\s*€|Grátis|Empréstimo|Free)/i);
+          const transferFee = feeMatch ? feeMatch[1].trim() : 'Não informado';
+
+          transfers.push({
+            playerName,
+            playerId,
+            playerImageUrl,
+            fromTeam: fromTeamName,
+            fromTeamLogo,
+            toTeam: toTeamName,
+            toTeamLogo,
+            transferFee,
+          });
+        }
       }
     }
 
@@ -148,20 +179,62 @@ export class SofascoreSyncService {
     const ratingSectionMatch = normalized.match(ratingSectionRegex);
     if (ratingSectionMatch) {
       const ratingBody = ratingSectionMatch[1];
-      const ratingBlockRegex =
-        /!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/player\/(\d+)\/image)\)!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/team\/(\d+)\/image)\)\s*([^\n\r]+?)(?:(Meio-campista|Atacante|Defensor|Goleiro))?[\s\S]*?(\d+(?:\.\d+)?)\s*(?=\d+\s*!\[|\n\s*\d+\s*\n|$)/gi;
+      const playerMatches = Array.from(
+        ratingBody.matchAll(
+          /!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/player\/(\d+)\/image)\)/gi
+        )
+      );
 
-      let rMatch: RegExpExecArray | null;
-      while ((rMatch = ratingBlockRegex.exec(ratingBody)) !== null) {
-        const ratingVal = parseFloat(rMatch[9]);
-        if (!isNaN(ratingVal)) {
+      for (let i = 0; i < playerMatches.length; i++) {
+        const pMatch = playerMatches[i];
+        const startIndex = pMatch.index!;
+        const nextIndex =
+          i + 1 < playerMatches.length ? playerMatches[i + 1].index! : ratingBody.length;
+        const block = ratingBody.slice(startIndex, nextIndex);
+
+        const playerName = pMatch[1].trim();
+        const playerImageUrl = pMatch[2];
+        const playerId = pMatch[3];
+
+        // Extrai time do jogador
+        const teamMatch = block.match(
+          /!\[([^\]]+)\]\((https:\/\/img\.sofascore\.com\/api\/v1\/team\/(\d+)\/image[^\)]*)\)/i
+        );
+
+        // Extrai posição
+        const posMatch = block.match(/(Meio-campista|Atacante|Defensor|Goleiro|Lateral|Zagueiro|Volante)/i);
+
+        // Extrai nota (ex: 10, 9.5, 8.4) no final do card do jogador
+        const blockLines = block
+          .split('\n')
+          .map((l) => l.trim())
+          .filter((l) => l.length > 0);
+        let ratingVal = 0;
+
+        for (let j = blockLines.length - 1; j >= 0; j--) {
+          const line = blockLines[j];
+          const rMatch = line.match(/^(10(?:\.0)?|[5-9](?:\.[0-9]+)?)$/);
+          if (rMatch) {
+            ratingVal = parseFloat(rMatch[1]);
+            break;
+          }
+        }
+
+        if (ratingVal === 0) {
+          const fallbackMatch = block.match(/\b(10(?:\.0)?|[5-9]\.[0-9]+)\b/);
+          if (fallbackMatch) {
+            ratingVal = parseFloat(fallbackMatch[1]);
+          }
+        }
+
+        if (ratingVal > 0) {
           topRatings.push({
-            playerName: rMatch[1].trim(),
-            playerId: rMatch[3],
-            playerImageUrl: rMatch[2],
-            teamName: rMatch[4].trim(),
-            teamLogo: rMatch[5],
-            position: rMatch[8]?.trim(),
+            playerName,
+            playerId,
+            playerImageUrl,
+            teamName: teamMatch ? teamMatch[1].trim() : undefined,
+            teamLogo: teamMatch ? teamMatch[2] : undefined,
+            position: posMatch ? posMatch[1].trim() : undefined,
             rating: ratingVal,
           });
         }
