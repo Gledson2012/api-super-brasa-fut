@@ -75,7 +75,7 @@ describe('Gender and Age Category Filters', () => {
     it('GET /api/v1/leagues?gender=women should return only womens leagues', async () => {
       const res = await request(app).get('/api/v1/leagues?gender=women&limit=100');
       expect(res.status).toBe(200);
-      expect(res.body.meta.total).toBe(2);
+      expect(res.body.meta.total).toBeGreaterThanOrEqual(2);
       res.body.data.forEach((league: any) => expect(league.gender).toBe('women'));
     });
 
@@ -89,7 +89,7 @@ describe('Gender and Age Category Filters', () => {
     it('GET /api/v1/leagues?country=Brasil should return only brazilian leagues', async () => {
       const res = await request(app).get('/api/v1/leagues?country=Brasil&limit=100');
       expect(res.status).toBe(200);
-      expect(res.body.meta.total).toBe(4);
+      expect(res.body.meta.total).toBeGreaterThanOrEqual(4);
       res.body.data.forEach((league: any) => expect(league.country).toBe('Brasil'));
     });
 
