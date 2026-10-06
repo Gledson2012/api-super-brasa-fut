@@ -38,7 +38,9 @@ export class LeagueRepository {
         (l) =>
           l.name.toLowerCase().includes(search) ||
           l.slug.toLowerCase().includes(search) ||
-          l.country.toLowerCase().includes(search)
+          l.country.toLowerCase().includes(search) ||
+          l.id.toLowerCase().includes(search) ||
+          (l.originalName && l.originalName.toLowerCase().includes(search))
       );
     }
 

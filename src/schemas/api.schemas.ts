@@ -43,7 +43,9 @@ export const matchFilterQuerySchema = paginationQuerySchema.extend({
 export const leagueFilterQuerySchema = paginationQuerySchema.extend({
   country: z.string().optional(),
   season: z.string().optional(),
-  tier: z.enum(['top', 'second', 'cup', 'international', 'continental', 'youth', 'amateur']).optional(),
+  tier: z
+    .enum(['top', 'second', 'third', 'fourth', 'state', 'cup', 'international', 'continental', 'youth', 'amateur', 'other'])
+    .optional(),
   gender: z.enum(['men', 'women', 'mixed', 'all']).optional(),
   ageCategory: z.enum(['senior', 'u23', 'u20', 'u17', 'all']).optional(),
   isLive: z.enum(['true', 'false']).optional(),
