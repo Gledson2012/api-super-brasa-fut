@@ -56,6 +56,9 @@ export function getApiMetadata() {
       webhooks: `${config.apiPrefix}/webhooks`,
       syncStatus: `${config.apiPrefix}/sync/status`,
       syncFlashscore: `${config.apiPrefix}/sync/flashscore`,
+      syncSofascore: `${config.apiPrefix}/sync/sofascore`,
+      syncSofascoreTransfers: `${config.apiPrefix}/sync/sofascore/transfers`,
+      syncSofascoreRatings: `${config.apiPrefix}/sync/sofascore/ratings`,
     },
   };
 }
