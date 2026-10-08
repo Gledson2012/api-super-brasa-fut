@@ -321,11 +321,22 @@ export class FlashscoreSyncService {
     return newTeam;
   }
 
+  private inFlightSyncs: Map<string, Promise<FlashscoreSyncResult>> = new Map();
+
   /**
    * Calcula a data ISO UTC estimada a partir da data de referência e horário local (BRT).
    */
-  private calculateKickoffTime(targetDateStr: string, timeStr?: string): string {
+  private calculateKickoffTime(
+    targetDateStr: string,
+    timeStr?: string,
+    status?: MatchStatus,
+    minute?: number
+  ): string {
     if (!timeStr || !timeStr.includes(':')) {
+      if ((status === 'LIVE' || status === 'HALFTIME') && typeof minute === 'number' && minute > 0) {
+        const estimatedMs = Date.now() - minute * 60 * 1000;
+        return new Date(estimatedMs).toISOString();
+      }
       return `${targetDateStr}T19:00:00Z`;
     }
     const [h, m] = timeStr.split(':').map((s) => parseInt(s, 10));
@@ -337,9 +348,28 @@ export class FlashscoreSyncService {
   }
 
   /**
-   * Sincroniza partidas a partir de uma data ou offset do Flashscore.
+   * Sincroniza partidas a partir de uma data ou offset do Flashscore com desduplicação concorrente.
    */
   public async syncMatches(
+    queryPath: string = '',
+    targetDateStr: string = todayInTimeZone()
+  ): Promise<FlashscoreSyncResult> {
+    const key = `${queryPath}::${targetDateStr}`;
+    const inFlight = this.inFlightSyncs.get(key);
+    if (inFlight) {
+      return inFlight;
+    }
+
+    const promise = this.executeSyncMatches(queryPath, targetDateStr);
+    this.inFlightSyncs.set(key, promise);
+    try {
+      return await promise;
+    } finally {
+      this.inFlightSyncs.delete(key);
+    }
+  }
+
+  private async executeSyncMatches(
     queryPath: string = '',
     targetDateStr: string = todayInTimeZone()
   ): Promise<FlashscoreSyncResult> {
@@ -372,14 +402,18 @@ export class FlashscoreSyncService {
           const awayTeam = this.resolveTeam(item.awayTeamName, item.country, leagueId);
 
           // Procura partida existente
-          const existingIdx = db.matches.findIndex(
-            (m) =>
-              (m.flashscoreUrl && m.flashscoreUrl.includes(item.fsId)) ||
-              m.id === `match-fs-${item.fsId}` ||
-              (m.homeTeam.id === homeTeam.id &&
-                m.awayTeam.id === awayTeam.id &&
-                m.kickoffTime.startsWith(targetDateStr))
-          );
+          const existingIdx = db.matches.findIndex((m) => {
+            if (m.flashscoreUrl && m.flashscoreUrl.includes(item.fsId)) return true;
+            if (m.id === `match-fs-${item.fsId}`) return true;
+            if (m.homeTeam.id === homeTeam.id && m.awayTeam.id === awayTeam.id) {
+              let localDate: string | null = null;
+              try {
+                localDate = todayInTimeZone(undefined, new Date(m.kickoffTime));
+              } catch {}
+              return m.kickoffTime.startsWith(targetDateStr) || localDate === targetDateStr;
+            }
+            return false;
+          });
 
           if (existingIdx !== -1) {
             const existing = db.matches[existingIdx];
@@ -438,7 +472,7 @@ export class FlashscoreSyncService {
           } else {
             // Insere nova partida
             const matchId = `match-fs-${item.fsId}`;
-            const kickoffTime = this.calculateKickoffTime(targetDateStr, item.timeStr);
+            const kickoffTime = this.calculateKickoffTime(targetDateStr, item.timeStr, item.status, item.minute);
             const homeScore = item.homeScore ?? 0;
             const awayScore = item.awayScore ?? 0;
 
@@ -566,7 +600,7 @@ export class FlashscoreSyncService {
     this.status.backgroundIntervalMinutes = safeIntervalMinutes;
     const intervalMs = Math.max(safeIntervalMinutes * 60 * 1000, 60000);
 
-    this.syncTimer = setInterval(() => {
+    const runCycle = () => {
       if (this.isSyncing) return;
       this.isSyncing = true;
       this.syncMatches('?s=2', todayInTimeZone()) // Atualiza jogos ao vivo
@@ -575,7 +609,14 @@ export class FlashscoreSyncService {
         .finally(() => {
           this.isSyncing = false;
         });
-    }, intervalMs);
+    };
+
+    // Executa a primeira sincronização imediatamente no boot (exceto em ambiente de testes)
+    if (config.env !== 'test' && process.env.FLASHSCORE_SYNC_ENABLED !== 'false') {
+      runCycle();
+    }
+
+    this.syncTimer = setInterval(runCycle, intervalMs);
 
     this.syncTimer.unref?.();
     console.log(`📡 Flashscore Sync Worker ativo (intervalo: ${safeIntervalMinutes} minutos).`);

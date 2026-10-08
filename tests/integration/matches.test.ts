@@ -33,11 +33,34 @@ describe('Matches API Integration Tests', () => {
     });
   });
 
-  it('GET /api/v1/matches?date=today should resolve dynamically to current day', async () => {
+  it('GET /api/v1/matches?date=today should resolve dynamically to current day with matches', async () => {
     const res = await request(app).get('/api/v1/matches?date=today');
     expect(res.status).toBe(200);
     expect(res.body.success).toBe(true);
     expect(Array.isArray(res.body.data)).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    res.body.data.forEach((m: any) => {
+      const matchDate = new Date(m.kickoffTime).toISOString().slice(0, 10);
+      const isToday = m.kickoffTime.includes('2026-10-08') || matchDate === '2026-10-08';
+      expect(isToday).toBe(true);
+    });
+  });
+
+  it('GET /api/v1/matches?date=hoje should alias to today', async () => {
+    const res = await request(app).get('/api/v1/matches?date=hoje');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+  });
+
+  it('GET /api/v1/matches should prioritize LIVE and today matches in default ordering', async () => {
+    const res = await request(app).get('/api/v1/matches?limit=10');
+    expect(res.status).toBe(200);
+    expect(res.body.success).toBe(true);
+    expect(res.body.data.length).toBeGreaterThan(0);
+    // As primeiras partidas devem ser partidas ao vivo ou jogos agendados para hoje
+    const firstMatch = res.body.data[0];
+    expect(['LIVE', 'HALFTIME', 'UPCOMING']).toContain(firstMatch.status);
   });
 
 

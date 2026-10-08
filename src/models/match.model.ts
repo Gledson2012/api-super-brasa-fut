@@ -143,4 +143,6 @@ export interface MatchFilterQuery {
   search?: string;
   gender?: GenderCategory | 'all';
   ageCategory?: AgeCategory | 'all';
+  sort?: string;
+  order?: 'asc' | 'desc';
 }

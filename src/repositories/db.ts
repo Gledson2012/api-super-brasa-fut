@@ -13,6 +13,8 @@ import { MatchLineups } from '../models/lineup.model.js';
 import { stateStore, STATE_PREFIX } from './state-store.js';
 import type { StateStore } from './state-store.js';
 import { withTimeout } from '../utils/with-timeout.js';
+import { config } from '../config/environment.js';
+import { todayInTimeZone } from '../utils/date.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -87,6 +89,29 @@ export class InMemoryDatabase {
     this.statsLeaders = loadJson<StatsLeaders[]>('stats-leaders.json');
     this.brackets = loadJson<LeagueBracket[]>('brackets.json');
     this.lineups = loadJson<MatchLineups[]>('lineups.json');
+
+    // Em produção/desenvolvimento, garante que as partidas demonstrativas de hoje/ao vivo
+    // acompanhem a data atual caso os seeds estáticos estejam defasados e a sincronização externa
+    // ainda não tenha ocorrido.
+    if (config.env !== 'test') {
+      const todayStr = todayInTimeZone();
+      const hasToday = this.matches.some((m) => m.kickoffTime.startsWith(todayStr));
+      if (!hasToday) {
+        const liveSample = this.matches.find((m) => m.status === 'LIVE');
+        const oldDate = liveSample ? liveSample.kickoffTime.slice(0, 10) : undefined;
+        if (oldDate) {
+          this.matches = this.matches.map((m) => {
+            if (m.kickoffTime.startsWith(oldDate)) {
+              return {
+                ...m,
+                kickoffTime: m.kickoffTime.replace(oldDate, todayStr),
+              };
+            }
+            return m;
+          });
+        }
+      }
+    }
   }
 
   /**
