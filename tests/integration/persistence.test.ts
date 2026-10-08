@@ -53,14 +53,15 @@ describe('External state hydration', () => {
         events: ['GOAL'],
         createdAt: new Date().toISOString(),
         active: true,
+        ownerKey: 'anonymous',
       },
     ];
     const store = new FakeStore({ 'super-brasa-fut:webhooks': subscriptions });
 
     await webhookService.hydrate(store);
 
-    expect(webhookService.list()).toHaveLength(1);
-    expect(webhookService.getById('whk-fake').url).toBe('https://example.com/hook');
+    expect(webhookService.list('anonymous')).toHaveLength(1);
+    expect(webhookService.getById('whk-fake', 'anonymous').url).toBe('https://example.com/hook');
   });
 
   it('keeps the JSON seed baseline for entities absent from the store', async () => {

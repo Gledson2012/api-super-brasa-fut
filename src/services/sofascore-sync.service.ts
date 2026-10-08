@@ -802,7 +802,12 @@ export class SofascoreSyncService {
 
   public startBackgroundSync(intervalMinutes: number = 5): void {
     this.stopBackgroundSync();
-    this.status.backgroundIntervalMinutes = intervalMinutes;
+
+    // Guarda contra intervalos inválidos (NaN/Infinity/<=0): nunca permitir
+    // que um `setInterval` dispare em ~1ms contra os sites externos.
+    const safeIntervalMinutes =
+      Number.isFinite(intervalMinutes) && intervalMinutes >= 1 ? Math.max(1, Math.floor(intervalMinutes)) : 5;
+    this.status.backgroundIntervalMinutes = safeIntervalMinutes;
 
     this.syncTimer = setInterval(async () => {
       if (this.isSyncing) return;
@@ -814,7 +819,7 @@ export class SofascoreSyncService {
       } finally {
         this.isSyncing = false;
       }
-    }, intervalMinutes * 60 * 1000);
+    }, Math.max(safeIntervalMinutes * 60 * 1000, 60000));
 
     this.syncTimer.unref?.();
   }

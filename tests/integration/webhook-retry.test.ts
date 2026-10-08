@@ -48,13 +48,13 @@ describe('Webhook Retry & Delivery History Integration Tests', () => {
     const sub = webhookService.subscribe({
       url: `http://127.0.0.1:${port}/hook-flaky`,
       events: ['GOAL'],
-    });
+    }, apiKeys.pro);
 
     await webhookService.notify('GOAL', { matchId: 'match-flaky-1', minute: 23 });
 
     expect(requestCount).toBe(3);
 
-    const deliveries = webhookService.getDeliveries(sub.id);
+    const deliveries = webhookService.getDeliveries(apiKeys.pro, sub.id);
     expect(deliveries.length).toBe(1);
     expect(deliveries[0].success).toBe(true);
     expect(deliveries[0].attempts).toBe(3);
@@ -68,13 +68,13 @@ describe('Webhook Retry & Delivery History Integration Tests', () => {
     const sub = webhookService.subscribe({
       url: `http://127.0.0.1:${port}/hook-down`,
       events: ['MATCH_EVENT'],
-    });
+    }, apiKeys.pro);
 
     await webhookService.notify('MATCH_EVENT', { matchId: 'match-down-1' });
 
     expect(requestCount).toBe(3);
 
-    const deliveries = webhookService.getDeliveries(sub.id);
+    const deliveries = webhookService.getDeliveries(apiKeys.pro, sub.id);
     expect(deliveries.length).toBe(1);
     expect(deliveries[0].success).toBe(false);
     expect(deliveries[0].attempts).toBe(3);
@@ -88,7 +88,7 @@ describe('Webhook Retry & Delivery History Integration Tests', () => {
     const sub = webhookService.subscribe({
       url: `http://127.0.0.1:${port}/hook-history`,
       events: ['GOAL'],
-    });
+    }, apiKeys.pro);
 
     await webhookService.notify('GOAL', { matchId: 'match-hist-1', minute: 90 });
 

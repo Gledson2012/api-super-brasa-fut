@@ -109,5 +109,21 @@ describe('Flashscore Sync Service & Endpoints', () => {
       expect(stopRes.status).toBe(200);
       expect(stopRes.body.data.message).toContain('pausado');
     });
+
+    it('should fall back to the default 5-minute interval for invalid intervalMinutes values', async () => {
+      const startRes = await request(app)
+        .post('/api/v1/sync/start')
+        .set('x-api-key', apiKeys.pro)
+        .send({ intervalMinutes: 'abc' });
+
+      expect(startRes.status).toBe(200);
+      expect(startRes.body.success).toBe(true);
+      expect(startRes.body.data.message).toContain('5 minutos');
+
+      const stopRes = await request(app)
+        .post('/api/v1/sync/stop')
+        .set('x-api-key', apiKeys.pro);
+      expect(stopRes.status).toBe(200);
+    });
   });
 });

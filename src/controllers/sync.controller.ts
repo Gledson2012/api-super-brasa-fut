@@ -5,6 +5,22 @@ import { successResponse } from '../utils/response.js';
 import { asyncHandler } from '../utils/async-handler.js';
 import { todayInTimeZone, tomorrowInTimeZone, yesterdayInTimeZone } from '../utils/date.js';
 
+const DEFAULT_SYNC_INTERVAL_MINUTES = 5;
+
+/**
+ * Normaliza o intervalo (em minutos) recebido de clientes para os workers de
+ * sincronização em background. Garante um inteiro >= 1 ou o default (5),
+ * impedindo que valores não numéricos (ex.: "abc"), NaN/Infinity ou <= 0 virem
+ * um `setInterval` de ~1ms que inundaria os sites externos alvo.
+ */
+export function normalizeSyncIntervalMinutes(raw: unknown): number {
+  if (typeof raw !== 'number' && typeof raw !== 'string') return DEFAULT_SYNC_INTERVAL_MINUTES;
+  const parsed = Number(raw);
+  return Number.isFinite(parsed) && parsed >= 1
+    ? Math.max(1, Math.floor(parsed))
+    : DEFAULT_SYNC_INTERVAL_MINUTES;
+}
+
 export class SyncController {
   public getStatus = asyncHandler(async (_req: Request, res: Response): Promise<void> => {
     const status = flashscoreSyncService.getStatus();
@@ -74,7 +90,7 @@ export class SyncController {
   });
 
   public startWorker = asyncHandler(async (req: Request, res: Response): Promise<void> => {
-    const intervalMinutes = req.body.intervalMinutes ? parseInt(req.body.intervalMinutes, 10) : 5;
+    const intervalMinutes = normalizeSyncIntervalMinutes(req.body?.intervalMinutes);
     flashscoreSyncService.startBackgroundSync(intervalMinutes);
     res.json(
       successResponse({
@@ -95,7 +111,7 @@ export class SyncController {
   });
 
   public startSofascoreWorker = asyncHandler(async (req: Request, res: Response): Promise<void> => {
-    const intervalMinutes = req.body.intervalMinutes ? parseInt(req.body.intervalMinutes, 10) : 5;
+    const intervalMinutes = normalizeSyncIntervalMinutes(req.body?.intervalMinutes);
     sofascoreSyncService.startBackgroundSync(intervalMinutes);
     res.json(
       successResponse({

@@ -74,7 +74,9 @@ export function apiKeyMiddleware(req: Request, res: Response, next: NextFunction
   const headerKey = req.headers['x-api-key'] as string | undefined;
 
   if (headerKey) {
-    const keyInfo = KNOWN_API_KEYS[headerKey];
+    const keyInfo = Object.prototype.hasOwnProperty.call(KNOWN_API_KEYS, headerKey)
+      ? KNOWN_API_KEYS[headerKey]
+      : undefined;
     if (!keyInfo) {
       res.status(401).json(errorResponse('Chave de API (X-API-Key) inválida ou expirada.', 'UNAUTHORIZED'));
       return;

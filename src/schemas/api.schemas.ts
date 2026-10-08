@@ -21,7 +21,11 @@ export const paginationQuerySchema = z.object({
 
 export const matchFilterQuerySchema = paginationQuerySchema.extend({
   leagueId: z.string().optional(),
+  // Atalhos com nomes curtos (`?league=` e `?team=`) — antes removidos pelo
+  // strip do Zod, o que silenciosamente anulava os filtros.
+  league: z.string().optional(),
   teamId: z.string().optional(),
+  team: z.string().optional(),
   status: z
     .enum(['SCHEDULED', 'UPCOMING', 'LIVE', 'HALFTIME', 'FINISHED', 'POSTPONED', 'CANCELLED'])
     .optional(),
@@ -51,6 +55,19 @@ export const leagueFilterQuerySchema = paginationQuerySchema.extend({
   isLive: z.enum(['true', 'false']).optional(),
   isCup: z.enum(['true', 'false']).optional(),
   search: z.string().optional(),
+});
+
+export const newsFilterQuerySchema = paginationQuerySchema.extend({
+  category: z.string().optional(),
+  tag: z.string().optional(),
+  leagueId: z.string().optional(),
+  teamId: z.string().optional(),
+  search: z.string().optional(),
+});
+
+export const oddsFilterQuerySchema = paginationQuerySchema.extend({
+  leagueId: z.string().optional(),
+  matchId: z.string().optional(),
 });
 
 export const teamFilterQuerySchema = paginationQuerySchema.extend({

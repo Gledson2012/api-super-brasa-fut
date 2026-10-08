@@ -3,7 +3,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-ES_Modules-green?logo=node.js)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.21-lightgrey?logo=express)](https://expressjs.com/)
-[![Vitest](https://img.shields.io/badge/Tests-162%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Tests-208%20Passed-brightgreen?logo=vitest)](https://vitest.dev/)
 [![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-orange?logo=prometheus)](http://localhost:3000/metrics)
 [![Swagger](https://img.shields.io/badge/OpenAPI-3.0_Swagger-brightgreen?logo=swagger)](http://localhost:3000/docs)
 
@@ -190,6 +190,8 @@ O recurso exige uma chave **Pro** ou **Enterprise** (`x-api-key`).
 * **Reenvio Manual (Redeliver)**: `POST /api/v1/webhooks/deliveries/:id/redeliver`
 
 O corpo do `POST` é validado com Zod: `url` é obrigatória, `events` aceita apenas `GOAL`, `MATCH_EVENT`, `MATCH_STATUS_CHANGE` e `ALL`, e `secret` (quando enviado) precisa ter ao menos 8 caracteres. Requisições inválidas recebem `422 VALIDATION_ERROR` com o campo problemático em `error.details`.
+
+> **Multi-tenant**: cada assinatura pertence à `X-API-Key` que a criou. `GET`, `GET /:id`, `DELETE` e o histórico de entregas (`/deliveries`) só enxergam webhooks da própria chave — acessar assinatura de outra chave retorna `404` (sem vazar existência). O `secret` de assinatura **nunca é devolvido** em respostas; o campo `secretSet` indica se o webhook possui segredo para verificação de assinatura.
 
 Eventos emitidos hoje: `GOAL` e `MATCH_EVENT` (via `POST /matches/:id/simulate-event`) e `MATCH_STATUS_CHANGE` (quando o avanço do relógio muda o status da partida, ex.: `LIVE → HALFTIME` / `FINISHED`).
 

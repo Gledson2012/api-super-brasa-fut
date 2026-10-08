@@ -554,12 +554,17 @@ export class FlashscoreSyncService {
    * Inicia o worker em segundo plano para ingestão contínua.
    */
   public startBackgroundSync(intervalMinutes: number = 5): void {
+    // Guarda contra intervalos inválidos (NaN/Infinity/<=0): nunca permitir
+    // que um `setInterval` dispare em ~1ms contra os sites externos.
+    const safeIntervalMinutes =
+      Number.isFinite(intervalMinutes) && intervalMinutes >= 1 ? Math.max(1, Math.floor(intervalMinutes)) : 5;
+
     if (this.syncTimer) {
       clearInterval(this.syncTimer);
     }
 
-    this.status.backgroundIntervalMinutes = intervalMinutes;
-    const intervalMs = Math.max(intervalMinutes * 60 * 1000, 60000);
+    this.status.backgroundIntervalMinutes = safeIntervalMinutes;
+    const intervalMs = Math.max(safeIntervalMinutes * 60 * 1000, 60000);
 
     this.syncTimer = setInterval(() => {
       if (this.isSyncing) return;
@@ -573,7 +578,7 @@ export class FlashscoreSyncService {
     }, intervalMs);
 
     this.syncTimer.unref?.();
-    console.log(`📡 Flashscore Sync Worker ativo (intervalo: ${intervalMinutes} minutos).`);
+    console.log(`📡 Flashscore Sync Worker ativo (intervalo: ${safeIntervalMinutes} minutos).`);
   }
 
   /**

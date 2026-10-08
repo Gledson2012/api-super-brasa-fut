@@ -10,6 +10,8 @@ import { webhookDeliveriesTotal } from './metrics.service.js';
 const WEBHOOKS_KEY = `${STATE_PREFIX}:webhooks`;
 const HYDRATE_TIMEOUT_MS = 4000;
 const MAX_DELIVERIES_STORED = 100;
+const MAX_REDIRECTS = 5;
+const REDIRECT_STATUS_CODES = new Set([301, 302, 303, 307, 308]);
 
 export class WebhookService {
   private static instance: WebhookService;
@@ -23,6 +25,11 @@ export class WebhookService {
       WebhookService.instance = new WebhookService();
     }
     return WebhookService.instance;
+  }
+
+  /** Conjunto de IDs de webhooks pertencentes a uma chave de API. */
+  private ownedWebhookIds(ownerKey: string): Set<string> {
+    return new Set(this.subscriptions.filter((s) => s.ownerKey === ownerKey).map((s) => s.id));
   }
 
   /** Restaura as assinaturas persistidas externamente (chamar no boot). */
@@ -50,7 +57,7 @@ export class WebhookService {
     });
   }
 
-  public subscribe(dto: CreateWebhookDto): WebhookSubscription {
+  public subscribe(dto: CreateWebhookDto, ownerKey: string = 'anonymous'): WebhookSubscription {
     // Valida protocolo e bloqueia hosts internos (proteção contra SSRF).
     assertSafeWebhookUrl(dto.url);
 
@@ -63,6 +70,7 @@ export class WebhookService {
       secret: dto.secret,
       createdAt: new Date().toISOString(),
       active: true,
+      ownerKey,
     };
 
     this.subscriptions.push(sub);
@@ -70,26 +78,71 @@ export class WebhookService {
     return sub;
   }
 
-  public list(): WebhookSubscription[] {
-    return this.subscriptions;
+  /**
+   * Lista apenas os webhooks da chave de API informada. O `secret` nunca deve
+   * ser exposto em respostas — veja `toPublicSubscription`.
+   */
+  public list(ownerKey: string): WebhookSubscription[] {
+    return this.subscriptions.filter((s) => s.ownerKey === ownerKey);
   }
 
-  public getById(id: string): WebhookSubscription {
-    const sub = this.subscriptions.find((s) => s.id === id);
+  /**
+   * Busca um webhook garantindo que ele pertence à chave informada. Usa
+   * NotFoundError tanto para "não existe" quanto para "não é seu", evitando
+   * vazar a existência de assinaturas de outros clientes.
+   */
+  public getById(id: string, ownerKey: string): WebhookSubscription {
+    const sub = this.subscriptions.find((s) => s.id === id && s.ownerKey === ownerKey);
     if (!sub) {
       throw new NotFoundError(`Webhook com ID '${id}' não encontrado.`);
     }
     return sub;
   }
 
-  public unsubscribe(id: string): boolean {
-    const index = this.subscriptions.findIndex((s) => s.id === id);
+  public unsubscribe(id: string, ownerKey: string): boolean {
+    const index = this.subscriptions.findIndex((s) => s.id === id && s.ownerKey === ownerKey);
     if (index === -1) {
       throw new NotFoundError(`Webhook com ID '${id}' não encontrado.`);
     }
     this.subscriptions.splice(index, 1);
     this.persist();
     return true;
+  }
+
+  /**
+   * Executa a entrega HTTP seguindo redirecionamentos de forma segura. Cada hop
+   * revalida protocolo e DNS do alvo (proteção SSRF/DNS rebinding) e o número de
+   * hops é limitado. Redirecionamentos para hosts internos/rede privada fazem a
+   * entrega falhar sem jamais contatar o destino, impedindo contorno da
+   * validação via 302 para metadata/loopback.
+   */
+  private async deliverTo(
+    initialUrl: string,
+    init: Parameters<typeof fetch>[1]
+  ): Promise<Response> {
+    let currentUrl = initialUrl;
+
+    for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+      // Revalida a resolução DNS imediatamente antes de cada requisição (anti DNS rebinding).
+      await assertResolvesToPublicHost(currentUrl);
+
+      const response = await fetch(currentUrl, { ...init, redirect: 'manual' });
+
+      const location = response.headers.get('location');
+      if (!location || !REDIRECT_STATUS_CODES.has(response.status)) {
+        return response;
+      }
+
+      if (hop >= MAX_REDIRECTS) {
+        return response; // excedeu o número máximo de redirecionamentos
+      }
+
+      currentUrl = new URL(location, currentUrl).toString();
+      assertSafeWebhookUrl(currentUrl);
+    }
+
+    /* istanbul ignore next -- caminho inalcançável: o loop sempre retorna. */
+    throw new Error('Número máximo de redirecionamentos excedido.');
   }
 
   /**
@@ -131,15 +184,7 @@ export class WebhookService {
       attempts = attempt;
 
       try {
-        // Revalida a resolução DNS imediatamente antes de cada tentativa (anti DNS rebinding).
-        await assertResolvesToPublicHost(target.url);
-      } catch (err) {
-        lastError = err instanceof Error ? err.message : 'DNS inválido ou privado.';
-        break;
-      }
-
-      try {
-        const response = await fetch(target.url, {
+        const response = await this.deliverTo(target.url, {
           method: 'POST',
           headers,
           body,
@@ -218,24 +263,34 @@ export class WebhookService {
     await Promise.all(deliveryPromises);
   }
 
-  public getDeliveries(webhookId?: string, limit = 50): WebhookDeliveryLog[] {
-    const list = webhookId
-      ? this.deliveries.filter((d) => d.webhookId === webhookId)
-      : this.deliveries;
-    return list.slice(0, Math.min(limit, MAX_DELIVERIES_STORED));
+  /**
+   * Retorna o histórico de entregas apenas dos webhooks pertencentes à chave.
+   * Quando `webhookId` é fornecido, o webhook deve pertencer à chave.
+   */
+  public getDeliveries(ownerKey: string, webhookId?: string, limit = 50): WebhookDeliveryLog[] {
+    const ownedIds = this.ownedWebhookIds(ownerKey);
+
+    if (webhookId) {
+      if (!ownedIds.has(webhookId)) {
+        throw new NotFoundError(`Webhook com ID '${webhookId}' não encontrado.`);
+      }
+      return this.deliveries
+        .filter((d) => d.webhookId === webhookId)
+        .slice(0, Math.min(limit, MAX_DELIVERIES_STORED));
+    }
+
+    return this.deliveries
+      .filter((d) => ownedIds.has(d.webhookId))
+      .slice(0, Math.min(limit, MAX_DELIVERIES_STORED));
   }
 
-  public getDeliveryById(id: string): WebhookDeliveryLog | undefined {
-    return this.deliveries.find((d) => d.id === id);
-  }
-
-  public async redeliver(deliveryId: string): Promise<WebhookDeliveryLog> {
-    const delivery = this.getDeliveryById(deliveryId);
+  public async redeliver(deliveryId: string, ownerKey: string): Promise<WebhookDeliveryLog> {
+    const delivery = this.deliveries.find((d) => d.id === deliveryId);
     if (!delivery) {
       throw new NotFoundError(`Entrega com ID '${deliveryId}' não encontrada no histórico recente.`);
     }
 
-    const target = this.subscriptions.find((s) => s.id === delivery.webhookId);
+    const target = this.subscriptions.find((s) => s.id === delivery.webhookId && s.ownerKey === ownerKey);
     if (!target) {
       throw new NotFoundError(`Webhook '${delivery.webhookId}' associado a esta entrega não está mais ativo.`);
     }
@@ -254,6 +309,15 @@ export class WebhookService {
       stateStore.del(WEBHOOKS_KEY).catch(() => undefined);
     }
   }
+}
+
+/**
+ * View pública de uma assinatura: remove o `secret` (que assina os payloads)
+ * do corpo da resposta, expondo apenas `secretSet` como sinalizador.
+ */
+export function toPublicSubscription(sub: WebhookSubscription) {
+  const { secret: _secret, ...rest } = sub;
+  return { ...rest, secretSet: Boolean(sub.secret) };
 }
 
 export const webhookService = WebhookService.getInstance();

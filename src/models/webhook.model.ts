@@ -9,6 +9,8 @@ export interface WebhookSubscription {
   secret?: string;
   createdAt: string;
   active: boolean;
+  /** Chave de API (tier Pro/Enterprise) que criou esta assinatura. */
+  ownerKey: string;
 }
 
 export interface CreateWebhookDto {
