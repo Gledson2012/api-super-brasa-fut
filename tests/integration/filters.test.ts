@@ -41,7 +41,7 @@ describe('Gender and Age Category Filters', () => {
     it('GET /api/v1/teams?gender=women should return only womens teams', async () => {
       const res = await request(app).get('/api/v1/teams?gender=women&limit=100');
       expect(res.status).toBe(200);
-      expect(res.body.meta.total).toBe(4);
+      expect(res.body.meta.total).toBe(26);
       res.body.data.forEach((team: any) => expect(team.gender).toBe('women'));
     });
 
@@ -103,19 +103,27 @@ describe('Gender and Age Category Filters', () => {
 });
 
 describe('Standings Consistency Tests', () => {
-  it('GET /api/v1/leagues/bra-serie-b-2026/standings should include the finished Operário 1-0 Criciúma round', async () => {
+  it('GET /api/v1/leagues/bra-serie-b-2026/standings should return a complete 20-team table with a consistent Operário row', async () => {
     const res = await request(app).get('/api/v1/leagues/bra-serie-b-2026/standings');
     expect(res.status).toBe(200);
 
-    const operario = res.body.data.groups[0].table.find((row: any) => row.team.id === 'operario-pr');
+    const table = res.body.data.groups[0].table;
+    expect(table.length).toBe(20);
+
+    const operario = table.find((row: any) => row.team.id === 'operario-pr');
     expect(operario.played).toBe(28);
-    expect(operario.won).toBe(12);
-    expect(operario.lost).toBe(10);
-    expect(operario.points).toBe(42);
-    expect(operario.goalsFor).toBe(25);
-    expect(operario.goalsAgainst).toBe(22);
+    expect(operario.won).toBe(9);
+    expect(operario.lost).toBe(9);
+    expect(operario.points).toBe(37);
+    expect(operario.goalsFor).toBe(24);
+    expect(operario.goalsAgainst).toBe(27);
     expect(operario.points).toBe(operario.won * 3 + operario.drawn);
     expect(operario.goalDifference).toBe(operario.goalsFor - operario.goalsAgainst);
+
+    // Tabela completa: soma de vitórias = soma de derrotas e gols marcados = gols sofridos
+    const sum = (key: string): number => table.reduce((total: number, row: any) => total + row[key], 0);
+    expect(sum('won')).toBe(sum('lost'));
+    expect(sum('goalsFor')).toBe(sum('goalsAgainst'));
   });
 
   it('GET /api/v1/leagues/fifa-wwc-u20-2026/standings should include the finished Brasil 3-1 EUA match', async () => {
@@ -126,14 +134,14 @@ describe('Standings Consistency Tests', () => {
     const brazil = table.find((row: any) => row.team.id === 'brazil-women-u20');
     const usa = table.find((row: any) => row.team.id === 'usa-women-u20');
 
-    expect(brazil.played).toBe(4);
-    expect(brazil.points).toBe(12);
-    expect(brazil.goalsFor).toBe(17);
+    expect(brazil.played).toBe(3);
+    expect(brazil.points).toBe(9);
+    expect(brazil.goalsFor).toBe(5);
     expect(brazil.goalsAgainst).toBe(1);
-    expect(usa.played).toBe(4);
-    expect(usa.lost).toBe(2);
-    expect(usa.goalsFor).toBe(10);
-    expect(usa.goalsAgainst).toBe(6);
+    expect(usa.played).toBe(3);
+    expect(usa.lost).toBe(1);
+    expect(usa.goalsFor).toBe(4);
+    expect(usa.goalsAgainst).toBe(3);
   });
 
   it('GET /api/v1/leagues/bra-sub-17-2026/standings should return a consistent 20 team table', async () => {
@@ -201,8 +209,8 @@ describe('Standings Validation Endpoint', () => {
     expect(res.body.data.issues).toEqual([]);
     expect(res.body.data.valid).toBe(true);
     expect(res.body.data.checkedLeagues).toBe(4);
-    expect(res.body.data.checkedEntries).toBe(46);
-    expect(res.body.data.partialLeagues).toEqual(['bra-serie-b-2026', 'fifa-wwc-u20-2026']);
+    expect(res.body.data.checkedEntries).toBe(84);
+    expect(res.body.data.partialLeagues).toEqual([]);
   });
 
   it('GET /api/v1/standings/validate should not warn: no league declares standings without a table', async () => {

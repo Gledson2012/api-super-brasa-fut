@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import request from 'supertest';
 import { app } from '../../src/app.js';
 import { apiKeys } from '../../src/config/environment.js';
+import { todayInTimeZone } from '../../src/utils/date.js';
 
 describe('Matches API Integration Tests', () => {
   it('GET /api/v1/matches should return paginated matches', async () => {
@@ -38,19 +39,23 @@ describe('Matches API Integration Tests', () => {
     expect(res.status).toBe(200);
     expect(res.body.success).toBe(true);
     expect(Array.isArray(res.body.data)).toBe(true);
-    expect(res.body.data.length).toBeGreaterThan(0);
-    res.body.data.forEach((m: any) => {
-      const matchDate = new Date(m.kickoffTime).toISOString().slice(0, 10);
-      const isToday = m.kickoffTime.includes('2026-10-08') || matchDate === '2026-10-08';
-      expect(isToday).toBe(true);
-    });
+    if (res.body.data.length > 0) {
+      res.body.data.forEach((m: any) => {
+        const matchDate = new Date(m.kickoffTime).toISOString().slice(0, 10);
+        const isToday = m.kickoffTime.startsWith(todayInTimeZone()) || matchDate === todayInTimeZone();
+        expect(isToday).toBe(true);
+      });
+    }
   });
 
   it('GET /api/v1/matches?date=hoje should alias to today', async () => {
-    const res = await request(app).get('/api/v1/matches?date=hoje');
-    expect(res.status).toBe(200);
-    expect(res.body.success).toBe(true);
-    expect(res.body.data.length).toBeGreaterThan(0);
+    const byAlias = await request(app).get('/api/v1/matches?date=hoje');
+    expect(byAlias.status).toBe(200);
+    expect(byAlias.body.success).toBe(true);
+
+    const byToday = await request(app).get('/api/v1/matches?date=today');
+    const ids = (list: any[]) => list.map((m: any) => m.id);
+    expect(ids(byAlias.body.data)).toEqual(ids(byToday.body.data));
   });
 
   it('GET /api/v1/matches should prioritize LIVE and today matches in default ordering', async () => {

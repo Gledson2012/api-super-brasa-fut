@@ -641,7 +641,7 @@
     "country": "Brasil",
     "season": "2026",
     "updatedAt": "2026-09-25T12:00:00Z",
-    "partial": true,
+    "partial": false,
     "groups": [
       {
         "groupName": "Tabela Única",
@@ -649,27 +649,27 @@
           {
             "position": 1,
             "team": {
-              "id": "novorizontino",
-              "name": "Novorizontino",
-              "shortName": "Novorizontino",
-              "code": "NOV",
-              "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
+              "id": "coritiba",
+              "name": "Coritiba",
+              "shortName": "Coritiba",
+              "code": "COR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/coritiba.png"
             },
             "played": 28,
-            "won": 14,
-            "drawn": 9,
-            "lost": 5,
+            "won": 18,
+            "drawn": 7,
+            "lost": 3,
             "goalsFor": 36,
-            "goalsAgainst": 24,
-            "goalDifference": 12,
-            "points": 51,
-            "pointsPercentage": 60.7,
+            "goalsAgainst": 8,
+            "goalDifference": 28,
+            "points": 61,
+            "pointsPercentage": 72.6,
             "form": [
               "W",
-              "D",
               "W",
               "W",
-              "D"
+              "L",
+              "W"
             ],
             "zone": {
               "name": "Acesso à Série A",
@@ -680,27 +680,27 @@
           {
             "position": 2,
             "team": {
-              "id": "santos",
-              "name": "Santos",
-              "shortName": "Santos",
-              "code": "SAN",
-              "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
+              "id": "sport-recife",
+              "name": "Sport",
+              "shortName": "Sport",
+              "code": "SPT",
+              "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
             },
             "played": 28,
-            "won": 14,
-            "drawn": 8,
-            "lost": 6,
-            "goalsFor": 41,
-            "goalsAgainst": 21,
-            "goalDifference": 20,
-            "points": 50,
-            "pointsPercentage": 59.5,
+            "won": 17,
+            "drawn": 7,
+            "lost": 4,
+            "goalsFor": 33,
+            "goalsAgainst": 7,
+            "goalDifference": 26,
+            "points": 58,
+            "pointsPercentage": 69,
             "form": [
               "D",
               "W",
               "W",
-              "W",
-              "D"
+              "D",
+              "W"
             ],
             "zone": {
               "name": "Acesso à Série A",
@@ -711,26 +711,26 @@
           {
             "position": 3,
             "team": {
-              "id": "sport-recife",
-              "name": "Sport Recife",
-              "shortName": "Sport",
-              "code": "SPT",
-              "logoUrl": "https://static.flashscore.com/res/image/data/sport.png"
+              "id": "goias",
+              "name": "Goiás",
+              "shortName": "Goiás",
+              "code": "GOI",
+              "logoUrl": "https://static.flashscore.com/res/image/data/goias.png"
             },
-            "played": 27,
+            "played": 28,
             "won": 13,
-            "drawn": 7,
-            "lost": 7,
-            "goalsFor": 37,
-            "goalsAgainst": 26,
-            "goalDifference": 11,
-            "points": 46,
-            "pointsPercentage": 56.8,
+            "drawn": 11,
+            "lost": 4,
+            "goalsFor": 31,
+            "goalsAgainst": 10,
+            "goalDifference": 21,
+            "points": 50,
+            "pointsPercentage": 59.5,
             "form": [
-              "W",
-              "W",
               "D",
               "W",
+              "D",
+              "D",
               "W"
             ],
             "zone": {
@@ -742,32 +742,468 @@
           {
             "position": 4,
             "team": {
-              "id": "operario-pr",
-              "name": "Operário-PR",
-              "shortName": "Operário",
-              "code": "OPE",
-              "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
+              "id": "santos",
+              "name": "Santos",
+              "shortName": "Santos",
+              "code": "SAN",
+              "logoUrl": "https://static.flashscore.com/res/image/data/hzibzPjC-hv442jSk.png"
             },
             "played": 28,
-            "won": 12,
-            "drawn": 6,
-            "lost": 10,
+            "won": 14,
+            "drawn": 8,
+            "lost": 6,
             "goalsFor": 25,
-            "goalsAgainst": 22,
-            "goalDifference": 3,
-            "points": 42,
-            "pointsPercentage": 50,
+            "goalsAgainst": 11,
+            "goalDifference": 14,
+            "points": 50,
+            "pointsPercentage": 59.5,
             "form": [
-              "W",
-              "L",
               "L",
               "W",
-              "W"
+              "W",
+              "W",
+              "L"
             ],
             "zone": {
               "name": "Acesso à Série A",
               "type": "promotion",
               "color": "#008000"
+            }
+          },
+          {
+            "position": 5,
+            "team": {
+              "id": "ceara",
+              "name": "Ceará",
+              "shortName": "Ceará",
+              "code": "CEA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/ceara.png"
+            },
+            "played": 28,
+            "won": 15,
+            "drawn": 4,
+            "lost": 9,
+            "goalsFor": 36,
+            "goalsAgainst": 16,
+            "goalDifference": 20,
+            "points": 49,
+            "pointsPercentage": 58.3,
+            "form": [
+              "W",
+              "W",
+              "W",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "position": 6,
+            "team": {
+              "id": "remo",
+              "name": "Remo",
+              "shortName": "Remo",
+              "code": "REM",
+              "logoUrl": "https://static.flashscore.com/res/image/data/remo.png"
+            },
+            "played": 28,
+            "won": 12,
+            "drawn": 7,
+            "lost": 9,
+            "goalsFor": 26,
+            "goalsAgainst": 18,
+            "goalDifference": 8,
+            "points": 43,
+            "pointsPercentage": 51.2,
+            "form": [
+              "W",
+              "L",
+              "D",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "position": 7,
+            "team": {
+              "id": "chapecoense",
+              "name": "Chapecoense",
+              "shortName": "Chapecoense",
+              "code": "CHA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/chapecoense.png"
+            },
+            "played": 28,
+            "won": 11,
+            "drawn": 10,
+            "lost": 7,
+            "goalsFor": 24,
+            "goalsAgainst": 19,
+            "goalDifference": 5,
+            "points": 43,
+            "pointsPercentage": 51.2,
+            "form": [
+              "W",
+              "D",
+              "D",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "position": 8,
+            "team": {
+              "id": "ponte-preta",
+              "name": "Ponte Preta",
+              "shortName": "Ponte Preta",
+              "code": "PON",
+              "logoUrl": "https://static.flashscore.com/res/image/data/ponte-preta.png"
+            },
+            "played": 28,
+            "won": 9,
+            "drawn": 12,
+            "lost": 7,
+            "goalsFor": 23,
+            "goalsAgainst": 17,
+            "goalDifference": 6,
+            "points": 39,
+            "pointsPercentage": 46.4,
+            "form": [
+              "W",
+              "D",
+              "L",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "position": 9,
+            "team": {
+              "id": "paysandu",
+              "name": "Paysandu",
+              "shortName": "Paysandu",
+              "code": "PAY",
+              "logoUrl": "https://static.flashscore.com/res/image/data/paysandu.png"
+            },
+            "played": 28,
+            "won": 11,
+            "drawn": 6,
+            "lost": 11,
+            "goalsFor": 27,
+            "goalsAgainst": 23,
+            "goalDifference": 4,
+            "points": 39,
+            "pointsPercentage": 46.4,
+            "form": [
+              "W",
+              "W",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "position": 10,
+            "team": {
+              "id": "operario-pr",
+              "name": "Operário",
+              "shortName": "Operário",
+              "code": "OPE",
+              "logoUrl": "https://static.flashscore.com/res/image/data/operario.png"
+            },
+            "played": 28,
+            "won": 9,
+            "drawn": 10,
+            "lost": 9,
+            "goalsFor": 24,
+            "goalsAgainst": 27,
+            "goalDifference": -3,
+            "points": 37,
+            "pointsPercentage": 44,
+            "form": [
+              "L",
+              "D",
+              "W",
+              "D",
+              "W"
+            ]
+          },
+          {
+            "position": 11,
+            "team": {
+              "id": "mirassol",
+              "name": "Mirassol",
+              "shortName": "Mirassol",
+              "code": "MIR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/mirassol.png"
+            },
+            "played": 28,
+            "won": 9,
+            "drawn": 9,
+            "lost": 10,
+            "goalsFor": 23,
+            "goalsAgainst": 24,
+            "goalDifference": -1,
+            "points": 36,
+            "pointsPercentage": 42.9,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W",
+              "W"
+            ]
+          },
+          {
+            "position": 12,
+            "team": {
+              "id": "vila-nova",
+              "name": "Vila Nova",
+              "shortName": "Vila Nova",
+              "code": "VIL",
+              "logoUrl": "https://static.flashscore.com/res/image/data/vila-nova.png"
+            },
+            "played": 28,
+            "won": 10,
+            "drawn": 6,
+            "lost": 12,
+            "goalsFor": 19,
+            "goalsAgainst": 28,
+            "goalDifference": -9,
+            "points": 36,
+            "pointsPercentage": 42.9,
+            "form": [
+              "D",
+              "L",
+              "W",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "position": 13,
+            "team": {
+              "id": "botafogo-sp",
+              "name": "Botafogo-SP",
+              "shortName": "Botafogo-SP",
+              "code": "BFO",
+              "logoUrl": "https://static.flashscore.com/res/image/data/botafogo-sp.png"
+            },
+            "played": 28,
+            "won": 7,
+            "drawn": 12,
+            "lost": 9,
+            "goalsFor": 18,
+            "goalsAgainst": 21,
+            "goalDifference": -3,
+            "points": 33,
+            "pointsPercentage": 39.3,
+            "form": [
+              "L",
+              "W",
+              "D",
+              "D",
+              "D"
+            ]
+          },
+          {
+            "position": 14,
+            "team": {
+              "id": "novorizontino",
+              "name": "Novorizontino",
+              "shortName": "Novorizontino",
+              "code": "NOV",
+              "logoUrl": "https://static.flashscore.com/res/image/data/novorizontino.png"
+            },
+            "played": 28,
+            "won": 8,
+            "drawn": 8,
+            "lost": 12,
+            "goalsFor": 24,
+            "goalsAgainst": 24,
+            "goalDifference": 0,
+            "points": 32,
+            "pointsPercentage": 38.1,
+            "form": [
+              "L",
+              "L",
+              "L",
+              "W",
+              "L"
+            ]
+          },
+          {
+            "position": 15,
+            "team": {
+              "id": "avai",
+              "name": "Avaí",
+              "shortName": "Avaí",
+              "code": "AVA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/avai.png"
+            },
+            "played": 28,
+            "won": 8,
+            "drawn": 6,
+            "lost": 14,
+            "goalsFor": 18,
+            "goalsAgainst": 26,
+            "goalDifference": -8,
+            "points": 30,
+            "pointsPercentage": 35.7,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "position": 16,
+            "team": {
+              "id": "amazonas",
+              "name": "Amazonas",
+              "shortName": "Amazonas",
+              "code": "AMA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/amazonas.png"
+            },
+            "played": 28,
+            "won": 6,
+            "drawn": 11,
+            "lost": 11,
+            "goalsFor": 18,
+            "goalsAgainst": 30,
+            "goalDifference": -12,
+            "points": 29,
+            "pointsPercentage": 34.5,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "L",
+              "L"
+            ]
+          },
+          {
+            "position": 17,
+            "team": {
+              "id": "athletic-club",
+              "name": "Athletic Club",
+              "shortName": "Athletic Club",
+              "code": "ATH",
+              "logoUrl": "https://static.flashscore.com/res/image/data/athletic.png"
+            },
+            "played": 28,
+            "won": 4,
+            "drawn": 13,
+            "lost": 11,
+            "goalsFor": 16,
+            "goalsAgainst": 37,
+            "goalDifference": -21,
+            "points": 25,
+            "pointsPercentage": 29.8,
+            "form": [
+              "D",
+              "D",
+              "W",
+              "L",
+              "W"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série C",
+              "type": "relegation",
+              "color": "#e04040"
+            }
+          },
+          {
+            "position": 18,
+            "team": {
+              "id": "crb",
+              "name": "CRB",
+              "shortName": "CRB",
+              "code": "CRB",
+              "logoUrl": "https://static.flashscore.com/res/image/data/crb.png"
+            },
+            "played": 28,
+            "won": 6,
+            "drawn": 7,
+            "lost": 15,
+            "goalsFor": 11,
+            "goalsAgainst": 32,
+            "goalDifference": -21,
+            "points": 25,
+            "pointsPercentage": 29.8,
+            "form": [
+              "D",
+              "W",
+              "L",
+              "L",
+              "L"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série C",
+              "type": "relegation",
+              "color": "#e04040"
+            }
+          },
+          {
+            "position": 19,
+            "team": {
+              "id": "ituano",
+              "name": "Ituano",
+              "shortName": "Ituano",
+              "code": "ITU",
+              "logoUrl": "https://static.flashscore.com/res/image/data/ituano.png"
+            },
+            "played": 28,
+            "won": 5,
+            "drawn": 8,
+            "lost": 15,
+            "goalsFor": 18,
+            "goalsAgainst": 45,
+            "goalDifference": -27,
+            "points": 23,
+            "pointsPercentage": 27.4,
+            "form": [
+              "L",
+              "L",
+              "W",
+              "W",
+              "L"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série C",
+              "type": "relegation",
+              "color": "#e04040"
+            }
+          },
+          {
+            "position": 20,
+            "team": {
+              "id": "america-mg",
+              "name": "América-MG",
+              "shortName": "América-MG",
+              "code": "AME",
+              "logoUrl": "https://static.flashscore.com/res/image/data/america-mg.png"
+            },
+            "played": 28,
+            "won": 0,
+            "drawn": 14,
+            "lost": 14,
+            "goalsFor": 8,
+            "goalsAgainst": 35,
+            "goalDifference": -27,
+            "points": 14,
+            "pointsPercentage": 16.7,
+            "form": [
+              "D",
+              "L",
+              "L",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Rebaixamento para a Série C",
+              "type": "relegation",
+              "color": "#e04040"
             }
           }
         ]
@@ -781,37 +1217,36 @@
     "country": "Internacional",
     "season": "2026",
     "updatedAt": "2026-09-25T12:00:00Z",
-    "partial": true,
+    "partial": false,
     "groups": [
       {
-        "groupName": "Grupo B",
+        "groupName": "Grupo A",
         "table": [
           {
             "position": 1,
             "team": {
               "id": "brazil-women-u20",
               "name": "Brasil Sub-20 Fem",
-              "shortName": "Brasil",
+              "shortName": "Brasil Sub-20 Fem",
               "code": "BRA",
               "logoUrl": "https://static.flashscore.com/res/image/data/cbf_fem.png"
             },
-            "played": 4,
-            "won": 4,
+            "played": 3,
+            "won": 3,
             "drawn": 0,
             "lost": 0,
-            "goalsFor": 17,
+            "goalsFor": 5,
             "goalsAgainst": 1,
-            "goalDifference": 16,
-            "points": 12,
+            "goalDifference": 4,
+            "points": 9,
             "pointsPercentage": 100,
             "form": [
-              "W",
               "W",
               "W",
               "W"
             ],
             "zone": {
-              "name": "Classificado para as Quartas",
+              "name": "Classificado para as Oitavas",
               "type": "promotion",
               "color": "#008000"
             }
@@ -821,30 +1256,632 @@
             "team": {
               "id": "usa-women-u20",
               "name": "EUA Sub-20 Fem",
-              "shortName": "EUA",
+              "shortName": "EUA Sub-20 Fem",
               "code": "USA",
               "logoUrl": "https://static.flashscore.com/res/image/data/ussoccer.png"
             },
-            "played": 4,
+            "played": 3,
             "won": 2,
             "drawn": 0,
-            "lost": 2,
-            "goalsFor": 10,
-            "goalsAgainst": 6,
-            "goalDifference": 4,
+            "lost": 1,
+            "goalsFor": 4,
+            "goalsAgainst": 3,
+            "goalDifference": 1,
             "points": 6,
-            "pointsPercentage": 50,
+            "pointsPercentage": 66.7,
+            "form": [
+              "L",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "morocco-women-u20",
+              "name": "Marrocos Sub-20 Fem",
+              "shortName": "Marrocos Sub-20 Fem",
+              "code": "MAR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/frmf.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 1,
+            "lost": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 2,
+            "goalDifference": -2,
+            "points": 1,
+            "pointsPercentage": 11.1,
+            "form": [
+              "L",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "nigeria-women-u20",
+              "name": "Nigéria Sub-20 Fem",
+              "shortName": "Nigéria Sub-20 Fem",
+              "code": "NGA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/nff_n.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 1,
+            "lost": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 3,
+            "goalDifference": -3,
+            "points": 1,
+            "pointsPercentage": 11.1,
+            "form": [
+              "L",
+              "L",
+              "D"
+            ]
+          }
+        ]
+      },
+      {
+        "groupName": "Grupo B",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "new-zealand-women-u20",
+              "name": "Nova Zelândia Sub-20 Fem",
+              "shortName": "Nova Zelândia Sub-20 Fem",
+              "code": "NZL",
+              "logoUrl": "https://static.flashscore.com/res/image/data/nzfootball.png"
+            },
+            "played": 3,
+            "won": 2,
+            "drawn": 0,
+            "lost": 1,
+            "goalsFor": 3,
+            "goalsAgainst": 2,
+            "goalDifference": 1,
+            "points": 6,
+            "pointsPercentage": 66.7,
+            "form": [
+              "L",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "france-women-u20",
+              "name": "França Sub-20 Fem",
+              "shortName": "França Sub-20 Fem",
+              "code": "FRA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fff.png"
+            },
+            "played": 3,
+            "won": 1,
+            "drawn": 2,
+            "lost": 0,
+            "goalsFor": 2,
+            "goalsAgainst": 1,
+            "goalDifference": 1,
+            "points": 5,
+            "pointsPercentage": 55.6,
             "form": [
               "W",
+              "D",
+              "D"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "mexico-women-u20",
+              "name": "México Sub-20 Fem",
+              "shortName": "México Sub-20 Fem",
+              "code": "MEX",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fmf.png"
+            },
+            "played": 3,
+            "won": 1,
+            "drawn": 1,
+            "lost": 1,
+            "goalsFor": 3,
+            "goalsAgainst": 3,
+            "goalDifference": 0,
+            "points": 4,
+            "pointsPercentage": 44.4,
+            "form": [
+              "D",
               "L",
+              "W"
+            ]
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "colombia-women-u20",
+              "name": "Colômbia Sub-20 Fem",
+              "shortName": "Colômbia Sub-20 Fem",
+              "code": "COL",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fcf.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 1,
+            "lost": 2,
+            "goalsFor": 2,
+            "goalsAgainst": 4,
+            "goalDifference": -2,
+            "points": 1,
+            "pointsPercentage": 11.1,
+            "form": [
+              "D",
+              "L",
+              "L"
+            ]
+          }
+        ]
+      },
+      {
+        "groupName": "Grupo C",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "australia-women-u20",
+              "name": "Austrália Sub-20 Fem",
+              "shortName": "Austrália Sub-20 Fem",
+              "code": "AUS",
+              "logoUrl": "https://static.flashscore.com/res/image/data/ffa.png"
+            },
+            "played": 3,
+            "won": 2,
+            "drawn": 0,
+            "lost": 1,
+            "goalsFor": 4,
+            "goalsAgainst": 3,
+            "goalDifference": 1,
+            "points": 6,
+            "pointsPercentage": 66.7,
+            "form": [
+              "W",
               "W",
               "L"
             ],
             "zone": {
-              "name": "Classificado para as Quartas",
+              "name": "Classificado para as Oitavas",
               "type": "promotion",
               "color": "#008000"
             }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "germany-women-u20",
+              "name": "Alemanha Sub-20 Fem",
+              "shortName": "Alemanha Sub-20 Fem",
+              "code": "GER",
+              "logoUrl": "https://static.flashscore.com/res/image/data/dfb_frauen.png"
+            },
+            "played": 3,
+            "won": 1,
+            "drawn": 1,
+            "lost": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 2,
+            "goalDifference": 0,
+            "points": 4,
+            "pointsPercentage": 44.4,
+            "form": [
+              "W",
+              "D",
+              "L"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "ghana-women-u20",
+              "name": "Gana Sub-20 Fem",
+              "shortName": "Gana Sub-20 Fem",
+              "code": "GHA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/gfa.png"
+            },
+            "played": 3,
+            "won": 1,
+            "drawn": 1,
+            "lost": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 3,
+            "goalDifference": -2,
+            "points": 4,
+            "pointsPercentage": 44.4,
+            "form": [
+              "D",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "south-korea-women-u20",
+              "name": "Coreia do Sul Sub-20 Fem",
+              "shortName": "Coreia do Sul Sub-20 Fem",
+              "code": "KOR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/kfa.png"
+            },
+            "played": 3,
+            "won": 1,
+            "drawn": 0,
+            "lost": 2,
+            "goalsFor": 4,
+            "goalsAgainst": 3,
+            "goalDifference": 1,
+            "points": 3,
+            "pointsPercentage": 33.3,
+            "form": [
+              "L",
+              "W",
+              "L"
+            ]
+          }
+        ]
+      },
+      {
+        "groupName": "Grupo D",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "spain-women-u20",
+              "name": "Espanha Sub-20 Fem",
+              "shortName": "Espanha Sub-20 Fem",
+              "code": "ESP",
+              "logoUrl": "https://static.flashscore.com/res/image/data/rfef.png"
+            },
+            "played": 3,
+            "won": 2,
+            "drawn": 1,
+            "lost": 0,
+            "goalsFor": 7,
+            "goalsAgainst": 1,
+            "goalDifference": 6,
+            "points": 7,
+            "pointsPercentage": 77.8,
+            "form": [
+              "D",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "japan-women-u20",
+              "name": "Japão Sub-20 Fem",
+              "shortName": "Japão Sub-20 Fem",
+              "code": "JPN",
+              "logoUrl": "https://static.flashscore.com/res/image/data/jfa.png"
+            },
+            "played": 3,
+            "won": 2,
+            "drawn": 1,
+            "lost": 0,
+            "goalsFor": 7,
+            "goalsAgainst": 1,
+            "goalDifference": 6,
+            "points": 7,
+            "pointsPercentage": 77.8,
+            "form": [
+              "D",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "venezuela-women-u20",
+              "name": "Venezuela Sub-20 Fem",
+              "shortName": "Venezuela Sub-20 Fem",
+              "code": "VEN",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fvf.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 1,
+            "lost": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 5,
+            "goalDifference": -5,
+            "points": 1,
+            "pointsPercentage": 11.1,
+            "form": [
+              "L",
+              "L",
+              "D"
+            ]
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "portugal-women-u20",
+              "name": "Portugal Sub-20 Fem",
+              "shortName": "Portugal Sub-20 Fem",
+              "code": "POR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fpf.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 1,
+            "lost": 2,
+            "goalsFor": 0,
+            "goalsAgainst": 7,
+            "goalDifference": -7,
+            "points": 1,
+            "pointsPercentage": 11.1,
+            "form": [
+              "L",
+              "L",
+              "D"
+            ]
+          }
+        ]
+      },
+      {
+        "groupName": "Grupo E",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "england-women-u20",
+              "name": "Inglaterra Sub-20 Fem",
+              "shortName": "Inglaterra Sub-20 Fem",
+              "code": "ENG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/fa.png"
+            },
+            "played": 3,
+            "won": 2,
+            "drawn": 1,
+            "lost": 0,
+            "goalsFor": 7,
+            "goalsAgainst": 2,
+            "goalDifference": 5,
+            "points": 7,
+            "pointsPercentage": 77.8,
+            "form": [
+              "D",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "sweden-women-u20",
+              "name": "Suécia Sub-20 Fem",
+              "shortName": "Suécia Sub-20 Fem",
+              "code": "SWE",
+              "logoUrl": "https://static.flashscore.com/res/image/data/svff.png"
+            },
+            "played": 3,
+            "won": 2,
+            "drawn": 1,
+            "lost": 0,
+            "goalsFor": 4,
+            "goalsAgainst": 2,
+            "goalDifference": 2,
+            "points": 7,
+            "pointsPercentage": 77.8,
+            "form": [
+              "D",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "china-women-u20",
+              "name": "China Sub-20 Fem",
+              "shortName": "China Sub-20 Fem",
+              "code": "CHN",
+              "logoUrl": "https://static.flashscore.com/res/image/data/cfa.png"
+            },
+            "played": 3,
+            "won": 1,
+            "drawn": 0,
+            "lost": 2,
+            "goalsFor": 2,
+            "goalsAgainst": 5,
+            "goalDifference": -3,
+            "points": 3,
+            "pointsPercentage": 33.3,
+            "form": [
+              "L",
+              "L",
+              "W"
+            ]
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "argentina-women-u20",
+              "name": "Argentina Sub-20 Fem",
+              "shortName": "Argentina Sub-20 Fem",
+              "code": "ARG",
+              "logoUrl": "https://static.flashscore.com/res/image/data/afa.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 0,
+            "lost": 3,
+            "goalsFor": 0,
+            "goalsAgainst": 4,
+            "goalDifference": -4,
+            "points": 0,
+            "pointsPercentage": 0,
+            "form": [
+              "L",
+              "L",
+              "L"
+            ]
+          }
+        ]
+      },
+      {
+        "groupName": "Grupo F",
+        "table": [
+          {
+            "position": 1,
+            "team": {
+              "id": "netherlands-women-u20",
+              "name": "Holanda Sub-20 Fem",
+              "shortName": "Holanda Sub-20 Fem",
+              "code": "NED",
+              "logoUrl": "https://static.flashscore.com/res/image/data/knvb.png"
+            },
+            "played": 3,
+            "won": 3,
+            "drawn": 0,
+            "lost": 0,
+            "goalsFor": 10,
+            "goalsAgainst": 2,
+            "goalDifference": 8,
+            "points": 9,
+            "pointsPercentage": 100,
+            "form": [
+              "W",
+              "W",
+              "W"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 2,
+            "team": {
+              "id": "norway-women-u20",
+              "name": "Noruega Sub-20 Fem",
+              "shortName": "Noruega Sub-20 Fem",
+              "code": "NOR",
+              "logoUrl": "https://static.flashscore.com/res/image/data/nff.png"
+            },
+            "played": 3,
+            "won": 1,
+            "drawn": 1,
+            "lost": 1,
+            "goalsFor": 2,
+            "goalsAgainst": 4,
+            "goalDifference": -2,
+            "points": 4,
+            "pointsPercentage": 44.4,
+            "form": [
+              "L",
+              "W",
+              "D"
+            ],
+            "zone": {
+              "name": "Classificado para as Oitavas",
+              "type": "promotion",
+              "color": "#008000"
+            }
+          },
+          {
+            "position": 3,
+            "team": {
+              "id": "canada-women-u20",
+              "name": "Canadá Sub-20 Fem",
+              "shortName": "Canadá Sub-20 Fem",
+              "code": "CAN",
+              "logoUrl": "https://static.flashscore.com/res/image/data/csa.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 2,
+            "lost": 1,
+            "goalsFor": 1,
+            "goalsAgainst": 3,
+            "goalDifference": -2,
+            "points": 2,
+            "pointsPercentage": 22.2,
+            "form": [
+              "L",
+              "D",
+              "D"
+            ]
+          },
+          {
+            "position": 4,
+            "team": {
+              "id": "italy-women-u20",
+              "name": "Itália Sub-20 Fem",
+              "shortName": "Itália Sub-20 Fem",
+              "code": "ITA",
+              "logoUrl": "https://static.flashscore.com/res/image/data/figc.png"
+            },
+            "played": 3,
+            "won": 0,
+            "drawn": 1,
+            "lost": 2,
+            "goalsFor": 2,
+            "goalsAgainst": 6,
+            "goalDifference": -4,
+            "points": 1,
+            "pointsPercentage": 11.1,
+            "form": [
+              "L",
+              "L",
+              "D"
+            ]
           }
         ]
       }
